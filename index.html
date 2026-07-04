@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Offline Music Player</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#17181c">
+
+  <!-- iOS-та "Негізгі бетке қосу" арқылы қолданба сияқты ашылуы үшін -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Music">
+  <link rel="apple-touch-icon" href="icon.svg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="statusbar">
+      <span class="dot" id="dot"></span>
+      <span class="label" id="statusLabel">Тексерілуде...</span>
+      <span class="sub" id="swLabel">SW: —</span>
+    </div>
+
+    <div class="device">
+
+      <div class="screen" id="screenBox">
+        <canvas id="visualizer"></canvas>
+        <div class="screen-overlay">
+          <div class="marquee-box">
+            <span class="marquee-text" id="trackName">Треки жоқ — төменнен қос</span>
+          </div>
+          <div class="time-row">
+            <span id="curTime">0:00</span>
+            <span id="totalTime">0:00</span>
+          </div>
+        </div>
+      </div>
+
+      <input type="range" id="seek" class="seek" min="0" max="100" value="0" step="0.1">
+
+      <div class="controls">
+        <button class="ctrl" id="shuffleBtn" title="Аралас">🔀</button>
+        <button class="ctrl" id="prevBtn" title="Алдыңғы">⏮</button>
+        <button class="ctrl play" id="playBtn" title="Ойнату">▶</button>
+        <button class="ctrl" id="nextBtn" title="Келесі">⏭</button>
+        <button class="ctrl" id="repeatBtn" title="Қайталау">🔁</button>
+      </div>
+
+      <div class="volume-row">
+        <span>🔈</span>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+      </div>
+
+      <div class="playlist-header">
+        <span>ПЛЕЙЛИСТ (<span id="trackCount">0</span>)</span>
+        <button id="addBtn">+ Ән қосу</button>
+        <input type="file" id="fileInput" accept="audio/*" multiple hidden>
+      </div>
+
+      <ul id="playlist"></ul>
+      <p class="empty" id="empty">Телефоныңдағы файл бөлімінен MP3/аудио файл таңда</p>
+
+    </div>
+
+    <p class="footnote">
+      Барлық ән файлы осы құрылғының өз жадында сақталады, ешқайда жіберілмейді.
+      Интернетті өшіріп те тыңдай бересің.
+    </p>
+  </div>
+
+  <audio id="audio" preload="metadata"></audio>
+
+  <script src="db.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
