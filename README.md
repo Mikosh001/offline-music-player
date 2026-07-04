@@ -53,11 +53,11 @@ python -m http.server 8000
 git init
 git add .
 git commit -m "offline music player"
-git remote add origin https://github.com/СЕНІҢ_ЮЗЕРНЕЙМІҢ/offline-music-player.git
+git remote add origin https://github.com/Mikosh001/offline-music-player.git
 git push -u origin main
 ```
 Репозиторийдің **Settings → Pages** бөлімінен `main` бранчты таңда.
-Сайт `https://СЕНІҢ_ЮЗЕРНЕЙМІҢ.github.io/offline-music-player` мекенжайында
+Сайт `https://Mikosh001.github.io/offline-music-player` мекенжайында
 іске қосылады.
 
 ## Кеңес
