@@ -46,6 +46,43 @@ const fileInput = document.getElementById('fileInput');
 const canvas = document.getElementById('visualizer');
 const canvasCtx = canvas.getContext('2d');
 const screenBox = document.getElementById('screenBox');
+const toastEl = document.getElementById('toast');
+const storageInfoEl = document.getElementById('storageInfo');
+
+// ================= Хабарлама (toast) =================
+let toastTimer = null;
+function showToast(msg, isError, sticky) {
+  toastEl.textContent = msg;
+  toastEl.classList.toggle('error', !!isError);
+  toastEl.classList.add('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  if (!sticky) {
+    toastTimer = setTimeout(() => toastEl.classList.remove('show'), 5000);
+  }
+}
+
+if (!window.indexedDB) {
+  // Жеке (Private/Incognito) режимде кейбір браузерлер IndexedDB-ді толық бұғаттайды
+  showToast('Бұл режимде дерекқор қолжетімсіз. Жеке/инкогнито режимде емес екеніңізді тексер.', true, true);
+}
+
+// ================= Жады көлемі =================
+async function refreshStorageInfo() {
+  if (!(navigator.storage && navigator.storage.estimate)) return;
+  try {
+    const { usage, quota } = await navigator.storage.estimate();
+    const usedMB = (usage / (1024 * 1024)).toFixed(1);
+    const quotaGB = (quota / (1024 * 1024 * 1024)).toFixed(1);
+    storageInfoEl.textContent = `Жады: ${usedMB} МБ қолданылды · шамамен ${quotaGB} ГБ бос орын бар`;
+  } catch {
+    storageInfoEl.textContent = '';
+  }
+}
+
+if (navigator.storage && navigator.storage.persist) {
+  // Браузерден деректерді автоматты тазаламауын сұраймыз (best-effort — Safari-де әрқашан қолдау таппайды)
+  navigator.storage.persist().catch(() => {});
+}
 
 // ================= Күй =================
 let tracks = [];
@@ -59,6 +96,7 @@ let audioCtx, analyser, dataArray, sourceNode;
 async function init() {
   tracks = await MusicDB.getAllTracks();
   renderPlaylist();
+  refreshStorageInfo();
 
   const savedVolume = parseFloat(localStorage.getItem('mp-volume'));
   if (!isNaN(savedVolume)) {
@@ -219,13 +257,47 @@ volume.addEventListener('input', () => {
 addBtn.addEventListener('click', () => fileInput.click());
 fileInput.addEventListener('change', async (e) => {
   const files = Array.from(e.target.files);
-  for (const file of files) {
-    await MusicDB.addTrack(file);
+  if (!files.length) return;
+
+  const originalLabel = addBtn.textContent;
+  addBtn.disabled = true;
+
+  let okCount = 0;
+  const failedNames = [];
+
+  for (let i = 0; i < files.length; i++) {
+    const file = files[i];
+    addBtn.textContent = `Қосылуда... ${i + 1}/${files.length}`;
+    try {
+      await MusicDB.addTrack(file);
+      okCount++;
+    } catch (err) {
+      // Бір файл қатесе де, қалғандарын жалғастырамыз — бұрын осы жерде
+      // бүкіл цикл үнсіз тоқтап, ештеңе қосылмағандай көрінетін.
+      console.error('Ән қосылмады:', file.name, err);
+      failedNames.push(file.name);
+    }
+    // Әр файлдан кейін дереу жаңартамыз, сондықтан біреуі қатесе де
+    // сәтті қосылғандары бірден плейлистте көрінеді.
+    tracks = await MusicDB.getAllTracks();
+    renderPlaylist();
   }
-  tracks = await MusicDB.getAllTracks();
-  renderPlaylist();
+
+  refreshStorageInfo();
   if (currentIndex === -1 && tracks.length) loadTrack(0, false);
+
+  addBtn.disabled = false;
+  addBtn.textContent = originalLabel;
   fileInput.value = '';
+
+  if (failedNames.length) {
+    showToast(
+      `${okCount} ән қосылды, ${failedNames.length} қосылмады: ${failedNames.join(', ')}`,
+      true
+    );
+  } else {
+    showToast(`${okCount} ән сәтті қосылды ✓`, false);
+  }
 });
 
 // ================= Трек өшіру =================
@@ -237,6 +309,7 @@ playlistEl.addEventListener('click', async (e) => {
 
   await MusicDB.deleteTrack(id);
   tracks = await MusicDB.getAllTracks();
+  refreshStorageInfo();
 
   if (deletingCurrent) {
     audio.pause();
