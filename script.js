@@ -90,7 +90,12 @@ let currentIndex = -1;
 let currentUrl = null;
 let shuffle = false;
 let repeat = false;
-let audioCtx, analyser, dataArray, sourceNode;
+
+// Визуализатор бар-күйлері (нақты Web Audio API талдауышы ЕМЕС — әдейі,
+// төмендегі ескертуді қара)
+const BAR_COUNT = 28;
+let barHeights = new Array(BAR_COUNT).fill(0);
+let barTargets = new Array(BAR_COUNT).fill(0);
 
 // ================= Іске қосу =================
 async function init() {
@@ -153,9 +158,9 @@ function loadTrack(index, autoplay) {
   setTrackName(tracks[index].name);
   localStorage.setItem('mp-last-index', index);
   renderPlaylist();
+  updateMediaSession(tracks[index]);
 
   if (autoplay) {
-    ensureAudioContext();
     audio.play().catch(() => {});
   }
 }
@@ -176,7 +181,6 @@ function setTrackName(name) {
 playBtn.addEventListener('click', () => {
   if (!tracks.length) return;
   if (currentIndex === -1) { loadTrack(0, true); return; }
-  ensureAudioContext();
   if (audio.paused) {
     audio.play().catch(() => {});
   } else {
@@ -187,10 +191,12 @@ playBtn.addEventListener('click', () => {
 audio.addEventListener('play', () => {
   playBtn.textContent = '⏸';
   screenBox.classList.add('playing');
+  if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing';
 });
 audio.addEventListener('pause', () => {
   playBtn.textContent = '▶';
   screenBox.classList.remove('playing');
+  if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused';
 });
 audio.addEventListener('ended', () => {
   if (repeat) {
@@ -226,11 +232,45 @@ function prevTrack() {
   loadTrack(idx, true);
 }
 
+// ================= Media Session API =================
+// Бұл — телефонға "нақты музыка ойнатылып жатыр" деп білдіретін стандартты
+// API. Осының арқасында: 1) құлыптау экранында/басқару орталығында
+// трек аты мен түймелер шығады, 2) iOS/Android бетті фонда өлтірмей,
+// ойнатуды жалғастыруға рұқсат етеді.
+function updateMediaSession(track) {
+  if (!('mediaSession' in navigator) || !track) return;
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title: track.name,
+    artist: 'Offline Music Player',
+    artwork: [{ src: 'icon.svg', sizes: '512x512', type: 'image/svg+xml' }]
+  });
+}
+
+if ('mediaSession' in navigator) {
+  navigator.mediaSession.setActionHandler('play', () => audio.play().catch(() => {}));
+  navigator.mediaSession.setActionHandler('pause', () => audio.pause());
+  navigator.mediaSession.setActionHandler('previoustrack', () => prevTrack());
+  navigator.mediaSession.setActionHandler('nexttrack', () => nextTrack());
+  navigator.mediaSession.setActionHandler('seekto', (details) => {
+    if (details.seekTime != null) audio.currentTime = details.seekTime;
+  });
+}
+
 // ================= Уақыт / seek =================
 audio.addEventListener('timeupdate', () => {
   if (!isNaN(audio.duration)) {
     seek.value = (audio.currentTime / audio.duration) * 100;
     curTimeEl.textContent = formatTime(audio.currentTime);
+
+    if ('mediaSession' in navigator && 'setPositionState' in navigator.mediaSession) {
+      try {
+        navigator.mediaSession.setPositionState({
+          duration: audio.duration,
+          playbackRate: audio.playbackRate,
+          position: audio.currentTime
+        });
+      } catch {}
+    }
   }
 });
 audio.addEventListener('loadedmetadata', () => {
@@ -334,24 +374,13 @@ playlistEl.addEventListener('click', async (e) => {
   renderPlaylist();
 });
 
-// ================= Web Audio API визуализатор =================
-// Ескерту: iOS/Safari-де AudioContext тек пайдаланушы түрткен әрекеттен
-// кейін ғана іске қосылады, сондықтан ensureAudioContext() play басқанда шақырылады.
-function ensureAudioContext() {
-  if (audioCtx) {
-    if (audioCtx.state === 'suspended') audioCtx.resume();
-    return;
-  }
-  audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-  sourceNode = audioCtx.createMediaElementSource(audio);
-  analyser = audioCtx.createAnalyser();
-  analyser.fftSize = 64;
-  sourceNode.connect(analyser);
-  analyser.connect(audioCtx.destination);
-  dataArray = new Uint8Array(analyser.frequencyBinCount);
-  drawVisualizer();
-}
-
+// ================= Визуализатор (жалған-анимация) =================
+// Маңызды: бұрын мұнда createMediaElementSource() арқылы <audio>
+// шығысы Web Audio API графигі арқылы өтетін. iOS телефон фонға
+// кеткенде немесе экран құлыпталғанда сол AudioContext-ті тоқтатып
+// тастайды — сондықтан музыка да тоқтап қалатын. Енді визуализатор
+// толығымен CSS/JS анимациясы, дыбыс ағынына мүлдем тимейді — сол
+// себепті <audio> өз алдына табиғи түрде фонда ойнай береді.
 function resizeCanvas() {
   const rect = canvas.getBoundingClientRect();
   canvas.width = rect.width * devicePixelRatio;
@@ -360,20 +389,31 @@ function resizeCanvas() {
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
 
-function drawVisualizer() {
-  requestAnimationFrame(drawVisualizer);
+function tickVisualizer() {
+  requestAnimationFrame(tickVisualizer);
+  const playing = !audio.paused && !audio.ended;
+
+  for (let i = 0; i < BAR_COUNT; i++) {
+    if (playing && Math.random() < 0.12) {
+      barTargets[i] = 0.15 + Math.random() * 0.85;
+    } else if (!playing) {
+      barTargets[i] = 0;
+    }
+    // жұмсақ өту (easing) — секірмей, толқындай қозғалу үшін
+    barHeights[i] += (barTargets[i] - barHeights[i]) * 0.15;
+  }
+  drawBars();
+}
+
+function drawBars() {
   canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
-  if (!analyser) return;
+  const barWidth = (canvas.width / BAR_COUNT) * 0.65;
+  const gap = (canvas.width / BAR_COUNT) * 0.35;
 
-  analyser.getByteFrequencyData(dataArray);
-  const barCount = dataArray.length;
-  const barWidth = canvas.width / barCount * 0.7;
-  const gap = canvas.width / barCount * 0.3;
-
-  for (let i = 0; i < barCount; i++) {
-    const value = dataArray[i] / 255;
-    const barHeight = value * canvas.height;
+  for (let i = 0; i < BAR_COUNT; i++) {
+    const h = Math.max(2, barHeights[i] * canvas.height);
     canvasCtx.fillStyle = 'rgba(57, 255, 143, 0.9)';
-    canvasCtx.fillRect(i * (barWidth + gap), canvas.height - barHeight, barWidth, barHeight);
+    canvasCtx.fillRect(i * (barWidth + gap), canvas.height - h, barWidth, h);
   }
 }
+tickVisualizer();
