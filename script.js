@@ -254,10 +254,25 @@ volume.addEventListener('input', () => {
 });
 
 // ================= Ән қосу (телефон/компьютер файл бөлімінен) =================
+// Ескерту: <input> сүзгісі (accept="audio/*") әдейі алынып тасталды — iOS-та
+// кейбір MP3 файлдардың ішкі түрі (UTI) дұрыс танылмай, сүзгі оларды
+// таңдатпай тастайтын жағдай болатын. Енді кез келген файл көрінеді,
+// ал аудио еместерін осында JS арқылы сүземіз.
+const AUDIO_EXT = ['mp3', 'm4a', 'aac', 'wav', 'ogg', 'oga', 'flac', 'opus', 'weba', 'wma'];
+
+function isLikelyAudio(file) {
+  if (file.type && file.type.startsWith('audio')) return true;
+  const ext = (file.name.split('.').pop() || '').toLowerCase();
+  return AUDIO_EXT.includes(ext);
+}
+
 addBtn.addEventListener('click', () => fileInput.click());
 fileInput.addEventListener('change', async (e) => {
-  const files = Array.from(e.target.files);
-  if (!files.length) return;
+  const allFiles = Array.from(e.target.files);
+  if (!allFiles.length) return;
+
+  const files = allFiles.filter(isLikelyAudio);
+  const skipped = allFiles.length - files.length;
 
   const originalLabel = addBtn.textContent;
   addBtn.disabled = true;
@@ -290,14 +305,12 @@ fileInput.addEventListener('change', async (e) => {
   addBtn.textContent = originalLabel;
   fileInput.value = '';
 
-  if (failedNames.length) {
-    showToast(
-      `${okCount} ән қосылды, ${failedNames.length} қосылмады: ${failedNames.join(', ')}`,
-      true
-    );
-  } else {
-    showToast(`${okCount} ән сәтті қосылды ✓`, false);
-  }
+  const parts = [];
+  if (okCount) parts.push(`${okCount} ән қосылды ✓`);
+  if (failedNames.length) parts.push(`${failedNames.length} қосылмады: ${failedNames.join(', ')}`);
+  if (skipped) parts.push(`${skipped} файл аудио емес деп өткізілді`);
+
+  showToast(parts.join(' · ') || 'Ештеңе таңдалмады', failedNames.length > 0);
 });
 
 // ================= Трек өшіру =================
