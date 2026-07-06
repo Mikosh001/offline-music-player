@@ -1,5 +1,5 @@
 // Кэш нұсқасы — файлдарды өзгертсең осы санды өсір
-const CACHE_NAME = 'offline-music-player-v3';
+const CACHE_NAME = 'offline-music-player-v4';
 
 // Тек "қаңқа" файлдар кэштеледі — ән файлдары IndexedDB-де сақталады,
 // сондықтан оларды бұл кэшке қосудың қажеті жоқ.
