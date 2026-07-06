@@ -239,11 +239,24 @@ function prevTrack() {
 // ойнатуды жалғастыруға рұқсат етеді.
 function updateMediaSession(track) {
   if (!('mediaSession' in navigator) || !track) return;
-  navigator.mediaSession.metadata = new MediaMetadata({
-    title: track.name,
-    artist: 'Offline Music Player',
-    artwork: [{ src: 'icon.svg', sizes: '512x512', type: 'image/svg+xml' }]
-  });
+  try {
+    navigator.mediaSession.metadata = new MediaMetadata({
+      title: track.name,
+      artist: 'Offline Music Player',
+      artwork: [
+        { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
+        { src: 'icon-512.png', sizes: '512x512', type: 'image/png' }
+      ]
+    });
+  } catch (err) {
+    // iOS-тың кейбір нұсқалары дұрыс емес artwork форматынан бүкіл
+    // metadata-ны үнсіз тастап кетуі мүмкін — сол кезде суретсіз де болса
+    // ән атауы кемінде көрінсін
+    console.error('MediaMetadata қатесі:', err);
+    try {
+      navigator.mediaSession.metadata = new MediaMetadata({ title: track.name, artist: 'Offline Music Player' });
+    } catch {}
+  }
 }
 
 if ('mediaSession' in navigator) {
@@ -255,6 +268,21 @@ if ('mediaSession' in navigator) {
     if (details.seekTime != null) audio.currentTime = details.seekTime;
   });
 }
+
+// ================= Фонға кету / қайту =================
+// iOS кейде бетті фонда тоқтата тұрады (JS орындалуын аялдатады).
+// Бұл audio.play() шақыруларымызды тоқтатпайды, бірақ форс-тоқтатылған
+// жағдайда, қайта алдыңғы планға шыққанда, ойнату өздігінен қалпына
+// келуі үшін осы сақтық тетігін қосамыз.
+let wasPlayingBeforeHidden = false;
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    wasPlayingBeforeHidden = !audio.paused;
+  } else if (wasPlayingBeforeHidden && audio.paused) {
+    audio.play().catch(() => {});
+  }
+});
 
 // ================= Уақыт / seek =================
 audio.addEventListener('timeupdate', () => {

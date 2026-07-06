@@ -1,5 +1,5 @@
 // Кэш нұсқасы — файлдарды өзгертсең осы санды өсір
-const CACHE_NAME = 'offline-music-player-v4';
+const CACHE_NAME = 'offline-music-player-v5';
 
 // Тек "қаңқа" файлдар кэштеледі — ән файлдары IndexedDB-де сақталады,
 // сондықтан оларды бұл кэшке қосудың қажеті жоқ.
@@ -10,7 +10,10 @@ const APP_SHELL = [
   './script.js',
   './db.js',
   './manifest.json',
-  './icon.svg'
+  './icon.svg',
+  './icon-192.png',
+  './icon-512.png',
+  './icon-180.png'
 ];
 
 self.addEventListener('install', (event) => {
