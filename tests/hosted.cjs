@@ -80,7 +80,7 @@ const base = "http://127.0.0.1:4173";
   assert.match(await page.locator("#audio").getAttribute("src"), /^blob:/);
   await page.locator('#mainNav [href="#downloads"]').click();
   await page
-    .getByRole("heading", { name: "Ән сайтта. Офлайн көшірме браузерде." })
+    .getByRole("heading", { name: "Жеке әндерің. Интернетсіз тыңда." })
     .waitFor();
   assert.deepEqual(fileDownloads, []);
   assert.deepEqual(externalAudio, []);

@@ -249,7 +249,10 @@ export function filterTracks(
   );
 }
 export function hasFullAudio(track) {
-  return Boolean(track?.audioUrl && track?.downloadable && track?.license);
+  return Boolean(
+    track?.downloaded ||
+      (track?.audioUrl && track?.downloadable && track?.license),
+  );
 }
 export function nextQueueIndex(index, length, repeat) {
   if (!length) return -1;

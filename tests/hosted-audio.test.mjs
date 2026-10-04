@@ -59,7 +59,7 @@ test("offline, full-audio and pending filters keep catalogue metadata separate f
   assert.equal(hasFullAudio(tracks[1]), true);
   assert.deepEqual(
     filterTracks(tracks, { availability: "full" }).map((t) => t.id),
-    ["hosted"],
+    ["hosted", "saved"],
   );
   assert.deepEqual(
     filterTracks(tracks, { availability: "offline" }).map((t) => t.id),
@@ -70,8 +70,10 @@ test("offline, full-audio and pending filters keep catalogue metadata separate f
     ["pending"],
   );
   assert.deepEqual(
-    filterTracks(tracks, { availability: "full", offlineOnly: true }),
-    [],
+    filterTracks(tracks, { availability: "full", offlineOnly: true }).map(
+      (t) => t.id,
+    ),
+    ["saved"],
   );
 });
 
