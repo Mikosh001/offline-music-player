@@ -1,12 +1,13 @@
 {
-  "name": "Offline Music Player",
-  "short_name": "Music",
+  "name": "SAZ — сенің әуенің",
+  "short_name": "SAZ",
   "description": "Интернетсіз өз телефоныңдағы әндерді ойнататын плеер",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#17181c",
-  "theme_color": "#17181c",
-  "orientation": "portrait",
+  "background_color": "#0c1020",
+  "theme_color": "#0c1020",
+  "lang": "kk",
+  "scope": "./",
   "categories": ["music"],
   "icons": [
     {
