@@ -130,6 +130,9 @@ svg {
   z-index: 20;
   overflow: auto;
 }
+.sidebar > :not(.playlist-nav) {
+  flex-shrink: 0;
+}
 .brand {
   display: flex;
   align-items: center;
@@ -229,6 +232,8 @@ svg {
 .playlist-nav {
   margin: 7px 0 15px;
   min-height: 25px;
+  flex: 1 1 auto;
+  overflow-y: auto;
 }
 .playlist-nav a {
   display: flex;
@@ -238,6 +243,7 @@ svg {
   font-size: 12px;
   color: var(--muted);
   border-radius: 7px;
+  flex-shrink: 0;
 }
 .playlist-nav a svg {
   width: 16px;

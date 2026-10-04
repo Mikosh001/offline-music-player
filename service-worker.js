@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-4`;
+const CACHE = `${PREFIX}v2-5`;
 const SHELL = [
   "./",
   "index.html",
@@ -18,7 +18,17 @@ const SHELL = [
 ];
 const shellUrls = new Set(SHELL.map((path) => new URL(path, BASE).href));
 self.addEventListener("install", (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)));
+  event.waitUntil(
+    caches
+      .open(CACHE)
+      .then((cache) =>
+        cache.addAll(
+          SHELL.map(
+            (path) => new Request(new URL(path, BASE), { cache: "reload" }),
+          ),
+        ),
+      ),
+  );
 });
 self.addEventListener("message", (event) => {
   if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
