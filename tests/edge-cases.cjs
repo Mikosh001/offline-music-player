@@ -127,13 +127,11 @@ const base = "http://127.0.0.1:4173",
     }),
     2,
   );
-  await a
-    .locator("#backupInput")
-    .setInputFiles({
-      name: "broken.saz",
-      mimeType: "application/octet-stream",
-      buffer: Buffer.from("invalid backup"),
-    });
+  await a.locator("#backupInput").setInputFiles({
+    name: "broken.saz",
+    mimeType: "application/octet-stream",
+    buffer: Buffer.from("invalid backup"),
+  });
   await a.waitForTimeout(150);
   assert.equal(
     await a.evaluate(async () => {
@@ -144,11 +142,13 @@ const base = "http://127.0.0.1:4173",
   );
   await a.goto(base + "/#catalog");
   await a.locator('[data-track-id="apple-1793534605"] .track-title').click();
-  await a.locator(".embed-player").waitFor();
+  await a.locator(".availability-message").waitFor();
+  assert.equal(await a.locator("#dialog iframe").count(), 0);
   assert.match(
-    await a.locator(".embed-player").getAttribute("src"),
-    /^https:\/\/embed.music.apple.com\//,
+    await a.locator(".availability-message").textContent(),
+    /Толық аудио күтілуде/,
   );
+  assert.equal(await a.locator('#dialog a[target="_blank"]').count(), 0);
   await a.locator('[data-action="close-dialog"]').click();
   for (const width of [320, 360, 390, 768, 1440]) {
     await a.setViewportSize({ width, height: 900 });
@@ -171,7 +171,7 @@ const base = "http://127.0.0.1:4173",
   }
   assert.deepEqual(errors, []);
   console.log(
-    "Edge-case checks passed: v1 migration, stable playback on deletion, cancelled download rollback, retry, non-audio rejection, batch download, damaged backup rejection, official embed, responsive widths 320–1440.",
+    "Edge-case checks passed: v1 migration, stable playback on deletion, cancelled download rollback, retry, non-audio rejection, batch download, damaged backup rejection, unavailable audio without external playback, responsive widths 320–1440.",
   );
   await browser.close();
 })().catch((error) => {

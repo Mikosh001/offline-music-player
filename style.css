@@ -746,6 +746,84 @@ svg {
   gap: 8px;
   flex-wrap: wrap;
 }
+.availability-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  margin: 20px 0 26px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #14172b;
+}
+.availability-strip div {
+  display: grid;
+  gap: 5px;
+}
+.availability-strip span {
+  font-size: 12px;
+  color: var(--muted);
+}
+.availability-strip button {
+  border: 0;
+  background: transparent;
+  padding: 10px 0;
+  color: var(--accent);
+}
+.pending-audio-text {
+  color: #9c91aa;
+}
+.online-audio-text {
+  color: #b7bfdf;
+}
+.offline-explainer {
+  display: flex;
+  gap: 18px;
+  padding: 22px;
+  margin: 0 0 25px;
+  background: #171b2d;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+.offline-explainer > span {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+.offline-explainer svg {
+  width: 25px;
+  height: 25px;
+}
+.offline-explainer h3 {
+  margin: 0 0 9px;
+  font-size: 16px;
+}
+.offline-explainer p,
+.availability-message p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 0;
+}
+.availability-message {
+  padding: 18px 0;
+}
+.availability-message b {
+  display: block;
+  margin-bottom: 9px;
+}
+@media (max-width: 680px) {
+  .availability-strip {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+    padding: 17px;
+  }
+  .offline-explainer {
+    gap: 12px;
+    padding: 17px;
+  }
+}
 .filters {
   display: flex;
   align-items: center;
@@ -780,10 +858,9 @@ svg {
 .track-head,
 .track-row {
   display: grid;
-  grid-template-columns: 32px minmax(150px, 1.5fr) minmax(
-      95px,
-      0.8fr
-    ) 75px 58px 109px;
+  grid-template-columns:
+    32px minmax(150px, 1.5fr) minmax(95px, 0.8fr)
+    75px 58px 109px;
   gap: 10px;
   align-items: center;
 }
@@ -1544,10 +1621,9 @@ svg {
   }
   .track-head,
   .track-row {
-    grid-template-columns: 25px minmax(125px, 1.5fr) minmax(
-        85px,
-        0.7fr
-      ) 48px 91px;
+    grid-template-columns:
+      25px minmax(125px, 1.5fr) minmax(85px, 0.7fr)
+      48px 91px;
   }
   .track-style {
     display: none;

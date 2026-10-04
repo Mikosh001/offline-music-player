@@ -118,4 +118,4 @@ export const artists = [
     color: "#9b9dba",
     description: "Жұмсақ ырғақ пен сезімге толы әуендер.",
   },
-];
+].filter((artist) => artist.featured);

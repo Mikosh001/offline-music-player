@@ -163,6 +163,10 @@ export function validateCatalog(input) {
       artwork: safeUrl(t.artwork),
       downloadable: Boolean(audioUrl && t.downloadable === true && t.license),
       license: String(t.license || "").slice(0, 500),
+      licenseUrl: safeUrl(t.licenseUrl),
+      sourceUrl: safeUrl(t.sourceUrl),
+      permissionRef: String(t.permissionRef || "").slice(0, 500),
+      sha256: /^[a-f0-9]{64}$/i.test(t.sha256 || "") ? t.sha256 : "",
       size: Math.max(0, Number(t.size) || 0),
       mime: String(t.mime || "audio/mpeg"),
       version: String(t.version || "1"),
@@ -216,7 +220,13 @@ export function mergeTracks(catalogTracks, library) {
 }
 export function filterTracks(
   tracks,
-  { query = "", style = "all", artistId = "all", offlineOnly = false } = {},
+  {
+    query = "",
+    style = "all",
+    artistId = "all",
+    offlineOnly = false,
+    availability = "all",
+  } = {},
   artists = [],
 ) {
   const terms = normalize(query).split(" ").filter(Boolean);
@@ -228,12 +238,18 @@ export function filterTracks(
       (style === "all" || t.styles?.includes(style)) &&
       (artistId === "all" || t.artistId === artistId) &&
       (!offlineOnly || t.downloaded) &&
+      (availability !== "full" || hasFullAudio(t)) &&
+      (availability !== "offline" || t.downloaded) &&
+      (availability !== "pending" || (!hasFullAudio(t) && !t.downloaded)) &&
       terms.every((term) =>
         normalize(
           `${t.title} ${t.artist} ${t.album} ${names.get(t.artistId) || ""}`,
         ).includes(term),
       ),
   );
+}
+export function hasFullAudio(track) {
+  return Boolean(track?.audioUrl && track?.downloadable && track?.license);
 }
 export function nextQueueIndex(index, length, repeat) {
   if (!length) return -1;

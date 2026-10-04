@@ -14,6 +14,8 @@ const types = {
   ".wav": "audio/wav",
   ".mp3": "audio/mpeg",
   ".m4a": "audio/mp4",
+  ".ogg": "audio/ogg",
+  ".flac": "audio/flac",
   ".webmanifest": "application/manifest+json",
 };
 const port = Number(process.env.PORT || 4173);

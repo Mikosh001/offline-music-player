@@ -10,6 +10,7 @@ import {
   validateCatalog,
   mergeTracks,
   filterTracks,
+  hasFullAudio,
   nextQueueIndex,
 } from "./core.js";
 import { icon, hydrateIcons } from "./icons.js";
@@ -47,12 +48,12 @@ const collections = [
   },
   {
     id: "wave",
-    name: "Жаңа толқын",
-    art: "Жаңа\nтолқын.",
-    caption: "R&B · соул · жұмсақ ырғақ",
+    name: "Жайлы кеш",
+    art: "Жайлы\nкеш.",
+    caption: "Акустика · тыныш әуен",
     color: "#c5a3ce",
-    styles: ["rnb"],
-    artists: ["ayau", "dequine", "bakr"],
+    styles: ["acoustic", "indie"],
+    artists: ["ernar", "moldanazar"],
   },
   {
     id: "demo",
@@ -74,6 +75,7 @@ const state = {
   style: "all",
   artistId: "all",
   sort: "curated",
+  availability: "all",
   limit: 50,
   currentId: null,
   queue: [],
@@ -101,9 +103,7 @@ let currentUrl = null,
 const getTrack = (id) => state.tracks.find((t) => t.id === id);
 const artistOf = (t) => state.catalog.artists.find((a) => a.id === t?.artistId);
 const canPlay = (t) =>
-  Boolean(
-    t && (t.downloaded || (state.online && t.audioUrl && t.downloadable)),
-  );
+  Boolean(t && (t.downloaded || (state.online && hasFullAudio(t))));
 const route = () => decodeURIComponent(location.hash.slice(1) || "home");
 const cover = (t) =>
   `<span class="cover-art" style="--art-color:${artistOf(t)?.color || "#8c7daa"}"><b>${esc((t?.title || "S").slice(0, 1))}</b>${t?.artwork && state.online ? `<img src="${esc(t.artwork)}" alt="" loading="lazy" onerror="this.remove()">` : ""}</span>`;
@@ -178,7 +178,7 @@ function artistCards(items) {
   return `<div class="artist-grid">${items.map((a) => `<button class="artist-card" data-action="artist" data-id="${esc(a.id)}">${artistPortrait(a)}<h3>${esc(a.name)}</h3><p>${state.tracks.filter((t) => t.artistId === a.id).length} ән · ${esc(STYLES.find((s) => s.id === a.styles[0])?.name || "Музыка")}</p></button>`).join("")}</div>`;
 }
 function filters() {
-  return `<div class="filters">${STYLES.map((s) => `<button class="filter-chip${state.style === s.id ? " active" : ""}" data-action="style" data-id="${s.id}" aria-pressed="${state.style === s.id}">${s.name}</button>`).join("")}<select id="artistFilter" class="filter-select" aria-label="Орындаушы бойынша сүзу"><option value="all">Барлық орындаушы</option>${state.catalog.artists
+  return `<div class="filters">${STYLES.map((s) => `<button class="filter-chip${state.style === s.id ? " active" : ""}" data-action="style" data-id="${s.id}" aria-pressed="${state.style === s.id}">${s.name}</button>`).join("")}<select id="availabilityFilter" class="filter-select" aria-label="Аудио қолжетімділігі"><option value="all"${state.availability === "all" ? " selected" : ""}>Бүкіл каталог</option><option value="full"${state.availability === "full" ? " selected" : ""}>Толық аудио бар</option><option value="offline"${state.availability === "offline" ? " selected" : ""}>Офлайн дайын</option><option value="pending"${state.availability === "pending" ? " selected" : ""}>Аудио күтілуде</option></select><select id="artistFilter" class="filter-select" aria-label="Орындаушы бойынша сүзу"><option value="all">Барлық орындаушы</option>${state.catalog.artists
     .filter((a) => !a.id.startsWith("saz-"))
     .map(
       (a) =>
@@ -206,8 +206,12 @@ function trackList(tracks, { limit = state.limit, allowMore = true } = {}) {
   visibleTracks = tracks;
   if (!tracks.length)
     return empty(
-      "Әзірге ән жоқ",
-      "Іздеуді өзгертіп көр немесе файлдан өз әніңді қос.",
+      state.availability === "full"
+        ? "Толық аудио әлі қосылмаған"
+        : "Бұл таңдауда ән жоқ",
+      state.availability === "full"
+        ? "Әннің толық файлы сайтқа қосылғанда осында көрінеді. Бүкіл каталогтан әнді таңдап, плейлистіңе қоса аласың."
+        : "Іздеуді немесе қолжетімділік сүзгісін өзгертіп көр.",
       button("import", `${icon("plus")} Файл қосу`),
     );
   return `<div class="track-head"><span>#</span><span>Ән атауы</span><span class="track-artist">Орындаушы</span><span class="track-style">Стиль</span><span>Уақыт</span><span></span></div><div class="track-list">${tracks
@@ -216,16 +220,25 @@ function trackList(tracks, { limit = state.limit, allowMore = true } = {}) {
       const progress = state.downloads.get(t.id),
         pending =
           progress && ["queued", "loading", "saving"].includes(progress.status);
-      return `<div class="track-row${t.id === state.currentId ? " current" : ""}" data-track-id="${esc(t.id)}"><div class="track-number"><span>${String(i + 1).padStart(2, "0")}</span><button data-action="track-play" data-id="${esc(t.id)}" aria-label="${esc(t.title)} тыңдау">${icon(t.id === state.currentId && !audio.paused ? "pause" : "play")}</button></div><div class="track-main">${cover(t)}<div class="track-copy"><button class="track-title" data-action="track-play" data-id="${esc(t.id)}">${esc(t.title)}</button><p class="track-subtitle">${esc(t.artist)}${t.downloaded ? ' · <span class="offline-text">Офлайн дайын</span>' : t.demo ? " · Аспаптық демо" : ""}</p></div></div><span class="track-artist">${esc(t.artist)}</span><span class="track-style style-label">${esc(STYLES.find((s) => s.id === t.styles?.[0])?.name || "Музыка")}</span><span class="track-time">${formatTime(t.duration)}</span><div class="track-actions"><button class="icon-button${t.favorite ? " active" : ""}" data-action="favorite" data-id="${esc(t.id)}" aria-label="${esc(t.title)}: ${t.favorite ? "ұнағандардан алып тастау" : "ұнағандарға қосу"}" aria-pressed="${Boolean(t.favorite)}">${icon("heart")}</button>${pending ? `<button class="icon-button" data-action="cancel-download" data-id="${esc(t.id)}" aria-label="Жүктеуді тоқтату"${progress.status === "saving" ? " disabled" : ""}><span class="row-progress">${progress.progress || 0}%</span></button>` : `<button class="icon-button${t.downloaded ? " ready-icon" : ""}" data-action="${t.downloaded ? "track-menu" : t.downloadable ? "download" : "bind"}" data-id="${esc(t.id)}" aria-label="${t.downloaded ? "Офлайн дайын" : t.downloadable ? "Әнді жүктеу" : "Осы әннің аудиосын байланыстыру"}">${icon(t.downloaded ? "check" : t.downloadable ? "download" : "folder")}</button>`}<button class="icon-button" data-action="track-menu" data-id="${esc(t.id)}" aria-label="${esc(t.title)}: қосымша әрекеттер">${icon("more")}</button></div></div>`;
+      return `<div class="track-row${t.id === state.currentId ? " current" : ""}" data-track-id="${esc(t.id)}"><div class="track-number"><span>${String(i + 1).padStart(2, "0")}</span><button data-action="track-play" data-id="${esc(t.id)}" aria-label="${esc(t.title)} тыңдау">${icon(t.id === state.currentId && !audio.paused ? "pause" : "play")}</button></div><div class="track-main">${cover(t)}<div class="track-copy"><button class="track-title" data-action="track-play" data-id="${esc(t.id)}">${esc(t.title)}</button><p class="track-subtitle">${esc(t.artist)}${t.downloaded ? ' · <span class="offline-text">Офлайн дайын</span>' : t.demo ? " · Аспаптық демо" : hasFullAudio(t) ? ' · <span class="online-audio-text">Толық аудио бар</span>' : ' · <span class="pending-audio-text">Аудио күтілуде</span>'}</p></div></div><span class="track-artist">${esc(t.artist)}</span><span class="track-style style-label">${esc(STYLES.find((s) => s.id === t.styles?.[0])?.name || "Музыка")}</span><span class="track-time">${formatTime(t.duration)}</span><div class="track-actions"><button class="icon-button${t.favorite ? " active" : ""}" data-action="favorite" data-id="${esc(t.id)}" aria-label="${esc(t.title)}: ${t.favorite ? "ұнағандардан алып тастау" : "ұнағандарға қосу"}" aria-pressed="${Boolean(t.favorite)}">${icon("heart")}</button>${pending ? `<button class="icon-button" data-action="cancel-download" data-id="${esc(t.id)}" aria-label="Жүктеуді тоқтату"${progress.status === "saving" ? " disabled" : ""}><span class="row-progress">${progress.progress || 0}%</span></button>` : `<button class="icon-button${t.downloaded ? " ready-icon" : ""}" data-action="${t.downloaded ? "track-menu" : t.downloadable ? "download" : "bind"}" data-id="${esc(t.id)}" aria-label="${t.downloaded ? "Офлайн дайын" : t.downloadable ? "Офлайнға сақтау" : "Осы әннің аудиосын байланыстыру"}">${icon(t.downloaded ? "check" : t.downloadable ? "download" : "folder")}</button>`}<button class="icon-button" data-action="track-menu" data-id="${esc(t.id)}" aria-label="${esc(t.title)}: қосымша әрекеттер">${icon("more")}</button></div></div>`;
     })
     .join(
       "",
     )}</div>${allowMore && tracks.length > limit ? `<button class="load-more" data-action="more-tracks">Тағы ${Math.min(50, tracks.length - limit)} ән көрсету</button>` : ""}`;
 }
+function availabilitySummary() {
+  const tracks = state.tracks.filter(
+    (t) => !t.demo && state.catalog.artists.some((a) => a.id === t.artistId),
+  );
+  return `<section class="availability-strip" aria-label="Музыка қолжетімділігі"><div><b>${tracks.length} ән тізімі</b><span>${tracks.filter(hasFullAudio).length} толық аудио · ${tracks.filter((t) => t.downloaded).length} офлайн дайын</span></div><button class="text-link" data-action="available-catalog">Толық аудионы көрсету ${icon("arrow")}</button></section>`;
+}
+function offlineExplanation() {
+  return `<div class="offline-explainer"><span>${icon("cloud-off")}</span><div><h3>Ән сайтта. Офлайн көшірме браузерде.</h3><p>«Офлайнға сақтау» басқанда ән осы сайттың сақтау орнына жазылады. Телефонның «Файлдар» қалтасына MP3 жүктеу қажет емес. Интернетсіз таңдауға және тыңдауға алдын ала сақталған әндер дайын болады.</p></div></div>`;
+}
 function home() {
   const featured = state.catalog.artists.filter((a) => a.featured);
   const tracks = state.tracks.filter((t) => !t.demo).slice(0, 8);
-  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><a href="#catalog" class="button">${icon("discover")} Музыка іздеу</a><button class="button secondary" data-action="import">${icon("plus")} Өз әнімді қосу</button></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
+  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><a href="#catalog" class="button">${icon("discover")} Музыка іздеу</a><button class="button secondary" data-action="import">${icon("plus")} Өз әнімді қосу</button></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${availabilitySummary()}${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
 }
 function renderDownloads() {
   const tracks = sorted(
@@ -241,9 +254,10 @@ function renderDownloads() {
   return (
     heading(
       "Жүктелгендер",
-      `${state.tracks.filter((t) => t.downloaded).length} ән · осы құрылғыда сақталған`,
+      `${state.tracks.filter((t) => t.downloaded).length} ән · сайттың осы браузердегі сақтау орнында`,
       button("import", `${icon("plus")} Файл қосу`),
     ) +
+    offlineExplanation() +
     `${active.length ? `<div id="downloadJobs">${active.map(([id, d]) => `<div class="download-row"><div><b>${esc(getTrack(id)?.title || id)}</b><small>${d.status === "error" ? esc(d.error) : d.status === "queued" ? "Кезекте" : d.status === "saving" ? "Сақталуда" : `${d.progress || 0}% · ${formatBytes(d.bytes || 0)}`}</small><div class="progress-bar"><span style="width:${d.progress || 0}%"></span></div></div>${d.status === "error" ? `<button class="icon-button" data-action="download" data-id="${esc(id)}" aria-label="Қайта жүктеу">${icon("repeat")}</button>` : `<button class="icon-button" data-action="cancel-download" data-id="${esc(id)}" aria-label="Жүктеуді тоқтату"${d.status === "saving" ? " disabled" : ""}>${icon("close")}</button>`}</div>`).join("")}</div>` : ""}` +
     (!tracks.length
       ? empty(
@@ -259,7 +273,7 @@ function renderSettings() {
     bytes = downloaded.reduce((n, t) => n + (t.size || 0), 0);
   return (
     heading("Баптаулар", "Өз әуенің. Өз құрылғың. Өз қалауың.") +
-    `<div class="settings-grid"><section class="settings-card"><h3>Құрылғыдағы музыка</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Толық офлайн аудионы файлдан немесе рұқсат етілген қоймадан қосуға болады.</p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
+    `<div class="settings-grid"><section class="settings-card"><h3>Сайттың офлайн сақтау орны</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын. Көшірмелер браузерде сақталады; негізгі файл сайтта қалады.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Толық офлайн аудионы файлдан немесе рұқсат етілген қоймадан қосуға болады.</p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
   );
 }
 function render() {
@@ -292,12 +306,13 @@ function render() {
   else if (base === "catalog") {
     const tracks = sorted(
       filterTracks(
-        state.tracks,
+        state.tracks.filter((track) => !track.demo),
         {
           query: state.query,
           style: state.style,
           artistId: state.artistId,
           offlineOnly: Boolean(state.settings.offlineOnly),
+          availability: state.availability,
         },
         state.catalog.artists,
       ),
@@ -307,6 +322,7 @@ function render() {
         state.query ? `«${state.query}» іздеу нәтижесі` : "Музыка іздеу",
         `${tracks.length} ән · көңіл күйіңе сай әуен таңда`,
       ) +
+      availabilitySummary() +
       filters() +
       trackList(tracks);
   } else if (base === "artists")
@@ -585,16 +601,10 @@ async function previous() {
   }
 }
 function officialDialog(t) {
-  if (!t) {
-    toast("Алдымен әнді таңда.");
-    return;
-  }
-  const url = safeUrl(t.officialUrl);
-  const apple = url && new URL(url).hostname === "music.apple.com";
-  audio.pause();
+  if (!t) return toast("Алдымен әнді таңда.");
   showDialog(
     t.title,
-    `<div class="official-card">${cover(t)}<div><h3>${esc(t.title)}</h3><p>${esc(t.artist)}</p></div></div>${state.online && apple ? `<iframe class="embed-player" title="${esc(t.title)} — ресми Apple Music плеері" src="${esc(url.replace("https://music.apple.com/", "https://embed.music.apple.com/"))}" allow="autoplay *; encrypted-media *; fullscreen *" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p>Ресми плеер: жүйеге кірмегенде үзінді ойнатылуы мүмкін. Толық тыңдау қолжетімділігі Apple Music аккаунтына байланысты.</p>` : `<p>${state.online ? "Бұл әннің толық аудиосы әлі байланыстырылмаған." : "Интернетсіз тыңдау үшін осы әннің аудиофайлын құрылғыға қос."}</p>`}${url ? `<a class="button subtle" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${icon("external")} Ресми бетте тыңдау</a>` : ""}<div class="dialog-actions">${button("bind", `${icon("folder")} Аудиофайлды қосу`, `data-id="${esc(t.id)}"`)}</div>`,
+    `<div class="official-card">${cover(t)}<div><h3>${esc(t.title)}</h3><p>${esc(t.artist)}</p></div></div><div class="availability-message"><b>${state.online ? "Толық аудио күтілуде" : "Бұл ән офлайн сақталмаған"}</b><p>${state.online ? "Бұл ән әзірге каталогта ғана бар. Толық аудиосы сайтқа қосылғанда осы жерден тыңдап, офлайнға сақтай аласың." : "Әнді интернет бар кезде осы сайтта «Офлайнға сақтау» арқылы дайындау керек. Қазір сақталған әндеріңді таңда."}</p></div><div class="dialog-actions">${button("add-playlist", "Плейлистке қосу", `data-id="${esc(t.id)}"`)}<a href="#downloads" class="button subtle" data-action="show-offline">Офлайн әндерді ашу</a>${button("bind", `${icon("folder")} Өз аудиофайлымды қосу`, `data-id="${esc(t.id)}"`, true)}</div>`,
   );
 }
 
@@ -849,7 +859,7 @@ async function removeAudio(id) {
   await DB.deleteAudio(t);
   await refresh();
   closeDialog();
-  toast("Құрылғыдағы аудио өшірілді.");
+  toast("Офлайн көшірме өшірілді. Сайттағы негізгі файл сақталады.");
 }
 
 function trackMenu(id) {
@@ -858,7 +868,7 @@ function trackMenu(id) {
   const playlistId = route().startsWith("playlist/") ? route().slice(9) : null;
   showDialog(
     t.title,
-    `<p>${esc(t.artist)}</p><div class="dialog-menu"><button data-action="track-play" data-id="${esc(id)}">${icon("play")} ${canPlay(t) ? "Тыңдау" : "Ресми плеерді ашу"}</button><button data-action="add-playlist" data-id="${esc(id)}">${icon("plus")} Плейлистке қосу</button><button data-action="queue-next" data-id="${esc(id)}">${icon("queue")} Келесі болып ойнасын</button><button data-action="bind" data-id="${esc(id)}">${icon("folder")} Аудиофайлды байланыстыру</button><button data-action="source-edit" data-id="${esc(id)}">${icon("external")} Толық аудио сілтемесін қосу</button>${t.officialUrl ? `<a href="${esc(t.officialUrl)}" target="_blank" rel="noopener noreferrer">${icon("external")} Ресми бетте тыңдау</a>` : ""}${t.downloaded ? `<button class="danger-button" data-action="remove-audio" data-id="${esc(id)}">${icon("trash")} Құрылғыдан өшіру</button>` : ""}${playlistId ? `<button data-action="remove-from-playlist" data-id="${esc(id)}" data-playlist-id="${esc(playlistId)}">${icon("close")} Осы плейлисттен алып тастау</button>` : ""}</div>`,
+    `<p>${esc(t.artist)}</p><div class="dialog-menu"><button data-action="track-play" data-id="${esc(id)}">${icon("play")} ${canPlay(t) ? "Тыңдау" : "Аудио қолжетімділігі"}</button><button data-action="add-playlist" data-id="${esc(id)}">${icon("plus")} Плейлистке қосу</button><button data-action="queue-next" data-id="${esc(id)}">${icon("queue")} Келесі болып ойнасын</button><button data-action="bind" data-id="${esc(id)}">${icon("folder")} Аудиофайлды байланыстыру</button><button data-action="source-edit" data-id="${esc(id)}">${icon("external")} Толық аудио сілтемесін қосу</button>${t.downloaded ? `<button class="danger-button" data-action="remove-audio" data-id="${esc(id)}">${icon("trash")} Құрылғыдан өшіру</button>` : ""}${playlistId ? `<button data-action="remove-from-playlist" data-id="${esc(id)}" data-playlist-id="${esc(playlistId)}">${icon("close")} Осы плейлисттен алып тастау</button>` : ""}</div>`,
   );
 }
 function sourceEditor(id) {
@@ -1208,6 +1218,19 @@ document.addEventListener("click", async (event) => {
           toast("Бұл жинақтың толық аудиосын файлдан байланыстыруға болады.");
         break;
       }
+      case "available-catalog":
+        state.availability = "full";
+        state.query = "";
+        state.style = "all";
+        state.artistId = "all";
+        $("search").value = "";
+        location.hash = "catalog";
+        render();
+        break;
+      case "show-offline":
+        closeDialog();
+        location.hash = "downloads";
+        break;
       case "download":
         enqueue([id]);
         break;
@@ -1407,6 +1430,11 @@ document.addEventListener("submit", async (event) => {
 document.addEventListener("change", async (event) => {
   try {
     switch (event.target.id) {
+      case "availabilityFilter":
+        state.availability = event.target.value;
+        state.limit = 50;
+        render();
+        break;
       case "artistFilter":
         state.artistId = event.target.value;
         state.limit = 50;

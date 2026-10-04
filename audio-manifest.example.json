@@ -1,0 +1,14 @@
+{
+  "notice": "Рұқсат пен толық аудиофайл алынғаннан кейін ғана толтырыңыз. Бұл мысалда ән файлы мен рұқсат жоқ.",
+  "tracks": [
+    {
+      "trackId": "apple-1793534605",
+      "file": "licensed-files/ernar-keipker.mp3",
+      "redistributionAllowed": false,
+      "license": "",
+      "permissionRef": "",
+      "sourceUrl": "https://music.apple.com/kz/album/keipker/1793534603?i=1793534605",
+      "licenseUrl": ""
+    }
+  ]
+}

@@ -72,4 +72,9 @@ test("bundled catalogue has all six requested artists and separates official met
     catalog.tracks.filter((t) => t.demo && t.downloadable).length,
     2,
   );
+  assert.equal(
+    catalog.artists.filter((a) => !a.id.startsWith("saz-")).length,
+    6,
+  );
+  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 207);
 });

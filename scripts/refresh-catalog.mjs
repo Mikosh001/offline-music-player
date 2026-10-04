@@ -31,6 +31,10 @@ if (previous?.tracks) {
       "size",
       "mime",
       "version",
+      "licenseUrl",
+      "sourceUrl",
+      "permissionRef",
+      "sha256",
     ]) {
       if (Object.hasOwn(old, key)) track[key] = old[key];
     }
@@ -41,7 +45,11 @@ if (previous?.tracks) {
       catalog.tracks.push(track);
   const artistIds = new Set(catalog.artists.map((artist) => artist.id));
   for (const artist of previous.artists || [])
-    if (!artistIds.has(artist.id)) catalog.artists.push(artist);
+    if (
+      !artistIds.has(artist.id) &&
+      catalog.tracks.some((track) => track.artistId === artist.id)
+    )
+      catalog.artists.push(artist);
 }
 await writeFile(
   new URL("../catalog.tmp", import.meta.url),
