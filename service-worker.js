@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-3`;
+const CACHE = `${PREFIX}v2-4`;
 const SHELL = [
   "./",
   "index.html",

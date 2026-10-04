@@ -244,7 +244,12 @@ function renderDownloads() {
   const tracks = sorted(
     filterTracks(
       state.tracks.filter((t) => t.downloaded),
-      { query: state.query, style: state.style },
+      {
+        query: state.query,
+        style: state.style,
+        artistId: state.artistId,
+        availability: state.availability,
+      },
       state.catalog.artists,
     ),
   );
