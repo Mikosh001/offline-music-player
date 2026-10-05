@@ -82,6 +82,7 @@ const state = {
   limit: 50,
   currentId: null,
   queue: [],
+  queueOrder: [],
   history: [],
   shuffle: false,
   repeat: "off",
@@ -171,12 +172,16 @@ async function refresh() {
   updatePlayer();
 }
 function showDialog(title, body) {
+  dialog.classList.remove("now-playing-dialog");
+  delete dialog.dataset.view;
   $("dialogTitle").textContent = title;
   $("dialogBody").innerHTML = body;
   if (!dialog.open) dialog.showModal();
 }
 function closeDialog() {
   dialog.close();
+  dialog.classList.remove("now-playing-dialog");
+  delete dialog.dataset.view;
   $("dialogBody").innerHTML = "";
 }
 function heading(title, subtitle = "", actions = "") {
@@ -258,7 +263,7 @@ function offlineExplanation() {
 function home() {
   const featured = state.catalog.artists.filter((a) => a.featured);
   const tracks = state.tracks.filter((t) => !t.demo).slice(0, 8);
-  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><a href="#catalog" class="button">${icon("discover")} Музыка іздеу</a><button class="button secondary" data-action="import">${icon("plus")} Өз әнімді қосу</button></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${availabilitySummary()}${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
+  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><button class="button" data-action="shuffle-play" data-scope="all">${icon("shuffle")} Араластырып тыңдау</button><a href="#catalog" class="button secondary">${icon("discover")} Музыка іздеу</a></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${availabilitySummary()}${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
 }
 function renderDownloads() {
   const tracks = sorted(
@@ -346,6 +351,7 @@ function render() {
       heading(
         state.query ? `«${state.query}» іздеу нәтижесі` : "Музыка іздеу",
         `${tracks.length} ән · көңіл күйіңе сай әуен таңда`,
+        button("shuffle-play", `${icon("shuffle")} Араластырып тыңдау`),
       ) +
       availabilitySummary() +
       filters() +
@@ -368,7 +374,7 @@ function render() {
           .filter(Boolean)
           .join(
             " / ",
-          )}</p><div class="artist-actions">${button("play-list", `${icon("play")} Тыңдау`)}${state.tracks.some((t) => t.artistId === a.id && t.downloadable && !t.downloaded && hasFullAudio(t)) ? button("download-list", `${icon("download")} Офлайнға сақтау`, "", true) : ""}</div></div></div>` +
+          )}</p><div class="artist-actions">${button("play-list", `${icon("play")} Тыңдау`)}${button("shuffle-play", `${icon("shuffle")} Араластыру`, "", true)}${state.tracks.some((t) => t.artistId === a.id && t.downloadable && !t.downloaded && hasFullAudio(t)) ? button("download-list", `${icon("download")} Офлайнға сақтау`, "", true) : ""}</div></div></div>` +
         trackList(state.tracks.filter((t) => t.artistId === a.id))
       : empty("Орындаушы табылмады", "Каталогтан басқа орындаушыны таңда.");
   } else if (base === "collection") {
@@ -456,6 +462,12 @@ async function toggleFavorite(id) {
 }
 function updatePlayer() {
   const t = getTrack(state.currentId);
+  if (
+    dialog.dataset.view === "now-playing" &&
+    t &&
+    $("nowPlayingPanel")?.dataset.trackId !== t.id
+  )
+    $("dialogBody").innerHTML = nowPlayingBody(t);
   $("playerTitle").textContent = t?.title || "Әуеніңді таңда";
   $("playerArtist").textContent = t?.artist || "Кітапханаң әрқашан өзіңмен";
   $("playerArt").innerHTML = t
@@ -465,20 +477,38 @@ function updatePlayer() {
     "--art-color",
     artistOf(t)?.color || "#8c7daa",
   );
-  $("playBtn").innerHTML = icon(audio.paused ? "play" : "pause");
-  $("playBtn").setAttribute("aria-label", audio.paused ? "Ойнату" : "Кідірту");
-  $("playerFav").classList.toggle("active", Boolean(t?.favorite));
-  $("playerFav").setAttribute(
-    "aria-label",
-    t?.favorite ? "Ұнағандардан алып тастау" : "Ұнағандарға қосу",
-  );
-  $("shuffleBtn").classList.toggle("active", state.shuffle);
-  $("shuffleBtn").setAttribute("aria-pressed", String(state.shuffle));
-  $("repeatBtn").classList.toggle("active", state.repeat !== "off");
-  $("repeatBtn").setAttribute(
-    "aria-label",
-    `Қайталау: ${state.repeat === "one" ? "бір ән" : state.repeat === "all" ? "барлық ән" : "өшіру"}`,
-  );
+  for (const btn of document.querySelectorAll('[data-action="play"]')) {
+    btn.innerHTML = icon(audio.paused ? "play" : "pause");
+    btn.setAttribute("aria-label", audio.paused ? "Ойнату" : "Кідірту");
+  }
+  for (const btn of document.querySelectorAll(
+    '[data-action="player-favorite"]',
+  )) {
+    btn.classList.toggle("active", Boolean(t?.favorite));
+    btn.setAttribute("aria-pressed", String(Boolean(t?.favorite)));
+    btn.setAttribute(
+      "aria-label",
+      t?.favorite ? "Ұнағандардан алып тастау" : "Ұнағандарға қосу",
+    );
+  }
+  for (const btn of document.querySelectorAll('[data-action="shuffle"]')) {
+    btn.classList.toggle("active", state.shuffle);
+    btn.setAttribute("aria-pressed", String(state.shuffle));
+  }
+  for (const btn of document.querySelectorAll('[data-action="repeat"]')) {
+    btn.classList.toggle("active", state.repeat !== "off");
+    btn.setAttribute(
+      "aria-label",
+      `Қайталау: ${state.repeat === "one" ? "бір ән" : state.repeat === "all" ? "барлық ән" : "өшіру"}`,
+    );
+    const one = btn.querySelector("[data-repeat-one]");
+    if (one) one.hidden = state.repeat !== "one";
+  }
+  if ($("nowStatus"))
+    $("nowStatus").textContent = t?.downloaded
+      ? "Офлайн дайын"
+      : "Сайттан ойнатылады";
+  updateNowPlayingPosition();
   $("repeatOne").hidden = state.repeat !== "one";
   document.querySelectorAll(".track-row").forEach((row) => {
     const current = row.dataset.trackId === state.currentId;
@@ -495,6 +525,7 @@ function persistPlayback() {
       currentId: state.currentId,
       position: Number.isFinite(audio.currentTime) ? audio.currentTime : 0,
       queue: state.queue,
+      queueOrder: state.queueOrder,
       shuffle: state.shuffle,
       repeat: state.repeat,
     }).catch(() => {});
@@ -515,7 +546,49 @@ function updateMedia(t) {
         },
       ],
     });
+    configureMediaControls();
   } catch {}
+}
+function nowPlayingBody(t) {
+  return `<div id="nowPlayingPanel" class="now-playing-panel" data-track-id="${esc(t.id)}"><div class="cover-art now-art" style="--art-color:${artistOf(t)?.color || "#8c7daa"}"><b>${esc(t.title.slice(0, 1))}</b></div><div class="now-copy"><h3>${esc(t.title)}</h3><p>${esc(t.artist)}</p><span id="nowStatus" class="now-status">${t.downloaded ? "Офлайн дайын" : "Сайттан ойнатылады"}</span></div><div class="now-progress"><input id="nowSeek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Толық плеер: әннің ойнату орны"><div class="now-times"><span id="nowCurrentTime">0:00</span><span id="nowDuration">${formatTime(t.duration)}</span></div></div><div class="now-controls"><button class="icon-button" data-action="shuffle" aria-label="Араластыру" aria-pressed="${state.shuffle}">${icon("shuffle")}</button><button class="icon-button" data-action="prev" aria-label="Алдыңғы ән">${icon("prev")}</button><button class="play-main now-play" data-action="play" aria-label="Ойнату">${icon("play")}</button><button class="icon-button" data-action="next" aria-label="Келесі ән">${icon("next")}</button><button class="icon-button" data-action="repeat" aria-label="Қайталау: өшіру">${icon("repeat")}<small data-repeat-one hidden>1</small></button></div><div class="now-actions"><button class="icon-button" data-action="player-favorite" aria-label="Ұнағандарға қосу">${icon("heart")}</button>${button("queue", `${icon("queue")} Кезек`, "", true)}${button("sleep", `${icon("moon")} Таймер`, "", true)}</div></div>`;
+}
+function updateNowPlayingPosition() {
+  if (!$("nowSeek")) return;
+  $("nowCurrentTime").textContent = formatTime(audio.currentTime);
+  $("nowDuration").textContent = formatTime(
+    Number.isFinite(audio.duration)
+      ? audio.duration
+      : getTrack(state.currentId)?.duration,
+  );
+  $("nowSeek").value =
+    Number.isFinite(audio.duration) && audio.duration > 0
+      ? (audio.currentTime / audio.duration) * 100
+      : 0;
+}
+function playableSelection(all = false) {
+  const global =
+    all ||
+    ["home", "artists", "playlists", "settings"].includes(
+      route().split("/")[0],
+    );
+  return (global ? state.tracks.filter((t) => !t.demo) : visibleTracks).filter(
+    canPlay,
+  );
+}
+async function shufflePlay(all = false) {
+  const ids = playableSelection(all).map((t) => t.id);
+  if (!ids.length)
+    return toast(
+      state.online
+        ? "Бұл таңдауда ойнатылатын ән жоқ."
+        : "Алдымен әндерді интернет бар кезде офлайнға сақта.",
+    );
+  state.queueOrder = ids;
+  state.queue = shuffled(ids);
+  state.shuffle = true;
+  if (state.repeat === "one") state.repeat = "all";
+  state.history = [];
+  await loadTrack(state.queue[0], { addHistory: false });
 }
 async function loadTrack(
   id,
@@ -557,7 +630,13 @@ async function loadTrack(
   audio.addEventListener("loadedmetadata", restore, { once: true });
   persistPlayback();
   if (autoplay) {
-    await audio.play();
+    try {
+      await audio.play();
+    } catch (error) {
+      if (error.name === "AbortError" && (token !== playToken || audio.paused))
+        return;
+      throw error;
+    }
     if (token === playToken && state.dbReady) {
       await DB.put("library", {
         ...getTrack(id),
@@ -581,8 +660,9 @@ async function playSelected(id) {
     officialDialog(t);
     return;
   }
-  let ids = visibleTracks.filter(canPlay).map((t) => t.id);
+  let ids = playableSelection().map((t) => t.id);
   if (!ids.includes(id)) ids = [id];
+  state.queueOrder = ids;
   state.queue = state.shuffle ? shuffled(ids, id) : ids;
   await loadTrack(id);
 }
@@ -592,7 +672,7 @@ async function playPause() {
     else audio.pause();
     return;
   }
-  const t = visibleTracks.find(canPlay) || state.tracks.find(canPlay);
+  const t = playableSelection()[0];
   if (t) await playSelected(t.id);
   else toast("Әннің толық аудиосын қос немесе аспаптық демоны жүкте.");
 }
@@ -879,6 +959,7 @@ async function removeAudio(id) {
     currentUrl = null;
     state.currentId = null;
     state.queue = state.queue.filter((x) => x !== id);
+    state.queueOrder = state.queueOrder.filter((x) => x !== id);
     persistPlayback();
   }
   await DB.deleteAudio(t);
@@ -1210,14 +1291,20 @@ document.addEventListener("click", async (event) => {
         break;
       case "shuffle":
         state.shuffle = !state.shuffle;
+        if (!state.queue.length)
+          state.queue = playableSelection().map((t) => t.id);
+        if (state.shuffle) state.queueOrder = [...state.queue];
         state.queue = state.shuffle
           ? shuffled(state.queue, state.currentId)
-          : visibleTracks.filter(canPlay).map((t) => t.id);
+          : [...state.queueOrder].filter((id) => canPlay(getTrack(id)));
         if (state.currentId && !state.queue.includes(state.currentId))
           state.queue.unshift(state.currentId);
         persistPlayback();
         updatePlayer();
         toast(state.shuffle ? "Араластыру қосылды." : "Араластыру өшірілді.");
+        break;
+      case "shuffle-play":
+        await shufflePlay(btn.dataset.scope === "all");
         break;
       case "repeat":
         state.repeat =
@@ -1335,6 +1422,7 @@ document.addEventListener("click", async (event) => {
           0,
           id,
         );
+        state.queueOrder = [...state.queue];
         persistPlayback();
         closeDialog();
         toast("Келесі әндер кезегіне қосылды.");
@@ -1345,12 +1433,14 @@ document.addEventListener("click", async (event) => {
           j = action === "queue-up" ? i - 1 : i + 1;
         if (j >= 0 && j < state.queue.length)
           [state.queue[i], state.queue[j]] = [state.queue[j], state.queue[i]];
+        state.queueOrder = [...state.queue];
         persistPlayback();
         queueDialog();
         break;
       }
       case "queue-remove":
-        state.queue.splice(Number(btn.dataset.index), 1);
+        const [removed] = state.queue.splice(Number(btn.dataset.index), 1);
+        state.queueOrder = state.queueOrder.filter((id) => id !== removed);
         persistPlayback();
         queueDialog();
         break;
@@ -1403,12 +1493,13 @@ document.addEventListener("click", async (event) => {
         break;
       case "now-playing": {
         const t = getTrack(state.currentId);
-        if (t)
-          showDialog(
-            "Қазір ойнап тұр",
-            `<div class="cover-art now-art" style="--art-color:${artistOf(t)?.color || "#8c7daa"}"><b>${esc(t.title.slice(0, 1))}</b></div><div class="now-copy"><h3>${esc(t.title)}</h3><p>${esc(t.artist)} · ${t.downloaded ? "Офлайн аудио" : "Онлайн аудио"}</p>${button("queue", `${icon("queue")} Ойнату кезегі`)}</div>`,
-          );
+        if (t) showDialog("Қазір ойнап тұр", nowPlayingBody(t));
         else toast("Алдымен әнді таңда.");
+        if (t) {
+          dialog.classList.add("now-playing-dialog");
+          dialog.dataset.view = "now-playing";
+          updatePlayer();
+        }
         break;
       }
     }
@@ -1540,11 +1631,24 @@ $("seek").addEventListener("input", () => {
     persistPlayback();
   }
 });
+document.addEventListener("input", (event) => {
+  if (
+    event.target.id === "nowSeek" &&
+    Number.isFinite(audio.duration) &&
+    audio.duration > 0
+  ) {
+    audio.currentTime = (Number(event.target.value) / 100) * audio.duration;
+    updateNowPlayingPosition();
+    persistPlayback();
+  }
+});
 audio.addEventListener("loadedmetadata", () => {
   $("duration").textContent = formatTime(audio.duration);
+  updateNowPlayingPosition();
 });
 audio.addEventListener("timeupdate", () => {
   checkSleep();
+  updateNowPlayingPosition();
   $("currentTime").textContent = formatTime(audio.currentTime);
   $("duration").textContent = formatTime(audio.duration);
   $("seek").value =
@@ -1589,7 +1693,8 @@ audio.addEventListener("error", () => {
       true,
     );
 });
-if ("mediaSession" in navigator) {
+function configureMediaControls() {
+  if (!("mediaSession" in navigator)) return;
   for (const [action, fn] of Object.entries({
     play: () => audio.play().catch(() => {}),
     pause: () => audio.pause(),
@@ -1599,12 +1704,15 @@ if ("mediaSession" in navigator) {
       if (Number.isFinite(audio.duration) && d.seekTime != null)
         audio.currentTime = Math.max(0, Math.min(d.seekTime, audio.duration));
     },
+    seekbackward: null,
+    seekforward: null,
   })) {
     try {
       navigator.mediaSession.setActionHandler(action, fn);
     } catch {}
   }
 }
+configureMediaControls();
 function network() {
   state.online = navigator.onLine;
   $("networkText").textContent = state.online
@@ -1647,6 +1755,7 @@ document.addEventListener("visibilitychange", () => {
       currentId: state.currentId,
       position: audio.currentTime || 0,
       queue: state.queue,
+      queueOrder: state.queueOrder,
       shuffle: state.shuffle,
       repeat: state.repeat,
     }).catch(() => {});
@@ -1693,8 +1802,10 @@ document.addEventListener("drop", (event) => {
       toast(errorMessage(error), true),
     );
 });
-dialog.addEventListener("cancel", () => {
+dialog.addEventListener("close", () => {
   $("dialogBody").innerHTML = "";
+  dialog.classList.remove("now-playing-dialog");
+  delete dialog.dataset.view;
 });
 setInterval(checkSleep, 1000);
 async function init() {
@@ -1742,6 +1853,9 @@ async function init() {
     state.queue = Array.isArray(saved.queue)
       ? saved.queue.filter((id) => getTrack(id))
       : [];
+    state.queueOrder = Array.isArray(saved.queueOrder)
+      ? saved.queueOrder.filter((id) => getTrack(id))
+      : [...state.queue];
     if (saved.currentId && canPlay(getTrack(saved.currentId)))
       await loadTrack(saved.currentId, {
         autoplay: false,
@@ -1752,7 +1866,9 @@ async function init() {
   }
   if ("serviceWorker" in navigator) {
     try {
+      let knownController = navigator.serviceWorker.controller;
       const reg = await navigator.serviceWorker.register("./service-worker.js");
+      knownController = navigator.serviceWorker.controller || knownController;
       state.registration = reg;
       const waiting = () => {
         if (reg.waiting && navigator.serviceWorker.controller)
@@ -1770,7 +1886,9 @@ async function init() {
       });
       let reloading = false;
       navigator.serviceWorker.addEventListener("controllerchange", () => {
-        if (reg.waiting || !$("updateBanner").hidden) {
+        const previousController = knownController;
+        knownController = navigator.serviceWorker.controller;
+        if (previousController && previousController !== knownController) {
           if (!reloading) {
             reloading = true;
             location.reload();
