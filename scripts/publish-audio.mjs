@@ -105,6 +105,16 @@ export async function publishAudio({ root, manifestPath, apply = false }) {
       sha256,
       version: sha256.slice(0, 16),
     };
+    if (entry.duration !== undefined) {
+      if (
+        typeof entry.duration !== "number" ||
+        !Number.isFinite(entry.duration) ||
+        entry.duration <= 0 ||
+        entry.duration > 86400
+      )
+        throw new Error(`${track.title}: аудио ұзақтығы жарамсыз.`);
+      fields.duration = entry.duration;
+    }
     Object.assign(track, fields);
     planned.push({
       id: track.id,

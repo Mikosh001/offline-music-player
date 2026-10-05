@@ -46,6 +46,7 @@ async function fixture() {
     license: "CC0-1.0 original test fixture",
     permissionRef: "SAZ original demo generator",
     sourceUrl: "https://example.com/original-test-fixture",
+    duration: 2,
   };
   await writeFile(manifestPath, JSON.stringify({ tracks: [entry] }));
   return { root, manifestPath, entry, bytes };
@@ -107,6 +108,7 @@ test("publisher preview leaves files unchanged; apply stores exact bytes on the 
   assert.deepEqual(await readFile(path.join(f.root, track.audioUrl)), f.bytes);
   assert.equal(track.size, f.bytes.length);
   assert.equal(track.permissionRef, f.entry.permissionRef);
+  assert.equal(track.duration, f.entry.duration);
   assert.equal(
     track.sha256,
     createHash("sha256").update(f.bytes).digest("hex"),
@@ -151,6 +153,17 @@ test("two catalogue releases of identical licensed audio share one immutable hos
 test("missing redistribution rights or a bad second file rejects the whole batch before publication", async () => {
   const f = await fixture();
   const before = await readFile(path.join(f.root, "catalog.json"), "utf8");
+  await writeFile(
+    f.manifestPath,
+    JSON.stringify({ tracks: [{ ...f.entry, duration: -1 }] }),
+  );
+  await assert.rejects(
+    publishAudio({ ...f, apply: true }),
+    /ұзақтығы жарамсыз/,
+  );
+  await assert.rejects(access(path.join(f.root, "assets/audio/licensed")), {
+    code: "ENOENT",
+  });
   await writeFile(
     f.manifestPath,
     JSON.stringify({ tracks: [{ ...f.entry, redistributionAllowed: false }] }),
