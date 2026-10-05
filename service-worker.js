@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-9`;
+const CACHE = `${PREFIX}v2-10`;
 const SHELL = [
   "./",
   "index.html",
@@ -15,6 +15,11 @@ const SHELL = [
   "icon-192.png",
   "icon-512.png",
   "icon-180.png",
+  "legal/site-policy.html",
+  "legal/site-policy.pdf",
+  "legal/site-policy-content.json",
+  "legal/policy-registration.json",
+  "legal/saz-policy-seal.svg",
 ];
 const shellUrls = new Set(SHELL.map((path) => new URL(path, BASE).href));
 self.addEventListener("install", (event) => {
@@ -63,9 +68,24 @@ self.addEventListener("fetch", (event) => {
         try {
           return await fetch(request);
         } catch {
-          return (await caches.open(CACHE)).match(
-            new URL("index.html", BASE).href,
-          );
+          const cache = await caches.open(CACHE);
+          const documentUrl = new URL(request.url);
+          documentUrl.search = "";
+          documentUrl.hash = "";
+          const stored = await cache.match(documentUrl.href);
+          if (stored) return stored;
+          // A saved policy or PDF must keep its own content when opened offline.
+          // Unknown document paths must not silently turn into the music home page.
+          if (
+            documentUrl.pathname === BASE.pathname ||
+            documentUrl.pathname === new URL("index.html", BASE).pathname
+          ) {
+            return (
+              (await cache.match(new URL("index.html", BASE).href)) ||
+              Response.error()
+            );
+          }
+          return Response.error();
         }
       })(),
     );

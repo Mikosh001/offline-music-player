@@ -1,4 +1,6 @@
 # Keep the supplied public declarations byte-for-byte, including line endings.
 permissions/** -text whitespace=cr-at-eol
+# Preserve the bytes recorded in the policy registry's SHA-256 checksums.
+legal/** -text whitespace=cr-at-eol
 *.mp3 binary
 *.pdf binary
