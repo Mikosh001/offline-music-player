@@ -1,0 +1,16 @@
+{
+  "name": "saz-offline-music",
+  "version": "2.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.cjs && node tests/edge-cases.cjs && node tests/hosted.cjs && node tests/catalog-sync.cjs && node tests/mobile-player.cjs && node tests/legal-policy.cjs",
+    "refresh:catalog": "node scripts/refresh-catalog.mjs",
+    "publish:audio": "node scripts/publish-audio.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

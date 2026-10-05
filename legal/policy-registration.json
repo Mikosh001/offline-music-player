@@ -1,0 +1,80 @@
+{
+  "registry": "SAZ сайтының ішкі саясат реестрі",
+  "documentId": "SAZ-POL-2026-001",
+  "version": "1.0",
+  "createdOn": "2026-10-05",
+  "effective": "Сайтта осы нұсқа жарияланған сәттен",
+  "owner": "Бердібек Мейірбек Болатбекұлы",
+  "contactEmail": "berdibekmejirbek08@gmail.com",
+  "status": "Сайттың ішкі саясат құжаты. ЭЦҚмен қол қойылмаған.",
+  "isGovernmentRegistration": false,
+  "isMusicLicense": false,
+  "isNotarized": false,
+  "isDigitallySigned": false,
+  "seal": "SAZ графикалық ішкі құжат мөрі",
+  "sections": 14,
+  "clauses": 100,
+  "appendices": 3,
+  "pdfPages": 12,
+  "legalSourcesCheckedOn": "2026-10-05",
+  "sources": [
+    {
+      "id": "Қ1",
+      "url": "https://www.akorda.kz/kz/kazakstan-respublikasynyn-konstituciyasy-3053334"
+    },
+    {
+      "id": "Қ2",
+      "url": "https://old.adilet.zan.kz/kaz/docs/Z960000006_"
+    },
+    {
+      "id": "Қ3",
+      "url": "https://old.adilet.zan.kz/kaz/docs/Z1300000094"
+    },
+    {
+      "id": "Қ4",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K2600000255"
+    },
+    {
+      "id": "Қ5",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K1400000226"
+    },
+    {
+      "id": "Қ6",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K1400000235"
+    },
+    {
+      "id": "Қ7",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K940001000_"
+    },
+    {
+      "id": "Қ8",
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "id": "Қ9",
+      "url": "https://policies.google.com/privacy?hl=kk"
+    }
+  ],
+  "files": [
+    {
+      "path": "site-policy.pdf",
+      "sha256": "7bbdf223edb9ea91be46fb91dd7b0a5653a90048521b4189d03a451a795a12b7",
+      "bytes": 105033
+    },
+    {
+      "path": "site-policy.html",
+      "sha256": "6a0f654b8869ef5e6c0499ee92223b5922e40ce75071625239018f0d0154f9db",
+      "bytes": 102675
+    },
+    {
+      "path": "site-policy-content.json",
+      "sha256": "792715bc80288fde504c824cbd7cefed371495667dc21b95cf914c3f5918fcc7",
+      "bytes": 60863
+    },
+    {
+      "path": "saz-policy-seal.svg",
+      "sha256": "3aa29be70ac02ebbc75e81cbaca5ce166653419e65ae30ad985e7005bbda20be",
+      "bytes": 753
+    }
+  ]
+}

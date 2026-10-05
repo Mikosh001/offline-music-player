@@ -1,0 +1,1909 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#0d1020" />
+    <meta
+      name="description"
+      content="SAZ сайтының пайдалану, музыка құқықтары, құпиялық, саяси бейтараптық және этникалық теңдік саясаты. SAZ-POL-2026-001."
+    />
+    <title>Сайт саясаты · SAZ</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0d1020;
+        --card: #16182a;
+        --line: #303044;
+        --text: #f3eefb;
+        --muted: #b2acc3;
+        --accent: #cab0f0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-padding-top: 88px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.75 "Segoe UI",
+          Arial,
+          sans-serif;
+      }
+      a {
+        color: var(--accent);
+        text-underline-offset: 4px;
+      }
+      a:focus-visible,
+      summary:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 5px;
+      }
+      a:hover {
+        color: white;
+      }
+      .top {
+        border-bottom: 1px solid var(--line);
+        background: #0d1020ed;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        backdrop-filter: blur(12px);
+      }
+      .top-inner {
+        max-width: 1100px;
+        margin: auto;
+        padding: calc(14px + env(safe-area-inset-top, 0px))
+          calc(28px + env(safe-area-inset-right, 0px)) 14px
+          calc(28px + env(safe-area-inset-left, 0px));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+      .brand {
+        font-weight: 800;
+        font-size: 24px;
+        text-decoration: none;
+        color: var(--text);
+      }
+      .brand span {
+        color: var(--accent);
+      }
+      .top nav {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        font-size: 14px;
+      }
+      .wrap {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 36px 28px 70px;
+      }
+      .hero {
+        display: grid;
+        grid-template-columns: 1fr 180px;
+        gap: 30px;
+        align-items: start;
+      }
+      .tag {
+        display: inline-block;
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.11em;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: clamp(28px, 5vw, 42px);
+        line-height: 1.22;
+        margin: 0 0 18px;
+        letter-spacing: -0.035em;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.35;
+        margin: 0 0 10px;
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 1.45;
+        margin: 0 0 8px;
+      }
+      .lead,
+      .muted,
+      .basis {
+        color: var(--muted);
+      }
+      .seal {
+        width: 180px;
+        height: 180px;
+      }
+      .meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 26px 0;
+      }
+      .meta div,
+      .quick div {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: var(--card);
+        padding: 16px 18px;
+      }
+      .meta dt {
+        font-size: 12px;
+        color: var(--muted);
+        margin-bottom: 6px;
+      }
+      .meta dd {
+        margin: 0;
+        overflow-wrap: anywhere;
+      }
+      .notice {
+        background: #cab0f011;
+        border-left: 3px solid var(--accent);
+        padding: 16px 20px;
+        border-radius: 0 12px 12px 0;
+        margin: 24px 0;
+      }
+      .notice p {
+        margin: 0;
+      }
+      .quick {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 24px 0;
+      }
+      .quick h3 {
+        color: var(--accent);
+        font-size: 16px;
+      }
+      .quick p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .toc {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 17px 22px;
+        margin: 28px 0 38px;
+      }
+      .toc summary {
+        font-weight: 700;
+        cursor: pointer;
+      }
+      .toc nav {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px 28px;
+        padding-top: 18px;
+      }
+      .toc a {
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .section {
+        padding: 30px 0;
+        border-top: 1px solid var(--line);
+        scroll-margin-top: 88px;
+      }
+      .section h2 {
+        max-width: 820px;
+      }
+      .basis {
+        font-size: 13px;
+        margin: 0 0 20px;
+      }
+      .clause {
+        display: grid;
+        grid-template-columns: 45px minmax(0, 1fr);
+        gap: 12px;
+        margin: 0 0 18px;
+        max-width: 900px;
+        overflow-wrap: anywhere;
+      }
+      .clause .number {
+        font-weight: 700;
+        color: var(--accent);
+        font-size: 14px;
+        padding-top: 2px;
+        text-decoration: none;
+      }
+      .source {
+        border-bottom: 1px solid var(--line);
+        padding: 18px 0;
+      }
+      .source p {
+        margin: 6px 0;
+      }
+      .source .date {
+        font-size: 13px;
+        color: var(--muted);
+      }
+      .source a {
+        overflow-wrap: anywhere;
+      }
+      .fields {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .field {
+        border: 1px solid var(--line);
+        padding: 18px;
+        border-radius: 12px;
+      }
+      .field p {
+        margin: 0;
+        color: var(--muted);
+      }
+      .registry {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
+      }
+      .registry th,
+      .registry td {
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid var(--line);
+        padding: 12px;
+        overflow-wrap: anywhere;
+      }
+      .registry th {
+        width: 220px;
+        color: var(--muted);
+        font-weight: 400;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 20px 0;
+      }
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 46px;
+        padding: 9px 17px;
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        text-decoration: none;
+        color: var(--text);
+        background: var(--card);
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .button.primary {
+        background: var(--accent);
+        color: var(--bg);
+        border-color: transparent;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        margin-top: 26px;
+        padding-top: 24px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .small {
+        font-size: 13px;
+      }
+      .hash {
+        font-family: Consolas, monospace;
+        font-size: 12px;
+      }
+      @media (max-width: 640px) {
+        body {
+          font-size: 15px;
+          line-height: 1.8;
+        }
+        .top-inner {
+          padding: calc(12px + env(safe-area-inset-top, 0px))
+            calc(18px + env(safe-area-inset-right, 0px)) 12px
+            calc(18px + env(safe-area-inset-left, 0px));
+        }
+        .top nav {
+          gap: 12px;
+          font-size: 12px;
+        }
+        .wrap {
+          padding: 28px 18px 48px;
+        }
+        .hero {
+          grid-template-columns: minmax(0, 1fr);
+        }
+        .hero .seal {
+          width: 116px;
+          height: 116px;
+          justify-self: start;
+          grid-row: 2;
+        }
+        .meta,
+        .quick,
+        .toc nav {
+          grid-template-columns: 1fr;
+        }
+        .clause {
+          grid-template-columns: 35px minmax(0, 1fr);
+          gap: 7px;
+        }
+        .section h2 {
+          font-size: 21px;
+        }
+        .registry th {
+          width: 105px;
+        }
+        .registry th,
+        .registry td {
+          padding: 10px 6px;
+        }
+        h1 {
+          font-size: 31px;
+        }
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        html {
+          scroll-behavior: smooth;
+        }
+      }
+      @media print {
+        :root {
+          color-scheme: light;
+          --bg: #fff;
+          --card: #fff;
+          --line: #ddd;
+          --text: #222;
+          --muted: #555;
+          --accent: #6b499c;
+        }
+        body {
+          font-size: 10pt;
+        }
+        .top,
+        .actions,
+        .toc {
+          display: none;
+        }
+        .wrap {
+          max-width: none;
+          padding: 0;
+        }
+        .hero {
+          grid-template-columns: 1fr 100px;
+        }
+        .hero .seal {
+          width: 100px;
+          height: 100px;
+        }
+        .section {
+          padding: 18px 0;
+        }
+        h1 {
+          font-size: 24pt;
+        }
+        h2 {
+          font-size: 15pt;
+          break-after: avoid;
+        }
+        .clause,
+        .source,
+        .field {
+          break-inside: avoid;
+        }
+        .clause {
+          margin-bottom: 10px;
+        }
+        .meta {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        a {
+          color: #333;
+        }
+        footer {
+          font-size: 9pt;
+        }
+        @page {
+          size: A4;
+          margin: 18mm;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <div class="top-inner">
+        <a class="brand" href="../#home">SAZ<span>.</span></a>
+        <nav aria-label="Құжат әрекеттері">
+          <a href="#sources">Заңдар</a><a href="#claim">Өтініш</a
+          ><a href="site-policy.pdf" download>PDF ↓</a>
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <div class="hero">
+        <div>
+          <span class="tag">SAZ / ІШКІ ҚҰЖАТ РЕЕСТРІ</span>
+          <h1>SAZ сайтының саясаты және пайдалану қағидалары</h1>
+          <p class="lead">
+            Музыкаға құқықтар, құпиялық, саяси бейтараптық және этникалық
+            теңдік. 14 бөлім, 100 тармақ және 3 қосымша.
+          </p>
+        </div>
+        <div class="seal">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 260 260"
+            role="img"
+            aria-label="SAZ ішкі құжат мөрі — мемлекеттік мөр емес"
+          >
+            <g fill="none" stroke="#a98bdb">
+              <circle cx="130" cy="130" r="121" stroke-width="3" />
+              <circle cx="130" cy="130" r="108" stroke-width="1" />
+              <circle
+                cx="130"
+                cy="130"
+                r="91"
+                stroke-width="1"
+                stroke-dasharray="2 5"
+              />
+            </g>
+            <g
+              fill="#a98bdb"
+              font-family="Segoe UI,Arial,sans-serif"
+              text-anchor="middle"
+            >
+              <text x="130" y="68" font-size="15" font-weight="700">
+                ІШКІ ҚҰЖАТ
+              </text>
+              <text x="130" y="139" font-size="55" font-weight="800">SAZ</text>
+              <text x="130" y="166" font-size="13">САЯСАТ РЕЕСТРІ · 2026</text>
+              <text x="130" y="203" font-size="11">SAZ-POL-2026-001</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <dl class="meta">
+        <div>
+          <dt>Құжат нөмірі</dt>
+          <dd>SAZ-POL-2026-001</dd>
+        </div>
+        <div>
+          <dt>Нұсқа және күн</dt>
+          <dd>1.0 · 05 қазан 2026 жыл</dd>
+        </div>
+        <div>
+          <dt>Сайт иесі және әкімшісі</dt>
+          <dd>Бердібек Мейірбек Болатбекұлы</dd>
+        </div>
+        <div>
+          <dt>Құқықтар және құпиялық бойынша байланыс</dt>
+          <dd>
+            <a href="mailto:berdibekmejirbek08@gmail.com"
+              >berdibekmejirbek08@gmail.com</a
+            >
+          </dd>
+        </div>
+      </dl>
+      <div class="notice">
+        <p>
+          <strong>Құжат мәртебесі:</strong> сайттың ішкі саясат мәтіні. SAZ мөрі
+          мен нөмірі — ішкі белгі; мемлекеттік тіркеу, музыкалық лицензия,
+          нотариалдық мөр немесе ЭЦҚ емес.
+        </p>
+      </div>
+      <div class="quick" aria-label="Негізгі қағидалар">
+        <div>
+          <h3>Жеке тыңдау</h3>
+          <p>
+            Сайт ұсынатын құқық шегінде әнді офлайнға сақтап, өзің тыңдауға
+            болады.
+          </p>
+        </div>
+        <div>
+          <h3>Қайта тарату</h3>
+          <p>
+            Файлды сату, басқа сайтқа жариялау және ортақ архивке тарату үшін
+            бөлек құқық қажет.
+          </p>
+        </div>
+        <div>
+          <h3>Деректер</h3>
+          <p>
+            Жеке кітапхана браузерде. Хостинг пен өтініш e-mail-ының өңдеуі
+            бөлек көрсетілген.
+          </p>
+        </div>
+        <div>
+          <h3>Құжат мәртебесі</h3>
+          <p>
+            SAZ ішкі нөмірі мен графикалық мөрі бар; мемлекеттік мөр, лицензия
+            немесе ЭЦҚ емес.
+          </p>
+        </div>
+      </div>
+      <div class="actions">
+        <a class="button primary" href="site-policy.pdf" download
+          >Құжатты PDF түрінде сақтау ↓</a
+        ><a
+          class="button"
+          href="../permissions/music-sources-and-permissions.html"
+          >Музыка дереккөздері мен рұқсаттар</a
+        >
+      </div>
+      <details class="toc" open>
+        <summary>Құжат мазмұны</summary>
+        <nav aria-label="Саясат бөлімдері">
+          <a href="#section-1">1. Құжаттың мақсаты және сайт деректері</a
+          ><a href="#section-2">2. Қолданылу аясы және негізгі ұғымдар</a
+          ><a href="#section-3">3. Сайт мүмкіндіктері және офлайн жұмыс</a
+          ><a href="#section-4">4. Музыкалық және өзге құқықтарды сақтау</a
+          ><a href="#section-5"
+            >5. Пайдаланушыға берілетін пайдалану мүмкіндігі</a
+          ><a href="#section-6"
+            >6. Рұқсатсыз көшіру және зиян келтіру шектеулері</a
+          ><a href="#section-7"
+            >7. Саяси бейтараптық және редакциялық тәуелсіздік</a
+          ><a href="#section-8">8. Этникалық теңдік, әдеп және қолжетімділік</a
+          ><a href="#section-9">9. Құпиялық: деректердің нақты сақталуы</a
+          ><a href="#section-10"
+            >10. Үшінші қызметтер және дербес дерекке қатысты құқықтар</a
+          ><a href="#section-11">11. Қауіпсіздік және кәмелетке толмағандар</a
+          ><a href="#section-12"
+            >12. Құқық иесінің өтініші және контентті қайта қарау</a
+          ><a href="#section-13">13. Жауаптылық, өзгерістер және даулар</a
+          ><a href="#section-14">14. Ішкі мөр, тіркеу және құжаттың тұтастығы</a
+          ><a href="#sources">А қосымшасы · Құқықтық дереккөздер</a
+          ><a href="#claim">Ә қосымшасы · Өтініш үлгісі</a
+          ><a href="#registry">Б қосымшасы · Ішкі тіркеу</a>
+        </nav>
+      </details>
+      <section class="section" id="section-1" aria-labelledby="heading-1">
+        <h2 id="heading-1">1-бөлім. Құжаттың мақсаты және сайт деректері</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ1, Қ4. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-1-1">
+          <a class="number" href="#clause-1-1" aria-label="1.1 тармақ">1.1.</a
+          ><span
+            >Осы саясат SAZ музыкалық веб-қолданбасын пайдалану, контентке
+            құқықтарды сақтау, құпиялық, саяси бейтараптық, этникалық теңдік
+            және өтініштерді қарау қағидаларын белгілейді. Төмендегі 1.1–14.8
+            нөмірлері — сайттың ішкі тармақтары; олар заң баптарының нөмірлері
+            емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-1-2">
+          <a class="number" href="#clause-1-2" aria-label="1.2 тармақ">1.2.</a
+          ><span
+            >Сайттың иесі және әкімшісі: Бердібек Мейірбек Болатбекұлы. Жоба
+            атауы: SAZ. Негізгі мекенжайы:
+            https://mikosh001.github.io/offline-music-player/. Құқықтар,
+            құпиялық және техникалық мәселелер бойынша байланыс:
+            berdibekmejirbek08@gmail.com.</span
+          >
+        </p>
+        <p class="clause" id="clause-1-3">
+          <a class="number" href="#clause-1-3" aria-label="1.3 тармақ">1.3.</a
+          ><span
+            >Иесінің аты-жөні сайт әкімшілігінің сәйкестендіру дерегі ретінде
+            көрсетіледі. Бұл құжат заңды тұлғаның тіркелгенін, тауар белгісінің
+            тіркелгенін, мемлекеттік лицензияны немесе музыкалық құқықтардың
+            иеленуін куәландырмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-1-4">
+          <a class="number" href="#clause-1-4" aria-label="1.4 тармақ">1.4.</a
+          ><span
+            >Құжат нөмірі: SAZ-POL-2026-001. Нұсқа: 1.0. Жасалған және
+            жарияланымға арналған күні: 05 қазан 2026 жыл. Қолданылуы сайтта осы
+            нұсқа жарияланған сәттен басталады; бұрын болған әрекеттерге жаңа
+            міндет кері күшпен жүктелмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-1-5">
+          <a class="number" href="#clause-1-5" aria-label="1.5 тармақ">1.5.</a
+          ><span
+            >Саясат Қазақстан Республикасының заңнамасы негізінде дайындалды.
+            Міндетті заң нормалары, құқық иесімен жасалған нақты келісім және
+            пайдаланушыға қолданылатын өзге міндетті құқықтық кепілдіктер басым
+            болады; осы мәтін оларды жоймайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-1-6">
+          <a class="number" href="#clause-1-6" aria-label="1.6 тармақ">1.6.</a
+          ><span
+            >Ішкі графикалық мөр мен тіркеу нөмірі құжатты тану үшін
+            қолданылады. Олар нотариалдық куәландыру, мемлекеттік тіркеу,
+            авторлық құқық куәлігі немесе электрондық цифрлық қолтаңба болып
+            саналмайды. Құжат тәуелсіз заңдық сараптамадан өткені туралы
+            мәлімдеме жасалмайды.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-2" aria-labelledby="heading-2">
+        <h2 id="heading-2">2-бөлім. Қолданылу аясы және негізгі ұғымдар</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2, Қ4, Қ7. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-2-1">
+          <a class="number" href="#clause-2-1" aria-label="2.1 тармақ">2.1.</a
+          ><span
+            >«Сайт» — SAZ интерфейсі, жарияланған каталог, сайтта
+            орналастырылған аудио, құжаттар және офлайн веб-қолданба. Сайттың
+            коды ашық репозиторийде болуы музыкалық жазбалардың да еркін
+            лицензиямен берілгенін білдірмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-2-2">
+          <a class="number" href="#clause-2-2" aria-label="2.2 тармақ">2.2.</a
+          ><span
+            >«Пайдаланушы» — сайтты браузерден немесе негізгі экранға орнатылған
+            веб-қолданбадан ашатын тұлға. «Әкімші» — 1.2-тармақта көрсетілген
+            сайт иесі немесе оның нақты өкілеттік берген тұлғасы.</span
+          >
+        </p>
+        <p class="clause" id="clause-2-3">
+          <a class="number" href="#clause-2-3" aria-label="2.3 тармақ">2.3.</a
+          ><span
+            >«Құқық иесі» — тиісті құқықты иеленетін автор, орындаушы,
+            фонограмма жасаушы, баспагер, өзге құқық иеленуші немесе олардың
+            өкілі. Ән авторы, орындаушысы және дыбыс жазбасының құқық иесі
+            әртүрлі тұлғалар болуы мүмкін.</span
+          >
+        </p>
+        <p class="clause" id="clause-2-4">
+          <a class="number" href="#clause-2-4" aria-label="2.4 тармақ">2.4.</a
+          ><span
+            >«Жеке офлайн көшірме» — пайдаланушының өз тыңдауы үшін браузерінде
+            сақталған аудио. «Қайта тарату» — файлды, аудионы қамтитын сақтық
+            көшірмені немесе өзге дананы үшінші тұлғаларға беру, жариялау, сату
+            не ортақ қолжетімді ету.</span
+          >
+        </p>
+        <p class="clause" id="clause-2-5">
+          <a class="number" href="#clause-2-5" aria-label="2.5 тармақ">2.5.</a
+          ><span
+            >«Рұқсат» — нақты құқық иесінің тиісті пайдалану тәсілін қамтитын
+            келісімі немесе қолданылатын лицензия. «Дереккөз» — файл алынған не
+            метадерек тексерілген жер; дереккөз сілтемесінің өзі қайта тарату
+            лицензиясын алмастырмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-2-6">
+          <a class="number" href="#clause-2-6" aria-label="2.6 тармақ">2.6.</a
+          ><span
+            >Пайдаланушыға осы саясатпен танысуға тұрақты сілтеме беріледі.
+            Сайтқа жай кіру барлық деректерді өңдеуге, трансшекаралық беруге
+            немесе келешекте енгізілетін ақылы қызметтерге шексіз келісім деп
+            түсіндірілмейді; қажет келісім бөлек алынуға тиіс.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-3" aria-labelledby="heading-3">
+        <h2 id="heading-3">3-бөлім. Сайт мүмкіндіктері және офлайн жұмыс</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2, Қ4. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-3-1">
+          <a class="number" href="#clause-3-1" aria-label="3.1 тармақ">3.1.</a
+          ><span
+            >SAZ ән іздеуге, орындаушы мен стиль бойынша таңдауға, музыка
+            ойнатуға, ұнағандарды белгілеуге, плейлист пен ойнату кезегін
+            құруға, тректерді араластыруға және қайталауға арналған. Осы нұсқада
+            тіркелу мен ақылы жазылым жоқ.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-2">
+          <a class="number" href="#clause-3-2" aria-label="3.2 тармақ">3.2.</a
+          ><span
+            >Толық аудиосы байланыстырылған әнді интернет кезінде сайттан
+            тыңдауға болады. Аудиосы жоқ каталог жолы файлдың бар екенін немесе
+            оны жүктеу мүмкіндігін растамайды; интерфейстегі нақты қолжетімділік
+            күйі басшылыққа алынады.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-3">
+          <a class="number" href="#clause-3-3" aria-label="3.3 тармақ">3.3.</a
+          ><span
+            >Интернетсіз тыңдау үшін пайдаланушы әнді алдын ала «Офлайнға
+            сақтау» арқылы жүктейді. Көшірме сайт серверінде ғана тұрып,
+            байланыссыз ойналмайды: офлайн аудио пайдаланушы құрылғысының осы
+            браузеріндегі сақтау орнында болады.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-4">
+          <a class="number" href="#clause-3-4" aria-label="3.4 тармақ">3.4.</a
+          ><span
+            >Негізгі экранға орнату SAZ-ды веб-қолданба ретінде ашуға мүмкіндік
+            береді. Бұл App Store немесе Google Play дүкенінде ресми жарияланған
+            жеке мобильдік қосымша мәртебесін білдірмейді. Орнату, фондық ойнату
+            және құлып экраны басқаруы браузерге тәуелді.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-5">
+          <a class="number" href="#clause-3-5" aria-label="3.5 тармақ">3.5.</a
+          ><span
+            >Өз құрылғысынан импортталған ән файлдары, жеке плейлисттер және
+            каталог өзгерістері сайттың қазіргі кодында серверге жарияланбайды.
+            Пайдаланушы жергілікті кітапханасын өзгерткенде басқа адамдардың
+            ортақ каталогы өзгермейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-6">
+          <a class="number" href="#clause-3-6" aria-label="3.6 тармақ">3.6.</a
+          ><span
+            >Сақтық көшірме экспорты .saz файлына аудио мен кітапхана деректерін
+            енгізуі мүмкін. Ол жеке қалпына келтіруге арналған; мұндай файлды
+            ортақ чатқа, бұлт папкасына не сайтқа тарату үшін тиісті құқық бөлек
+            қажет.</span
+          >
+        </p>
+        <p class="clause" id="clause-3-7">
+          <a class="number" href="#clause-3-7" aria-label="3.7 тармақ">3.7.</a
+          ><span
+            >Браузер деректері тазаланса, жеке режим жабылса, сақтау орны толса
+            немесе жүйе кэшті жойса, офлайн әндер жоғалуы мүмкін. «Сақтауды
+            қорғау» мүмкіндігі абсолютті кепілдік бермейді. Жүктелмеген әнді
+            интернетсіз тыңдау мүмкін емес.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-4" aria-labelledby="heading-4">
+        <h2 id="heading-4">4-бөлім. Музыкалық және өзге құқықтарды сақтау</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ1, Қ2. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-4-1">
+          <a class="number" href="#clause-4-1" aria-label="4.1 тармақ">4.1.</a
+          ><span
+            >Әннің сөзі мен әуені, орындау және фонограмма құқықтары тиісті
+            құқық иелерінде қалады. SAZ каталогқа қосу немесе MP3 файлын сақтау
+            арқылы бұл құқықтарды өз меншігі деп жарияламайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-2">
+          <a class="number" href="#clause-4-2" aria-label="4.2 тармақ">4.2.</a
+          ><span
+            >Орындаушы мен авторды көрсету, шығарманың атауын дұрыс беру және
+            авторлық белгілерді сақтау міндетті. Қате атрибуция, жалған
+            авторлық, құқық иесінің келісімінсіз шығарманы бұрмалау және құқық
+            туралы мәліметті алып тастауға жол берілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-3">
+          <a class="number" href="#clause-4-3" aria-label="4.3 тармақ">4.3.</a
+          ><span
+            >Ортақ сайтта аудио жариялауға негіз болатын рұқсат онлайн
+            тыңдатуды, серверде сақтау мен көшірмелеуді, пайдаланушыға жеке
+            офлайн көшірме беруді, аумақты және мерзімді тиісті көлемде қамтуы
+            керек. Бір тәсілге рұқсат өзге тәсілдерге автоматты түрде
+            таралмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-4">
+          <a class="number" href="#clause-4-4" aria-label="4.4 тармақ">4.4.</a
+          ><span
+            >Әкімшілік әр аудионың дереккөзі мен рұқсат негізін каталогта және
+            дереккөздер тізімінде көрсетеді. Құжат не лицензия нақты әнге, құқық
+            иесіне және пайдалану көлеміне сәйкес келуге тиіс; үшінші сайттың өз
+            лицензиясы SAZ-ға автоматты түрде берілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-5">
+          <a class="number" href="#clause-4-5" aria-label="4.5 тармақ">4.5.</a
+          ><span
+            >Қазіргі музыкалық жинақ бойынша рұқсаттың жарияланған негізі —
+            жинақты берген тұлғаның жеке келісімдер бар деген мәлімдемесі. Жеке
+            хаттардың түпнұсқасы сайтта тәуелсіз расталған деп көрсетілмейді.
+            Осы саясат жаңа лицензия бермейді және рұқсаттың орнына
+            жүрмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-6">
+          <a class="number" href="#clause-4-6" aria-label="4.6 тармақ">4.6.</a
+          ><span
+            >Музыка дереккөздері мен рұқсаттар парағы және оның бастапқы
+            құжаттары саясаттан бөлек сақталады. Олардың SAZ-20261005-001 ішкі
+            нөмірін осы саясаттың SAZ-POL-2026-001 нөмірімен шатастыруға
+            болмайды. Екеуі де мемлекеттік лицензия нөмірі емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-4-7">
+          <a class="number" href="#clause-4-7" aria-label="4.7 тармақ">4.7.</a
+          ><span
+            >Сайттың өзіндік мәтіні, дизайны мен кодына қатысты құқықтар тиісті
+            авторларға тиесілі. Бөлек көрсетілген ашық лицензия, еркін пайдалану
+            рұқсаты немесе үшінші компонент лицензиясы өз көлемінде сақталады;
+            жалпы сайт ережесі оларды жоя алмайды.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-5" aria-labelledby="heading-5">
+        <h2 id="heading-5">
+          5-бөлім. Пайдаланушыға берілетін пайдалану мүмкіндігі
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2: 18, 26, 31–32, 40-1-баптар. Дереккөздер А
+          қосымшасында.
+        </p>
+        <p class="clause" id="clause-5-1">
+          <a class="number" href="#clause-5-1" aria-label="5.1 тармақ">5.1.</a
+          ><span
+            >Сайт ұсынатын және оған қатысты құқықтық негіз қамтитын толық әнді
+            жеке, коммерциялық емес тыңдау үшін ойнатуға және «Офлайнға сақтау»
+            арқылы осы браузерде сақтауға болады. Әкімші өзінде жоқ құқықты
+            пайдаланушыға бере алмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-2">
+          <a class="number" href="#clause-5-2" aria-label="5.2 тармақ">5.2.</a
+          ><span
+            >Жеке кітапхана жасауға, ұнағандарды белгілеуге, плейлист құруға,
+            тректерді араластыруға және жеке сақтық көшірме жасауға сайт
+            мүмкіндік береді. Бұл әрекеттер файлдарды көпшілікке ұсыну немесе
+            музыканы коммерциялық пайдалану құқығын бермейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-3">
+          <a class="number" href="#clause-5-3" aria-label="5.3 тармақ">5.3.</a
+          ><span
+            >Әнге бағыттайтын сайт сілтемесін бөлісуге болады. Құқық иесінің
+            бөлек рұқсатынсыз ән файлын, аудионы қамтитын архивті немесе сақтық
+            көшірмені бөлісу сілтемені бөлісумен тең емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-4">
+          <a class="number" href="#clause-5-4" aria-label="5.4 тармақ">5.4.</a
+          ><span
+            >Заңда көзделген жеке мақсаттағы көшірмелеу және басқа еркін
+            пайдалану жағдайлары өз шарттарымен сақталады. Авторлық құқық туралы
+            заңның 18 және 26-баптары әртүрлі талаптарды қамтиды; бұл саясат
+            оларды жалпы «бәрін көшіруге болады» рұқсатына айналдырмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-5">
+          <a class="number" href="#clause-5-5" aria-label="5.5 тармақ">5.5.</a
+          ><span
+            >Аудионы бейнероликке, жарнамаға, ойынға, ремикске, коммерциялық
+            орындауға немесе басқа сервиске енгізу үшін осы тәсілді қамтитын
+            құқықтық негіз қажет. Жеке офлайн тыңдау мүмкіндігі мұндай
+            лицензияны алмастырмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-6">
+          <a class="number" href="#clause-5-6" aria-label="5.6 тармақ">5.6.</a
+          ><span
+            >Кафе, дүкен, іс-шара немесе өзге ортада көпшілікке музыка ойнату
+            үшін қажетті құқықтар мен шарттар бөлек анықталады. SAZ-ға тегін
+            кіру көпшілік алдында орындауға немесе коммерциялық пайдалануға
+            жалпы рұқсат бермейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-5-7">
+          <a class="number" href="#clause-5-7" aria-label="5.7 тармақ">5.7.</a
+          ><span
+            >Ән бойынша жеке лицензия осы саясаттан кең мүмкіндік берсе, сол
+            лицензияның нақты шарттары қолданылады. Құқық иесінің рұқсаты
+            аяқталса немесе құқықтық негіз өзгерсе, сайттағы кейінгі
+            қолжетімділік қайта қаралады.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-6" aria-labelledby="heading-6">
+        <h2 id="heading-6">
+          6-бөлім. Рұқсатсыз көшіру және зиян келтіру шектеулері
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2, Қ5; заңдағы ерекшеліктер сақталады. Дереккөздер А
+          қосымшасында.
+        </p>
+        <p class="clause" id="clause-6-1">
+          <a class="number" href="#clause-6-1" aria-label="6.1 тармақ">6.1.</a
+          ><span
+            >Құқық иесінің тиісті рұқсатынсыз сайттағы әнді басқа сайтқа,
+            әлеуметтік желіге, мессенджер арнасына, торрентке немесе ортақ бұлт
+            қоймасына қайта жариялауға не таратуға болмайды. Заң рұқсат ететін
+            нақты ерекшеліктер бұған кірмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-2">
+          <a class="number" href="#clause-6-2" aria-label="6.2 тармақ">6.2.</a
+          ><span
+            >Рұқсатсыз аудио сату, ақылы архив жасау, басқа сервиске музыка қоры
+            ретінде қосу немесе сайттағы жеке тыңдау мүмкіндігін коммерциялық
+            ұсынысқа айналдыруға болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-3">
+          <a class="number" href="#clause-6-3" aria-label="6.3 тармақ">6.3.</a
+          ><span
+            >Құқық туралы белгі, орындаушы аты, лицензия мәліметі немесе файлдың
+            қайдан алынғанын көрсететін деректі құқық бұзуды жасыру үшін алып
+            тастауға, ауыстыруға не жалған мәліметпен алмастыруға
+            болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-4">
+          <a class="number" href="#clause-6-4" aria-label="6.4 тармақ">6.4.</a
+          ><span
+            >Каталогты немесе оның елеулі бөлігін басқа музыкалық қызметті
+            толықтыру үшін автоматты түрде жаппай көшірмелеуге осы саясат рұқсат
+            бермейді. Сайттағы кәдімгі офлайн сақтау мүмкіндігімен жеке әндерін
+            дайындау бұл шектеумен теңестірілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-5">
+          <a class="number" href="#clause-6-5" aria-label="6.5 тармақ">6.5.</a
+          ><span
+            >Серверге шамадан тыс сұрау жіберу, қызметті әдейі істен шығару,
+            зиянды код енгізу, рұқсатсыз жабық дерекке қол жеткізу немесе
+            қорғанысты айналып өтуге болмайды. Заңдық жауаптылық нақты әрекет
+            пен заң құрамының болуына қарай анықталады.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-6">
+          <a class="number" href="#clause-6-6" aria-label="6.6 тармақ">6.6.</a
+          ><span
+            >SAZ әкімшілігін, орындаушыны не құқық иесін жалған таныстыруға,
+            жалған рұқсат құжатын жасауға, жоба мөрін лицензия белгісі ретінде
+            пайдалануға және бөгде тұлғаның атынан өтініш беруге болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-7">
+          <a class="number" href="#clause-6-7" aria-label="6.7 тармақ">6.7.</a
+          ><span
+            >Өзге адамның жеке дерегін, жасырын хаттарын, байланысын не жеке
+            кітапханасын оның заңды келісімінсіз жариялауға болмайды. Құқыққа
+            қатысты дәлелді әкімшілікке беру оны бүкіл сайтта жариялауға келісім
+            болып саналмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-6-8">
+          <a class="number" href="#clause-6-8" aria-label="6.8 тармақ">6.8.</a
+          ><span
+            >Сайттың ашық аудио URL-дары мен браузерлік сақтауы файлды
+            техникалық тұрғыда шығарып алуды толық тоқтатпайды; DRM немесе
+            абсолютті көшірме қорғанысы іске асырылған деп мәлімделмейді. Осы
+            бөлім — пайдалану шектеуі, техникалық кепілдік емес.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-7" aria-labelledby="heading-7">
+        <h2 id="heading-7">
+          7-бөлім. Саяси бейтараптық және редакциялық тәуелсіздік
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ1: 23-бап; Қ5: 174-бап. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-7-1">
+          <a class="number" href="#clause-7-1" aria-label="7.1 тармақ">7.1.</a
+          ><span
+            >SAZ-дың мақсаты — музыка тыңдау және музыкалық мәдениетпен танысу.
+            Сайт әкімшілігі каталогқа енгізуді саяси партияны, кандидатураны,
+            мемлекеттік органды немесе саяси қозғалысты ресми қолдау белгісі
+            ретінде ұсынбайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-7-2">
+          <a class="number" href="#clause-7-2" aria-label="7.2 тармақ">7.2.</a
+          ><span
+            >Орындаушының пікірі, әннің көркем мазмұны және жеке шығармашылық
+            ұстанымы әкімшіліктің ұстанымымен автоматты түрде теңестірілмейді.
+            Заңды саяси пікірдің болуы ғана адамды немесе шығарманы каталогтан
+            алып тастауға негіз болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-7-3">
+          <a class="number" href="#clause-7-3" aria-label="7.3 тармақ">7.3.</a
+          ><span
+            >Каталогты іріктеу кезінде музыка стилі, тыңдау ыңғайлылығы,
+            метадеректің дұрыстығы, аудио сапасы және құқықтық негіз ескеріледі.
+            Партиялық тиістілік пен этникалық шығу тегі жасырын іріктеу шарты
+            ретінде қолданылмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-7-4">
+          <a class="number" href="#clause-7-4" aria-label="7.4 тармақ">7.4.</a
+          ><span
+            >Зорлыққа, соғысқа, алауыздыққа немесе адамдар тобының үстемдігіне
+            заңсыз шақыру мен үгіттеуге жол берілмейді. Көркем контекст,
+            дәйексөз, тарихи баяндау және заң талаптары нақты қаралады; даулы
+            сөз жеке контекстен үзіліп бағаланбайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-7-5">
+          <a class="number" href="#clause-7-5" aria-label="7.5 тармақ">7.5.</a
+          ><span
+            >Әкімшілік өтінішті қарағанда дәлелге және бірдей өлшемге сүйенеді.
+            Саяси келіспеушілік үшін қорқытуға, кек алуға, өтініш иесін
+            кемсітуге немесе оның құпия дерегін жариялауға болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-7-6">
+          <a class="number" href="#clause-7-6" aria-label="7.6 тармақ">7.6.</a
+          ><span
+            >Келешекте демеушілік материал немесе жарнама қосылса, ол анық
+            белгіленіп, тиісті шарттары бөлек жариялануға тиіс. Қазіргі нұсқада
+            сайт ішінде саяси үгіт кабинеті, жарнама кабинеті немесе пайдаланушы
+            жазбаларын жариялау алаңы жоқ.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-8" aria-labelledby="heading-8">
+        <h2 id="heading-8">
+          8-бөлім. Этникалық теңдік, әдеп және қолжетімділік
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ1: 16, 20, 22–23-баптар; Қ4: 10, 13-баптар.
+          Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-8-1">
+          <a class="number" href="#clause-8-1" aria-label="8.1 тармақ">8.1.</a
+          ><span
+            >Тегіне, нәсіліне, ұлтына, этникалық тиістілігіне, тіліне, дініне,
+            жынысына, жасына, денсаулық жағдайына, мүгедектігіне, әлеуметтік
+            жағдайына немесе өзге жеке белгісіне байланысты кемсітуге жол
+            берілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-2">
+          <a class="number" href="#clause-8-2" aria-label="8.2 тармақ">8.2.</a
+          ><span
+            >Пайдаланушыдан ұлтын, дінін немесе саяси көзқарасын жариялау талап
+            етілмейді. Каталогтың қазақ музыкасына бағытталуы өзге мәдениет пен
+            тілдің қадірін төмендетуге немесе адамдарды қызметтен шеттетуге
+            негіз болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-3">
+          <a class="number" href="#clause-8-3" aria-label="8.3 тармақ">8.3.</a
+          ><span
+            >Шығарма мен орындаушы атаулары мүмкіндігінше бастапқы жазылымымен
+            беріледі. Іздеу үшін транслитерация қолданылуы мүмкін; ол адамның
+            аты-жөнін әдейі бұрмалау немесе этникалық мазақ ету үшін
+            қолданылмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-4">
+          <a class="number" href="#clause-8-4" aria-label="8.4 тармақ">8.4.</a
+          ><span
+            >Қорлау, қудалау, қорқыту, этникалық не діни кемсіту, адамды кем
+            санайтын жалпылау және жеке деректі кек алу үшін таратуға жол
+            берілмейді. Пікір мен шығарманы дәлелді сынау адамның қадір-қасиетін
+            қорлаумен теңестірілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-5">
+          <a class="number" href="#clause-8-5" aria-label="8.5 тармақ">8.5.</a
+          ><span
+            >Музыка жанры, тіл, танымалдық немесе тыңдау статистикасы адамдардың
+            құндылығының өлшемі ретінде ұсынылмайды. Ұсыну мен сұрыптау саяси,
+            этникалық немесе діни артықшылықты насихаттауға арналмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-6">
+          <a class="number" href="#clause-8-6" aria-label="8.6 тармақ">8.6.</a
+          ><span
+            >Интерфейс мобильдік құрылғыда, пернетақтамен және көмекші
+            технологиялармен пайдалануға ыңғайлы болуға ұмтылады. Нақты
+            қолжетімділік кемшілігі туралы өтініш 1.2-тармақтағы байланысқа
+            қабылданады; барлық құрылғыға толық сәйкестік сертификаты
+            мәлімделмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-7">
+          <a class="number" href="#clause-8-7" aria-label="8.7 тармақ">8.7.</a
+          ><span
+            >Каталогтағы қате атрибуция, кемсітетін сипаттама немесе негізсіз
+            шектеу туралы шағым қайта қаралады. Әкімшілік түзету жасаса,
+            бастапқы дәлел мен шешімнің негізін қажетті көлемде сақтайды, құпия
+            мәліметті көпшілікке шығармайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-8-8">
+          <a class="number" href="#clause-8-8" aria-label="8.8 тармақ">8.8.</a
+          ><span
+            >Сайтқа жеке файл қосу көпшілікке жариялау болып саналмайды. Қазіргі
+            нұсқада қоғамдық пікір бөлімі мен ашық пайдаланушы жүктеуі жоқ;
+            мұндай мүмкіндік енгізілсе, модерация, есеп беру және шағымдану
+            тәртібі алдын ала жаңартылады.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-9" aria-labelledby="heading-9">
+        <h2 id="heading-9">9-бөлім. Құпиялық: деректердің нақты сақталуы</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ1: 21-бап; Қ3: 7–8, 11–12, 14-баптар. Дереккөздер А
+          қосымшасында.
+        </p>
+        <p class="clause" id="clause-9-1">
+          <a class="number" href="#clause-9-1" aria-label="9.1 тармақ">9.1.</a
+          ><span
+            >SAZ осы нұсқада пайдаланушы аккаунтын, ЖСН-ін, паспортын, нақты
+            тұрғылықты мекенжайын немесе төлем картасын талап етпейді. Микрофон,
+            камера, контактілер тізімі және геолокацияға рұқсат сұрамайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-2">
+          <a class="number" href="#clause-9-2" aria-label="9.2 тармақ">9.2.</a
+          ><span
+            >Браузердің жергілікті дерекқорында импортталған және офлайн
+            сақталған аудио, атау мен орындаушы, плейлист, ұнағандар, тыңдау
+            саны мен соңғы ойнату, жеке каталог және файл көлемі сақталуы
+            мүмкін. Бұлар кітапхана мен ойнатуды іске асыру үшін қажет.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-3">
+          <a class="number" href="#clause-9-3" aria-label="9.3 тармақ">9.3.</a
+          ><span
+            >Ойнату кезегі, ағымдағы ән, тоқтаған уақыт, дыбыс деңгейі,
+            араластыру, қайталау және басқа баптаулар осы браузерде сақталады.
+            Бұл деректердің ағымдағы кодта әкімшіге жіберілетін жеке
+            аналитикалық есебі жоқ.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-4">
+          <a class="number" href="#clause-9-4" aria-label="9.4 тармақ">9.4.</a
+          ><span
+            >Офлайн ашылуға арналған интерфейс, каталог және саясат файлдары
+            браузер кэшінде сақталады. Дыбыс деңгейінің бұрынғы мәні жергілікті
+            сақтау орнында болуы мүмкін. Жергілікті сақтау cookie-ге ұқсас
+            техникалық функция атқара алады; ол аудионы тыңдауға қажет.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-5">
+          <a class="number" href="#clause-9-5" aria-label="9.5 тармақ">9.5.</a
+          ><span
+            >Жеке файл импорттау немесе .saz сақтық көшірмесін ашу кезінде файл
+            браузерде өңделеді. Экспортталған көшірмені пайдаланушы өзі таңдаған
+            жерге сақтайды. Жеке файлды кейін e-mail не басқа сервис арқылы өзі
+            жіберсе, ол бөлек әрекет болады.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-6">
+          <a class="number" href="#clause-9-6" aria-label="9.6 тармақ">9.6.</a
+          ><span
+            >Ағымдағы SAZ кодында жарнамалық пиксельдер мен жеке тыңдау
+            аналитикасы қосылмаған. Хостингтің техникалық журналдары мен сыртқы
+            қызметтердің өңдеуі бұдан бөлек: сайтқа кіру барлық желілік дерек
+            мүлде жиналмайды дегенді білдірмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-7">
+          <a class="number" href="#clause-9-7" aria-label="9.7 тармақ">9.7.</a
+          ><span
+            >Жергілікті деректер пайдаланушы өшіргенге, браузер сақтау орнын
+            тазартқанға немесе жүйе оны жойғанға дейін тұруы мүмкін. Әкімші
+            пайдаланушының жеке кітапханасын қашықтан оқитын немесе өшіретін
+            басқару панеліне ие емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-9-8">
+          <a class="number" href="#clause-9-8" aria-label="9.8 тармақ">9.8.</a
+          ><span
+            >Ортақ каталог пен сервердегі MP3 файлдары ашық сайттың бөлігі.
+            Оларға жеке файл қоймасындағыдай құпиялық уәде берілмейді. Құпия
+            келісімдерді, жеке хаттарды және үшінші тұлғаның деректерін ашық
+            репозиторийге салуға болмайды.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-10" aria-labelledby="heading-10">
+        <h2 id="heading-10">
+          10-бөлім. Үшінші қызметтер және дербес дерекке қатысты құқықтар
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ3: 8, 12, 16, 18, 24–25-баптар; Қ8–Қ9. Дереккөздер А
+          қосымшасында.
+        </p>
+        <p class="clause" id="clause-10-1">
+          <a class="number" href="#clause-10-1" aria-label="10.1 тармақ"
+            >10.1.</a
+          ><span
+            >Сайт GitHub Pages арқылы беріледі. Хостинг желілік сұрауларға
+            байланысты IP-мекенжай, құрылғы және сұрау уақыты сияқты техникалық
+            деректерді өз құпиялық саясаты бойынша өңдеуі мүмкін. SAZ әкімшілігі
+            хостинг журналдарын толық басқаратынын мәлімдемейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-2">
+          <a class="number" href="#clause-10-2" aria-label="10.2 тармақ"
+            >10.2.</a
+          ><span
+            >Ресми музыкалық параққа немесе өзге сыртқы сілтемеге өткенде сол
+            қызметтің шарттары қолданылады. Пайдаланушы өзі сыртқы аудио URL-ын
+            байланыстырса, оны жүктеу мен ойнату кезінде сол сервер сұрауды
+            алады. Сайт бұл әрекетке қарай қажет желілік сұрауды жасайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-3">
+          <a class="number" href="#clause-10-3" aria-label="10.3 тармақ"
+            >10.3.</a
+          ><span
+            >Әкімшілікке e-mail жібергенде жіберуші адресі, хат мәтіні, сұралған
+            байланыс дерегі және өзі тіркеген дәлелдер өңделеді. Мақсат — сол
+            өтінішті қарау, жауап беру және қажет болса құқықтық дауды шешу. Хат
+            коммерциялық тарату тізіміне автоматты қосылмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-4">
+          <a class="number" href="#clause-10-4" aria-label="10.4 тармақ"
+            >10.4.</a
+          ><span
+            >Байланыс үшін Gmail қолданылатындықтан, хат пен тіркеме Google
+            инфрақұрылымында, соның ішінде Қазақстаннан тыс жерде өңделуі
+            мүмкін. Сайт барлық дерек тек Қазақстанда сақталады деп
+            мәлімдемейді. Құпия немесе артық деректерді хатқа қоспау
+            ұсынылады.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-5">
+          <a class="number" href="#clause-10-5" aria-label="10.5 тармақ"
+            >10.5.</a
+          ><span
+            >Дерекқор орналасуы мен трансшекаралық беру мәселелері заңның 12
+            және 16-баптарына сай бөлек бағалануға тиіс. Шетелдік сервис туралы
+            хабарлау Қазақстандағы сақтау талабын алмастырмайды. Қажет келісім
+            не өзге заңды негіз болмайынша жаңа орталық деректер қорын іске
+            қосуға болмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-6">
+          <a class="number" href="#clause-10-6" aria-label="10.6 тармақ"
+            >10.6.</a
+          ><span
+            >Пайдаланушы деректердің болуы, мақсаты мен сақталуы туралы ақпарат
+            сұрауға, заңда көзделген негіздер бойынша түзетуді, бұғаттауды,
+            анонимдеуді немесе жоюды талап етуге және келісімін қайтарып алуға
+            құқылы. Өтініш 1.2-тармақтағы e-mail-ға беріледі; міндетті заң
+            ерекшеліктері сақталады.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-7">
+          <a class="number" href="#clause-10-7" aria-label="10.7 тармақ"
+            >10.7.</a
+          ><span
+            >Өтініш хаттарында тек қажетті дәлел сақталады. Қарау мақсаты
+            аяқталып, заңды сақтау негізі қалмаса, әкімшіліктің бақылауындағы
+            артық дерек жойылады немесе анонимделеді. Бұл ереже Gmail мен
+            хостингтің өз журналдарын бірден жою кепілдігін бермейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-10-8">
+          <a class="number" href="#clause-10-8" aria-label="10.8 тармақ"
+            >10.8.</a
+          ><span
+            >Жергілікті аудионы сайттың кітапхана мәзірінен өшіруге болады;
+            бүкіл жергілікті деректерді жою үшін браузердің осы сайт деректерін
+            тазарту мүмкіндігі қолданылады. Бұл плейлист пен офлайн әндерді де
+            жоғалтады. Адресаттың сәйкестігін тексеру үшін қажетті ең аз дерек
+            сұралады; ЖСН немесе паспорт әдеттегі талап емес.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-11" aria-labelledby="heading-11">
+        <h2 id="heading-11">
+          11-бөлім. Қауіпсіздік және кәмелетке толмағандар
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ3; Қ4; Қ5: 205-бап қолданылатын жағдайда.
+          Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-11-1">
+          <a class="number" href="#clause-11-1" aria-label="11.1 тармақ"
+            >11.1.</a
+          ><span
+            >Сайт HTTPS арқылы ашылады. Әкімшілік код пен жарияланған файлдардың
+            дұрыстығын бақылауға, белгілі ақауларды түзетуге және құқыққа
+            қатысты негізді өтініштерді қарауға ұмтылады. Қауіпсіздік толық
+            бұзылмайды деген абсолютті кепілдік берілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-11-2">
+          <a class="number" href="#clause-11-2" aria-label="11.2 тармақ"
+            >11.2.</a
+          ><span
+            >Сенімсіз .saz не каталог файлын ашпау, құрылғыны қорғау және
+            браузерді жаңартып отыру ұсынылады. Сақтық көшірмеде жеке плейлист
+            пен аудио болуы мүмкін; оны жариялаудан бұрын оның мазмұнын тексеру
+            қажет.</span
+          >
+        </p>
+        <p class="clause" id="clause-11-3">
+          <a class="number" href="#clause-11-3" aria-label="11.3 тармақ"
+            >11.3.</a
+          ><span
+            >Сайтта зиянды файл, дерек ағуы немесе қауіпсіздік осалдығы
+            байқалса, оның сипаттамасы мен қажет минималды дәлел әкімшіге
+            жіберіледі. Тексеру кезінде бөгде кітапханаға кіру, қызметті істен
+            шығару немесе құпия деректі жариялау рұқсат етілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-11-4">
+          <a class="number" href="#clause-11-4" aria-label="11.4 тармақ"
+            >11.4.</a
+          ><span
+            >Музыка мазмұны әртүрлі болуы мүмкін. Кәмелетке толмаған
+            пайдаланушының тыңдауын ата-анасы немесе заңды өкілі жасына және
+            жағдайына қарай бағалайды. Сайт барлық ән үшін жас санатын толық
+            тексергенін не балаларға қауіпсіздік сертификатын
+            мәлімдемейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-11-5">
+          <a class="number" href="#clause-11-5" aria-label="11.5 тармақ"
+            >11.5.</a
+          ><span
+            >Кәмелетке толмағаннан заңда қажет келісімсіз дербес дерек жинау
+            немесе шарт жасасуды талап етуге болмайды. Сайт аккаунт ашуға не
+            төлем жасауға мәжбүрлемейді; келешекте мұндай қызмет қосылса, жасқа
+            қатысты талаптар бөлек белгіленеді.</span
+          >
+        </p>
+        <p class="clause" id="clause-11-6">
+          <a class="number" href="#clause-11-6" aria-label="11.6 тармақ"
+            >11.6.</a
+          ><span
+            >Баланың жеке дерегі, қорқыту немесе қауіпті мазмұн жөніндегі нақты
+            хабарлама басымдықпен қаралады. Әкімшілік қабылдайтын шара заңға,
+            қолда бар дәлелге және сайттың нақты техникалық мүмкіндігіне сәйкес
+            болады.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-12" aria-labelledby="heading-12">
+        <h2 id="heading-12">
+          12-бөлім. Құқық иесінің өтініші және контентті қайта қарау
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2: 48–49-баптар; Қ3: 24–25-баптар. Дереккөздер А
+          қосымшасында.
+        </p>
+        <p class="clause" id="clause-12-1">
+          <a class="number" href="#clause-12-1" aria-label="12.1 тармақ"
+            >12.1.</a
+          ><span
+            >Авторлық құқық, атрибуция, рұқсат немесе жеке дерек туралы өтініш
+            berdibekmejirbek08@gmail.com адресіне жіберіледі. Хат тақырыбына
+            «SAZ — құқық туралы өтініш» немесе «SAZ — дербес дерек туралы
+            өтініш» деп көрсетуге болады.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-2">
+          <a class="number" href="#clause-12-2" aria-label="12.2 тармақ"
+            >12.2.</a
+          ><span
+            >Өтініште даулы әннің атауы, орындаушысы, сайт URL-ы не каталог
+            ID-і, өтініш иесінің құқыққа қатысы, мәселенің сипаттамасы, қажетті
+            шара және жауап беретін байланыс көрсетіледі. Құқықты не өкілдікті
+            растайтын қажетті дәлел ғана тіркеледі.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-3">
+          <a class="number" href="#clause-12-3" aria-label="12.3 тармақ"
+            >12.3.</a
+          ><span
+            >Жеке келісімдер мен хаттардың артық бөліктерін жабуға болады.
+            Әкімші дәлелдің жеткіліксіздігін нақты түсіндіріп, қажет мәліметті
+            сұрайды. Өтініш беру үшін құпия хатты көпшілікке жариялау немесе
+            құжаттың барлық жеке дерегін ашу талап етілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-4">
+          <a class="number" href="#clause-12-4" aria-label="12.4 тармақ"
+            >12.4.</a
+          ><span
+            >Әкімшіліктің ішкі қызмет көрсету мақсаты — түскен хатты 3 жұмыс
+            күні ішінде алғанын растау және жеткілікті мәлімет түскен соң 10
+            жұмыс күні ішінде бастапқы шешім беру. Қосымша тексеру керек болса,
+            себебі мен күтілетін мерзім хабарланады. Бұл заңдағы арнайы
+            мерзімдерді алмастырмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-5">
+          <a class="number" href="#clause-12-5" aria-label="12.5 тармақ"
+            >12.5.</a
+          ><span
+            >Құқықтың жоқтығы немесе айқын бұзылуы жөнінде негізді дәлел болса,
+            әкімшілік тексеру кезінде даулы аудионы жария қолжетімділіктен
+            уақытша алып тастауды қарастырады. Бұл шағымды біржола дәлелденді
+            деп тану емес; тараптардың түсіндірмесі ескеріледі.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-6">
+          <a class="number" href="#clause-12-6" aria-label="12.6 тармақ"
+            >12.6.</a
+          ><span
+            >Шешім аудионы алып тастау, рұқсат шегін өзгерту, атрибуцияны
+            түзету, қосымша дәлел сұрау немесе себеппен өтінішті қабылдамау
+            түрінде берілуі мүмкін. Өтініш иесі жаңа дәлелмен қайта қарауды
+            сұрауға және заңды қорғау құралдарын қолдануға құқылы.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-7">
+          <a class="number" href="#clause-12-7" aria-label="12.7 тармақ"
+            >12.7.</a
+          ><span
+            >Серверден файлды алу бұрын жүктелген браузерлік көшірмелерді
+            қашықтан автоматты жоймайды. Сайт жаңарғанда қолжетімді каталог
+            өзгеруі мүмкін. Әкімшілік заңды шектеу туралы хабарласа, пайдаланушы
+            оны ескеріп, қажет болса өз көшірмесін өшіреді.</span
+          >
+        </p>
+        <p class="clause" id="clause-12-8">
+          <a class="number" href="#clause-12-8" aria-label="12.8 тармақ"
+            >12.8.</a
+          ><span
+            >Өтініш пен оның дәлелдері қажетті құпиялықпен өңделеді; жария есеп
+            қажет болса, артық дерексіз қысқа мәртебе беріледі. Тек шағым түсті
+            деген факт бойынша адам құқық бұзушы деп жарияланбайды; кінә мен
+            жауаптылық заңда белгіленген тәртіппен анықталады.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-13" aria-labelledby="heading-13">
+        <h2 id="heading-13">13-бөлім. Жауаптылық, өзгерістер және даулар</h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ2: 49-бап; Қ5: 198-бап; Қ6: 79-бап; Қ7: 380-бап.
+          Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-13-1">
+          <a class="number" href="#clause-13-1" aria-label="13.1 тармақ"
+            >13.1.</a
+          ><span
+            >Әкімшілік ортақ сайтта өзі жариялайтын контенттің құқықтық негізі
+            мен қызметтің нақты сипаттамасына жауапты. Жауаптылықты түгел
+            пайдаланушыға ауыстыратын ереже қолданылмайды. Пайдаланушы өзінің
+            импорттауы, кейінгі таратуы және өзге әрекеттері үшін қолданылатын
+            заң шегінде жауап береді.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-2">
+          <a class="number" href="#clause-13-2" aria-label="13.2 тармақ"
+            >13.2.</a
+          ><span
+            >Саясатты бұзу автоматты түрде қылмыс немесе белгілі сомада айыппұл
+            болып саналмайды. Азаматтық, әкімшілік немесе қылмыстық жауаптылық
+            нақты құқық бұзушылық құрамына және заң талаптарына байланысты; оны
+            уәкілетті орган немесе сот айқындайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-3">
+          <a class="number" href="#clause-13-3" aria-label="13.3 тармақ"
+            >13.3.</a
+          ><span
+            >SAZ осы саясат арқылы жеке айыппұл, тәркілеу, паспорт тексеруі
+            немесе полицияға автоматты хабарлау жүйесін енгізбейді. Әкімшілік
+            контентті түзетуге не алып тастауға және заңда көзделген қорғау
+            құралдарын пайдалануға құқылы.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-4">
+          <a class="number" href="#clause-13-4" aria-label="13.4 тармақ"
+            >13.4.</a
+          ><span
+            >Сайттың үздіксіз жұмысы, хостингтің әрдайым қолжетімділігі,
+            құрылғыда сақтау орнының сақталуы және барлық браузердің бірдей
+            ойнатуы кепілдендірілмейді. Бұл ескерту заң бойынша алып тастауға
+            болмайтын жауаптылықты немесе пайдаланушының міндетті құқықтарын
+            жоймайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-5">
+          <a class="number" href="#clause-13-5" aria-label="13.5 тармақ"
+            >13.5.</a
+          ><span
+            >Жаңа функция, дерек жинау тәсілі немесе пайдалану шарты енгізілсе,
+            саясаттың нұсқасы мен күні өзгертіледі. Елеулі өзгеріс сайтта
+            көрінетін хабармен түсіндірілуге тиіс; қосымша келісім заң бойынша
+            қажет болса, ол өзгеріс іске асқанға дейін бөлек алынады.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-6">
+          <a class="number" href="#clause-13-6" aria-label="13.6 тармақ"
+            >13.6.</a
+          ><span
+            >Дауды алдымен көрсетілген байланыс арқылы түсіндіру және дәлел
+            алмасу жолымен шешуге болады. Бұл сотқа, уәкілетті органға немесе
+            өзге заңды қорғау құралына жүгінудің міндетті құқықтарын шектемейді;
+            e-mail жіберу сотқа жүгінудің әмбебап міндетті шарты емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-13-7">
+          <a class="number" href="#clause-13-7" aria-label="13.7 тармақ"
+            >13.7.</a
+          ><span
+            >Қолданылатын құқық пен істің қай органда қаралатыны нақты
+            жағдайдағы заң және халықаралық міндеттемелер арқылы айқындалады.
+            Құжат Қазақстан Республикасының құқықтық негізін көрсетеді; өзге
+            елдің міндетті кепілдіктерін алып тастау немесе ойдан шығарылған
+            ерекше соттылық белгілеу жасалмайды.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="section-14" aria-labelledby="heading-14">
+        <h2 id="heading-14">
+          14-бөлім. Ішкі мөр, тіркеу және құжаттың тұтастығы
+        </h2>
+        <p class="basis">
+          Құқықтық бағдар: Қ4: 61–62-баптар. Дереккөздер А қосымшасында.
+        </p>
+        <p class="clause" id="clause-14-1">
+          <a class="number" href="#clause-14-1" aria-label="14.1 тармақ"
+            >14.1.</a
+          ><span
+            >Реестр атауы — «SAZ сайтының ішкі саясат реестрі». Осы құжаттың
+            жазбасы: SAZ-POL-2026-001, 1.0 нұсқа, 05 қазан 2026 жыл. Нөмір сайт
+            әкімшілігінің ішкі есебі үшін жасалған; мемлекеттік құжат нөмірі
+            емес.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-2">
+          <a class="number" href="#clause-14-2" aria-label="14.2 тармақ"
+            >14.2.</a
+          ><span
+            >Мөрде SAZ атауы, «ІШКІ ҚҰЖАТ», 2026 жылы және құжат нөмірі
+            беріледі. Мемлекеттік елтаңба, нотариус атауы, мемлекеттік орган
+            белгісі немесе лицензия расталды деген мәлімет қолданылмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-3">
+          <a class="number" href="#clause-14-3" aria-label="14.3 тармақ"
+            >14.3.</a
+          ><span
+            >Графикалық мөр иесінің қолтаңбасын алмастырмайды. Бұл файлға нақты
+            электрондық цифрлық қолтаңба қойылмаған. Цифрлық кодекстің
+            62-бабындағы қол қойылған электрондық құжатқа қойылатын талаптар мөр
+            суретімен орындалды деп көрсетілмейді.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-4">
+          <a class="number" href="#clause-14-4" aria-label="14.4 тармақ"
+            >14.4.</a
+          ><span
+            >Саясат HTML және PDF түрінде беріледі. Екі нұсқа бір мәтіндік
+            дереккөзден дайындалады. HTML бөлімдерге өтуге, PDF сақтау мен басып
+            шығаруға арналған. Айырмашылық байқалса, әкімші тексеріп, бірдей
+            мәтінді қайта жариялайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-5">
+          <a class="number" href="#clause-14-5" aria-label="14.5 тармақ"
+            >14.5.</a
+          ><span
+            >Ішкі реестр JSON файлында нұсқа, иесі, байланысы, жасалған күн,
+            құқықтық дереккөздер, бет саны және SHA-256 бақылау сомалары
+            көрсетіледі. Бақылау сомасы файл өзгерісін салыстыруға көмектеседі;
+            ол құқықтың барын не қол қойған тұлғаны өздігінен растамайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-6">
+          <a class="number" href="#clause-14-6" aria-label="14.6 тармақ"
+            >14.6.</a
+          ><span
+            >Осы құжатта музыканың бастапқы рұқсат құжаттарына өзгеріс
+            енгізілмейді. Жаңа саясат нөмірі нақты орындаушыға немесе дыбыс
+            жазбасына берілген рұқсат нөмірі ретінде қолданылмайды.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-7">
+          <a class="number" href="#clause-14-7" aria-label="14.7 тармақ"
+            >14.7.</a
+          ><span
+            >Саясаттың құжаттан алынған қысқаша сипаттамасы толық мәтінге қайшы
+            келмеуге тиіс. Мөрді, нөмірді немесе бет үзіндісін құжаттың
+            мәртебесін бұрмалап пайдалану рұқсат етілмейді. Тиісті ашық
+            лицензиямен берілген материалдардың құқықтары сақталады.</span
+          >
+        </p>
+        <p class="clause" id="clause-14-8">
+          <a class="number" href="#clause-14-8" aria-label="14.8 тармақ"
+            >14.8.</a
+          ><span
+            >Әкімшілік байланысы: Бердібек Мейірбек Болатбекұлы,
+            berdibekmejirbek08@gmail.com. Құжат мәртебесі: сайттың ішкі саясат
+            мәтіні. Иесінің графикалық қолтаңбасы қолдан жасалмаған; тіркелген
+            лицензия немесе ресми заңдық сараптама туралы жалған белгі
+            жоқ.</span
+          >
+        </p>
+      </section>
+      <section class="section" id="sources">
+        <h2>А қосымшасы. Құқықтық дереккөздер</h2>
+        <p class="muted">
+          Ресми мәтіндер 05 қазан 2026 жылы тексерілді. Бұл қысқа бағдар заңның
+          толық мәтіні мен нақты жағдайдағы талаптарын алмастырмайды. Сайт
+          тармақтары — мемлекеттік заң баптары емес. 2026 жылғы жаңа Конституция
+          мен Цифрлық кодекс ескерілді.
+        </p>
+        <article class="source" id="source-Қ1">
+          <h3>Қ1. Қазақстан Республикасының Конституциясы</h3>
+          <p class="date">
+            2026 жылғы 15 наурыздағы республикалық референдумда қабылданған;
+            94-бап бойынша 2026 жылғы 1 шілдеден қолданылады.
+          </p>
+          <p>
+            16-бап — теңдік; 20-бап — қадір-қасиет; 21-бап — жеке өмір мен
+            деректер; 22-бап — ұлттық және тілдік таңдау; 23-бап — шығармашылық,
+            зияткерлік меншік және ақпарат еркіндігінің шектері.
+          </p>
+          <a
+            href="https://www.akorda.kz/kz/kazakstan-respublikasynyn-konstituciyasy-3053334"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ2">
+          <h3>Қ2. «Авторлық құқық және сабақтас құқықтар туралы» заң</h3>
+          <p class="date">
+            1996 жылғы 10 маусым, № 6-I; 05.10.2026 күні қолданыстағы
+            жинақталған мәтін.
+          </p>
+          <p>
+            15–16-баптар — автор құқықтары; 18 және 26-баптар — жеке көшірмелеу
+            жағдайлары; 31–32 және 40-1-баптар — құқық беру; 37–38-баптар —
+            орындау мен фонограмма; 48–49-баптар — бұзушылық және қорғау.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/Z960000006_"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ3">
+          <h3>Қ3. «Дербес деректер және оларды қорғау туралы» заң</h3>
+          <p class="date">
+            2013 жылғы 21 мамыр, № 94-V; 2026 жылғы өзгерістер ескерілген
+            жинақталған мәтін.
+          </p>
+          <p>
+            7–8-баптар — өңдеу негізі мен келісім; 11–12-баптар — құпиялық,
+            сақтау; 14, 16, 18-баптар — мақсат, трансшекаралық беру, жою;
+            24–25-баптар — субъект және оператор.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/Z1300000094"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ4">
+          <h3>Қ4. Қазақстан Республикасының Цифрлық кодексі</h3>
+          <p class="date">
+            2026 жылғы 9 қаңтар, № 255-VIII; күшіне енуі 106-баппен айқындалады.
+          </p>
+          <p>
+            10 және 13-баптар — қолжетімділік, цифрлық әдеп; 61–62-баптар — ЭЦҚ
+            мен электрондық құжат. Графикалық мөр қол қойылған электрондық
+            құжатпен тең емес.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/K2600000255"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ5">
+          <h3>Қ5. Қазақстан Республикасының Қылмыстық кодексі</h3>
+          <p class="date">
+            2014 жылғы 3 шілде, № 226-V; 05.10.2026 күні қолданыстағы
+            жинақталған мәтін.
+          </p>
+          <p>
+            174-бап — алауыздықты қоздыру; 198-бап — авторлық және сабақтас
+            құқықтарды бұзу; 205-бап — құқыққа сыйымсыз қол жеткізу.
+            Әрқайсысының нақты заңдық құрамы мен шарттары бар.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/K1400000226"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ6">
+          <h3>Қ6. Әкімшілік құқық бұзушылық туралы кодекс</h3>
+          <p class="date">
+            2014 жылғы 5 шілде, № 235-V; 05.10.2026 күні қолданыстағы
+            жинақталған мәтін.
+          </p>
+          <p>
+            79-бап — дербес деректерге қатысты заңнаманы бұзу. Құрам мен
+            қолданылатын шарттарды уәкілетті орган бағалайды; сайт өз бетінше
+            әкімшілік айыппұл салмайды.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/K1400000235"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ7">
+          <h3>Қ7. Қазақстан Республикасының Азаматтық кодексі, жалпы бөлім</h3>
+          <p class="date">
+            1994 жылғы 27 желтоқсан, № 268-XIII; 05.10.2026 күні қолданыстағы
+            жинақталған мәтін.
+          </p>
+          <p>
+            380-бап — шарт еркіндігі. Сайттың ережесі заңдағы міндетті
+            құқықтарды немесе тарапқа берілмеген музыкалық құқықтарды
+            алмастырмайды.
+          </p>
+          <a
+            href="https://old.adilet.zan.kz/kaz/docs/K940001000_"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ8">
+          <h3>Қ8. GitHub General Privacy Statement</h3>
+          <p class="date">
+            GitHub ресми құпиялық саясаты; 05.10.2026 күні қаралған.
+          </p>
+          <p>
+            Хостингтің техникалық деректерді өңдеуін түсіндіретін үшінші тарап
+            саясаты. Бұл Қазақстан Республикасының заңы емес.
+          </p>
+          <a
+            href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+        <article class="source" id="source-Қ9">
+          <h3>Қ9. Google құпиялық саясаты</h3>
+          <p class="date">
+            Google ресми құпиялық саясаты; 05.10.2026 күні қаралған.
+          </p>
+          <p>
+            Gmail арқылы хат пен тіркемені өңдейтін үшінші тараптың саясаты. Бұл
+            SAZ-дың лицензиясы немесе Қазақстан Республикасының заңы емес.
+          </p>
+          <a
+            href="https://policies.google.com/privacy?hl=kk"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Ресми дереккөзді ашу ↗</a
+          >
+        </article>
+      </section>
+      <section class="section" id="claim">
+        <h2>Ә қосымшасы. Өтініш беру үлгісі</h2>
+        <p>
+          Адресат:
+          <a href="mailto:berdibekmejirbek08@gmail.com"
+            >berdibekmejirbek08@gmail.com</a
+          >
+        </p>
+        <p class="muted">
+          Үлгі — ыңғайлы хат құрылымы. Әдетте ЖСН, паспорт және қажетсіз жеке
+          дерек жіберудің керегі жоқ. 12-бөлімдегі қарау тәртібі қолданылады;
+          заңдағы арнайы нысандар мен мерзімдер сақталады.
+        </p>
+        <div class="fields">
+          <div class="field">
+            <h3>1. Өтініш тақырыбы</h3>
+            <p>SAZ — құқық туралы өтініш / SAZ — дербес дерек туралы өтініш.</p>
+          </div>
+          <div class="field">
+            <h3>2. Өтініш иесі және байланыс</h3>
+            <p>
+              Аты-жөні немесе ұйым атауы, жауап алатын e-mail, өкіл болса
+              өкілдік негізі. Артық жеке дерек қажет емес.
+            </p>
+          </div>
+          <div class="field">
+            <h3>3. Даулы материал</h3>
+            <p>
+              Ән атауы, орындаушы, сайттағы URL немесе каталог ID-і; мәселе жеке
+              дерекке қатысты болса — сол деректің орналасуы.
+            </p>
+          </div>
+          <div class="field">
+            <h3>4. Негіз және дәлел</h3>
+            <p>
+              Қандай құқық қозғалғаны, оны не растайтыны; қажет келісімнің не
+              лицензияның тиісті бөлігі. Құпия және қатыссыз деректерді жабыңыз.
+            </p>
+          </div>
+          <div class="field">
+            <h3>5. Сұралған шара</h3>
+            <p>
+              Аудионы алып тастау / атрибуцияны түзету / деректі жою немесе
+              бұғаттау / қосымша түсіндірме. Нақты қалауыңызды жазыңыз.
+            </p>
+          </div>
+          <div class="field">
+            <h3>6. Күні және растау</h3>
+            <p>
+              Күнін көрсетіп, мәліметтің білгеніңізше дұрыс екенін және өзіңіз
+              не заңды өкіл ретінде жүгінгеніңізді жазыңыз. Бұл үлгі нотариалдық
+              арыз немесе ЭЦҚ нысаны емес.
+            </p>
+          </div>
+        </div>
+        <div class="actions">
+          <a
+            class="button"
+            href="mailto:berdibekmejirbek08@gmail.com?subject=SAZ%20%E2%80%94%20%D2%9B%D2%B1%D2%9B%D1%8B%D2%9B%20%D1%82%D1%83%D1%80%D0%B0%D0%BB%D1%8B%20%D3%A9%D1%82%D1%96%D0%BD%D1%96%D1%88"
+            >Өз пошта қолданбаңнан хат дайындау ↗</a
+          >
+        </div>
+        <p class="small muted">
+          Батырма пошта қолданбасын ашады. Хатты пайдаланушы өзі жібереді;
+          сайтта автоматты жіберу нысаны жоқ.
+        </p>
+      </section>
+      <section class="section" id="registry">
+        <h2>Б қосымшасы. Ішкі тіркеу мәліметі</h2>
+        <table class="registry">
+          <tbody>
+            <tr>
+              <th scope="row">Реестр</th>
+              <td>SAZ сайтының ішкі саясат реестрі</td>
+            </tr>
+            <tr>
+              <th scope="row">Құжат</th>
+              <td>SAZ-POL-2026-001 · 1.0 нұсқа · 05 қазан 2026 жыл</td>
+            </tr>
+            <tr>
+              <th scope="row">Қол қою</th>
+              <td>ЭЦҚ жоқ. Графикалық қолтаңба жасалмаған.</td>
+            </tr>
+            <tr>
+              <th scope="row">Мәтін хэші</th>
+              <td class="hash">
+                792715bc80288fde504c824cbd7cefed371495667dc21b95cf914c3f5918fcc7
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Толық реестр</th>
+              <td>
+                <a href="policy-registration.json">JSON реестрін ашу</a> ·
+                <a href="site-policy-content.json">Толық мәтіндік дереккөз</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="small muted">
+          Хэш файлдың өзгерісін салыстыру үшін қажет; ол құқықты, лицензияны
+          немесе қол қоюды растамайды. HTML мен PDF бір мәтіндік дереккөзден
+          дайындалған.
+        </p>
+      </section>
+    </main>
+    <footer class="wrap">
+      <p>
+        SAZ · Өз ырғағыңмен. <a href="../#home">Музыкаға оралу</a> ·
+        <a href="#">Құжат басына ↑</a>
+      </p>
+      <p>
+        Бердібек Мейірбек Болатбекұлы ·
+        <a href="mailto:berdibekmejirbek08@gmail.com"
+          >berdibekmejirbek08@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
