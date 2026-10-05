@@ -8,6 +8,7 @@ import {
   shuffled,
   safeUrl,
   validateCatalog,
+  mergeCatalogs,
   mergeTracks,
   filterTracks,
   hasFullAudio,
@@ -67,6 +68,8 @@ const collections = [
 ];
 const state = {
   catalog: { artists: [], tracks: [] },
+  publishedCatalog: { artists: [], tracks: [] },
+  initialized: false,
   library: [],
   tracks: [],
   playlists: [],
@@ -138,6 +141,23 @@ function requireDB() {
     throw new Error(
       "Құрылғыда сақтау қолжетімсіз. Браузердің әдеттегі режимін ашып көр.",
     );
+}
+let catalogSync;
+async function syncPublishedCatalog() {
+  if (!catalogSync)
+    catalogSync = (async () => {
+      const response = await fetch("./catalog.json", { cache: "reload" });
+      if (!response.ok)
+        throw new Error("Сайт каталогы жүктелмеді. Қайта байқап көр.");
+      const published = validateCatalog(await response.json());
+      const merged = mergeCatalogs(published, state.settings.customCatalog);
+      await setting("cachedCatalog", published);
+      state.publishedCatalog = published;
+      state.catalog = merged;
+    })().finally(() => {
+      catalogSync = null;
+    });
+  return catalogSync;
 }
 async function refresh() {
   if (state.dbReady) {
@@ -278,7 +298,7 @@ function renderSettings() {
     bytes = downloaded.reduce((n, t) => n + (t.size || 0), 0);
   return (
     heading("Баптаулар", "Өз әуенің. Өз құрылғың. Өз қалауың.") +
-    `<div class="settings-grid"><section class="settings-card"><h3>Сайттың офлайн сақтау орны</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын. Көшірмелер осы браузерде сақталады. Өз файлыңнан қосылған аудио сайт серверіне жіберілмейді.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Сайттағы толық әндерді «Офлайнға сақтау» арқылы интернетсіз тыңдауға дайында.</p><p><a class="text-link" href="permissions/music-sources-and-permissions.html" target="_blank" rel="noopener">Музыка дереккөздері мен рұқсаттар ${icon("external")}</a></p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
+    `<div class="settings-grid"><section class="settings-card"><h3>Сайттың офлайн сақтау орны</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын. Көшірмелер осы браузерде сақталады. Өз файлыңнан қосылған аудио сайт серверіне жіберілмейді.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-sync", "Сайт каталогын жаңарту", "", true)}${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Сайттағы толық әндерді «Офлайнға сақтау» арқылы интернетсіз тыңдауға дайында.</p><p><a class="text-link" href="permissions/music-sources-and-permissions.html" target="_blank" rel="noopener">Музыка дереккөздері мен рұқсаттар ${icon("external")}</a></p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
   );
 }
 function render() {
@@ -1363,6 +1383,11 @@ document.addEventListener("click", async (event) => {
       case "catalog-import":
         $("catalogInput").click();
         break;
+      case "catalog-sync":
+        await syncPublishedCatalog();
+        await refresh();
+        toast("Сайт каталогы жаңартылды. Сақталған әндерің орнында.");
+        break;
       case "install":
         if (window.installPrompt) {
           await window.installPrompt.prompt();
@@ -1400,12 +1425,19 @@ document.addEventListener("submit", async (event) => {
     if (form.dataset.form === "source") {
       const url = safeUrl($("sourceUrl").value);
       if (!url) throw new Error("Дұрыс HTTPS аудиосілтемесін енгіз.");
+      const sourceTrack = getTrack(form.dataset.id);
       await DB.put("library", {
-        ...getTrack(form.dataset.id),
+        ...sourceTrack,
         audioUrl: url,
         license: $("sourceLicense").value.trim(),
         downloadable: true,
         audioSourceOverride: true,
+        sha256: "",
+        size: sourceTrack.downloaded ? sourceTrack.size : 0,
+        version: String(Date.now()),
+        licenseUrl: "",
+        permissionRef: "",
+        sourceUrl: url,
       });
       await refresh();
       toast("Толық аудио сілтемесі сақталды.");
@@ -1470,7 +1502,7 @@ document.addEventListener("change", async (event) => {
           const catalog = validateCatalog(JSON.parse(await file.text()));
           requireDB();
           await setting("customCatalog", catalog);
-          state.catalog = catalog;
+          state.catalog = mergeCatalogs(state.publishedCatalog, catalog);
           await refresh();
           toast("Каталог осы құрылғыда жаңартылды.");
         }
@@ -1589,6 +1621,12 @@ function network() {
   render();
 }
 window.addEventListener("online", network);
+window.addEventListener("online", () => {
+  if (state.initialized)
+    syncPublishedCatalog()
+      .then(refresh)
+      .catch(() => {});
+});
 window.addEventListener("offline", network);
 window.addEventListener("hashchange", () => {
   state.limit = 50;
@@ -1672,16 +1710,18 @@ async function init() {
     toast(`Сақтау қолжетімсіз: ${errorMessage(error)}`, true);
   }
   try {
-    state.catalog =
-      state.settings.customCatalog ||
-      validateCatalog(
-        await (await fetch("./catalog.json", { cache: "no-cache" })).json(),
-      );
-    if (state.dbReady) await setting("cachedCatalog", state.catalog);
+    await syncPublishedCatalog();
   } catch (error) {
-    if (state.settings.cachedCatalog)
-      state.catalog = state.settings.cachedCatalog;
-    else toast("Каталог ашылмады. Интернет қосып, қайта ашып көр.", true);
+    state.publishedCatalog = state.settings.cachedCatalog || {
+      artists: [],
+      tracks: [],
+    };
+    state.catalog = mergeCatalogs(
+      state.publishedCatalog,
+      state.settings.customCatalog,
+    );
+    if (!state.catalog.tracks.length)
+      toast("Каталог ашылмады. Интернет қосып, қайта ашып көр.", true);
   }
   await refresh();
   network();
@@ -1741,5 +1781,6 @@ async function init() {
       toast("Қолданбаның офлайн ашылуы әзірге дайын емес.", true);
     }
   }
+  state.initialized = true;
 }
 init().catch((error) => toast(errorMessage(error), true));

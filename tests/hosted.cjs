@@ -58,6 +58,8 @@ const base = "http://127.0.0.1:4173";
       audioUrl: "assets/audio/qazaq-wave.wav",
       downloadable: true,
       license: "CC0 original test fixture",
+      audioSourceOverride: true,
+      sha256: "",
       size: 1058444,
       duration: 24,
     });

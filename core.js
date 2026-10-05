@@ -166,6 +166,7 @@ export function validateCatalog(input) {
       licenseUrl: safeUrl(t.licenseUrl),
       sourceUrl: safeUrl(t.sourceUrl),
       permissionRef: String(t.permissionRef || "").slice(0, 500),
+      audioSourceOverride: Boolean(t.audioSourceOverride),
       sha256: /^[a-f0-9]{64}$/i.test(t.sha256 || "") ? t.sha256 : "",
       size: Math.max(0, Number(t.size) || 0),
       mime: String(t.mime || "audio/mpeg"),
@@ -179,6 +180,45 @@ export function validateCatalog(input) {
     updatedAt: String(input.updatedAt || ""),
     artists,
     tracks,
+  };
+}
+const AUDIO_FIELDS = [
+  "audioUrl",
+  "downloadable",
+  "license",
+  "licenseUrl",
+  "sourceUrl",
+  "permissionRef",
+  "sha256",
+  "size",
+  "duration",
+  "mime",
+  "version",
+];
+export function mergeCatalogs(published, custom) {
+  const site = validateCatalog(published);
+  if (!custom) return site;
+  const personal = validateCatalog(custom);
+  const tracks = new Map(site.tracks.map((track) => [track.id, { ...track }]));
+  for (const track of personal.tracks) {
+    const current = tracks.get(track.id);
+    if (!current) {
+      tracks.set(track.id, { ...track });
+    } else if (
+      track.audioSourceOverride ||
+      (!hasFullAudio(current) && hasFullAudio(track))
+    ) {
+      for (const key of AUDIO_FIELDS) current[key] = track[key];
+      current.audioSourceOverride = track.audioSourceOverride;
+    }
+  }
+  const artists = new Map(site.artists.map((artist) => [artist.id, artist]));
+  for (const artist of personal.artists)
+    if (!artists.has(artist.id)) artists.set(artist.id, artist);
+  return {
+    ...site,
+    artists: [...artists.values()],
+    tracks: [...tracks.values()],
   };
 }
 export function mergeTracks(catalogTracks, library) {
@@ -205,15 +245,10 @@ export function mergeTracks(catalogTracks, library) {
         if (Object.hasOwn(item, key)) personal[key] = item[key];
       }
     if (item.audioSourceOverride)
-      for (const key of [
-        "audioUrl",
-        "license",
-        "downloadable",
-        "mime",
-        "audioSourceOverride",
-      ]) {
+      for (const key of [...AUDIO_FIELDS, "audioSourceOverride"]) {
         if (Object.hasOwn(item, key)) personal[key] = item[key];
       }
+    if (item.audioSourceOverride && !item.sha256) personal.sha256 = "";
     merged.set(item.id, { ...catalog, ...personal });
   }
   return [...merged.values()];

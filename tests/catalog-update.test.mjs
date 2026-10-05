@@ -1,7 +1,91 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { mergeTracks, validateCatalog } from "../core.js";
+import { mergeTracks, mergeCatalogs, validateCatalog } from "../core.js";
+test("a stale imported catalogue cannot hide newly published recordings; personal extra songs and explicit sources remain", () => {
+  const artists = [{ id: "ernar", name: "Ернар" }];
+  const published = {
+    artists,
+    tracks: [
+      {
+        id: "song",
+        artistId: "ernar",
+        title: "Song",
+        audioUrl: "assets/audio/current.mp3",
+        downloadable: true,
+        license: "Permission",
+        sha256: "a".repeat(64),
+      },
+      {
+        id: "new",
+        artistId: "ernar",
+        title: "New",
+        audioUrl: "assets/audio/new.mp3",
+        downloadable: true,
+        license: "Permission",
+      },
+    ],
+  };
+  const stale = {
+    artists,
+    tracks: [
+      {
+        id: "song",
+        artistId: "ernar",
+        title: "Old",
+        audioUrl: "",
+        downloadable: false,
+      },
+      {
+        id: "personal",
+        artistId: "ernar",
+        title: "Personal",
+        audioUrl: "https://example.com/personal.mp3",
+        downloadable: true,
+        license: "Personal permission",
+      },
+    ],
+  };
+  const before = JSON.stringify(stale);
+  let result = mergeCatalogs(published, stale);
+  assert.equal(
+    result.tracks.find((t) => t.id === "song").audioUrl,
+    "assets/audio/current.mp3",
+  );
+  assert.equal(result.tracks.filter((t) => t.downloadable).length, 3);
+  assert.equal(JSON.stringify(stale), before);
+  Object.assign(stale.tracks[0], {
+    audioUrl: "https://example.com/override.mp3",
+    downloadable: true,
+    license: "Personal permission",
+    audioSourceOverride: true,
+  });
+  result = mergeCatalogs(published, stale);
+  assert.equal(
+    result.tracks.find((t) => t.id === "song").audioUrl,
+    "https://example.com/override.mp3",
+  );
+  assert.equal(result.tracks.find((t) => t.id === "song").sha256, "");
+  assert.equal(
+    result.tracks.find((t) => t.id === "song").audioSourceOverride,
+    true,
+  );
+});
+test("a legacy personal source cannot inherit the published file checksum", () => {
+  const [result] = mergeTracks(
+    [{ id: "song", sha256: "a".repeat(64), audioUrl: "assets/audio/full.mp3" }],
+    [
+      {
+        id: "song",
+        audioSourceOverride: true,
+        audioUrl: "https://example.com/personal.mp3",
+        downloadable: true,
+        license: "Permission",
+      },
+    ],
+  );
+  assert.equal(result.sha256, "");
+});
 test("a newly published full audio becomes downloadable for an already favorited song", () => {
   const old = {
     id: "song",
