@@ -1,0 +1,4 @@
+# Keep the supplied public declarations byte-for-byte, including line endings.
+permissions/** -text whitespace=cr-at-eol
+*.mp3 binary
+*.pdf binary

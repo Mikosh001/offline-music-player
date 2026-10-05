@@ -35,13 +35,18 @@ if (previous?.tracks) {
       "sourceUrl",
       "permissionRef",
       "sha256",
+      "duration",
     ]) {
       if (Object.hasOwn(old, key)) track[key] = old[key];
     }
   }
   const known = new Set(catalog.tracks.map((track) => track.id));
   for (const track of previous.tracks)
-    if (!known.has(track.id) && !track.id.startsWith("apple-"))
+    if (
+      !known.has(track.id) &&
+      (!track.id.startsWith("apple-") ||
+        (track.audioUrl && track.downloadable && track.license))
+    )
       catalog.tracks.push(track);
   const artistIds = new Set(catalog.artists.map((artist) => artist.id));
   for (const artist of previous.artists || [])

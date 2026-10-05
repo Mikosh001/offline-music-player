@@ -141,7 +141,8 @@ const base = "http://127.0.0.1:4173",
     2,
   );
   await a.goto(base + "/#catalog");
-  await a.locator('[data-track-id="apple-1793534605"] .track-title').click();
+  await a.locator("#availabilityFilter").selectOption("pending");
+  await a.locator('[data-track-id="apple-1541309376"] .track-title').click();
   await a.locator(".availability-message").waitFor();
   assert.equal(await a.locator("#dialog iframe").count(), 0);
   assert.match(

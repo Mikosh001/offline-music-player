@@ -27,23 +27,30 @@ const base = "http://127.0.0.1:4173";
   );
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /0 толық аудио/,
+    /203 толық аудио/,
   );
   await page.locator("#availabilityFilter").selectOption("full");
-  assert.equal(await page.locator(".track-row").count(), 0);
-  await page
-    .getByRole("heading", { name: "Толық аудио әлі қосылмаған" })
-    .waitFor();
-  await page.locator("#availabilityFilter").selectOption("all");
+  assert.ok((await page.locator(".track-row").count()) > 0);
+  assert.equal(await page.locator(".pending-audio-text").count(), 0);
   await page.locator('[data-track-id="apple-1793534605"] .track-title').click();
+  await page.waitForFunction(() => !document.getElementById("audio").paused);
+  assert.equal(
+    new URL(await page.locator("#audio").getAttribute("src"), base).origin,
+    base,
+  );
+  await page.locator("#playBtn").click();
+  await page.locator("#availabilityFilter").selectOption("pending");
+  assert.equal(await page.locator(".track-row").count(), 4);
+  await page.locator('[data-track-id="apple-1541309376"] .track-title').click();
   await page.locator(".availability-message").waitFor();
   assert.equal(await page.locator("#dialog iframe").count(), 0);
   await page.locator('[data-action="close-dialog"]').click();
+  await page.locator("#availabilityFilter").selectOption("all");
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;
     const db = await import("./db.js");
     const catalog = await (await fetch("./catalog.json")).json();
-    // Original test audio in an isolated browser context; production songs are never substituted.
+    // Use small original test audio in this isolated context for the offline-storage assertions.
     const t = catalog.tracks.find((t) => t.id === "apple-1793534605");
     Object.assign(t, {
       title: "Түпнұсқа сынақ аудиосы",
@@ -58,7 +65,7 @@ const base = "http://127.0.0.1:4173";
   });
   await page.reload();
   await page.locator("#availabilityFilter").selectOption("full");
-  assert.equal(await page.locator(".track-row").count(), 1);
+  assert.ok((await page.locator(".track-row").count()) > 0);
   await page.locator('[data-track-id="apple-1793534605"] .track-title').click();
   await page.waitForFunction(() => !document.getElementById("audio").paused);
   assert.equal(
