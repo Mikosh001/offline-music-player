@@ -133,6 +133,11 @@ svg {
 .sidebar > :not(.playlist-nav) {
   flex-shrink: 0;
 }
+.artist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .brand {
   display: flex;
   align-items: center;

@@ -348,7 +348,7 @@ function render() {
           .filter(Boolean)
           .join(
             " / ",
-          )}</p>${button("play-list", `${icon("play")} Менің аудиомды тыңдау`)}</div></div>` +
+          )}</p><div class="artist-actions">${button("play-list", `${icon("play")} Тыңдау`)}${state.tracks.some((t) => t.artistId === a.id && t.downloadable && !t.downloaded && hasFullAudio(t)) ? button("download-list", `${icon("download")} Офлайнға сақтау`, "", true) : ""}</div></div></div>` +
         trackList(state.tracks.filter((t) => t.artistId === a.id))
       : empty("Орындаушы табылмады", "Каталогтан басқа орындаушыны таңда.");
   } else if (base === "collection") {

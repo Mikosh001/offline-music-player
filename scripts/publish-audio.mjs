@@ -49,7 +49,8 @@ export async function publishAudio({ root, manifestPath, apply = false }) {
   if (!Array.isArray(manifest.tracks) || !manifest.tracks.length)
     throw new Error("Жариялайтын tracks тізімі бос.");
   const planned = [],
-    seen = new Set();
+    seen = new Set(),
+    audioUrlsByHash = new Map();
   for (const entry of manifest.tracks) {
     const track = catalog.tracks.find((t) => t.id === entry.trackId);
     if (!track || !ALLOWED_ARTISTS.has(track.artistId))
@@ -87,7 +88,11 @@ export async function publishAudio({ root, manifestPath, apply = false }) {
     )
       throw new Error(`${track.title}: аудио форматы немесе көлемі жарамсыз.`);
     const sha256 = digest(bytes);
-    const audioUrl = `assets/audio/licensed/${track.id}-${sha256.slice(0, 16)}${extension}`;
+    const audioKey = `${extension}:${sha256}`;
+    const audioUrl =
+      audioUrlsByHash.get(audioKey) ||
+      `assets/audio/licensed/${track.id}-${sha256.slice(0, 16)}${extension}`;
+    audioUrlsByHash.set(audioKey, audioUrl);
     const fields = {
       audioUrl,
       downloadable: true,

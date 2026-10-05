@@ -1,6 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile, writeFile, mkdir, mkdtemp, access } from "node:fs/promises";
+import {
+  readFile,
+  writeFile,
+  mkdir,
+  mkdtemp,
+  access,
+  readdir,
+} from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { createHash } from "node:crypto";
@@ -106,6 +113,39 @@ test("publisher preview leaves files unchanged; apply stores exact bytes on the 
   );
   assert.equal(applied.applied, true);
   await publishAudio({ ...f, apply: true }); // Repeated publication reuses the same immutable file.
+});
+
+test("two catalogue releases of identical licensed audio share one immutable hosted file", async () => {
+  const f = await fixture();
+  const catalog = JSON.parse(
+    await readFile(path.join(f.root, "catalog.json"), "utf8"),
+  );
+  catalog.tracks.push({ ...catalog.tracks[0], id: "second-release" });
+  await writeFile(path.join(f.root, "catalog.json"), JSON.stringify(catalog));
+  await writeFile(
+    f.manifestPath,
+    JSON.stringify({
+      tracks: [f.entry, { ...f.entry, trackId: "second-release" }],
+    }),
+  );
+  const applied = await publishAudio({ ...f, apply: true });
+  assert.equal(applied.tracks.length, 2);
+  assert.equal(applied.tracks[0].audioUrl, applied.tracks[1].audioUrl);
+  assert.equal(
+    (await readdir(path.join(f.root, "assets/audio/licensed"))).length,
+    1,
+  );
+  const published = JSON.parse(
+    await readFile(path.join(f.root, "catalog.json"), "utf8"),
+  );
+  assert.deepEqual(
+    published.tracks.map((t) => t.id),
+    ["test-original", "second-release"],
+  );
+  assert.deepEqual(
+    await readFile(path.join(f.root, published.tracks[1].audioUrl)),
+    f.bytes,
+  );
 });
 
 test("missing redistribution rights or a bad second file rejects the whole batch before publication", async () => {
