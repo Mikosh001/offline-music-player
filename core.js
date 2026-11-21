@@ -293,3 +293,23 @@ export function nextQueueIndex(index, length, repeat) {
   if (!length) return -1;
   return index + 1 < length ? index + 1 : repeat === "all" ? 0 : -1;
 }
+export function playbackSnapshot(state, position, now = Date.now()) {
+  return {
+    currentId: state.currentId,
+    position: Number.isFinite(position) ? Math.max(0, position) : 0,
+    queue: [...state.queue],
+    queueOrder: [...state.queueOrder],
+    history: [...state.history].slice(-200),
+    shuffle: Boolean(state.shuffle),
+    repeat: state.repeat,
+    savedAt: now,
+  };
+}
+export function selectPlayback(stored, emergency) {
+  const valid = value => value && typeof value === "object" && !Array.isArray(value)
+    && (value.currentId == null || typeof value.currentId === "string")
+    && Number.isFinite(value.position) && value.position >= 0;
+  if (!valid(emergency)) return valid(stored) ? stored : null;
+  if (!valid(stored)) return emergency;
+  return (Number(emergency.savedAt) || 0) > (Number(stored.savedAt) || 0) ? emergency : stored;
+}

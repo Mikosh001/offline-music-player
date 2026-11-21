@@ -2499,3 +2499,11 @@ svg {
     margin-top: 8px;
   }
 }
+/* Short compositor animations; never add a JS render loop to audio playback. */
+@keyframes saz-enter { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+body:not(.energy-saving):not(.page-hidden) .now-playing-panel { animation: saz-enter .2s ease-out both; }
+body:not(.energy-saving) .track-row { transition: background-color .15s ease; }
+.track-row.current { box-shadow: inset 2px 0 var(--accent, #c8c1ff); }
+.play-main.is-loading { opacity: .65; }
+.page-hidden *, .energy-saving * { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .now-playing-panel { animation: none !important; } }

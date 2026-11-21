@@ -102,8 +102,10 @@ async function start() {
     .click();
   await page.waitForFunction(() => !document.getElementById("audio").paused);
   await page.locator('#mainNav [href="#favorites"]').click();
+  await page.getByRole("heading", { name: "Ұнаған әндер", exact: true }).waitFor();
   assert.equal(await page.locator(".track-row").count(), 1);
   await page.locator("#playlistNav a").filter({ hasText: "Жолға" }).click();
+  await page.getByRole("heading", { name: "Жолға", exact: true }).waitFor();
   assert.equal(await page.locator(".track-row").count(), 1);
   await context.setOffline(false);
   await page.goto("http://127.0.0.1:4173/#settings");

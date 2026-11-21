@@ -56,6 +56,16 @@ if (previous?.tracks) {
     )
       catalog.artists.push(artist);
 }
+// Keep existing curated ordering and object field order stable across provider refreshes.
+// New metadata is appended before the separate demo collection.
+if (previous?.tracks) {
+  const refreshed = new Map(catalog.tracks.map(track => [track.id, track]));
+  const known = new Set(previous.tracks.map(track => track.id));
+  const retained = previous.tracks.filter(track => !track.demo && refreshed.has(track.id))
+    .map(track => ({ ...track, ...refreshed.get(track.id) }));
+  const added = catalog.tracks.filter(track => !track.demo && !known.has(track.id));
+  catalog.tracks = [...retained, ...added, ...catalog.tracks.filter(track => track.demo)];
+}
 await writeFile(
   new URL("../catalog.tmp", import.meta.url),
   JSON.stringify(catalog, null, 2),

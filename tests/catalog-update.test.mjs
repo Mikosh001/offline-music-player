@@ -133,7 +133,7 @@ test("personal audio bindings and downloaded byte counts survive catalogue updat
   assert.equal(result.plays, 3);
   assert.equal(result.audioUrl, personal.audioUrl);
 });
-test("bundled catalogue connects 203 owner-supplied recordings to declarations and keeps four missing recordings pending", async () => {
+test("bundled catalogue connects 203 owner-supplied recordings to declarations and keeps new metadata separate from full audio", async () => {
   const catalog = validateCatalog(
     JSON.parse(
       await readFile(new URL("../catalog.json", import.meta.url), "utf8"),
@@ -165,18 +165,14 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
     assert.match(t.sha256, /^[a-f0-9]{64}$/);
     assert.ok(t.size > 0 && t.duration > 0);
   }
-  assert.deepEqual(
-    songs
-      .filter((t) => !t.downloadable)
-      .map((t) => t.id)
-      .sort(),
-    [
-      "apple-1541309376",
-      "apple-1548678265",
-      "apple-1634913631",
-      "apple-1880744346",
-    ],
-  );
+  const pending = songs.filter(t => !t.downloadable);
+  for (const id of ["apple-1541309376", "apple-1548678265", "apple-1634913631", "apple-1880744346"])
+    assert.ok(pending.some(t => t.id === id));
+  assert.equal(pending.length, 47);
+  for (const track of pending) {
+    assert.equal(track.audioUrl, "");
+    assert.equal(track.downloadable, false);
+  }
   assert.equal(
     catalog.tracks.filter((t) => t.demo && t.downloadable).length,
     2,
@@ -185,5 +181,5 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
     catalog.artists.filter((a) => !a.id.startsWith("saz-")).length,
     6,
   );
-  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 207);
+  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 250);
 });

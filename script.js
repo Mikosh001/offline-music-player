@@ -13,6 +13,8 @@ import {
   filterTracks,
   hasFullAudio,
   nextQueueIndex,
+  playbackSnapshot,
+  selectPlayback,
 } from "./core.js";
 import { icon, hydrateIcons } from "./icons.js";
 
@@ -104,6 +106,18 @@ let currentUrl = null,
   saveTimer,
   visibleTracks = [],
   dropDepth = 0;
+let playbackReady = false, loadPending = false, wantsPlayback = false;
+let sourceTrackId = null, pendingRestore = null, lastCheckpoint = 0;
+let failedTracks = new Set(), failureToken = -1, playbackWarning = false;
+let recoveryTimer, sleepTimer;
+const audioRecords = new Map();
+const playbackKey = `saz-playback:${new URL("./", location.href).pathname}`;
+const preferenceKeys = ["volume", "energySaving", "offlineOnly"];
+function localRead(key) { try { return localStorage.getItem(key); } catch { return null; } }
+function playbackState() {
+  return playbackSnapshot(state, pendingRestore?.position ??
+    (sourceTrackId === state.currentId ? audio.currentTime : state.settings.playback?.position || 0));
+}
 const getTrack = (id) => state.tracks.find((t) => t.id === id);
 const artistOf = (t) => state.catalog.artists.find((a) => a.id === t?.artistId);
 const canPlay = (t) =>
@@ -135,6 +149,9 @@ function errorMessage(error) {
 }
 async function setting(key, value) {
   state.settings[key] = value;
+  if (preferenceKeys.includes(key)) {
+    try { localStorage.setItem(`${playbackKey}:${key}`, JSON.stringify(value)); } catch {}
+  }
   if (state.dbReady) await DB.put("settings", { key, value });
 }
 function requireDB() {
@@ -142,6 +159,9 @@ function requireDB() {
     throw new Error(
       "Құрылғыда сақтау қолжетімсіз. Браузердің әдеттегі режимін ашып көр.",
     );
+}
+async function protectStorage() {
+  try { await navigator.storage?.persist?.(); } catch {}
 }
 let catalogSync;
 async function syncPublishedCatalog() {
@@ -303,7 +323,7 @@ function renderSettings() {
     bytes = downloaded.reduce((n, t) => n + (t.size || 0), 0);
   return (
     heading("Баптаулар", "Өз әуенің. Өз құрылғың. Өз қалауың.") +
-    `<div class="settings-grid"><section class="settings-card"><h3>Сайттың офлайн сақтау орны</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын. Көшірмелер осы браузерде сақталады. Өз файлыңнан қосылған аудио сайт серверіне жіберілмейді.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-sync", "Сайт каталогын жаңарту", "", true)}${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Сайт саясаты</h3><p>Жеке офлайн тыңдау, музыка құқықтары, құпиялық және теңдік қағидалары.</p><p><a class="text-link" href="legal/site-policy.html" target="_blank" rel="noopener">Толық саясат құжаты ${icon("external")}</a></p><p><a class="text-link" href="legal/site-policy.pdf" download>Құжатты PDF түрінде сақтау ${icon("download")}</a></p><p class="setting-hint">SAZ-POL-2026-001 · 1.0 нұсқа · 05.10.2026. SAZ ішкі мөрі мемлекеттік мөр немесе музыкалық лицензия емес.</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Сайттағы толық әндерді «Офлайнға сақтау» арқылы интернетсіз тыңдауға дайында.</p><p><a class="text-link" href="permissions/music-sources-and-permissions.html" target="_blank" rel="noopener">Музыка дереккөздері мен рұқсаттар ${icon("external")}</a></p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
+    `<div class="settings-grid"><section class="settings-card"><h3>Сайттың офлайн сақтау орны</h3><div class="stat-value">${formatBytes(bytes)}</div><p>${downloaded.length} ән офлайн тыңдауға дайын. Көшірмелер осы браузерде сақталады. Өз файлыңнан қосылған аудио сайт серверіне жіберілмейді.</p><div class="storage-line"><span id="storageBar" style="width:0"></span></div><div id="storageDetails" class="storage-details">Сақтау орны тексерілуде…</div>${button("persist", `${icon("shield")} Сақтауды қорғау`, "", true)}<p id="persistStatus" class="setting-hint"></p></section><section class="settings-card"><h3>Ойнату</h3><div class="settings-row"><label for="sleepSelect">Ұйқы таймері</label><select id="sleepSelect"><option value="0">Өшіру</option><option value="15">15 минут</option><option value="30">30 минут</option><option value="60">60 минут</option></select></div><div class="settings-row"><label for="offlineOnly">Тек офлайн әндерді көрсету</label><input id="offlineOnly" type="checkbox"${state.settings.offlineOnly ? " checked" : ""}></div><div class="settings-row"><label for="energySaving">Қуат үнемдеу</label><input id="energySaving" type="checkbox"${state.settings.energySaving !== false ? " checked" : ""}></div><p class="setting-hint">Соңғы ән, тоқтаған секунд, дыбыс деңгейі және ойнату режимі сақталады. Қуат үнемдеу қосулы кезде қозғалыс азаяды.</p>${button("queue", `${icon("queue")} Ойнату кезегі`, "", true)}</section><section class="settings-card"><h3>Сақтық көшірме</h3><p>Ән файлдарын, ұнағандарды және жеке плейлисттерді бірге сақтап ал.</p>${button("backup-export", `${icon("download")} Көшірмені сақтау`)}${button("backup-import", `${icon("folder")} Қалпына келтіру`, "", true)}<p class="setting-hint">.saz файлы тек өзің таңдаған жерге сақталады.</p></section><section class="settings-card"><h3>Каталогты басқару</h3><p>Әннің мәзірінен аудиофайлды немесе жүктеу сілтемесін байланыстыр. Өзгертілген каталогты JSON түрінде сақта.</p>${button("catalog-sync", "Сайт каталогын жаңарту", "", true)}${button("catalog-export", "Каталогты сақтау")}${button("catalog-import", "Каталогты ашу", "", true)}<p class="setting-hint">Өзгерістер осы құрылғыда сақталады. Бәріне жариялау үшін экспортталған файлды сайттағы catalog.json орнына қой.</p></section><section class="settings-card"><h3>Қолданбаны орнату</h3><p>Телефонның негізгі экранынан SAZ-ды ашып, музыкаңа жылдам орал.</p>${button("install", "Орнату нұсқаулығы", "", true)}<p class="setting-hint" id="offlineReadyText">${state.offlineReady ? "Қолданба интернетсіз ашылуға дайын." : "Қолданбаның офлайн дайындығы тексерілуде."}</p></section><section class="settings-card"><h3>Сайт саясаты</h3><p>Жеке офлайн тыңдау, музыка құқықтары, құпиялық және теңдік қағидалары.</p><p><a class="text-link" href="legal/site-policy.html" target="_blank" rel="noopener">Толық саясат құжаты ${icon("external")}</a></p><p><a class="text-link" href="legal/site-policy.pdf" download>Құжатты PDF түрінде сақтау ${icon("download")}</a></p><p class="setting-hint">SAZ-POL-2026-001 · 1.0 нұсқа · 05.10.2026. SAZ ішкі мөрі мемлекеттік мөр немесе музыкалық лицензия емес.</p></section><section class="settings-card"><h3>Каталог туралы</h3><p>${state.catalog.artists.filter((a) => !a.id.startsWith("saz-")).length} орындаушы · ${state.catalog.tracks.filter((t) => !t.demo).length} ән. Атаулар мен сілтемелер ресми каталогтан жиналған.</p><p>Стильдер мен жинақтар — тыңдау көңіл күйіне сай редакциялық іріктеу. Сайттағы толық әндерді «Офлайнға сақтау» арқылы интернетсіз тыңдауға дайында.</p><p><a class="text-link" href="permissions/music-sources-and-permissions.html" target="_blank" rel="noopener">Музыка дереккөздері мен рұқсаттар ${icon("external")}</a></p><a class="text-link" href="#collection/demo">Аспаптық демоны тыңдау ${icon("arrow")}</a></section></div>`
   );
 }
 function render() {
@@ -478,8 +498,9 @@ function updatePlayer() {
     artistOf(t)?.color || "#8c7daa",
   );
   for (const btn of document.querySelectorAll('[data-action="play"]')) {
-    btn.innerHTML = icon(audio.paused ? "play" : "pause");
-    btn.setAttribute("aria-label", audio.paused ? "Ойнату" : "Кідірту");
+    const playing = !audio.paused || (loadPending && wantsPlayback);
+    btn.innerHTML = icon(playing ? "pause" : "play");
+    btn.setAttribute("aria-label", playing ? "Кідірту" : "Ойнату");
   }
   for (const btn of document.querySelectorAll(
     '[data-action="player-favorite"]',
@@ -504,8 +525,10 @@ function updatePlayer() {
     const one = btn.querySelector("[data-repeat-one]");
     if (one) one.hidden = state.repeat !== "one";
   }
+  $("playBtn").classList.toggle("is-loading", loadPending);
+  $("playBtn").setAttribute("aria-busy", String(loadPending));
   if ($("nowStatus"))
-    $("nowStatus").textContent = t?.downloaded
+    $("nowStatus").textContent = loadPending ? "Ән дайындалуда…" : t?.downloaded
       ? "Офлайн дайын"
       : "Сайттан ойнатылады";
   updateNowPlayingPosition();
@@ -517,19 +540,21 @@ function updatePlayer() {
     if (btn) btn.innerHTML = icon(current && !audio.paused ? "pause" : "play");
   });
 }
-function persistPlayback() {
-  if (saveTimer) return;
-  saveTimer = setTimeout(() => {
-    saveTimer = null;
-    setting("playback", {
-      currentId: state.currentId,
-      position: Number.isFinite(audio.currentTime) ? audio.currentTime : 0,
-      queue: state.queue,
-      queueOrder: state.queueOrder,
-      shuffle: state.shuffle,
-      repeat: state.repeat,
-    }).catch(() => {});
-  }, 350);
+function persistPlayback(immediate = false) {
+  if (!playbackReady) return;
+  // Keep a synchronous emergency checkpoint for pagehide / sudden page termination.
+  if (immediate === true) {
+    clearTimeout(saveTimer); saveTimer = null;
+    const snapshot = playbackState();
+    try { localStorage.setItem(playbackKey, JSON.stringify(snapshot)); } catch {}
+    setting("playback", snapshot).catch(() => {
+      if (!playbackWarning) { playbackWarning = true; toast("Тыңдалған орынды сақтау мүмкін болмады. Сақтау орнын тексер.", true); }
+    });
+    lastCheckpoint = Date.now();
+    return;
+  }
+  if (saveTimer || Date.now() - lastCheckpoint < 5000) return;
+  saveTimer = setTimeout(() => persistPlayback(true), 350);
 }
 function updateMedia(t) {
   if (!("mediaSession" in navigator)) return;
@@ -554,7 +579,7 @@ function nowPlayingBody(t) {
 }
 function updateNowPlayingPosition() {
   if (!$("nowSeek")) return;
-  $("nowCurrentTime").textContent = formatTime(audio.currentTime);
+  $("nowCurrentTime").textContent = formatTime(pendingRestore?.position ?? audio.currentTime);
   $("nowDuration").textContent = formatTime(
     Number.isFinite(audio.duration)
       ? audio.duration
@@ -562,7 +587,7 @@ function updateNowPlayingPosition() {
   );
   $("nowSeek").value =
     Number.isFinite(audio.duration) && audio.duration > 0
-      ? (audio.currentTime / audio.duration) * 100
+      ? ((pendingRestore?.position ?? audio.currentTime) / audio.duration) * 100
       : 0;
 }
 function playableSelection(all = false) {
@@ -590,120 +615,199 @@ async function shufflePlay(all = false) {
   state.history = [];
   await loadTrack(state.queue[0], { addHistory: false });
 }
+function warmNextAudio() {
+  const index = state.queue.indexOf(state.currentId);
+  const nextId = state.queue[index + 1] ?? (state.repeat === "all" ? state.queue[0] : null);
+  const keep = new Set([state.currentId, nextId]);
+  for (const id of audioRecords.keys()) if (!keep.has(id)) audioRecords.delete(id);
+  if (nextId && getTrack(nextId)?.downloaded && !audioRecords.has(nextId)) {
+    const entry = {};
+    entry.promise = DB.get("audio", nextId).then(record => (entry.record = record)).catch(() => null);
+    audioRecords.set(nextId, entry);
+  }
+}
+async function startAudio(token = playToken) {
+  wantsPlayback = true;
+  if (loadPending) { updatePlayer(); return; }
+  try {
+    const started = audio.play();
+    armRecovery();
+    await started;
+  }
+  catch (error) {
+    if (token !== playToken || !wantsPlayback || error.name === "AbortError") return;
+    if (error.name === "NotAllowedError") {
+      wantsPlayback = false;
+      toast("Жалғастыру үшін ▶ түймесін бас. Браузер автоматты ойнатуды шектеді.");
+      updatePlayer();
+      return;
+    }
+    await recoverPlayback(token);
+  }
+}
+function pausePlayback() {
+  wantsPlayback = false;
+  clearTimeout(recoveryTimer);
+  audio.pause();
+  updatePlayer();
+  persistPlayback(true);
+}
+async function recoverPlayback(token = playToken) {
+  if (token !== playToken || failureToken === token) return;
+  failureToken = token;
+  clearTimeout(recoveryTimer);
+  const resume = wantsPlayback;
+  failedTracks.add(state.currentId);
+  loadPending = false;
+  if (!resume) { updatePlayer(); return; }
+  const valid = state.queue.filter(id => canPlay(getTrack(id)));
+  const start = valid.indexOf(state.currentId);
+  // Search at most one pass. A broken queue can never create an infinite skip loop.
+  const remaining = start < 0 ? valid : [
+    ...valid.slice(start + 1), ...(state.repeat === "all" ? valid.slice(0, start + 1) : []),
+  ];
+  const nextId = remaining.find(id => !failedTracks.has(id));
+  if (nextId) {
+    toast("Бұл ән оқылмады. Келесі қолжетімді ән қосылады.", true);
+    await loadTrack(nextId, { recovery: true });
+  } else {
+    pausePlayback();
+    toast("Қолжетімді аудио ойнатылмады. Интернетті тексер немесе басқа ән таңда.", true);
+  }
+}
 async function loadTrack(
   id,
-  { autoplay = true, position = 0, addHistory = true } = {},
+  { autoplay = true, position = 0, addHistory = true, recovery = false } = {},
 ) {
   const t = getTrack(id);
   if (!canPlay(t)) return officialDialog(t);
+  persistPlayback(true);
   const token = ++playToken;
+  clearTimeout(recoveryTimer);
+  if (!recovery) failedTracks.clear();
+  wantsPlayback = autoplay;
+  loadPending = true;
   audio.pause();
-  let src = t.audioUrl;
-  if (t.downloaded) {
-    const record = await DB.get("audio", id);
-    if (token !== playToken) return;
-    if (!record?.blob) {
-      await DB.deleteAudio(t);
-      await refresh();
-      throw new Error("Сақталған аудио табылмады. Файлды қайта қос.");
-    }
-    src = URL.createObjectURL(record.blob);
-  }
-  if (token !== playToken) {
-    if (src?.startsWith("blob:")) URL.revokeObjectURL(src);
-    return;
-  }
-  if (addHistory && state.currentId && state.currentId !== id)
-    state.history.push(state.currentId);
+  audio.removeAttribute("src"); audio.load();
+  sourceTrackId = null;
   if (currentUrl) URL.revokeObjectURL(currentUrl);
-  currentUrl = src?.startsWith("blob:") ? src : null;
+  currentUrl = null;
+  if (addHistory && state.currentId && state.currentId !== id)
+    state.history = [...state.history, state.currentId].slice(-200);
   state.currentId = id;
-  audio.src = src;
-  audio.load();
-  updateMedia(t);
-  updatePlayer();
-  const restore = () => {
-    if (token !== playToken) return;
-    if (position && Number.isFinite(audio.duration))
-      audio.currentTime = Math.min(position, Math.max(0, audio.duration - 0.1));
-  };
-  audio.addEventListener("loadedmetadata", restore, { once: true });
-  persistPlayback();
-  if (autoplay) {
-    try {
-      await audio.play();
-    } catch (error) {
-      if (error.name === "AbortError" && (token !== playToken || audio.paused))
-        return;
-      throw error;
+  pendingRestore = { token, position: Math.max(0, Number(position) || 0) };
+  updateMedia(t); updatePlayer(); updatePlaybackPosition(); persistPlayback(true);
+  let src = t.audioUrl;
+  try {
+    if (t.downloaded) {
+      const cached = audioRecords.get(id);
+      const record = cached?.record ?? await (cached?.promise || DB.get("audio", id));
+      if (token !== playToken) return;
+      if (record?.blob?.size) src = URL.createObjectURL(record.blob);
+      else {
+        await DB.deleteAudio(t);
+        if (token !== playToken) return;
+        t.downloaded = false;
+        await refresh();
+        if (token !== playToken) return;
+        if (!state.online || !src) throw new Error("Сақталған аудио табылмады.");
+      }
     }
-    if (token === playToken && state.dbReady) {
-      await DB.put("library", {
-        ...getTrack(id),
-        plays: (getTrack(id).plays || 0) + 1,
-        lastPlayed: Date.now(),
-      });
-      state.library = await DB.getAll("library");
-      state.tracks = mergeTracks(state.catalog.tracks, state.library);
+    if (token !== playToken) {
+      if (src?.startsWith("blob:")) URL.revokeObjectURL(src);
+      return;
     }
+    currentUrl = src?.startsWith("blob:") ? src : null;
+    sourceTrackId = id;
+    audio.src = src;
+    audio.load();
+    loadPending = false;
+    updatePlayer();
+    warmNextAudio();
+    if (wantsPlayback) {
+      armRecovery();
+      await startAudio(token);
+      if (token === playToken && !audio.paused && state.dbReady) {
+        const track = getTrack(id);
+        const record = { ...track, plays: (track.plays || 0) + 1, lastPlayed: Date.now() };
+        // A storage failure in listening statistics must never skip valid audio.
+        try {
+          await DB.put("library", record);
+          if (token !== playToken) return;
+          state.library = state.library.filter(t => t.id !== id).concat(record);
+          state.tracks = mergeTracks(state.catalog.tracks, state.library);
+        } catch {
+          toast("Тыңдау статистикасы сақталмады. Музыка жалғасады.", true);
+        }
+      }
+    }
+  } catch {
+    if (token === playToken) await recoverPlayback(token);
   }
 }
 async function playSelected(id) {
   const t = getTrack(id);
   if (!t) return;
-  if (id === state.currentId && audio.src) {
-    if (audio.paused) await audio.play();
-    else audio.pause();
-    return;
+  if (id === state.currentId && (audio.getAttribute("src") || loadPending)) {
+    await playPause(); return;
   }
-  if (!canPlay(t)) {
-    officialDialog(t);
-    return;
-  }
-  let ids = playableSelection().map((t) => t.id);
+  if (!canPlay(t)) { officialDialog(t); return; }
+  let ids = playableSelection().map(t => t.id);
   if (!ids.includes(id)) ids = [id];
   state.queueOrder = ids;
   state.queue = state.shuffle ? shuffled(ids, id) : ids;
   await loadTrack(id);
 }
 async function playPause() {
-  if (audio.src && state.currentId) {
-    if (audio.paused) await audio.play();
-    else audio.pause();
+  if (loadPending) {
+    wantsPlayback = !wantsPlayback;
+    updatePlayer(); persistPlayback(true); return;
+  }
+  if (audio.getAttribute("src") && state.currentId && !audio.error) {
+    failedTracks.clear();
+    if (audio.paused) { armRecovery(); await startAudio(); }
+    else pausePlayback();
     return;
   }
-  const t = playableSelection()[0];
-  if (t) await playSelected(t.id);
-  else toast("Әннің толық аудиосын қос немесе аспаптық демоны жүкте.");
+  const track = getTrack(state.currentId) || playableSelection()[0];
+  if (track) {
+    if (!state.queue.includes(track.id)) state.queue = state.queueOrder = [track.id];
+    await loadTrack(track.id, { position: pendingRestore?.position || 0 });
+  } else toast("Әннің толық аудиосын қос немесе аспаптық демоны жүкте.");
 }
 async function next() {
-  const valid = state.queue.filter((id) => canPlay(getTrack(id)));
+  const valid = state.queue.filter(id => canPlay(getTrack(id)));
   state.queue = valid;
-  const index = nextQueueIndex(
-    valid.indexOf(state.currentId),
-    valid.length,
-    state.repeat,
-  );
-  if (index < 0) {
-    audio.pause();
-    persistPlayback();
-    return;
+  const index = nextQueueIndex(valid.indexOf(state.currentId), valid.length, state.repeat);
+  if (index < 0) { pausePlayback(); return; }
+  // Start a fresh shuffle cycle without repeating the track at the cycle boundary.
+  if (index === 0 && state.shuffle && valid.length > 1) {
+    state.queue = shuffled(valid, state.currentId);
+    state.queue.push(state.queue.shift());
   }
-  await loadTrack(valid[index]);
+  await loadTrack(state.queue[index]);
 }
 async function previous() {
-  if (audio.currentTime > 3) {
-    audio.currentTime = 0;
-    return;
+  if (audio.currentTime > 3 && sourceTrackId === state.currentId) {
+    audio.currentTime = 0; pendingRestore = null; persistPlayback(true); return;
   }
   const id = state.history.pop();
   if (id && canPlay(getTrack(id))) await loadTrack(id, { addHistory: false });
   else {
     const index = state.queue.indexOf(state.currentId);
-    if (index > 0)
-      await loadTrack(state.queue[index - 1], { addHistory: false });
-    else audio.currentTime = 0;
+    if (index > 0) await loadTrack(state.queue[index - 1], { addHistory: false });
+    else { audio.currentTime = 0; persistPlayback(true); }
   }
+}
+function armRecovery() {
+  clearTimeout(recoveryTimer);
+  if (!wantsPlayback || !state.currentId) return;
+  const token = playToken;
+  // One bounded recovery attempt per failed source; valid long tracks need no polling.
+  recoveryTimer = setTimeout(() => {
+    if (token === playToken && wantsPlayback && !audio.ended && audio.readyState < 3)
+      recoverPlayback(token).catch(error => toast(errorMessage(error), true));
+  }, 20000);
 }
 function officialDialog(t) {
   if (!t) return toast("Алдымен әнді таңда.");
@@ -718,10 +822,13 @@ async function probeAudio(blob) {
   const url = URL.createObjectURL(blob),
     probe = new Audio();
   return new Promise((resolve, reject) => {
-    let timer;
+    let timer, settled = false;
     const finish = (error) => {
+      if (settled) return;
+      settled = true;
       clearTimeout(timer);
       const duration = probe.duration;
+      probe.onloadedmetadata = probe.onerror = null;
       probe.removeAttribute("src");
       probe.load();
       URL.revokeObjectURL(url);
@@ -760,6 +867,7 @@ function mimeOf(name, type) {
 }
 async function importFiles(files, bindId = null) {
   requireDB();
+  protectStorage();
   let added = 0;
   const failed = [];
   for (const file of files) {
@@ -806,6 +914,7 @@ async function importFiles(files, bindId = null) {
         downloaded: true,
         addedAt: Date.now(),
       };
+      audioRecords.delete(record.id);
       await DB.saveAudio(record, blob);
       added++;
       await refresh();
@@ -820,6 +929,7 @@ async function importFiles(files, bindId = null) {
 }
 function enqueue(ids) {
   requireDB();
+  protectStorage();
   if (!state.online) throw new Error("Жүктеу үшін интернет қажет.");
   let count = 0;
   for (const id of ids) {
@@ -950,8 +1060,11 @@ function cancelDownload(id) {
 async function removeAudio(id) {
   const t = getTrack(id);
   if (!t) return;
+  audioRecords.delete(id);
   if (state.currentId === id) {
     ++playToken;
+    wantsPlayback = false; loadPending = false; pendingRestore = null; sourceTrackId = null;
+    clearTimeout(recoveryTimer);
     audio.pause();
     audio.removeAttribute("src");
     audio.load();
@@ -960,7 +1073,7 @@ async function removeAudio(id) {
     state.currentId = null;
     state.queue = state.queue.filter((x) => x !== id);
     state.queueOrder = state.queueOrder.filter((x) => x !== id);
-    persistPlayback();
+    persistPlayback(true);
   }
   await DB.deleteAudio(t);
   await refresh();
@@ -1029,7 +1142,9 @@ function sleepDialog() {
   );
 }
 function setSleep(minutes) {
+  clearTimeout(sleepTimer);
   state.sleepUntil = minutes ? Date.now() + minutes * 60000 : 0;
+  if (minutes) sleepTimer = setTimeout(checkSleep, minutes * 60000);
   toast(
     minutes
       ? `Музыка ${minutes} минуттан кейін тоқтайды.`
@@ -1038,7 +1153,8 @@ function setSleep(minutes) {
 }
 function checkSleep() {
   if (state.sleepUntil && Date.now() >= state.sleepUntil) {
-    audio.pause();
+    pausePlayback();
+    clearTimeout(sleepTimer);
     state.sleepUntil = 0;
     toast("Ұйқы таймері аяқталды.");
   }
@@ -1299,7 +1415,7 @@ document.addEventListener("click", async (event) => {
           : [...state.queueOrder].filter((id) => canPlay(getTrack(id)));
         if (state.currentId && !state.queue.includes(state.currentId))
           state.queue.unshift(state.currentId);
-        persistPlayback();
+        persistPlayback(true);
         updatePlayer();
         toast(state.shuffle ? "Араластыру қосылды." : "Араластыру өшірілді.");
         break;
@@ -1313,7 +1429,7 @@ document.addEventListener("click", async (event) => {
             : state.repeat === "all"
               ? "one"
               : "off";
-        persistPlayback();
+        persistPlayback(true);
         updatePlayer();
         toast(
           state.repeat === "off"
@@ -1423,7 +1539,7 @@ document.addEventListener("click", async (event) => {
           id,
         );
         state.queueOrder = [...state.queue];
-        persistPlayback();
+        persistPlayback(true);
         closeDialog();
         toast("Келесі әндер кезегіне қосылды.");
         break;
@@ -1434,14 +1550,14 @@ document.addEventListener("click", async (event) => {
         if (j >= 0 && j < state.queue.length)
           [state.queue[i], state.queue[j]] = [state.queue[j], state.queue[i]];
         state.queueOrder = [...state.queue];
-        persistPlayback();
+        persistPlayback(true);
         queueDialog();
         break;
       }
       case "queue-remove":
         const [removed] = state.queue.splice(Number(btn.dataset.index), 1);
         state.queueOrder = state.queueOrder.filter((id) => id !== removed);
-        persistPlayback();
+        persistPlayback(true);
         queueDialog();
         break;
       case "sleep":
@@ -1572,6 +1688,10 @@ document.addEventListener("change", async (event) => {
         state.sort = event.target.value;
         render();
         break;
+      case "energySaving":
+        await setting("energySaving", event.target.checked);
+        document.body.classList.toggle("energy-saving", event.target.checked);
+        break;
       case "offlineOnly":
         await setting("offlineOnly", event.target.checked);
         break;
@@ -1627,8 +1747,9 @@ $("volume").addEventListener("input", () => {
 });
 $("seek").addEventListener("input", () => {
   if (Number.isFinite(audio.duration) && audio.duration > 0) {
+    pendingRestore = null;
     audio.currentTime = (Number($("seek").value) / 100) * audio.duration;
-    persistPlayback();
+    persistPlayback(true);
   }
 });
 document.addEventListener("input", (event) => {
@@ -1637,72 +1758,79 @@ document.addEventListener("input", (event) => {
     Number.isFinite(audio.duration) &&
     audio.duration > 0
   ) {
+    pendingRestore = null;
     audio.currentTime = (Number(event.target.value) / 100) * audio.duration;
     updateNowPlayingPosition();
-    persistPlayback();
+    persistPlayback(true);
   }
 });
-audio.addEventListener("loadedmetadata", () => {
+function updatePlaybackPosition() {
+  const position = pendingRestore?.position ?? audio.currentTime;
+  $("currentTime").textContent = formatTime(position);
   $("duration").textContent = formatTime(audio.duration);
+  $("seek").value = Number.isFinite(audio.duration) && audio.duration > 0
+    ? position / audio.duration * 100 : 0;
+  $("seek").disabled = loadPending || !Number.isFinite(audio.duration);
   updateNowPlayingPosition();
-});
+}
+function restorePlaybackPosition() {
+  if (sourceTrackId !== state.currentId) return;
+  if (pendingRestore?.token === playToken && Number.isFinite(audio.duration) && audio.duration > 0) {
+    try {
+      audio.currentTime = pendingRestore.position >= audio.duration ? 0 : pendingRestore.position;
+      pendingRestore = null;
+    } catch { return; }
+  }
+  updatePlaybackPosition();
+}
+for (const event of ["loadedmetadata", "durationchange", "canplay"])
+  audio.addEventListener(event, restorePlaybackPosition);
+let lastMediaPosition = 0;
 audio.addEventListener("timeupdate", () => {
   checkSleep();
-  updateNowPlayingPosition();
-  $("currentTime").textContent = formatTime(audio.currentTime);
-  $("duration").textContent = formatTime(audio.duration);
-  $("seek").value =
-    Number.isFinite(audio.duration) && audio.duration > 0
-      ? (audio.currentTime / audio.duration) * 100
-      : 0;
-  if (
-    "mediaSession" in navigator &&
-    navigator.mediaSession.setPositionState &&
-    Number.isFinite(audio.duration) &&
-    audio.duration > 0
-  ) {
+  if (!document.hidden) updatePlaybackPosition();
+  if (navigator.mediaSession?.setPositionState && Number.isFinite(audio.duration) && audio.duration > 0 && Date.now() - lastMediaPosition >= 1000) {
     try {
-      navigator.mediaSession.setPositionState({
-        duration: audio.duration,
-        position: Math.min(audio.currentTime, audio.duration),
-        playbackRate: audio.playbackRate,
-      });
+      navigator.mediaSession.setPositionState({ duration: audio.duration,
+        position: Math.min(audio.currentTime, audio.duration), playbackRate: audio.playbackRate });
     } catch {}
+    lastMediaPosition = Date.now();
   }
   persistPlayback();
 });
 for (const event of ["play", "pause"])
   audio.addEventListener(event, () => {
-    updatePlayer();
-    persistPlayback();
-    if ("mediaSession" in navigator)
-      navigator.mediaSession.playbackState = audio.paused
-        ? "paused"
-        : "playing";
+    updatePlayer(); persistPlayback(true);
+    if (navigator.mediaSession)
+      navigator.mediaSession.playbackState = audio.paused ? "paused" : "playing";
   });
+audio.addEventListener("seeked", () => persistPlayback(true));
+audio.addEventListener("playing", () => { clearTimeout(recoveryTimer); });
+for (const event of ["waiting", "stalled"]) audio.addEventListener(event, armRecovery);
 audio.addEventListener("ended", () => {
+  if (!wantsPlayback || loadPending) return;
   if (state.repeat === "one") {
     audio.currentTime = 0;
-    audio.play().catch((error) => toast(errorMessage(error), true));
-  } else next().catch((error) => toast(errorMessage(error), true));
+    startAudio().catch(error => toast(errorMessage(error), true));
+  } else next().catch(error => toast(errorMessage(error), true));
 });
 audio.addEventListener("error", () => {
-  if (audio.src)
-    toast(
-      "Аудионы ойнату мүмкін болмады. Файлды немесе сілтемені тексер.",
-      true,
-    );
+  if (sourceTrackId === state.currentId && audio.getAttribute("src") && audio.error)
+    recoverPlayback().catch(error => toast(errorMessage(error), true));
 });
 function configureMediaControls() {
   if (!("mediaSession" in navigator)) return;
   for (const [action, fn] of Object.entries({
-    play: () => audio.play().catch(() => {}),
-    pause: () => audio.pause(),
+    play: () => { if (audio.paused) playPause().catch(error => toast(errorMessage(error), true)); },
+    pause: pausePlayback,
     previoustrack: () => previous().catch(() => {}),
     nexttrack: () => next().catch(() => {}),
     seekto: (d) => {
-      if (Number.isFinite(audio.duration) && d.seekTime != null)
+      if (Number.isFinite(audio.duration) && Number.isFinite(d.seekTime)) {
+        pendingRestore = null;
         audio.currentTime = Math.max(0, Math.min(d.seekTime, audio.duration));
+        persistPlayback(true);
+      }
     },
     seekbackward: null,
     seekforward: null,
@@ -1749,17 +1877,11 @@ window.addEventListener("dbblocked", () =>
   toast("Басқа ашық SAZ беттерін жауып, қайта ашып көр.", true),
 );
 document.addEventListener("visibilitychange", () => {
-  checkSleep();
-  if (document.hidden && state.dbReady)
-    setting("playback", {
-      currentId: state.currentId,
-      position: audio.currentTime || 0,
-      queue: state.queue,
-      queueOrder: state.queueOrder,
-      shuffle: state.shuffle,
-      repeat: state.repeat,
-    }).catch(() => {});
+  checkSleep(); persistPlayback(true);
+  document.body.classList.toggle("page-hidden", document.hidden);
+  if (!document.hidden) updatePlaybackPosition();
 });
+window.addEventListener("pagehide", () => persistPlayback(true));
 document.addEventListener("keydown", (event) => {
   if (event.target.matches("input,textarea,select") || dialog.open) return;
   if (event.key === "/") {
@@ -1807,8 +1929,9 @@ dialog.addEventListener("close", () => {
   dialog.classList.remove("now-playing-dialog");
   delete dialog.dataset.view;
 });
-setInterval(checkSleep, 1000);
+
 async function init() {
+  document.body.classList.add("energy-saving");
   hydrateIcons();
   $("content").innerHTML =
     '<div class="loading">Музыка әлемің дайындалуда…</div>';
@@ -1817,6 +1940,14 @@ async function init() {
     state.dbReady = true;
     const settings = await DB.getAll("settings");
     state.settings = Object.fromEntries(settings.map((s) => [s.key, s.value]));
+    for (const key of preferenceKeys) {
+      try {
+        const value = JSON.parse(localRead(`${playbackKey}:${key}`) || "null");
+        if (key === "volume" ? Number.isFinite(value) && value != null : typeof value === "boolean")
+          state.settings[key] = value;
+      } catch {}
+    }
+    document.body.classList.toggle("energy-saving", state.settings.energySaving !== false);
   } catch (error) {
     toast(`Сақтау қолжетімсіз: ${errorMessage(error)}`, true);
   }
@@ -1836,15 +1967,12 @@ async function init() {
   }
   await refresh();
   network();
-  audio.volume = Math.max(
-    0,
-    Math.min(
-      1,
-      Number(state.settings.volume ?? localStorage.getItem("mp-volume") ?? 0.8),
-    ),
-  );
+  const volume = Number(state.settings.volume ?? localRead("mp-volume") ?? 0.8);
+  audio.volume = Number.isFinite(volume) ? Math.max(0, Math.min(1, volume)) : 0.8;
   $("volume").value = audio.volume;
-  const saved = state.settings.playback;
+  let emergency;
+  try { emergency = JSON.parse(localRead(playbackKey) || "null"); } catch {}
+  const saved = selectPlayback(state.settings.playback, emergency);
   if (saved) {
     state.shuffle = Boolean(saved.shuffle);
     state.repeat = ["one", "all", "off"].includes(saved.repeat)
@@ -1856,6 +1984,11 @@ async function init() {
     state.queueOrder = Array.isArray(saved.queueOrder)
       ? saved.queueOrder.filter((id) => getTrack(id))
       : [...state.queue];
+    state.history = Array.isArray(saved.history) ? saved.history.filter(id => getTrack(id)).slice(-200) : [];
+    if (saved.currentId && getTrack(saved.currentId)) {
+      state.currentId = saved.currentId;
+      pendingRestore = { token: playToken, position: Math.max(0, Number(saved.position) || 0) };
+    }
     if (saved.currentId && canPlay(getTrack(saved.currentId)))
       await loadTrack(saved.currentId, {
         autoplay: false,
@@ -1864,6 +1997,7 @@ async function init() {
       });
     updatePlayer();
   }
+  playbackReady = true;
   if ("serviceWorker" in navigator) {
     try {
       let knownController = navigator.serviceWorker.controller;

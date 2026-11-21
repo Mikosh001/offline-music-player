@@ -5,10 +5,28 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+          cache: npm
+      - run: npm ci
       - run: npm test
       - run: node --check script.js && node --check service-worker.js
+      - run: npx playwright install --with-deps chromium
+      - name: Check browser playback and offline storage
+        run: |
+          npm start > /tmp/saz-server.log 2>&1 &
+          for attempt in $(seq 1 30); do
+            curl --fail --silent http://127.0.0.1:4173/ > /dev/null && break
+            sleep 1
+          done
+          npm run test:browser
+          npm run test:audio
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: browser-check-results
+          path: test-results/

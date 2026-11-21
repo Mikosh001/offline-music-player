@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-10-05",
+  "updatedAt": "2026-11-21",
   "description": "Ән метадеректері ресми Apple Music каталогынан жиналған. Стильдер — редакциялық көңіл күй жинақтары. Коммерциялық аудио бұл файлға енгізілмеген.",
   "artists": [
     {
@@ -5462,6 +5462,823 @@
         "pop"
       ],
       "officialUrl": "https://music.apple.com/kz/album/%D1%81%D0%B5%D0%BD%D0%B5%D0%BC%D1%96%D0%BD/1880744337?i=1880744346",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1765007438",
+      "title": "Sen Kelgeli",
+      "artistId": "ernar",
+      "artist": "Ernar Amandyq",
+      "album": "Sen Kelgeli - Single",
+      "duration": 151,
+      "releaseDate": "2024-08-30",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/sen-kelgeli/1765007430?i=1765007438",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1705937980",
+      "title": "Tyiym salam",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & The Svarka",
+      "album": "Tyiym salam - Single",
+      "duration": 192,
+      "releaseDate": "2023-09-08",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/tyiym-salam/1705937972?i=1705937980",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6820637496",
+      "title": "Aru",
+      "artistId": "ernar",
+      "artist": "Ernar Amandyq",
+      "album": "Aru - Single",
+      "duration": 160,
+      "releaseDate": "2026-10-09",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aru/6820637485?i=6820637496",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1630139437",
+      "title": "Кеш",
+      "artistId": "miras",
+      "artist": "Жугунусов Мирас",
+      "album": "Кеш - Single",
+      "duration": 208,
+      "releaseDate": "2022-06-21",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%BA%D0%B5%D1%88/1630139216?i=1630139437",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1875209646",
+      "title": "SUIGEN ADAM",
+      "artistId": "turar",
+      "artist": "Turar & DANA MAKSIM",
+      "album": "SUIGEN ADAM - Single",
+      "duration": 189,
+      "releaseDate": "2026-02-06",
+      "styles": [
+        "pop",
+        "lyrical"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/suigen-adam/1875209640?i=1875209646",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1682565605",
+      "title": "Okpeleidi",
+      "artistId": "turar",
+      "artist": "Turar",
+      "album": "Okpeleidi - Single",
+      "duration": 192,
+      "releaseDate": "2023-04-16",
+      "styles": [
+        "pop",
+        "lyrical"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/okpeleidi/1682565604?i=1682565605",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6819603937",
+      "title": "OZINE SEN",
+      "artistId": "turar",
+      "artist": "Turar & B'NDA",
+      "album": "OZINE SEN - Single",
+      "duration": 218,
+      "releaseDate": "2026-10-08",
+      "styles": [
+        "pop",
+        "lyrical"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ozine-sen/6819603933?i=6819603937",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1703961471",
+      "title": "KORIKTIM",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "KORIKTIM - Single",
+      "duration": 210,
+      "releaseDate": "2023-08-20",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/koriktim/1703961371?i=1703961471",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1532703846",
+      "title": "Грустный танец",
+      "artistId": "sadraddin",
+      "artist": "Sadraddin",
+      "album": "Грустный танец - Single",
+      "duration": 130,
+      "releaseDate": "2020-09-30",
+      "styles": [
+        "pop",
+        "lyrical"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B3%D1%80%D1%83%D1%81%D1%82%D0%BD%D1%8B%D0%B9-%D1%82%D0%B0%D0%BD%D0%B5%D1%86/1532703768?i=1532703846",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1675294688",
+      "title": "Aman bol",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & Serzhan Bakytzhan",
+      "album": "Aman bol - Single",
+      "duration": 260,
+      "releaseDate": "2023-03-02",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aman-bol/1675294667?i=1675294688",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1650819024",
+      "title": "Meni ozgertpe",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Jalgyz otem - Single",
+      "duration": 139,
+      "releaseDate": "2022-10-21",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/meni-ozgertpe/1650818576?i=1650819024",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1656414566",
+      "title": "Solai unai ma?",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Solai unai ma? - Single",
+      "duration": 248,
+      "releaseDate": "2022-11-27",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/solai-unai-ma/1656414420?i=1656414566",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1840926010",
+      "title": "why?",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & Nina Mazani",
+      "album": "why? - Single",
+      "duration": 237,
+      "releaseDate": "2025-09-21",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/why/1840926004?i=1840926010",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6830301778",
+      "title": "Kogersin (Live)",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Kogersin (Live) - Single",
+      "duration": 224,
+      "releaseDate": "2026-11-05",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/kogersin-live/6830301775?i=6830301778",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1872427735",
+      "title": "ESTI ZHI",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "ESTI ZHI - Single",
+      "duration": 125,
+      "releaseDate": "2026-01-27",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/esti-zhi/1872427732?i=1872427735",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6825262010",
+      "title": "Солай ма?",
+      "artistId": "duman",
+      "artist": "Duman",
+      "album": "Солай ма? - Single",
+      "duration": 149,
+      "releaseDate": "2026-10-25",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%81%D0%BE%D0%BB%D0%B0%D0%B9-%D0%BC%D0%B0/6825261580?i=6825262010",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6824502112",
+      "title": "Bilgim keledi",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Bilgim keledi - Single",
+      "duration": 172,
+      "releaseDate": "2026-10-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/bilgim-keledi/6824501961?i=6824502112",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1724957047",
+      "title": "Janym (Yeski Taspa)",
+      "artistId": "miras",
+      "artist": "Жугунусов Мирас",
+      "album": "Yeski Taspa (3 Season)",
+      "duration": 272,
+      "releaseDate": "2023-12-22",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/janym-yeski-taspa/1724956336?i=1724957047",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1864367251",
+      "title": "menin tilegim",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & Shashoo",
+      "album": "menin tilegim - Single",
+      "duration": 260,
+      "releaseDate": "2025-12-27",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/menin-tilegim/1864367240?i=1864367251",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1826529541",
+      "title": "Aqyldym",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Aqyldym - Single",
+      "duration": 200,
+      "releaseDate": "2025-07-18",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aqyldym/1826529531?i=1826529541",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6820021068",
+      "title": "Радость",
+      "artistId": "sadraddin",
+      "artist": "Sadraddin & ANDRO",
+      "album": "Радость - Single",
+      "duration": 194,
+      "releaseDate": "2026-10-09",
+      "styles": [
+        "pop",
+        "lyrical"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%80%D0%B0%D0%B4%D0%BE%D1%81%D1%82%D1%8C/6820020632?i=6820021068",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1815286493",
+      "title": "arbir jurek (feat. Shashoo)",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "YA - EP",
+      "duration": 140,
+      "releaseDate": "2025-05-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/arbir-jurek-feat-shashoo/1815286016?i=1815286493",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1650818586",
+      "title": "Jalgyz otem",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Jalgyz otem - Single",
+      "duration": 264,
+      "releaseDate": "2022-10-21",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/jalgyz-otem/1650818576?i=1650818586",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6830690061",
+      "title": "Жауың емеспін",
+      "artistId": "duman",
+      "artist": "Duman",
+      "album": "Жауың емеспін - Single",
+      "duration": 200,
+      "releaseDate": "2026-11-08",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B6%D0%B0%D1%83%D1%8B%D2%A3-%D0%B5%D0%BC%D0%B5%D1%81%D0%BF%D1%96%D0%BD/6830690052?i=6830690061",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1653986914",
+      "title": "Seni Eske Salyp Tur",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Depti - EP",
+      "duration": 203,
+      "releaseDate": "2021-03-07",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/seni-eske-salyp-tur/1653986471?i=1653986914",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6763002983",
+      "title": "omir kures",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "omir kures - Single",
+      "duration": 299,
+      "releaseDate": "2026-04-24",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/omir-kures/1895116698?i=6763002983",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6812379571",
+      "title": "Janym : Yeski Taspa",
+      "artistId": "miras",
+      "artist": "Жугунусов Мирас",
+      "album": "Yeski Taspa : 3 Season",
+      "duration": 272,
+      "releaseDate": "2023-12-22",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/janym-yeski-taspa/6812379566?i=6812379571",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6797508189",
+      "title": "kim ol",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Kim ol? - Single",
+      "duration": 215,
+      "releaseDate": "2026-08-06",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/kim-ol/6797507873?i=6797508189",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1815286512",
+      "title": "ya",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "YA - EP",
+      "duration": 215,
+      "releaseDate": "2025-05-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ya/1815286016?i=1815286512",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6827981168",
+      "title": "Jai gana",
+      "artistId": "miras",
+      "artist": "Жугунусов Мирас",
+      "album": "Jai gana - Single",
+      "duration": 212,
+      "releaseDate": "2026-11-06",
+      "styles": [
+        "lyrical",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/jai-gana/6827980884?i=6827981168",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1815286306",
+      "title": "qaytar",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "YA - EP",
+      "duration": 218,
+      "releaseDate": "2025-05-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qaytar/1815286016?i=1815286306",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1650818594",
+      "title": "Keshir meni",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Jalgyz otem - Single",
+      "duration": 194,
+      "releaseDate": "2022-10-21",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/keshir-meni/1650818576?i=1650818594",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6763306994",
+      "title": "Kobelek",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & dudeontheguitar",
+      "album": "Kobelek - Single",
+      "duration": 210,
+      "releaseDate": "2026-05-01",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/kobelek/1895256313?i=6763306994",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6797508184",
+      "title": "ai kunim",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Kim ol? - Single",
+      "duration": 143,
+      "releaseDate": "2026-08-06",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ai-kunim/6797507873?i=6797508184",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6817801159",
+      "title": "Ashyq Aspan",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "7 Қарақшы (Original Motion Picture Soundtrack)",
+      "duration": 267,
+      "releaseDate": "2026-09-29",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ashyq-aspan/6817800978?i=6817801159",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6787939065",
+      "title": "Magan Unaidy",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Magan Unaidy - Single",
+      "duration": 159,
+      "releaseDate": "2026-07-08",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/magan-unaidy/6787938995?i=6787939065",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1728291032",
+      "title": "QARANGYDA",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "QARANGYDA - Single",
+      "duration": 244,
+      "releaseDate": "2024-02-01",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qarangyda/1728290848?i=1728291032",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6809780421",
+      "title": "esimde bari",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar & Сироткин",
+      "album": "esimde bari - Single",
+      "duration": 224,
+      "releaseDate": "2026-09-18",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/esimde-bari/6809780259?i=6809780421",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6797507874",
+      "title": "tek seni súıu",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Kim ol? - Single",
+      "duration": 212,
+      "releaseDate": "2026-08-06",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/tek-seni-s%C3%BA%C4%B1u/6797507873?i=6797507874",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1653993076",
+      "title": "Aramyz Zhylyp Qalar (Acoustic Version)",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Aramyz Zhylyp Qalar (Acoustic Version) - Single",
+      "duration": 183,
+      "releaseDate": "2018-03-10",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aramyz-zhylyp-qalar-acoustic-version/1653992762?i=1653993076",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1815286320",
+      "title": "bul senbi",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "YA - EP",
+      "duration": 138,
+      "releaseDate": "2025-05-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/bul-senbi/1815286016?i=1815286320",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1653986921",
+      "title": "Kimge Eresin?",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "Depti - EP",
+      "duration": 175,
+      "releaseDate": "2021-03-07",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/kimge-eresin/1653986471?i=1653986921",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1815286331",
+      "title": "juzim auysqan (feat. The Svarka)",
+      "artistId": "moldanazar",
+      "artist": "Moldanazar",
+      "album": "YA - EP",
+      "duration": 208,
+      "releaseDate": "2025-05-23",
+      "styles": [
+        "indie",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/juzim-auysqan-feat-the-svarka/1815286016?i=1815286331",
       "artwork": "",
       "audioUrl": "",
       "downloadable": false,
