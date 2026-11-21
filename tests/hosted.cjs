@@ -23,11 +23,11 @@ const base = "http://127.0.0.1:4173";
   await page.locator("#availabilityFilter").waitFor();
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /300 ән тізімі/,
+    /325 ән тізімі/,
   );
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /300 толық аудио/,
+    /325 толық аудио/,
   );
   await page.locator("#availabilityFilter").selectOption("full");
   assert.ok((await page.locator(".track-row").count()) > 0);

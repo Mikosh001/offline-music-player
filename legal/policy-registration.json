@@ -1,9 +1,9 @@
 {
   "registry": "SAZ сайтының ішкі саясат реестрі",
   "documentId": "SAZ-POL-2026-001",
-  "version": "1.1",
+  "version": "1.2",
   "createdOn": "2026-10-05",
-  "updatedOn": "2026-11-21",
+  "updatedOn": "2026-11-22",
   "effective": "Сайтта осы нұсқа жарияланған сәттен",
   "owner": "Бердібек Мейірбек Болатбекұлы",
   "contactEmail": "berdibekmejirbek08@gmail.com",
@@ -17,9 +17,9 @@
   "appendices": 3,
   "pdfPages": 16,
   "legalSourcesCheckedOn": "2026-10-05",
-  "productReviewedOn": "2026-11-21",
+  "productReviewedOn": "2026-11-22",
   "reviewScope": "Сайттың нақты функциялары, құпиялық түсіндірмелері, құжат сілтемелері және оқылуы тексерілді. Бұл тәуелсіз заңдық сараптама емес; нормативтік актінің өзекті редакциясы ресми дереккөзден анықталады.",
-  "previousVersion": "archive/v1.0/policy-registration.json",
+  "previousVersion": "archive/v1.1/policy-registration.json",
   "sources": [
     {
       "id": "Қ1",
@@ -61,18 +61,18 @@
   "files": [
     {
       "path": "site-policy.html",
-      "sha256": "58f6bf44cc3eaa5d8ae453c95739bd2be3468bfdd81a27764188d1c9b37b7793",
-      "bytes": 82708
+      "sha256": "f16a04c8bf9e939125d46721bc22a55ff1200fc6be7448be7cae83bc7cf567ff",
+      "bytes": 82754
     },
     {
       "path": "site-policy.pdf",
-      "sha256": "fb23539c6d94caa49a82b1bcc18822efe447d10244fca62cf2758c2e7d87a949",
-      "bytes": 203216
+      "sha256": "02785ce54b14fa74adc99b5cb7e0cd3752c90fe0ccbd72e225f052c15b795527",
+      "bytes": 203233
     },
     {
       "path": "site-policy-content.json",
-      "sha256": "3c7661e6814291329786519cec8a8c1e7786aaef47184ee01a9c7b6114ce2f2a",
-      "bytes": 64809
+      "sha256": "041923d02267be88bf99da81b6b1a94a7f70dae32c072ba83745ff10e735feb0",
+      "bytes": 64770
     },
     {
       "path": "saz-policy-seal.svg",

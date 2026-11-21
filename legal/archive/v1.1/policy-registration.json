@@ -1,0 +1,93 @@
+{
+  "registry": "SAZ сайтының ішкі саясат реестрі",
+  "documentId": "SAZ-POL-2026-001",
+  "version": "1.1",
+  "createdOn": "2026-10-05",
+  "updatedOn": "2026-11-21",
+  "effective": "Сайтта осы нұсқа жарияланған сәттен",
+  "owner": "Бердібек Мейірбек Болатбекұлы",
+  "contactEmail": "berdibekmejirbek08@gmail.com",
+  "status": "Сайттың ішкі саясат құжаты. ЭЦҚ-мен қол қойылмаған.",
+  "isGovernmentRegistration": false,
+  "isMusicLicense": false,
+  "isNotarized": false,
+  "isDigitallySigned": false,
+  "sections": 14,
+  "clauses": 100,
+  "appendices": 3,
+  "pdfPages": 16,
+  "legalSourcesCheckedOn": "2026-10-05",
+  "productReviewedOn": "2026-11-21",
+  "reviewScope": "Сайттың нақты функциялары, құпиялық түсіндірмелері, құжат сілтемелері және оқылуы тексерілді. Бұл тәуелсіз заңдық сараптама емес; нормативтік актінің өзекті редакциясы ресми дереккөзден анықталады.",
+  "previousVersion": "archive/v1.0/policy-registration.json",
+  "sources": [
+    {
+      "id": "Қ1",
+      "url": "https://www.akorda.kz/kz/kazakstan-respublikasynyn-konstituciyasy-3053334"
+    },
+    {
+      "id": "Қ2",
+      "url": "https://old.adilet.zan.kz/kaz/docs/Z960000006_"
+    },
+    {
+      "id": "Қ3",
+      "url": "https://old.adilet.zan.kz/kaz/docs/Z1300000094"
+    },
+    {
+      "id": "Қ4",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K2600000255"
+    },
+    {
+      "id": "Қ5",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K1400000226"
+    },
+    {
+      "id": "Қ6",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K1400000235"
+    },
+    {
+      "id": "Қ7",
+      "url": "https://old.adilet.zan.kz/kaz/docs/K940001000_"
+    },
+    {
+      "id": "Қ8",
+      "url": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement"
+    },
+    {
+      "id": "Қ9",
+      "url": "https://policies.google.com/privacy?hl=kk"
+    }
+  ],
+  "files": [
+    {
+      "path": "site-policy.html",
+      "sha256": "660f7c72ed390e1eeb64ed9a1adbceb2f395216ba0ebb6109ab6d385c943bc15",
+      "bytes": 82741
+    },
+    {
+      "path": "site-policy.pdf",
+      "sha256": "fb23539c6d94caa49a82b1bcc18822efe447d10244fca62cf2758c2e7d87a949",
+      "bytes": 203216
+    },
+    {
+      "path": "site-policy-content.json",
+      "sha256": "3c7661e6814291329786519cec8a8c1e7786aaef47184ee01a9c7b6114ce2f2a",
+      "bytes": 64809
+    },
+    {
+      "path": "saz-policy-seal.svg",
+      "sha256": "3aa29be70ac02ebbc75e81cbaca5ce166653419e65ae30ad985e7005bbda20be",
+      "bytes": 753
+    },
+    {
+      "path": "policy.css",
+      "sha256": "2c6ec92f268f2ef0eedd35d4af876c80a8694ea7c52c03ca8d07a622f45477b6",
+      "bytes": 10102
+    },
+    {
+      "path": "policy.js",
+      "sha256": "d8a4d4f111d327b5c40efab54815c400bc715ddba29c1e6992af7cf9ea558402",
+      "bytes": 2556
+    }
+  ]
+}

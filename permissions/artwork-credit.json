@@ -1466,6 +1466,96 @@
       "artistId": "kazybek",
       "album": "Qaragym - Single",
       "sha256": "1ad5126a86feec894256a7acd31ab5e1240ec1cbbba7d3909aea443b4b0c8d50"
+    },
+    {
+      "file": "assets/artwork/50c4fb3c7beb500a.svg",
+      "artistId": "ayau",
+      "album": "jañbyr astynda (Euphoria Edit) - Single",
+      "sha256": "ff2c221f79536f3c4769cf3aa2b71a8927112e310fc8bb069ae88702b7fac50f"
+    },
+    {
+      "file": "assets/artwork/39b8c5dd0320a2ba.svg",
+      "artistId": "darkhan",
+      "album": "700 - Single",
+      "sha256": "8a36747f514dfb989b0f9f3e04a925ddf04c4735b1ad8f0cf33ba9826cd084dc"
+    },
+    {
+      "file": "assets/artwork/85fb3a4ce45e51c6.svg",
+      "artistId": "darkhan",
+      "album": "Quralai - Single",
+      "sha256": "ca39d31f62d2f5e5d1261c1c6f7cf64825e29dfac13f27cfea186c651970ec3e"
+    },
+    {
+      "file": "assets/artwork/82822704dd2aeedf.svg",
+      "artistId": "darkhan",
+      "album": "Shyraq - Single",
+      "sha256": "1d67aa68c7a15c0eeb587120475a7f630289e5be17e74b7e36cd93703cd661ae"
+    },
+    {
+      "file": "assets/artwork/f3505a195907c396.svg",
+      "artistId": "darkhan",
+      "album": "Kún Men Aıym (Remix) - Single",
+      "sha256": "dfc253b2322b970ec7d1e48a48537b28fe1bdea30390964459faa3be2280acc7"
+    },
+    {
+      "file": "assets/artwork/ba0b8a3f63c11f0a.svg",
+      "artistId": "dequine",
+      "album": "Да Ладно - Single",
+      "sha256": "47456c762c256ac3de84edc42afe4a9d50dbe6e1350ba7faa1b0dfd21e30f1a4"
+    },
+    {
+      "file": "assets/artwork/f98448704b197b88.svg",
+      "artistId": "kalifarniya",
+      "album": "Roza - Single",
+      "sha256": "6de516c2aa750c7cfc550c2993f827171d3f306a1f46223ed59377a5968e1f51"
+    },
+    {
+      "file": "assets/artwork/abc821efad7939ed.svg",
+      "artistId": "kalifarniya",
+      "album": "UAQYT - Single",
+      "sha256": "93d888a6b878acd463886d5d385973275eef15257f76f531dbea3dd11e296dda"
+    },
+    {
+      "file": "assets/artwork/e18f65b384b6531d.svg",
+      "artistId": "kalifarniya",
+      "album": "Өмір - Single",
+      "sha256": "555c9a08e9bfb8864297c857000bbeed7ab5579bd43a3e799fb38f511fe36779"
+    },
+    {
+      "file": "assets/artwork/9db85c5c3115e5e3.svg",
+      "artistId": "kalifarniya",
+      "album": "Хат - Single",
+      "sha256": "973e423b42b871b299af140c00183d3c3f9e1f17456e26714dab46e6be7831ce"
+    },
+    {
+      "file": "assets/artwork/f74bfb99a812f908.svg",
+      "artistId": "kalifarniya",
+      "album": "ПРЕПАРАТ - Single",
+      "sha256": "7e2d140fd9c85529c5dd0a6e75656734123e6f576068f7cb734a3200ef2859d1"
+    },
+    {
+      "file": "assets/artwork/de95826207ffafa9.svg",
+      "artistId": "kalifarniya",
+      "album": "Oi barekeldi - Single",
+      "sha256": "7dee5ef2bca48b7768ac298f44615a5b72b2fa5b84a11cf8e070e363cbd9e8c0"
+    },
+    {
+      "file": "assets/artwork/6c7e395fc3b115e9.svg",
+      "artistId": "kalifarniya",
+      "album": "69 - Single",
+      "sha256": "41c5125741c4246731dea32778f248d60a524aaf23fbf0313d975298be9fea07"
+    },
+    {
+      "file": "assets/artwork/e94912604ea7d79e.svg",
+      "artistId": "kazybek",
+      "album": "Баяғы - Single",
+      "sha256": "17bc23a106f3d587afe26397e2784628d201ea10eebd9844bfbc746b76abbe33"
+    },
+    {
+      "file": "assets/artwork/48038e2e5a9cb642.svg",
+      "artistId": "kazybek",
+      "album": "Suiemin - Single",
+      "sha256": "493480d5426763dffe86bd7747e2b1fbbf82b5c6e5b4fcfd00a83602c48be30c"
     }
   ]
 }

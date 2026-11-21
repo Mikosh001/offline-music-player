@@ -77,6 +77,6 @@ const base=process.env.SAZ_TEST_URL||'http://127.0.0.1:4173/';
     for(const c of geometry.controls){assert.ok(c.x>=0&&c.x+c.width<=geometry.width+1,JSON.stringify(c));assert.ok(c.width>=44&&c.height>=44,JSON.stringify(c));}
   }
   await touch.close();
-  console.log('Experience passed: personal mixes and cold start, queue identity/clear, album navigation, 244 offline covers, four responsive widths, offline discovery/playback, preferences and history privacy, policy search/theme, malformed route, no external requests.');
+  console.log('Experience passed: personal mixes and cold start, queue identity/clear, album navigation, all offline covers, four responsive widths, offline discovery/playback, preferences and history privacy, policy search/theme, malformed route, no external requests.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1)});

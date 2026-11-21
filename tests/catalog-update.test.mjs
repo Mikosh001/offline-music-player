@@ -133,7 +133,7 @@ test("personal audio bindings and downloaded byte counts survive catalogue updat
   assert.equal(result.plays, 3);
   assert.equal(result.audioUrl, personal.audioUrl);
 });
-test("all 300 catalogue songs have full audio, source references and declared checksums", async () => {
+test("all 325 catalogue songs have full audio, source references and declared checksums", async () => {
   const catalog = validateCatalog(
     JSON.parse(
       await readFile(new URL("../catalog.json", import.meta.url), "utf8"),
@@ -151,8 +151,8 @@ test("all 300 catalogue songs have full audio, source references and declared ch
     assert.ok(catalog.tracks.filter((t) => t.artistId === id).length >= 10, id);
   const songs = catalog.tracks.filter((t) => !t.demo);
   const hosted = songs.filter((t) => t.downloadable);
-  assert.equal(hosted.length, 300);
-  assert.equal(new Set(hosted.map((t) => t.audioUrl)).size, 297);
+  assert.equal(hosted.length, 325);
+  assert.equal(new Set(hosted.map((t) => t.audioUrl)).size, 322);
   for (const t of songs) {
     assert.match(t.officialUrl, /^https:\/\/music.apple.com\//);
   }
@@ -161,7 +161,7 @@ test("all 300 catalogue songs have full audio, source references and declared ch
       t.audioUrl,
       /^assets\/audio\/licensed\/apple-\d+-[a-f0-9]{16}\.mp3$/,
     );
-    assert.match(t.permissionRef, /^SAZ-(20261005-001|20261121-002)-F\d{3}$/);
+    assert.match(t.permissionRef, /^SAZ-(20261005-001|20261121-002|20261122-003)-F\d{3}$/);
     assert.match(t.license, /жинақтаушының мәлімдемесі/);
     assert.match(t.sha256, /^[a-f0-9]{64}$/);
     assert.ok(t.size > 0 && t.duration > 0);
@@ -176,5 +176,5 @@ test("all 300 catalogue songs have full audio, source references and declared ch
     catalog.artists.filter((a) => !a.id.startsWith("saz-")).length,
     11,
   );
-  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 300);
+  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 325);
 });

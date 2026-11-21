@@ -1,6 +1,6 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-15`;
+const CACHE = `${PREFIX}v2-16`;
 const SHELL = [
   "./",
   "index.html",
@@ -29,10 +29,19 @@ const SHELL = [
   "legal/archive/v1.0/site-policy-content.json",
   "legal/archive/v1.0/policy-registration.json",
   "legal/archive/v1.0/saz-policy-seal.svg",
+  "legal/archive/v1.1/site-policy.html",
+  "legal/archive/v1.1/site-policy.pdf",
+  "legal/archive/v1.1/site-policy-content.json",
+  "legal/archive/v1.1/policy-registration.json",
+  "legal/archive/v1.1/policy.css",
+  "legal/archive/v1.1/policy.js",
+  "legal/archive/v1.1/saz-policy-seal.svg",
   "legal/saz-policy-seal.svg",
   "permissions/additional-audio-20261121.html",
   "permissions/additional-audio-20261121.json",
   "permissions/current-audio-publication.json",
+  "permissions/additional-audio-20261122.html",
+  "permissions/additional-audio-20261122.json",
 ];
 const shellUrls = new Set(SHELL.map((path) => new URL(path, BASE).href));
 self.addEventListener("install", (event) => {

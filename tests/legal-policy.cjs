@@ -51,7 +51,7 @@ const output =
     });
     assert.equal(registry.documentId, "SAZ-POL-2026-001");
     assert.equal(registry.isDigitallySigned, false);
-    assert.equal(registry.version, "1.1");
+    assert.equal(registry.version, "1.2");
     const text = await page.evaluate(async () => (await fetch('site-policy-content.json')).json());
     for (const section of text.sections) {
       for (const clause of section.clauses) {

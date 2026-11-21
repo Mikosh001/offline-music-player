@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "publishedAt": "2026-11-21",
-  "catalogSongs": 300,
-  "newlyCompletedSongs": 95,
+  "publishedAt": "2026-11-22",
+  "catalogSongs": 325,
+  "newlyCompletedSongs": 25,
   "correctedExistingRecordings": [
     "apple-1132417509",
     "apple-1654030309",
     "apple-1653990242"
   ],
-  "uniqueHostedFiles": 297,
-  "totalHostedAudioBytes": 906200850,
+  "uniqueHostedFiles": 322,
+  "totalHostedAudioBytes": 980791700,
   "independentPermissionVerification": false,
-  "permissionDeclaration": "additional-audio-20261121.json",
+  "permissionDeclaration": "additional-audio-20261122.json",
   "historicPublicationMap": "hosted-audio-map.json",
   "comparisonNotice": "Official Apple Music excerpts were used transiently for recording comparison and are not redistributed. Correlation supports identity; it is not independent rights verification. Scores describe source audio before MP3 re-encoding.",
   "originalDocuments": [
@@ -8676,6 +8676,660 @@
         "reference": "Apple Music official audio preview (comparison only; not redistributed)",
         "method": "normalized waveform cross-correlation"
       }
+    },
+    {
+      "trackId": "apple-1715482340",
+      "artist": "Ayau",
+      "title": "menimen bol ∞",
+      "permissionRef": "SAZ-20261122-003-F001",
+      "audioUrl": "assets/audio/licensed/apple-1715482340-a266473e2b082bea.mp3",
+      "bytes": 3371377,
+      "sha256": "a266473e2b082bea7f2359be5dca26de7d19c50ae8812f33e44008e5f52271f1",
+      "durationSeconds": 210.67755102040817,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/menimen-bol/1715481464?i=1715482340",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/ayau-menimen-bol/140283",
+        "sourceSha256": "ca96740704c9f4037640a6e3ef6e64009393101140d64d04e1b24de66013f057",
+        "sourceBytes": 8658330
+      },
+      "verification": {
+        "correlation": 0.988748,
+        "previewOffsetSeconds": 4.019,
+        "previewDuration": 29.9755,
+        "officialDuration": 210.619,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1751960692",
+      "artist": "Ayau",
+      "title": "jañbyr astynda (Euphoria Edit)",
+      "permissionRef": "SAZ-20261122-003-F002",
+      "audioUrl": "assets/audio/licensed/apple-1751960692-6f67328be747b371.mp3",
+      "bytes": 2591156,
+      "sha256": "6f67328be747b37183aea1b962db3040ca7bac5f325c2e15e236dcd920fc6491",
+      "durationSeconds": 161.9069387755102,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/ja%C3%B1byr-astynda-euphoria-edit/1751960520?i=1751960692",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/ayau-janbyr-astynda-euphoria-edit/174218",
+        "sourceSha256": "e055e147f43d0bcca6783af6b7b8fa06d26af58f1fced442e90a28c1ba929dda",
+        "sourceBytes": 6477710
+      },
+      "verification": {
+        "correlation": 0.996521,
+        "previewOffsetSeconds": 50.0405,
+        "previewDuration": 29.9755,
+        "officialDuration": 161.818,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1543979574",
+      "artist": "Darkhan Juzz & JETI",
+      "title": "700",
+      "permissionRef": "SAZ-20261122-003-F003",
+      "audioUrl": "assets/audio/licensed/apple-1543979574-d68491dc83832ff1.mp3",
+      "bytes": 2656243,
+      "sha256": "d68491dc83832ff1f8e0fe7252c52a2403d852a5ab71ccf2f61bee925756ce20",
+      "durationSeconds": 165.98204081632653,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/700/1543979565?i=1543979574",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-jeti-700/32601",
+        "sourceSha256": "2172b633b87834b4a1ee0d76738de796eb3c6bd5a026319e58691199f1bdabdf",
+        "sourceBytes": 8261795
+      },
+      "verification": {
+        "correlation": 0.932394,
+        "previewOffsetSeconds": 62.9955,
+        "previewDuration": 29.929,
+        "officialDuration": 165.93,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1807096317",
+      "artist": "Darkhan Juzz",
+      "title": "Qaldyrma Menі",
+      "permissionRef": "SAZ-20261122-003-F004",
+      "audioUrl": "assets/audio/licensed/apple-1807096317-addff17994d2b5e9.mp3",
+      "bytes": 3634697,
+      "sha256": "addff17994d2b5e9884ff4c674287b8706864de5e14df149d45deaebc1191051",
+      "durationSeconds": 227.13469387755103,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/qaldyrma-men%D1%96/1807096312?i=1807096317",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-qaldyrma-meni/32611",
+        "sourceSha256": "6f387a99f67a13477d7e6882866c31a3a889c39ee197e2f2737a6e7f75bb8937",
+        "sourceBytes": 9140720
+      },
+      "verification": {
+        "correlation": 0.999941,
+        "previewOffsetSeconds": 0.0,
+        "previewDuration": 29.9525,
+        "officialDuration": 227.11,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1809381343",
+      "artist": "Darkhan Juzz",
+      "title": "Ol",
+      "permissionRef": "SAZ-20261122-003-F005",
+      "audioUrl": "assets/audio/licensed/apple-1809381343-535363fd437288b1.mp3",
+      "bytes": 1875066,
+      "sha256": "535363fd437288b14c58105d3665249913a7e6e72c7da623733905ca995644d9",
+      "durationSeconds": 117.15918367346939,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/ol/1809381341?i=1809381343",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-ol/127401",
+        "sourceSha256": "42bc7c3cc0e446244a5a6c4b7c931d3ba9c6248d593a9c07ee0d470403495531",
+        "sourceBytes": 4997762
+      },
+      "verification": {
+        "correlation": 0.997175,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 117.088,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1809381344",
+      "artist": "Darkhan Juzz",
+      "title": "Bari Shynai",
+      "permissionRef": "SAZ-20261122-003-F006",
+      "audioUrl": "assets/audio/licensed/apple-1809381344-766fe9a73c315d34.mp3",
+      "bytes": 2463980,
+      "sha256": "766fe9a73c315d349f3587835277602dac173c785a8d5b539d0ed50a0298994d",
+      "durationSeconds": 153.96571428571428,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/bari-shynai/1809381341?i=1809381344",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-bari-shynai/127405",
+        "sourceSha256": "5737dbde798d73f3ac7353d12f4f5775783b91108caa238304fe34a7cd1ae551",
+        "sourceBytes": 6470041
+      },
+      "verification": {
+        "correlation": 0.997384,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 153.912,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1809381532",
+      "artist": "Darkhan Juzz",
+      "title": "Munayp",
+      "permissionRef": "SAZ-20261122-003-F007",
+      "audioUrl": "assets/audio/licensed/apple-1809381532-9d59f855c9f93dea.mp3",
+      "bytes": 3242215,
+      "sha256": "9d59f855c9f93dea846781b9e024eb466c6d47e30be2adf81f1758dc3cec12d1",
+      "durationSeconds": 202.6057142857143,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/munayp/1809381341?i=1809381532",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-munayp/127399",
+        "sourceSha256": "c4a1d4ea294fef613743a2babdb56a27df85a1fb008abbec7f0cbbdada082c1c",
+        "sourceBytes": 8415633
+      },
+      "verification": {
+        "correlation": 0.991474,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 202.533,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1809381535",
+      "artist": "Darkhan Juzz",
+      "title": "Esindi Ji",
+      "permissionRef": "SAZ-20261122-003-F008",
+      "audioUrl": "assets/audio/licensed/apple-1809381535-38ab59a4858d58ec.mp3",
+      "bytes": 3106799,
+      "sha256": "38ab59a4858d58ec1c1b01e308aaf1bbf1d46c669f6f4c0620c0807ad374bdbb",
+      "durationSeconds": 194.14204081632653,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/esindi-ji/1809381341?i=1809381535",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-esindi-ji/127408",
+        "sourceSha256": "8e44e1372529786484b2b5a73065c65ff4877ff014ee35593f121493cd347bcf",
+        "sourceBytes": 8077092
+      },
+      "verification": {
+        "correlation": 0.995735,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 194.08,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1809381536",
+      "artist": "Darkhan Juzz",
+      "title": "Jappaim",
+      "permissionRef": "SAZ-20261122-003-F009",
+      "audioUrl": "assets/audio/licensed/apple-1809381536-923093baa7cc225a.mp3",
+      "bytes": 3710330,
+      "sha256": "923093baa7cc225ae281cfb795d98a8409167d5640197ec46008f4043a346713",
+      "durationSeconds": 231.86285714285714,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/jappaim/1809381341?i=1809381536",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-jappaim/127407",
+        "sourceSha256": "625740579e8165471321c63fa8da05883476b826a7b7c7a47314f8584085544b",
+        "sourceBytes": 9585921
+      },
+      "verification": {
+        "correlation": 0.982423,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 231.8,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1840400741",
+      "artist": "Darkhan Juzz",
+      "title": "Quralai",
+      "permissionRef": "SAZ-20261122-003-F010",
+      "audioUrl": "assets/audio/licensed/apple-1840400741-571e110642b7596b.mp3",
+      "bytes": 2951323,
+      "sha256": "571e110642b7596bea14df921561e8b24189d751ede8b6b4989d35df3b9c0771",
+      "durationSeconds": 184.42448979591836,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/quralai/1840400740?i=1840400741",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-quralai/19174",
+        "sourceSha256": "1e4e3194851e0e00ee806d603a13b5add0b142878369b8845989705f13c55436",
+        "sourceBytes": 8076245
+      },
+      "verification": {
+        "correlation": 0.999966,
+        "previewOffsetSeconds": 0.0,
+        "previewDuration": 29.9525,
+        "officialDuration": 184.399,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1841605041",
+      "artist": "Darkhan Juzz",
+      "title": "Shyraq",
+      "permissionRef": "SAZ-20261122-003-F011",
+      "audioUrl": "assets/audio/licensed/apple-1841605041-2e94e0f01940f5de.mp3",
+      "bytes": 2763658,
+      "sha256": "2e94e0f01940f5de9e297d28cb002f69693eb8e4e8dadebc2122ac48dad59024",
+      "durationSeconds": 172.69551020408164,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/shyraq/1841605040?i=1841605041",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-shyraq/108470",
+        "sourceSha256": "fbe7e43aa51f148637abcec9af6ebaea9c52f47f71dd866a01f98e0c552ddf70",
+        "sourceBytes": 7164266
+      },
+      "verification": {
+        "correlation": 0.983536,
+        "previewOffsetSeconds": 0.0,
+        "previewDuration": 29.9525,
+        "officialDuration": 173.021,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-6766387936",
+      "artist": "Darkhan Juzz & PUZA",
+      "title": "Kún Men Aıym (Remix)",
+      "permissionRef": "SAZ-20261122-003-F012",
+      "audioUrl": "assets/audio/licensed/apple-6766387936-265c0c3ad9a178df.mp3",
+      "bytes": 3534882,
+      "sha256": "265c0c3ad9a178df819b34806e25b1e698b3c54a2f42ac52b6cd7f8c52a5fb6a",
+      "durationSeconds": 220.89142857142858,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/k%C3%BAn-men-a%C4%B1ym-remix/6766387935?i=6766387936",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/darkhan-juzz-dj-puza-kun-men-a-ym-remix/158026",
+        "sourceSha256": "731f35bcebfb026fce2b63df2f40baa652acdd111291119118404eb4544e5548",
+        "sourceBytes": 9032428
+      },
+      "verification": {
+        "correlation": 0.985198,
+        "previewOffsetSeconds": 0.025,
+        "previewDuration": 29.9525,
+        "officialDuration": 220.83,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1678716965",
+      "artist": "Dequine",
+      "title": "Да Ладно",
+      "permissionRef": "SAZ-20261122-003-F013",
+      "audioUrl": "assets/audio/licensed/apple-1678716965-dcfcb17ac8089f96.mp3",
+      "bytes": 2196517,
+      "sha256": "dcfcb17ac8089f96162a4cc0d69df3ee696d18526f9124a8f1f68746c96fe5aa",
+      "durationSeconds": 137.2473469387755,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B4%D0%B0-%D0%BB%D0%B0%D0%B4%D0%BD%D0%BE/1678716674?i=1678716965",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/dequine-da-ladno/64999",
+        "sourceSha256": "10942ba5f4a8be4e9f5fb4c0faf30946750f7eecf055a104777971ebca2aaa61",
+        "sourceBytes": 5648016
+      },
+      "verification": {
+        "correlation": 0.874076,
+        "previewOffsetSeconds": 74.999,
+        "previewDuration": 29.9525,
+        "officialDuration": 137.173,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1762425040",
+      "artist": "Kalifarniya",
+      "title": "Roza",
+      "permissionRef": "SAZ-20261122-003-F014",
+      "audioUrl": "assets/audio/licensed/apple-1762425040-383f6603aab7c088.mp3",
+      "bytes": 3489648,
+      "sha256": "383f6603aab7c0886bbddbc7e1f877061b74c75b26aaa79a9e2406ed64ed2c36",
+      "durationSeconds": 218.07020408163265,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/roza/1762425031?i=1762425040",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-roza/55886",
+        "sourceSha256": "b1d7a4146a9547735e5e79721b7162560689732a7aa55748a577b9e5cd549904",
+        "sourceBytes": 8754364
+      },
+      "verification": {
+        "correlation": 0.999773,
+        "previewOffsetSeconds": 1.0235,
+        "previewDuration": 29.9755,
+        "officialDuration": 218.0,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1766268218",
+      "artist": "Kalifarniya & Qarakesek",
+      "title": "UAQYT",
+      "permissionRef": "SAZ-20261122-003-F015",
+      "audioUrl": "assets/audio/licensed/apple-1766268218-6f9e95f40b8a55af.mp3",
+      "bytes": 2801701,
+      "sha256": "6f9e95f40b8a55af33c65659e76b7eb96c629747c0d18d760d8a42a33c1e14fb",
+      "durationSeconds": 175.07265306122449,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/uaqyt/1766268202?i=1766268218",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-qarakesek-uaqyt/93144",
+        "sourceSha256": "d2285ab4a19e6a09ffae99f507e4be38049f6a95bfe573cd8a5fbf2dd457d612",
+        "sourceBytes": 7027658
+      },
+      "verification": {
+        "correlation": 0.999744,
+        "previewOffsetSeconds": 1.0235,
+        "previewDuration": 29.9755,
+        "officialDuration": 175.006,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1766544704",
+      "artist": "Kalifarniya",
+      "title": "DRAMA",
+      "permissionRef": "SAZ-20261122-003-F016",
+      "audioUrl": "assets/audio/licensed/apple-1766544704-d8c9bb64e36219e1.mp3",
+      "bytes": 2529594,
+      "sha256": "d8c9bb64e36219e1a5e14383dccee45980ab4e896161e4bc2c7c556b692d8484",
+      "durationSeconds": 158.0669387755102,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/drama/1766544099?i=1766544704",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-drama/85674",
+        "sourceSha256": "292465514ee5745ead609fc5924690d0172af4c916b0bdcfcf9064e144452f23",
+        "sourceBytes": 6345926
+      },
+      "verification": {
+        "correlation": 0.976194,
+        "previewOffsetSeconds": 47.0245,
+        "previewDuration": 29.9755,
+        "officialDuration": 156.702,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1766544965",
+      "artist": "Kalifarniya",
+      "title": "KESHIR",
+      "permissionRef": "SAZ-20261122-003-F017",
+      "audioUrl": "assets/audio/licensed/apple-1766544965-daf70b3ee68947c4.mp3",
+      "bytes": 3561118,
+      "sha256": "daf70b3ee68947c4b4a715b27ddbaf2e992aaee2fbf64fade4c24eda8a039f51",
+      "durationSeconds": 222.53714285714287,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/keshir/1766544099?i=1766544965",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-keshir/100662",
+        "sourceSha256": "13bfad3a00cfa24b21ccd57b0ea316e1926b7d4af348ddaa61cc73fb98b47002",
+        "sourceBytes": 8937517
+      },
+      "verification": {
+        "correlation": 0.997022,
+        "previewOffsetSeconds": 104.9775,
+        "previewDuration": 29.9755,
+        "officialDuration": 222.505,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1766544977",
+      "artist": "Kalifarniya",
+      "title": "LIRIKA",
+      "permissionRef": "SAZ-20261122-003-F018",
+      "audioUrl": "assets/audio/licensed/apple-1766544977-2299fc7cb32fb49b.mp3",
+      "bytes": 2127100,
+      "sha256": "2299fc7cb32fb49b942fed80f1e629b51679f7d0598e189aabf98a7110585f11",
+      "durationSeconds": 132.91102040816327,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/lirika/1766544099?i=1766544977",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-lirika/100667",
+        "sourceSha256": "7f09c10c255a1211f4047d66b881bd91d5a348a0547b07ee7bcb3a64e900a4f7",
+        "sourceBytes": 5352472
+      },
+      "verification": {
+        "correlation": 0.997194,
+        "previewOffsetSeconds": 52.988,
+        "previewDuration": 29.9755,
+        "officialDuration": 132.88,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1778062348",
+      "artist": "Kalifarniya",
+      "title": "Өмір",
+      "permissionRef": "SAZ-20261122-003-F019",
+      "audioUrl": "assets/audio/licensed/apple-1778062348-5212169932a03a69.mp3",
+      "bytes": 2933785,
+      "sha256": "5212169932a03a69937731a198d223efa4690f3d01fdadf10568b9fba49414f4",
+      "durationSeconds": 183.32734693877552,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/%D3%A9%D0%BC%D1%96%D1%80/1778062347?i=1778062348",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-omir/193086",
+        "sourceSha256": "e6b9a09073b35a7ed74a870bf2db40bc61f910e6fec9b725b614870a50fc5cc4",
+        "sourceBytes": 7424786
+      },
+      "verification": {
+        "correlation": 0.899041,
+        "previewOffsetSeconds": 59.0035,
+        "previewDuration": 29.9755,
+        "officialDuration": 183.273,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1780772737",
+      "artist": "Kalifarniya",
+      "title": "Хат",
+      "permissionRef": "SAZ-20261122-003-F020",
+      "audioUrl": "assets/audio/licensed/apple-1780772737-b2045c0b918f0dc4.mp3",
+      "bytes": 2716024,
+      "sha256": "b2045c0b918f0dc4b53bc7928291e55d533581c78d92907c7b3a37611a789582",
+      "durationSeconds": 169.71755102040817,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/%D1%85%D0%B0%D1%82/1780772719?i=1780772737",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-hat/154264",
+        "sourceSha256": "56f01095fafa4515baf538a3ce5588fd541c90690a6220db19c33cad25011dd3",
+        "sourceBytes": 6891386
+      },
+      "verification": {
+        "correlation": 0.999651,
+        "previewOffsetSeconds": 1.0235,
+        "previewDuration": 29.9755,
+        "officialDuration": 169.655,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1780791706",
+      "artist": "Kalifarniya",
+      "title": "ПРЕПАРАТ",
+      "permissionRef": "SAZ-20261122-003-F021",
+      "audioUrl": "assets/audio/licensed/apple-1780791706-edb6a91e01ca1f5f.mp3",
+      "bytes": 2750317,
+      "sha256": "edb6a91e01ca1f5f2173b4dd75b41a091477818776f1fd83bb387b4cd904660e",
+      "durationSeconds": 171.8595918367347,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/%D0%BF%D1%80%D0%B5%D0%BF%D0%B0%D1%80%D0%B0%D1%82/1780791683?i=1780791706",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-preparat/138380",
+        "sourceSha256": "75f015b5e23358e5c639b120e31a78b87c2cd87858dbf9bd21883c561933b0f1",
+        "sourceBytes": 6982572
+      },
+      "verification": {
+        "correlation": 0.999611,
+        "previewOffsetSeconds": 1.0235,
+        "previewDuration": 29.9755,
+        "officialDuration": 171.79,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1780792042",
+      "artist": "Kalifarniya",
+      "title": "Oi barekeldi",
+      "permissionRef": "SAZ-20261122-003-F022",
+      "audioUrl": "assets/audio/licensed/apple-1780792042-68f331b7189a7e29.mp3",
+      "bytes": 3172851,
+      "sha256": "68f331b7189a7e29dd77183fa1a3e3776e377f550fb1512570dfbb4ec87e53ee",
+      "durationSeconds": 198.26938775510203,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/oi-barekeldi/1780791745?i=1780792042",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-oi-barekeldi/127739",
+        "sourceSha256": "a42054aa9f0db2f0d2acba9d5f0e990b099acaf35e70b715ed3c91db74c0925a",
+        "sourceBytes": 7978906
+      },
+      "verification": {
+        "correlation": 0.998268,
+        "previewOffsetSeconds": 0.9985,
+        "previewDuration": 29.9755,
+        "officialDuration": 198.239,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1795044550",
+      "artist": "Kalifarniya",
+      "title": "69",
+      "permissionRef": "SAZ-20261122-003-F023",
+      "audioUrl": "assets/audio/licensed/apple-1795044550-223f5e36e5072f06.mp3",
+      "bytes": 4054725,
+      "sha256": "223f5e36e5072f06e27b4ee9086b28e5818a6f11ad87a9e1d6122b301e6cab31",
+      "durationSeconds": 253.3877551020408,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/69/1795044549?i=1795044550",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kalifarniya-69/208492",
+        "sourceSha256": "6c125ed74998e06730b65fbae2a49e9c4b1d1946f2c056c4da27565259b396f3",
+        "sourceBytes": 10363480
+      },
+      "verification": {
+        "correlation": 0.99989,
+        "previewOffsetSeconds": 53.013,
+        "previewDuration": 29.9755,
+        "officialDuration": 253.333,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1765720546",
+      "artist": "Kazybek Kuraiysh",
+      "title": "Баяғы",
+      "permissionRef": "SAZ-20261122-003-F024",
+      "audioUrl": "assets/audio/licensed/apple-1765720546-1766f3f4105314a0.mp3",
+      "bytes": 3100142,
+      "sha256": "1766f3f4105314a0e6a56d2dee37a91c9007cf7283bead41840ce3e9dca83370",
+      "durationSeconds": 193.72408163265305,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B1%D0%B0%D1%8F%D2%93%D1%8B/1765720533?i=1765720546",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kazybek-kuraiysh-bayagy/181383",
+        "sourceSha256": "d0c9c0bdb9dd0f455db8f95adfb1fc142ccc0a0571bfe50cfd24278f6b0065c6",
+        "sourceBytes": 8002676
+      },
+      "verification": {
+        "correlation": 0.969373,
+        "previewOffsetSeconds": 45.002,
+        "previewDuration": 29.9755,
+        "officialDuration": 193.653,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
+    },
+    {
+      "trackId": "apple-1880593150",
+      "artist": "Kazybek Kuraiysh",
+      "title": "Suiemin",
+      "permissionRef": "SAZ-20261122-003-F025",
+      "audioUrl": "assets/audio/licensed/apple-1880593150-2c2113f087f30bd1.mp3",
+      "bytes": 3255602,
+      "sha256": "2c2113f087f30bd10cac7662b9e2e499168ce4e1f949b7e827a2c651c64e704e",
+      "durationSeconds": 203.44163265306122,
+      "encoding": "MP3 128 kbps, full recording",
+      "officialUrl": "https://music.apple.com/kz/album/suiemin/1880593148?i=1880593150",
+      "source": {
+        "provider": "lmusic",
+        "sourceUrl": "https://lmusic.kz/mp3/kazybek-kuraiysh-suiemin/618986",
+        "sourceSha256": "888c8be229a319bb377ff467a393783aeeec102dee748e086e97ee14d77c4791",
+        "sourceBytes": 5076706
+      },
+      "verification": {
+        "correlation": 0.976003,
+        "previewOffsetSeconds": 45.002,
+        "previewDuration": 29.9755,
+        "officialDuration": 203.382,
+        "reference": "Apple Music official audio preview (comparison only; not redistributed)",
+        "method": "normalized waveform cross-correlation"
+      }
     }
+  ],
+  "permissionDeclarations": [
+    "additional-audio-20261121.json",
+    "additional-audio-20261122.json"
   ]
 }

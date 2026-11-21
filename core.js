@@ -155,6 +155,7 @@ export function validateCatalog(input) {
       album: String(t.album || "").slice(0, 200),
       duration: Math.max(0, Number(t.duration) || 0),
       releaseDate: String(t.releaseDate || ""),
+      catalogAddedOn: /^\d{4}-\d{2}-\d{2}$/.test(t.catalogAddedOn || "") ? t.catalogAddedOn : "",
       styles: Array.isArray(t.styles)
         ? t.styles.filter((s) => STYLES.some((x) => x.id === s && s !== "all"))
         : [],
