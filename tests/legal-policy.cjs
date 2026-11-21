@@ -51,6 +51,13 @@ const output =
     });
     assert.equal(registry.documentId, "SAZ-POL-2026-001");
     assert.equal(registry.isDigitallySigned, false);
+    assert.equal(registry.version, "1.1");
+    const text = await page.evaluate(async () => (await fetch('site-policy-content.json')).json());
+    for (const section of text.sections) {
+      for (const clause of section.clauses) {
+        assert.equal(await page.locator(`#clause-${clause.id.replace('.', '-')} p`).textContent(), clause.text);
+      }
+    }
     for (const file of registry.files) {
       const fetched = await page.evaluate(async (name) => {
         const response = await fetch(name);
@@ -79,6 +86,10 @@ const output =
         `${width}: policy fits screen`,
       );
     }
+    await page.locator('#policySearch').fill('жеке микстер');
+    await page.waitForFunction(() => document.querySelectorAll('.clause:not([hidden])').length > 0 && document.querySelectorAll('.clause:not([hidden])').length < 100);
+    await page.locator('#clearSearch').click();
+    assert.equal(await page.locator('.clause:not([hidden])').count(),100);
     await page.setViewportSize({ width: 390, height: 844 });
     await fs.mkdir(output, { recursive: true });
     await page.screenshot({ path: path.join(output, "saz-policy-phone.png") });

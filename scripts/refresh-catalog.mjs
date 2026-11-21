@@ -23,6 +23,7 @@ if (previous?.tracks) {
   const byId = new Map(previous.tracks.map((track) => [track.id, track]));
   for (const track of catalog.tracks) {
     const old = byId.get(track.id);
+    if (old?.artwork) track.artwork = old.artwork;
     if (!old?.audioUrl || !old.license || !old.downloadable) continue;
     for (const key of [
       "audioUrl",

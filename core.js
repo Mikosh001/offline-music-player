@@ -160,7 +160,7 @@ export function validateCatalog(input) {
         : [],
       officialUrl: safeUrl(t.officialUrl),
       audioUrl,
-      artwork: safeUrl(t.artwork),
+      artwork: safeUrl(t.artwork, { relative: true }),
       downloadable: Boolean(audioUrl && t.downloadable === true && t.license),
       license: String(t.license || "").slice(0, 500),
       licenseUrl: safeUrl(t.licenseUrl),

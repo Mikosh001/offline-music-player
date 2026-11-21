@@ -1,12 +1,15 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-14`;
+const CACHE = `${PREFIX}v2-15`;
 const SHELL = [
   "./",
   "index.html",
   "style.css",
+  "experience.css",
   "script.js",
   "core.js",
+  "mixes.js",
+  "assets/artwork/index.json",
   "db.js",
   "icons.js",
   "catalog.json",
@@ -16,9 +19,16 @@ const SHELL = [
   "icon-512.png",
   "icon-180.png",
   "legal/site-policy.html",
+  "legal/policy.css",
+  "legal/policy.js",
   "legal/site-policy.pdf",
   "legal/site-policy-content.json",
   "legal/policy-registration.json",
+  "legal/archive/v1.0/site-policy.html",
+  "legal/archive/v1.0/site-policy.pdf",
+  "legal/archive/v1.0/site-policy-content.json",
+  "legal/archive/v1.0/policy-registration.json",
+  "legal/archive/v1.0/saz-policy-seal.svg",
   "legal/saz-policy-seal.svg",
   "permissions/additional-audio-20261121.html",
   "permissions/additional-audio-20261121.json",
@@ -29,13 +39,17 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE)
-      .then((cache) =>
-        cache.addAll(
+      .then(async (cache) => {
+        await cache.addAll(
           SHELL.map(
             (path) => new Request(new URL(path, BASE), { cache: "reload" }),
           ),
-        ),
-      ),
+        );
+        // One compact bundle makes all editorial covers available offline.
+        // No hundreds of image downloads, audio caching or external requests.
+        const atlas=await (await cache.match(new URL("assets/artwork/index.json",BASE).href)).json();
+        await Promise.all(Object.entries(atlas).filter(([path])=>/^assets\/artwork\/[a-f0-9]{16}\.svg$/.test(path)).map(([path,svg])=>cache.put(new URL(path,BASE).href,new Response(svg,{headers:{"Content-Type":"image/svg+xml"}}))));
+      }),
   );
 });
 self.addEventListener("message", (event) => {
@@ -110,7 +124,7 @@ self.addEventListener("fetch", (event) => {
     );
     return;
   }
-  if (!shellUrls.has(url.href)) return;
+  if (!shellUrls.has(url.href) && !url.pathname.startsWith(new URL("assets/artwork/", BASE).pathname)) return;
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE);
