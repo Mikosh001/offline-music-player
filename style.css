@@ -155,17 +155,10 @@ svg {
   margin: 0 12px 31px;
 }
 .brand-icon {
-  background: var(--accent);
-  color: #201637;
-  border-radius: 12px;
-  width: 35px;
-  height: 35px;
-  display: grid;
-  place-items: center;
-  font-size: 29px;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 1;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: block;
 }
 .brand-dot {
   color: var(--accent);
@@ -1817,11 +1810,16 @@ svg {
     gap: 12px;
   }
   .mobile-brand {
+    display: grid;
+    place-items: center;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+  }
+  .mobile-brand img {
     display: block;
-    color: #ddcaff;
-    font-size: 22px;
-    font-weight: 800;
-    letter-spacing: -1px;
+    width: 40px;
+    height: 40px;
   }
   .topbar-import {
     display: none;

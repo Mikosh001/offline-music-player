@@ -1,6 +1,6 @@
 {
   "name": "saz-offline-music",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,6 +11,7 @@
     "publish:audio": "node scripts/publish-audio.mjs",
     "test:audio": "node tests/audio-codecs.cjs",
     "generate:artwork": "node scripts/generate-artwork.mjs",
+    "generate:icons": "node scripts/generate-icons.mjs",
     "build:policy": "node scripts/build-policy.mjs"
   },
   "engines": {
