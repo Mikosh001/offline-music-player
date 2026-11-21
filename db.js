@@ -81,6 +81,23 @@ export function put(store, record) {
     tx.objectStore(store).put(record);
   });
 }
+export function patchLibrary(id, fallback, update) {
+  return transaction(["library"], "readwrite", (tx, result) => {
+    const store = tx.objectStore("library");
+    store.get(id).onsuccess = event => {
+      try {
+        const record = update({ ...fallback, ...event.target.result, id });
+        store.put(record);
+        result(record);
+      } catch { tx.abort(); }
+    };
+  });
+}
+export function recordPlay(track) {
+  return patchLibrary(track.id, track, current => ({
+    ...current, plays: (current.plays || 0) + 1, lastPlayed: Date.now(),
+  }));
+}
 export function remove(store, key) {
   return transaction([store], "readwrite", (tx) => {
     tx.objectStore(store).delete(key);

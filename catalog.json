@@ -102,6 +102,77 @@
       "officialUrl": "https://music.apple.com/kz/artist/1536425190"
     },
     {
+      "id": "darkhan",
+      "name": "Darkhan Juzz",
+      "aliases": [
+        "Дархан Жүз"
+      ],
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "color": "#97a78c",
+      "description": "Инди жинақтарын толықтыратын еркін әуендер.",
+      "officialUrl": "https://music.apple.com/kz/artist/1461185962"
+    },
+    {
+      "id": "ayau",
+      "name": "Ayau",
+      "aliases": [
+        "Аяу"
+      ],
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "color": "#b597bb",
+      "description": "Жұмсақ дауыс, R&B және жаңа толқын.",
+      "officialUrl": "https://music.apple.com/kz/artist/1640233187"
+    },
+    {
+      "id": "dequine",
+      "name": "Dequine",
+      "aliases": [
+        "Деквин"
+      ],
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "color": "#c48b9b",
+      "description": "R&B жинағына арналған заманауи әуендер.",
+      "officialUrl": "https://music.apple.com/kz/artist/1367489232"
+    },
+    {
+      "id": "kalifarniya",
+      "name": "Kalifarniya",
+      "aliases": [
+        "Калифарния"
+      ],
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "color": "#b7af7d",
+      "description": "Жол үстіне және жақсы көңіл күйге арналған ырғақ.",
+      "officialUrl": "https://music.apple.com/kz/artist/1503068955"
+    },
+    {
+      "id": "kazybek",
+      "name": "Қазыбек Құрайыш",
+      "aliases": [
+        "Kazybek Kuraiysh",
+        "Казыбек Курайыш"
+      ],
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "color": "#b39179",
+      "description": "Лирика жинағына сай жылы әуендер.",
+      "officialUrl": "https://music.apple.com/kz/artist/1566702041"
+    },
+    {
       "id": "saz-demo",
       "name": "SAZ Studio",
       "aliases": [],
@@ -6279,6 +6350,956 @@
         "electronic"
       ],
       "officialUrl": "https://music.apple.com/kz/album/juzim-auysqan-feat-the-svarka/1815286016?i=1815286331",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1567457314",
+      "title": "Úıde (OYU Live)",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "OYU Live Season 1",
+      "duration": 172,
+      "releaseDate": "2021-05-19",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%C3%BA%C4%B1de-oyu-live/1567456856?i=1567457314",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1645073442",
+      "title": "sybyrlaiyn <3",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "sybyrlaiyn <3 - Single",
+      "duration": 181,
+      "releaseDate": "2022-09-22",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/sybyrlaiyn-3/1645073431?i=1645073442",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1693897120",
+      "title": "Deja Vu",
+      "artistId": "dequine",
+      "artist": "Dequine & Truwer",
+      "album": "Deja Vu - Single",
+      "duration": 190,
+      "releaseDate": "2023-06-27",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/deja-vu/1693897110?i=1693897120",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1785636292",
+      "title": "Qymbattym",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya & Жугунусов Мирас",
+      "album": "Qymbattym - Single",
+      "duration": 204,
+      "releaseDate": "2024-12-24",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qymbattym/1785636118?i=1785636292",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1633937001",
+      "title": "Таптым-Ау Сені",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Таптым-ау сені - Single",
+      "duration": 194,
+      "releaseDate": "2022-07-15",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%82%D0%B0%D0%BF%D1%82%D1%8B%D0%BC-%D0%B0%D1%83-%D1%81%D0%B5%D0%BD%D1%96/1633936813?i=1633937001",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1483502765",
+      "title": "Qosh Bol Japyraq",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz & TBRN",
+      "album": "Qosh Bol Japyraq - Single",
+      "duration": 231,
+      "releaseDate": "2019-10-18",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qosh-bol-japyraq/1483502563?i=1483502765",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1715481652",
+      "title": "kel kel :)",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "AYAULYM",
+      "duration": 198,
+      "releaseDate": "2023-11-22",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/kel-kel/1715481464?i=1715481652",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1707284051",
+      "title": "Такси",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Такси - Single",
+      "duration": 178,
+      "releaseDate": "2023-09-29",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%82%D0%B0%D0%BA%D1%81%D0%B8/1707284045?i=1707284051",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1891054568",
+      "title": "Ademi",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya & Kairat Nurtas",
+      "album": "Ademi - Single",
+      "duration": 228,
+      "releaseDate": "2026-04-07",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ademi/1891054435?i=1891054568",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1566702042",
+      "title": "Minezin Korkem",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Birge - EP",
+      "duration": 193,
+      "releaseDate": "2021-05-14",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/minezin-korkem/1566702040?i=1566702042",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1619987913",
+      "title": "IE",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "IE - Single",
+      "duration": 154,
+      "releaseDate": "2022-05-01",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ie/1619987896?i=1619987913",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1656314976",
+      "title": "basqany :(",
+      "artistId": "ayau",
+      "artist": "Ayau, Shiza & M'Dee",
+      "album": "basqany :( - Single",
+      "duration": 221,
+      "releaseDate": "2022-12-05",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/basqany/1656314968?i=1656314976",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1668847231",
+      "title": "Ай Ай (for my vip kazashkas)",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Ай Ай (for my vip kazashkas) - Single",
+      "duration": 180,
+      "releaseDate": "2023-02-10",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B0%D0%B9-%D0%B0%D0%B9-for-my-vip-kazashkas/1668847224?i=1668847231",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1780791552",
+      "title": "Puerto-Rico",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Puerto-Rico - Single",
+      "duration": 233,
+      "releaseDate": "2023-06-01",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/puerto-rico/1780791546?i=1780791552",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1682735625",
+      "title": "Ana",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Ana - Single",
+      "duration": 168,
+      "releaseDate": "2023-04-07",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ana/1682735623?i=1682735625",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1807096316",
+      "title": "Erikpe (õzen version)",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "TBRN",
+      "duration": 192,
+      "releaseDate": "2019-04-26",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/erikpe-%C3%B5zen-version/1807096312?i=1807096316",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1715482169",
+      "title": "tağy da",
+      "artistId": "ayau",
+      "artist": "Ayau & M'Dee",
+      "album": "AYAULYM",
+      "duration": 188,
+      "releaseDate": "2023-11-22",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/ta%C4%9Fy-da/1715481464?i=1715482169",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1678396183",
+      "title": "Матча чай",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Матча чай - Single",
+      "duration": 178,
+      "releaseDate": "2022-11-11",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%BC%D0%B0%D1%82%D1%87%D0%B0-%D1%87%D0%B0%D0%B9/1678396164?i=1678396183",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1780791667",
+      "title": "Hello",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Hello - Single",
+      "duration": 165,
+      "releaseDate": "2024-04-04",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/hello/1780791664?i=1780791667",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1620131430",
+      "title": "Korkemim",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Korkemim - Single",
+      "duration": 187,
+      "releaseDate": "2022-04-21",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/korkemim/1620131406?i=1620131430",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1840400476",
+      "title": "В темном небе",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "В темном небе - Single",
+      "duration": 279,
+      "releaseDate": "2020-08-14",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B2-%D1%82%D0%B5%D0%BC%D0%BD%D0%BE%D0%BC-%D0%BD%D0%B5%D0%B1%D0%B5/1840400475?i=1840400476",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1755171356",
+      "title": "tartady",
+      "artistId": "ayau",
+      "artist": "Ayau & A.Boo",
+      "album": "tartady - Single",
+      "duration": 178,
+      "releaseDate": "2024-07-10",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/tartady/1755171126?i=1755171356",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1736739870",
+      "title": "Fresh & Clean (Freestyle)",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Fresh & Clean (Freestyle) - Single",
+      "duration": 93,
+      "releaseDate": "2024-03-13",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/fresh-clean-freestyle/1736739866?i=1736739870",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1762425042",
+      "title": "Qar",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Qar - Single",
+      "duration": 172,
+      "releaseDate": "2021-08-14",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qar/1762425030?i=1762425042",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1763682058",
+      "title": "Бақытыңды табасың",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Бақытыңды табасың - Single",
+      "duration": 177,
+      "releaseDate": "2024-08-16",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B1%D0%B0%D2%9B%D1%8B%D1%82%D1%8B%D2%A3%D0%B4%D1%8B-%D1%82%D0%B0%D0%B1%D0%B0%D1%81%D1%8B%D2%A3/1763681803?i=1763682058",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6833051592",
+      "title": "Koripkel",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "coca-cola x õzen",
+      "duration": 239,
+      "releaseDate": "2021-06-01",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/koripkel/6833051583?i=6833051592",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1688432957",
+      "title": "Munaima (yeski taspa)",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "yeski taspa (2 season)",
+      "duration": 182,
+      "releaseDate": "2023-05-26",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/munaima-yeski-taspa/1688432690?i=1688432957",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1720715817",
+      "title": "l.o.v.e.",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "l.o.v.e. - Single",
+      "duration": 154,
+      "releaseDate": "2023-12-19",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/l-o-v-e/1720715613?i=1720715817",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1762426130",
+      "title": "Aspan",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Aspan - Single",
+      "duration": 200,
+      "releaseDate": "2021-08-14",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aspan/1762425937?i=1762426130",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1566702048",
+      "title": "Alystama Menen",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Birge - EP",
+      "duration": 196,
+      "releaseDate": "2021-05-14",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/alystama-menen/1566702040?i=1566702048",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1807096313",
+      "title": "Bylygyp",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "TBRN",
+      "duration": 198,
+      "releaseDate": "2019-04-26",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/bylygyp/1807096312?i=1807096313",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1715482182",
+      "title": "kõzder",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "AYAULYM",
+      "duration": 275,
+      "releaseDate": "2023-11-22",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/k%C3%B5zder/1715481464?i=1715482182",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-6786171892",
+      "title": "Хороша",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Хороша - Single",
+      "duration": 165,
+      "releaseDate": "2026-07-03",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%85%D0%BE%D1%80%D0%BE%D1%88%D0%B0/6786171891?i=6786171892",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1835757764",
+      "title": "QYLYQ",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "QYLYQ - Single",
+      "duration": 183,
+      "releaseDate": "2025-08-31",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qylyq/1835757753?i=1835757764",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1716499891",
+      "title": "Сағындым Сені",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Сағындым сені - Single",
+      "duration": 201,
+      "releaseDate": "2023-11-17",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D1%81%D0%B0%D2%93%D1%8B%D0%BD%D0%B4%D1%8B%D0%BC-%D1%81%D0%B5%D0%BD%D1%96/1716499885?i=1716499891",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1807096318",
+      "title": "Sheker",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "TBRN",
+      "duration": 217,
+      "releaseDate": "2019-04-26",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/sheker/1807096312?i=1807096318",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1640249015",
+      "title": "sensiz?",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "sensiz? - Single",
+      "duration": 173,
+      "releaseDate": "2022-09-01",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/sensiz/1640249001?i=1640249015",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1678544000",
+      "title": "Деньги Или Смерть",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "Деньги Или Смерть - Single",
+      "duration": 130,
+      "releaseDate": "2022-08-26",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B4%D0%B5%D0%BD%D1%8C%D0%B3%D0%B8-%D0%B8%D0%BB%D0%B8-%D1%81%D0%BC%D0%B5%D1%80%D1%82%D1%8C/1678543810?i=1678544000",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1766544951",
+      "title": "JOQ",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "KUSH PENDE",
+      "duration": 159,
+      "releaseDate": "2022-11-25",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/joq/1766544099?i=1766544951",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1566702044",
+      "title": "Birge",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Birge - EP",
+      "duration": 198,
+      "releaseDate": "2021-05-14",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/birge/1566702040?i=1566702044",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1809381533",
+      "title": "Osy Tobeden",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "aūe",
+      "duration": 309,
+      "releaseDate": "2023-08-09",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/osy-tobeden/1809381341?i=1809381533",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1715481851",
+      "title": "t.s.u.",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "AYAULYM",
+      "duration": 160,
+      "releaseDate": "2023-02-23",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/t-s-u/1715481464?i=1715481851",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1787145527",
+      "title": "На западе",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "labum",
+      "duration": 200,
+      "releaseDate": "2020-06-19",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%BD%D0%B0-%D0%B7%D0%B0%D0%BF%D0%B0%D0%B4%D0%B5/1787145521?i=1787145527",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1763235881",
+      "title": "Aiyp etpe",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Aiyp etpe - Single",
+      "duration": 194,
+      "releaseDate": "2024-08-23",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/aiyp-etpe/1763235876?i=1763235881",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1566702049",
+      "title": "Seni Izdep",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Birge - EP",
+      "duration": 182,
+      "releaseDate": "2021-05-14",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/seni-izdep/1566702040?i=1566702049",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1809381347",
+      "title": "Shyndar",
+      "artistId": "darkhan",
+      "artist": "Darkhan Juzz",
+      "album": "aūe",
+      "duration": 159,
+      "releaseDate": "2023-08-09",
+      "styles": [
+        "indie",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/shyndar/1809381341?i=1809381347",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1715481843",
+      "title": "bile!",
+      "artistId": "ayau",
+      "artist": "Ayau",
+      "album": "AYAULYM",
+      "duration": 143,
+      "releaseDate": "2023-11-22",
+      "styles": [
+        "rnb",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/bile/1715481464?i=1715481843",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1778231816",
+      "title": "До утра",
+      "artistId": "dequine",
+      "artist": "Dequine",
+      "album": "До утра - Single",
+      "duration": 150,
+      "releaseDate": "2024-11-27",
+      "styles": [
+        "rnb",
+        "electronic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/%D0%B4%D0%BE-%D1%83%D1%82%D1%80%D0%B0/1778231627?i=1778231816",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1664855144",
+      "title": "Jetim",
+      "artistId": "kalifarniya",
+      "artist": "Kalifarniya",
+      "album": "Jetim - Single",
+      "duration": 160,
+      "releaseDate": "2023-01-16",
+      "styles": [
+        "dance",
+        "pop"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/jetim/1664855138?i=1664855144",
+      "artwork": "",
+      "audioUrl": "",
+      "downloadable": false,
+      "source": "Apple Music catalog",
+      "version": "1"
+    },
+    {
+      "id": "apple-1725962751",
+      "title": "Qaragym",
+      "artistId": "kazybek",
+      "artist": "Kazybek Kuraiysh",
+      "album": "Qaragym - Single",
+      "duration": 180,
+      "releaseDate": "2024-01-19",
+      "styles": [
+        "lyrical",
+        "acoustic"
+      ],
+      "officialUrl": "https://music.apple.com/kz/album/qaragym/1725962353?i=1725962751",
       "artwork": "",
       "audioUrl": "",
       "downloadable": false,

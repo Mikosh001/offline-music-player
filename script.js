@@ -283,7 +283,7 @@ function offlineExplanation() {
 function home() {
   const featured = state.catalog.artists.filter((a) => a.featured);
   const tracks = state.tracks.filter((t) => !t.demo).slice(0, 8);
-  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><button class="button" data-action="shuffle-play" data-scope="all">${icon("shuffle")} Араластырып тыңдау</button><a href="#catalog" class="button secondary">${icon("discover")} Музыка іздеу</a></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${availabilitySummary()}${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
+  return `<div class="welcome"><div><h1>Қош келдің, тыңдарман.</h1><p>Бүгінгі көңіл күйіңе сай әуен табайық.</p></div><span class="small-pill">${icon("music")} ҚАЗАҚ МУЗЫКАСЫ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">БІР ӘЛЕМ. МЫҢ ӘУЕН.</span><h2>Сенің әуенің.<br>Қай жерде<br>болсаң да.</h2><p>Өзің сүйетін әндерді бір жерге жина.<br>Интернетсіз де өз ырғағыңмен бол.</p><div class="hero-actions"><button class="button" data-action="shuffle-play" data-scope="all">${icon("shuffle")} Араластырып тыңдау</button><a href="#catalog" class="button secondary">${icon("discover")} Музыка іздеу</a></div></div><div class="hero-art" aria-hidden="true"><div class="hero-art-word">QAZAQ<br>WAVE<small>ӨЗ ЫРҒАҒЫҢМЕН</small></div><div class="hero-stars"><span>✦</span><span>✧</span></div></div></section>${continueCard()}${availabilitySummary()}${sectionHeading("Көңіл күйіңді таңда", "Саған арнайы іріктелген әуендер")} ${collectionCards(collections.slice(0, 4))}${sectionHeading("Өзің сүйетін орындаушылар", "Таныс дауыстар. Жаңа әуендер.", "#artists")}${artistCards(featured)}${sectionHeading("Тыңдауға тұрарлық", "Ресми каталогтан таңдалған әндер", "#catalog")}${trackList(tracks, { limit: 8, allowMore: false })}`;
 }
 function renderDownloads() {
   const tracks = sorted(
@@ -470,6 +470,7 @@ function render() {
     );
   $("content").innerHTML = html;
   hydrateIcons($("content"));
+  updateContinueCard();
   if (base === "settings") updateStorage();
 }
 
@@ -477,7 +478,7 @@ async function toggleFavorite(id) {
   requireDB();
   const t = getTrack(id);
   if (!t) return;
-  await DB.put("library", { ...t, favorite: !t.favorite });
+  await DB.patchLibrary(id, t, current => ({ ...current, favorite: !current.favorite }));
   await refresh();
 }
 function updatePlayer() {
@@ -539,6 +540,27 @@ function updatePlayer() {
     const btn = row.querySelector(".track-number button");
     if (btn) btn.innerHTML = icon(current && !audio.paused ? "pause" : "play");
   });
+  updateContinueCard();
+}
+function continueCard() {
+  return `<section id="continueCard" class="continue-card" hidden aria-label="Тыңдауды жалғастыру"><div><span class="eyebrow">ТОҚТАҒАН ЖЕРДЕН</span><h2 id="continueTitle"></h2><p id="continueDetail"></p></div><button class="button" data-action="continue-play">${icon("play")} Жалғастыру</button></section>`;
+}
+function updateContinueCard() {
+  const card = $("continueCard");
+  if (!card) return;
+  const track = getTrack(state.currentId);
+  const position = pendingRestore?.position ?? audio.currentTime;
+  card.hidden = !track || !canPlay(track) || position <= 0;
+  if (card.hidden) return;
+  if ($("continueTitle").textContent !== track.title) $("continueTitle").textContent = track.title;
+  const detail = `${track.artist} · ${formatTime(position)} / ${formatTime(audio.duration || track.duration)}`;
+  if ($("continueDetail").textContent !== detail) $("continueDetail").textContent = detail;
+  const button = card.querySelector("button");
+  const mode = audio.paused ? "paused" : "playing";
+  if (button.dataset.mode !== mode) {
+    button.dataset.mode = mode;
+    button.innerHTML = `${icon(audio.paused ? "play" : "music")} ${audio.paused ? "Жалғастыру" : "Қазір ойнап тұр"}`;
+  }
 }
 function persistPlayback(immediate = false) {
   if (!playbackReady) return;
@@ -729,10 +751,9 @@ async function loadTrack(
       await startAudio(token);
       if (token === playToken && !audio.paused && state.dbReady) {
         const track = getTrack(id);
-        const record = { ...track, plays: (track.plays || 0) + 1, lastPlayed: Date.now() };
         // A storage failure in listening statistics must never skip valid audio.
         try {
-          await DB.put("library", record);
+          const record = await DB.recordPlay(track);
           if (token !== playToken) return;
           state.library = state.library.filter(t => t.id !== id).concat(record);
           state.tracks = mergeTracks(state.catalog.tracks, state.library);
@@ -1399,6 +1420,17 @@ document.addEventListener("click", async (event) => {
       case "play":
         await playPause();
         break;
+      case "continue-play":
+        if (audio.paused) await playPause();
+        else {
+          dialog.classList.add("now-playing-dialog");
+          dialog.dataset.view = "now-playing";
+          $("dialogTitle").textContent = "Қазір ойнап тұр";
+          $("dialogBody").innerHTML = nowPlayingBody(getTrack(state.currentId));
+          if (!dialog.open) dialog.showModal();
+          updatePlayer();
+        }
+        break;
       case "next":
         await next();
         break;
@@ -1528,6 +1560,11 @@ document.addEventListener("click", async (event) => {
         queueDialog();
         break;
       case "queue-next":
+        if (id === state.currentId) {
+          toast("Бұл ән қазір ойнап тұр.");
+          closeDialog();
+          break;
+        }
         if (!canPlay(getTrack(id))) {
           toast("Алдымен әннің толық аудиосын қос.");
           break;
@@ -1539,6 +1576,7 @@ document.addEventListener("click", async (event) => {
           id,
         );
         state.queueOrder = [...state.queue];
+        warmNextAudio();
         persistPlayback(true);
         closeDialog();
         toast("Келесі әндер кезегіне қосылды.");
@@ -1555,6 +1593,7 @@ document.addEventListener("click", async (event) => {
         break;
       }
       case "queue-remove":
+        if (state.queue[Number(btn.dataset.index)] === state.currentId) break;
         const [removed] = state.queue.splice(Number(btn.dataset.index), 1);
         state.queueOrder = state.queueOrder.filter((id) => id !== removed);
         persistPlayback(true);
@@ -1772,6 +1811,7 @@ function updatePlaybackPosition() {
     ? position / audio.duration * 100 : 0;
   $("seek").disabled = loadPending || !Number.isFinite(audio.duration);
   updateNowPlayingPosition();
+  updateContinueCard();
 }
 function restorePlaybackPosition() {
   if (sourceTrackId !== state.currentId) return;

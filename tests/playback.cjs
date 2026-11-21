@@ -19,6 +19,18 @@ const base = 'http://127.0.0.1:4173';
     await db.saveAudio({ id:'reg-bad',title:'Damaged audio',artist:'Test fixture',artistId:'local',source:'local'},new Blob(['invalid audio'],{type:'audio/mpeg'}));
     await db.put('settings', { key:'playback', value:{currentId:'saz-wave',position:9.25,queue:['saz-wave','saz-evening'],queueOrder:['saz-wave','saz-evening'],repeat:'off',shuffle:false} });
   });
+  await page.evaluate(async () => {
+    const db = await import('/db.js');
+    const track = { id:'reg-atomic',title:'Atomic statistics',artistId:'local',artist:'Test fixture',plays:0 };
+    await Promise.all([
+      db.recordPlay(track),
+      db.patchLibrary(track.id, track, current => ({...current, favorite:true})),
+      db.recordPlay(track),
+    ]);
+    const stored = await db.get('library', track.id);
+    if (stored.plays !== 2 || !stored.favorite) throw new Error('Concurrent statistics lost a favorite or play');
+    await db.remove('library',track.id);
+  });
   let releaseMetadata;
   const metadataGate = new Promise(resolve => { releaseMetadata = resolve; });
   await page.route('**/assets/audio/qazaq-wave.wav', async route => { await metadataGate; await route.continue(); });
@@ -62,6 +74,12 @@ const base = 'http://127.0.0.1:4173';
   await page.reload();
   await page.waitForFunction(()=>document.querySelector('#audio').currentTime > 8);
   assert.equal(await page.locator('#audio').evaluate(a=>a.paused),true);
+  await page.goto(base+'/#home');
+  await page.locator('#continueCard').waitFor({state:'visible'});
+  assert.equal(await page.locator('#continueTitle').textContent(),'Regression A');
+  await page.locator('[data-action="continue-play"]').click();
+  await page.waitForFunction(()=>!document.querySelector('#audio').paused && document.querySelector('#audio').currentTime>8);
+  await page.locator('#playBtn').click();
   // Queue fixtures are seeded between static pages so unload does not overwrite them.
   async function seed(queue,repeat='off', currentId=queue[0]) {
     await page.goto(base+'/legal/site-policy.html');
@@ -87,6 +105,13 @@ const base = 'http://127.0.0.1:4173';
   await page.waitForTimeout(400);
   assert.equal(await page.locator('#playerTitle').textContent(), 'Regression A', 'statistics write failure cannot skip audio');
   assert.equal(await page.locator('#audio').evaluate(a=>a.paused), false);
+  await seed(['reg-a','reg-b','reg-c'],'off','reg-b');
+  await page.locator('[data-track-id="reg-b"] [data-action="track-menu"]').last().click();
+  await page.locator('[data-action="queue-next"]').click();
+  const unchangedQueue = await page.evaluate(async()=> (await (await import('/db.js')).get('settings','playback')).value.queue);
+  assert.deepEqual(unchangedQueue,['reg-a','reg-b','reg-c'],'enqueueing current track never reorders the queue');
+  await page.locator('.transport [data-action="next"]').click();
+  await page.waitForFunction(()=>document.querySelector('#playerTitle').textContent==='Regression C' && !document.querySelector('#audio').paused);
   await seed(['reg-a','reg-bad','reg-b']);
   await page.locator('#playBtn').click();
   await page.waitForFunction(()=>!document.querySelector('#audio').paused);

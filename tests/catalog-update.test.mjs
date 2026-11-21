@@ -146,6 +146,7 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
     "miras",
     "turar",
     "duman",
+    "darkhan", "ayau", "dequine", "kalifarniya", "kazybek",
   ])
     assert.ok(catalog.tracks.filter((t) => t.artistId === id).length >= 10, id);
   const songs = catalog.tracks.filter((t) => !t.demo);
@@ -168,7 +169,7 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
   const pending = songs.filter(t => !t.downloadable);
   for (const id of ["apple-1541309376", "apple-1548678265", "apple-1634913631", "apple-1880744346"])
     assert.ok(pending.some(t => t.id === id));
-  assert.equal(pending.length, 47);
+  assert.equal(pending.length, 97);
   for (const track of pending) {
     assert.equal(track.audioUrl, "");
     assert.equal(track.downloadable, false);
@@ -179,7 +180,7 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
   );
   assert.equal(
     catalog.artists.filter((a) => !a.id.startsWith("saz-")).length,
-    6,
+    11,
   );
-  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 250);
+  assert.equal(catalog.tracks.filter((t) => !t.demo).length, 300);
 });

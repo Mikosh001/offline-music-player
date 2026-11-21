@@ -23,7 +23,7 @@ const base = "http://127.0.0.1:4173";
   await page.locator("#availabilityFilter").waitFor();
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /250 ән тізімі/,
+    /300 ән тізімі/,
   );
   assert.match(
     await page.locator(".availability-strip").textContent(),
@@ -40,7 +40,7 @@ const base = "http://127.0.0.1:4173";
   );
   await page.locator("#playBtn").click();
   await page.locator("#availabilityFilter").selectOption("pending");
-  assert.equal(await page.locator(".track-row").count(), 47);
+  assert.equal(await page.locator(".track-row").count(), 50);
   await page.locator('[data-track-id="apple-1541309376"] .track-title').click();
   await page.locator(".availability-message").waitFor();
   assert.equal(await page.locator("#dialog iframe").count(), 0);
@@ -95,7 +95,7 @@ const base = "http://127.0.0.1:4173";
   assert.deepEqual(externalAudio, []);
   assert.deepEqual(errors, []);
   console.log(
-    "Hosted checks passed: six-artist catalogue, truthful availability, same-site full audio, offline browser storage without a file download, no external music player.",
+    "Hosted checks passed: eleven-artist catalogue, truthful availability, same-site full audio, offline browser storage without a file download, no external music player.",
   );
   await browser.close();
 })().catch((error) => {

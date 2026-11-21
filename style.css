@@ -2507,3 +2507,11 @@ body:not(.energy-saving) .track-row { transition: background-color .15s ease; }
 .play-main.is-loading { opacity: .65; }
 .page-hidden *, .energy-saving * { animation: none !important; }
 @media (prefers-reduced-motion: reduce) { .now-playing-panel { animation: none !important; } }
+
+.continue-card { display:flex; align-items:center; justify-content:space-between; gap:20px; margin:24px 0; padding:22px; border:1px solid #444053; border-radius:18px; background:linear-gradient(110deg,#262139,#1c1b29); }
+.continue-card[hidden] { display:none; }
+.continue-card > div { min-width:0; }
+.continue-card h2 { font-size:20px; margin:8px 0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.continue-card p { color:var(--muted,#aaa); font-size:14px; margin:0; }
+.continue-card .button { flex-shrink:0; }
+@media(max-width:600px) { .continue-card { align-items:flex-start; flex-direction:column; padding:18px; gap:16px; } .continue-card > div { width:100%; } }
