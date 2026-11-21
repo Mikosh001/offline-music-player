@@ -12,6 +12,7 @@ const types = {
   ".svg": "image/svg+xml",
   ".pdf": "application/pdf",
   ".png": "image/png",
+  ".jpg": "image/jpeg",
   ".wav": "audio/wav",
   ".mp3": "audio/mpeg",
   ".m4a": "audio/mp4",

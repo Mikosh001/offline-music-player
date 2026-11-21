@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img"><title>Sadraddin — Taxi · SAZ мұқабасы</title><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#afbe9b"/><stop offset="1" stop-color="#25283e"/></linearGradient><radialGradient id="v"><stop stop-color="#afbe9b"/><stop offset=".14" stop-color="#111522"/><stop offset=".99" stop-color="#171c29"/></radialGradient></defs><rect width="400" height="400" fill="#121726"/><path d="M0 0H400V400H0Z" fill="url(#g)" opacity=".78"/><g transform="rotate(36 280 140)"><circle cx="300" cy="100" r="162" fill="url(#v)"/><g fill="none" stroke="#afbe9b" opacity=".22"><circle cx="300" cy="100" r="52"/><circle cx="300" cy="100" r="68"/><circle cx="300" cy="100" r="88"/><circle cx="300" cy="100" r="108"/><circle cx="300" cy="100" r="128"/><circle cx="300" cy="100" r="148"/></g><circle cx="300" cy="100" r="23" fill="#afbe9b"/><circle cx="300" cy="100" r="5" fill="#141827"/></g><path d="M0 235L400 172V400H0Z" fill="#101625" opacity=".9"/><text x="28" y="39" fill="#fff" opacity=".8" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">SAZ / QAZAQ WAVE</text><rect x="28" y="239" width="35" height="3" rx="1.5" fill="#afbe9b"/><g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="30"><text x="28" y="276">Taxi</text></g><text x="28" y="379" fill="#afbe9b" font-family="Segoe UI,Arial,sans-serif" font-size="14">Sadraddin</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img">
+  <title>Taxi · Sadraddin</title>
+  <defs>
+    <linearGradient id="base" x2=".8" y2="1">
+      <stop stop-color="hsl(114 55% 19%)"/>
+      <stop offset=".52" stop-color="hsl(100 46% 37%)"/>
+      <stop offset="1" stop-color="#161427"/>
+    </linearGradient>
+    <linearGradient id="light" x2=".86" y2="1">
+      <stop stop-color="hsl(100 78% 83%)"/>
+      <stop offset="1" stop-color="hsl(129 64% 52%)"/>
+    </linearGradient>
+    <linearGradient id="ink" x2="0" y2="1">
+      <stop offset=".43" stop-color="#121224" stop-opacity="0"/>
+      <stop offset=".64" stop-color="#171326" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#141224"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#base)"/>
+  <rect x="49" y="118.60982647376719" width="12" height="46.78034705246563" rx="6" fill="url(#light)" opacity="0.6203955092681039"/><rect x="71.3" y="104.84391917728482" width="12" height="74.31216164543036" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="93.6" y="95.42537341647403" width="12" height="93.14925316705192" rx="6" fill="url(#light)" opacity="0.7542957248827961"/><rect x="115.9" y="97.42585809428971" width="12" height="89.14828381142057" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="138.2" y="92.83185654719514" width="12" height="98.3362869056097" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="160.5" y="70.9049566574156" width="12" height="142.1900866851688" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="182.8" y="60.79326924481511" width="12" height="162.41346151036979" rx="6" fill="url(#light)" opacity="0.9509529358847655"/><rect x="205.1" y="69.07942620946267" width="12" height="145.84114758107467" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="227.4" y="90.13222748519891" width="12" height="103.73554502960219" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="249.70000000000002" y="64.773499243807" width="12" height="154.453001512386" rx="6" fill="url(#light)" opacity="1"/><rect x="272" y="53.25155310325978" width="12" height="177.49689379348044" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="294.3" y="61.72818604849104" width="12" height="160.54362790301792" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="316.6" y="85.11454031710747" width="12" height="113.77091936578508" rx="6" fill="url(#light)" opacity="0.9509529358847656"/><rect x="338.90000000000003" y="84.67123752424625" width="12" height="114.6575249515075" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="361.2" y="76.74468716916492" width="12" height="130.51062566167016" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="383.5" y="84.20603790377625" width="12" height="115.5879241924475" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="405.8" y="101.37661662738259" width="12" height="81.24676674523482" rx="6" fill="url(#light)" opacity="0.7542957248827962"/><rect x="428.1" y="114.88575557464733" width="12" height="54.22848885070533" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="450.40000000000003" y="117.65443941536898" width="12" height="48.69112116926202" rx="6" fill="url(#light)" opacity="0.6203955092681039"/>
+  <rect width="512" height="512" fill="url(#ink)"/>
+  <rect x="34" y="336" width="36" height="4" rx="2" fill="hsl(100 78% 83%)"/>
+  <g fill="#fff8f5" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="64" font-weight="700">
+    <text x="33" y="420">Taxi</text>
+  </g>
+  <text x="35" y="469" fill="hsl(100 78% 83%)" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="600">Sadraddin</text>
+</svg>

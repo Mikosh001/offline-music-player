@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img"><title>Duman — Тұмар · SAZ мұқабасы</title><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#a99181"/><stop offset="1" stop-color="#25283e"/></linearGradient><radialGradient id="v"><stop stop-color="#a99181"/><stop offset=".14" stop-color="#111522"/><stop offset=".99" stop-color="#171c29"/></radialGradient></defs><rect width="400" height="400" fill="#121726"/><path d="M0 0H400V400H0Z" fill="url(#g)" opacity=".78"/><g transform="rotate(27 280 140)"><circle cx="300" cy="100" r="162" fill="url(#v)"/><g fill="none" stroke="#a99181" opacity=".22"><circle cx="300" cy="100" r="52"/><circle cx="300" cy="100" r="68"/><circle cx="300" cy="100" r="88"/><circle cx="300" cy="100" r="108"/><circle cx="300" cy="100" r="128"/><circle cx="300" cy="100" r="148"/></g><circle cx="300" cy="100" r="23" fill="#a99181"/><circle cx="300" cy="100" r="5" fill="#141827"/></g><path d="M0 235L400 172V400H0Z" fill="#101625" opacity=".9"/><text x="28" y="39" fill="#fff" opacity=".8" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">SAZ / QAZAQ WAVE</text><rect x="28" y="239" width="35" height="3" rx="1.5" fill="#a99181"/><g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="30"><text x="28" y="276">Тұмар</text></g><text x="28" y="379" fill="#a99181" font-family="Segoe UI,Arial,sans-serif" font-size="14">Duman</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img">
+  <title>Тұмар · Думан Марат</title>
+  <defs>
+    <linearGradient id="base" x2=".8" y2="1">
+      <stop stop-color="hsl(41 55% 19%)"/>
+      <stop offset=".52" stop-color="hsl(27 46% 37%)"/>
+      <stop offset="1" stop-color="#161427"/>
+    </linearGradient>
+    <linearGradient id="light" x2=".86" y2="1">
+      <stop stop-color="hsl(27 78% 83%)"/>
+      <stop offset="1" stop-color="hsl(56 64% 52%)"/>
+    </linearGradient>
+    <linearGradient id="ink" x2="0" y2="1">
+      <stop offset=".43" stop-color="#121224" stop-opacity="0"/>
+      <stop offset=".64" stop-color="#171326" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#141224"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#base)"/>
+  <rect x="49" y="121.38282568997701" width="12" height="41.23434862004598" rx="6" fill="url(#light)" opacity="0.6203955092681039"/><rect x="71.3" y="107.59254374114484" width="12" height="68.81491251771033" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="93.6" y="93.50253728004142" width="12" height="96.99492543991714" rx="6" fill="url(#light)" opacity="0.7542957248827961"/><rect x="115.9" y="88.4217617537103" width="12" height="107.1564764925794" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="138.2" y="96.70095395350728" width="12" height="90.59809209298544" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="160.5" y="81.82446034315817" width="12" height="120.35107931368367" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="182.8" y="62.105541028234086" width="12" height="159.78891794353183" rx="6" fill="url(#light)" opacity="0.9509529358847655"/><rect x="205.1" y="58.367274784812594" width="12" height="167.2654504303748" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="227.4" y="73.46330820197889" width="12" height="137.07338359604222" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="249.70000000000002" y="81.65485397472747" width="12" height="120.69029205054507" rx="6" fill="url(#light)" opacity="1"/><rect x="272" y="60.2128339638367" width="12" height="163.5743320723266" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="294.3" y="55.83981124412918" width="12" height="172.32037751174164" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="316.6" y="70.46754860141237" width="12" height="143.06490279717525" rx="6" fill="url(#light)" opacity="0.9509529358847656"/><rect x="338.90000000000003" y="95.49024106069979" width="12" height="93.01951787860041" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="361.2" y="85.22083123851668" width="12" height="113.55833752296664" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="383.5" y="83.87659484115267" width="12" height="116.24681031769468" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="405.8" y="95.5486614588117" width="12" height="92.9026770823766" rx="6" fill="url(#light)" opacity="0.7542957248827962"/><rect x="428.1" y="112.09446925894447" width="12" height="59.81106148211106" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="450.40000000000003" y="120.1329900482638" width="12" height="43.73401990347238" rx="6" fill="url(#light)" opacity="0.6203955092681039"/>
+  <rect width="512" height="512" fill="url(#ink)"/>
+  <rect x="34" y="336" width="36" height="4" rx="2" fill="hsl(27 78% 83%)"/>
+  <g fill="#fff8f5" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="64" font-weight="700">
+    <text x="33" y="420">Тұмар</text>
+  </g>
+  <text x="35" y="469" fill="hsl(27 78% 83%)" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="600">Думан Марат</text>
+</svg>

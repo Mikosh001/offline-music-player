@@ -1,6 +1,8 @@
 const BASE = new URL("./", self.location);
 const PREFIX = `saz-${BASE.pathname}-`;
-const CACHE = `${PREFIX}v2-18`;
+const CACHE = `${PREFIX}v2-19`;
+const MEDIA_ARTWORK = `${PREFIX}media-artwork`;
+const artworkPath = new URL("assets/artwork/", BASE).pathname;
 const SHELL = [
   "./",
   "index.html",
@@ -15,9 +17,9 @@ const SHELL = [
   "catalog.json",
   "manifest.json",
   "icon.svg",
-  "icon-192.png",
-  "icon-512.png",
-  "icon-180.png",
+  "icon-192.png?v=2.7",
+  "icon-512.png?v=2.7",
+  "icon-180.png?v=2.7",
   "legal/site-policy.html",
   "legal/policy.css",
   "legal/policy.js",
@@ -54,10 +56,13 @@ self.addEventListener("install", (event) => {
             (path) => new Request(new URL(path, BASE), { cache: "reload" }),
           ),
         );
-        // One compact bundle makes all editorial covers available offline.
-        // No hundreds of image downloads, audio caching or external requests.
-        const atlas=await (await cache.match(new URL("assets/artwork/index.json",BASE).href)).json();
-        await Promise.all(Object.entries(atlas).filter(([path])=>/^assets\/artwork\/[a-f0-9]{16}\.svg$/.test(path)).map(([path,svg])=>cache.put(new URL(path,BASE).href,new Response(svg,{headers:{"Content-Type":"image/svg+xml"}}))));
+        // One small request supplies the site's artwork in offline mode.
+        const atlas = await (await cache.match(new URL("assets/artwork/index.json", BASE))).json();
+        const covers = Object.entries(atlas).filter(([path]) => /^assets\/artwork\/[a-f0-9]{16}\.svg$/.test(path));
+        await Promise.all(covers.map(([path, svg]) => cache.put(
+          new URL(path, BASE),
+          new Response(svg, { headers: { "Content-Type": "image/svg+xml" } }),
+        )));
       }),
   );
 });
@@ -70,7 +75,7 @@ self.addEventListener("activate", (event) => {
       const names = await caches.keys();
       await Promise.all(
         names
-          .filter((name) => name.startsWith(PREFIX) && name !== CACHE)
+          .filter((name) => name.startsWith(PREFIX) && name !== CACHE && name !== MEDIA_ARTWORK)
           .map((name) => caches.delete(name)),
       );
       await self.clients.claim();
@@ -133,7 +138,19 @@ self.addEventListener("fetch", (event) => {
     );
     return;
   }
-  if (!shellUrls.has(url.href) && !url.pathname.startsWith(new URL("assets/artwork/", BASE).pathname)) return;
+  const isArtwork = url.pathname.startsWith(artworkPath);
+  if (isArtwork && /^[a-f0-9]{16}-[a-f0-9]{12}\.jpg$/.test(url.pathname.slice(artworkPath.length))) {
+    event.respondWith((async () => {
+      const cache = await caches.open(MEDIA_ARTWORK).catch(() => null);
+      const stored = await cache?.match(request).catch(() => null);
+      if (stored) return stored;
+      const response = await fetch(request);
+      if (response.ok) await cache?.put(request, response.clone()).catch(() => {});
+      return response;
+    })());
+    return;
+  }
+  if (!shellUrls.has(url.href) && !isArtwork) return;
   event.respondWith(
     (async () => {
       const cache = await caches.open(CACHE);

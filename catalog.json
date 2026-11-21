@@ -209,7 +209,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3266048,
       "mime": "audio/mpeg",
-      "sha256": "f5e2d3dc17bb30d7487f4eee196df04e376ce1f4c4a5acc15ad31e5a4a50b021"
+      "sha256": "f5e2d3dc17bb30d7487f4eee196df04e376ce1f4c4a5acc15ad31e5a4a50b021",
+      "poster": "assets/artwork/0322a5f75aa5b4ff-dec5fd447d16.jpg"
     },
     {
       "id": "apple-1654400423",
@@ -235,7 +236,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2891141,
       "mime": "audio/mpeg",
-      "sha256": "271989ea53786c39b3f11a8696662694188e0d753ca19e791670dcbdd00bfd95"
+      "sha256": "271989ea53786c39b3f11a8696662694188e0d753ca19e791670dcbdd00bfd95",
+      "poster": "assets/artwork/2863db07e6a88004-67c93e31fae2.jpg"
     },
     {
       "id": "apple-6766889800",
@@ -261,7 +263,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2656656,
       "mime": "audio/mpeg",
-      "sha256": "26aa0fa1a0d03489d38921f05be503447dd0f6092c1d287b73f951701c9b6f8c"
+      "sha256": "26aa0fa1a0d03489d38921f05be503447dd0f6092c1d287b73f951701c9b6f8c",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1663313826",
@@ -287,7 +290,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3394410,
       "mime": "audio/mpeg",
-      "sha256": "a2597b1e2d66f1ca32e31df7c0f7a9fc928806aeed9b87bbb6bc17af962a032f"
+      "sha256": "a2597b1e2d66f1ca32e31df7c0f7a9fc928806aeed9b87bbb6bc17af962a032f",
+      "poster": "assets/artwork/b117e28e26f79149-7ffb5f0061fa.jpg"
     },
     {
       "id": "apple-1795463773",
@@ -313,7 +317,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3472524,
       "mime": "audio/mpeg",
-      "sha256": "55e0582cc1b7ecb4b844559f23cc95fc703f929991fba50ffc448e5a4e40fbf6"
+      "sha256": "55e0582cc1b7ecb4b844559f23cc95fc703f929991fba50ffc448e5a4e40fbf6",
+      "poster": "assets/artwork/bef32f6a6e920c6a-3679df1208bc.jpg"
     },
     {
       "id": "apple-1614408351",
@@ -339,7 +344,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2561417,
       "mime": "audio/mpeg",
-      "sha256": "c881d63fe7544603cebaa2a33ab9fd48152019691db6adff031e6d1aa8399536"
+      "sha256": "c881d63fe7544603cebaa2a33ab9fd48152019691db6adff031e6d1aa8399536",
+      "poster": "assets/artwork/e52774de8f57c9ed-2be879d9dfac.jpg"
     },
     {
       "id": "apple-1781052381",
@@ -365,7 +371,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4422961,
       "mime": "audio/mpeg",
-      "sha256": "383b0abc9267dab8ca48d8689ce4843855294e0bff2113a9be91c8966f70424b"
+      "sha256": "383b0abc9267dab8ca48d8689ce4843855294e0bff2113a9be91c8966f70424b",
+      "poster": "assets/artwork/db71af02c64707d8-dc52709a4038.jpg"
     },
     {
       "id": "apple-1654029652",
@@ -391,7 +398,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3118091,
       "mime": "audio/mpeg",
-      "sha256": "fc569653e7902340bde1187597f901e082c34bace6047545d9e66168892e80ba"
+      "sha256": "fc569653e7902340bde1187597f901e082c34bace6047545d9e66168892e80ba",
+      "poster": "assets/artwork/98446c1299553c63-0aa0de0b8415.jpg"
     },
     {
       "id": "apple-1700912887",
@@ -417,7 +425,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3166993,
       "mime": "audio/mpeg",
-      "sha256": "5bc369e9f1d9d2bf12751c6a72f91723b1acb71baf273b2ed2037de4885882ee"
+      "sha256": "5bc369e9f1d9d2bf12751c6a72f91723b1acb71baf273b2ed2037de4885882ee",
+      "poster": "assets/artwork/46fa1a708d78046f-9c411239cdbc.jpg"
     },
     {
       "id": "apple-1776255762",
@@ -443,7 +452,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3763886,
       "mime": "audio/mpeg",
-      "sha256": "47dd1229057686d81ed28eee60a678a7c02b68f8698b604e26a104c1af13b8b1"
+      "sha256": "47dd1229057686d81ed28eee60a678a7c02b68f8698b604e26a104c1af13b8b1",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1678295964",
@@ -469,7 +479,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3243476,
       "mime": "audio/mpeg",
-      "sha256": "f0762ea63923e2ac83ff9b09308dcbf15cca2f3ee1884d63b0272eae28da149d"
+      "sha256": "f0762ea63923e2ac83ff9b09308dcbf15cca2f3ee1884d63b0272eae28da149d",
+      "poster": "assets/artwork/47556c79ca402797-24c6def34d09.jpg"
     },
     {
       "id": "apple-1752465977",
@@ -495,7 +506,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3221351,
       "mime": "audio/mpeg",
-      "sha256": "aa77e659114d4394cb29be56ef4135d0615ee0e01b44ea53b8ce4b58f82e86e5"
+      "sha256": "aa77e659114d4394cb29be56ef4135d0615ee0e01b44ea53b8ce4b58f82e86e5",
+      "poster": "assets/artwork/2e2aac8d18b9553a-d544532d4e50.jpg"
     },
     {
       "id": "apple-1704660374",
@@ -521,7 +533,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3601669,
       "mime": "audio/mpeg",
-      "sha256": "b2241aac1fff6578c78baf34fdacc65fcf54ed8b8d96be0db4e75ff7b65e92b5"
+      "sha256": "b2241aac1fff6578c78baf34fdacc65fcf54ed8b8d96be0db4e75ff7b65e92b5",
+      "poster": "assets/artwork/32324684e800fefa-1c19b1606e43.jpg"
     },
     {
       "id": "apple-1654029886",
@@ -547,7 +560,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4007924,
       "mime": "audio/mpeg",
-      "sha256": "b9f8d1b78dd7f079cdfd1f28b94bbbdca2d073ee5582ba8018d0103f9504a098"
+      "sha256": "b9f8d1b78dd7f079cdfd1f28b94bbbdca2d073ee5582ba8018d0103f9504a098",
+      "poster": "assets/artwork/d94eda95a309efd1-1292be8133e6.jpg"
     },
     {
       "id": "apple-6766889591",
@@ -573,7 +587,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2916199,
       "mime": "audio/mpeg",
-      "sha256": "1c8359cac1ac15b8bf1b6efa18f00a7d41c84897d6dc37e4ec2fc1ecd81aed7d"
+      "sha256": "1c8359cac1ac15b8bf1b6efa18f00a7d41c84897d6dc37e4ec2fc1ecd81aed7d",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1565942086",
@@ -599,7 +614,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3937769,
       "mime": "audio/mpeg",
-      "sha256": "e1ae8afa4dd4f7813b552aa172f53a9d8bc25ed0aaf560cc9288ddfe7213eb11"
+      "sha256": "e1ae8afa4dd4f7813b552aa172f53a9d8bc25ed0aaf560cc9288ddfe7213eb11",
+      "poster": "assets/artwork/c21e1b38b8ec8331-7edeb7866215.jpg"
     },
     {
       "id": "apple-1811093351",
@@ -625,7 +641,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2985171,
       "mime": "audio/mpeg",
-      "sha256": "9b1f50809cbba263b2d1ee5b4454750bccc47c3219e4b27bb372e34f0f42786b"
+      "sha256": "9b1f50809cbba263b2d1ee5b4454750bccc47c3219e4b27bb372e34f0f42786b",
+      "poster": "assets/artwork/ce5c378127c7e166-bc653f1a92e1.jpg"
     },
     {
       "id": "apple-1696159903",
@@ -651,7 +668,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2423852,
       "mime": "audio/mpeg",
-      "sha256": "de75d423586cf7d2435bc75294ab385a34e216c61e67dd4d78002274daa48281"
+      "sha256": "de75d423586cf7d2435bc75294ab385a34e216c61e67dd4d78002274daa48281",
+      "poster": "assets/artwork/aa73243f9b65daec-f85ca5a13060.jpg"
     },
     {
       "id": "apple-1717396951",
@@ -677,7 +695,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3197932,
       "mime": "audio/mpeg",
-      "sha256": "07ed105e706f488b82ffd0f2a170dfebc30942ae1da4cf10ad7b28690bbf07fc"
+      "sha256": "07ed105e706f488b82ffd0f2a170dfebc30942ae1da4cf10ad7b28690bbf07fc",
+      "poster": "assets/artwork/4fadc15418b655da-443f0e8fce38.jpg"
     },
     {
       "id": "apple-1653990242",
@@ -703,7 +722,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4170516,
       "mime": "audio/mpeg",
-      "sha256": "ad27f7cc525787548322ed8e617ff8103fce9e48fdfa0317880c9c31b409861e"
+      "sha256": "ad27f7cc525787548322ed8e617ff8103fce9e48fdfa0317880c9c31b409861e",
+      "poster": "assets/artwork/4a63306ee1a75d62-0c8b2c46ebc3.jpg"
     },
     {
       "id": "apple-6766889610",
@@ -729,7 +749,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2807536,
       "mime": "audio/mpeg",
-      "sha256": "115cbb200eddedce19a40d95525502b8cfd6600783e70a317e678fc29a1cd1c5"
+      "sha256": "115cbb200eddedce19a40d95525502b8cfd6600783e70a317e678fc29a1cd1c5",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-6772216125",
@@ -755,7 +776,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2890334,
       "mime": "audio/mpeg",
-      "sha256": "c6329fd492b64874c2131af5d09d3f98026a5cab3938659ca2451fd8c347598e"
+      "sha256": "c6329fd492b64874c2131af5d09d3f98026a5cab3938659ca2451fd8c347598e",
+      "poster": "assets/artwork/52b14a3581c8c3df-b3d5555352ab.jpg"
     },
     {
       "id": "apple-1688432972",
@@ -781,7 +803,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4050152,
       "mime": "audio/mpeg",
-      "sha256": "5e61b9623bc29cc708e4c7545acfe597e369ffa8f8b06d87353531857ba150d3"
+      "sha256": "5e61b9623bc29cc708e4c7545acfe597e369ffa8f8b06d87353531857ba150d3",
+      "poster": "assets/artwork/638155511ee36d8c-bd877ec40c20.jpg"
     },
     {
       "id": "apple-1636348319",
@@ -807,7 +830,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1825885,
       "mime": "audio/mpeg",
-      "sha256": "8848c0e25690bc521c40586c8769f7e8afbeb9233042c1df280790a414d7718c"
+      "sha256": "8848c0e25690bc521c40586c8769f7e8afbeb9233042c1df280790a414d7718c",
+      "poster": "assets/artwork/3ed741235dc34a7d-1907f3732c1f.jpg"
     },
     {
       "id": "apple-1861520497",
@@ -833,7 +857,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3451245,
       "mime": "audio/mpeg",
-      "sha256": "92af19933bbfb6eb5e9a1cc08b2760bcd5858ccbac3e257693ec3cbd7160fc81"
+      "sha256": "92af19933bbfb6eb5e9a1cc08b2760bcd5858ccbac3e257693ec3cbd7160fc81",
+      "poster": "assets/artwork/e1c028bc5003f50a-062b612ef210.jpg"
     },
     {
       "id": "apple-1654030836",
@@ -859,7 +884,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2818424,
       "mime": "audio/mpeg",
-      "sha256": "191a5d6d2f9a4c25e9b03b0ce462b15cf5eaceee52d76895c0804991103f737d"
+      "sha256": "191a5d6d2f9a4c25e9b03b0ce462b15cf5eaceee52d76895c0804991103f737d",
+      "poster": "assets/artwork/6ad65f4afdb08ea3-1384baca5a65.jpg"
     },
     {
       "id": "apple-6766889805",
@@ -885,7 +911,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4129546,
       "mime": "audio/mpeg",
-      "sha256": "40692fc147400c9cb3245eb229d50f2cc38292280ff3e872c647f65f91e78bd3"
+      "sha256": "40692fc147400c9cb3245eb229d50f2cc38292280ff3e872c647f65f91e78bd3",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1594259047",
@@ -911,7 +938,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2533402,
       "mime": "audio/mpeg",
-      "sha256": "c4a41016f0c9e164939867de48437c9273880c5b989761f99a1e6b83b551a42d"
+      "sha256": "c4a41016f0c9e164939867de48437c9273880c5b989761f99a1e6b83b551a42d",
+      "poster": "assets/artwork/013d2f2c658fb6a7-5e7bd674c23b.jpg"
     },
     {
       "id": "apple-1674164019",
@@ -937,7 +965,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2815896,
       "mime": "audio/mpeg",
-      "sha256": "dfebe153824f9f997cb4862e0dc1ed32ab48e6380b105f6fba72c47c2efbe606"
+      "sha256": "dfebe153824f9f997cb4862e0dc1ed32ab48e6380b105f6fba72c47c2efbe606",
+      "poster": "assets/artwork/6b59319fa6fac412-64500666bed4.jpg"
     },
     {
       "id": "apple-1618385361",
@@ -963,7 +992,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2778334,
       "mime": "audio/mpeg",
-      "sha256": "a0a0b43c6b554d4735c77049e34b0b0b58fb8ebff600b16e4032e28bb52bf917"
+      "sha256": "a0a0b43c6b554d4735c77049e34b0b0b58fb8ebff600b16e4032e28bb52bf917",
+      "poster": "assets/artwork/0f858e8475777999-339c6663616a.jpg"
     },
     {
       "id": "apple-1893440366",
@@ -989,7 +1019,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2744046,
       "mime": "audio/mpeg",
-      "sha256": "f099e102f67ab4973eeea1d7f65f970c4e9234567b752d4ae15e2a756e925eb6"
+      "sha256": "f099e102f67ab4973eeea1d7f65f970c4e9234567b752d4ae15e2a756e925eb6",
+      "poster": "assets/artwork/b883631a805f880f-276fc5bf2f1e.jpg"
     },
     {
       "id": "apple-1132417509",
@@ -1015,7 +1046,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2954675,
       "mime": "audio/mpeg",
-      "sha256": "45bf51f2b7cd610c16bbf50436cdeec5aefabfbd517f306219c09d94b5bff5e8"
+      "sha256": "45bf51f2b7cd610c16bbf50436cdeec5aefabfbd517f306219c09d94b5bff5e8",
+      "poster": "assets/artwork/a4f87590b6574b0c-936035292d73.jpg"
     },
     {
       "id": "apple-1752694447",
@@ -1041,7 +1073,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2511221,
       "mime": "audio/mpeg",
-      "sha256": "8cf52df5d3e2c331252cac1925fb88d1429e45ccd3458576292e69470d7c5f99"
+      "sha256": "8cf52df5d3e2c331252cac1925fb88d1429e45ccd3458576292e69470d7c5f99",
+      "poster": "assets/artwork/b8958d7e4062e040-3817083ae3b6.jpg"
     },
     {
       "id": "apple-1766750060",
@@ -1067,7 +1100,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3053769,
       "mime": "audio/mpeg",
-      "sha256": "4ea3b378b05d0f2a172071a95c730e6bb1d493d79252d5c7f651d278d73d2c89"
+      "sha256": "4ea3b378b05d0f2a172071a95c730e6bb1d493d79252d5c7f651d278d73d2c89",
+      "poster": "assets/artwork/5a086bbc99a9ebd9-0a7265a1fe99.jpg"
     },
     {
       "id": "apple-1753157955",
@@ -1093,7 +1127,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3335013,
       "mime": "audio/mpeg",
-      "sha256": "d5db23cdee1a5984bc86e213f283652e106b5678611854b32723c47393300c14"
+      "sha256": "d5db23cdee1a5984bc86e213f283652e106b5678611854b32723c47393300c14",
+      "poster": "assets/artwork/b9b0e79e39016196-3a0b5d12571d.jpg"
     },
     {
       "id": "apple-1785641840",
@@ -1119,7 +1154,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2633732,
       "mime": "audio/mpeg",
-      "sha256": "38b17675b9149f01571377f78429dd90c1c4f3bb169beb463447dba02e576f99"
+      "sha256": "38b17675b9149f01571377f78429dd90c1c4f3bb169beb463447dba02e576f99",
+      "poster": "assets/artwork/ff0447837c68284d-3d20e62597b3.jpg"
     },
     {
       "id": "apple-1553732901",
@@ -1145,7 +1181,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3088429,
       "mime": "audio/mpeg",
-      "sha256": "4eaceffe6d09cc9f8544120226bb9cc4f51ff1e6f628815a4c8d003e84bd328b"
+      "sha256": "4eaceffe6d09cc9f8544120226bb9cc4f51ff1e6f628815a4c8d003e84bd328b",
+      "poster": "assets/artwork/31918d9649ea4e66-687e0a3a9b05.jpg"
     },
     {
       "id": "apple-1654030276",
@@ -1171,7 +1208,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3994992,
       "mime": "audio/mpeg",
-      "sha256": "feb0bc5f25356fb05764b5cc2543a5f5fa431fc50251f170ddf0af7ca3b6c837"
+      "sha256": "feb0bc5f25356fb05764b5cc2543a5f5fa431fc50251f170ddf0af7ca3b6c837",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1759423716",
@@ -1197,7 +1235,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2966361,
       "mime": "audio/mpeg",
-      "sha256": "7b35e6e5e31d54133ca3010ae0d6b4f92cdef3f28c77ce9cf92f7dfdccdecf4e"
+      "sha256": "7b35e6e5e31d54133ca3010ae0d6b4f92cdef3f28c77ce9cf92f7dfdccdecf4e",
+      "poster": "assets/artwork/ec22da41fd46b734-ae4ee3cf5609.jpg"
     },
     {
       "id": "apple-1776255960",
@@ -1223,7 +1262,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3605054,
       "mime": "audio/mpeg",
-      "sha256": "db7ec94ede50f309d34dc5b42b6c9e93d5967e0622c983606f87e9548b3affef"
+      "sha256": "db7ec94ede50f309d34dc5b42b6c9e93d5967e0622c983606f87e9548b3affef",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1705036637",
@@ -1249,7 +1289,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3516821,
       "mime": "audio/mpeg",
-      "sha256": "a22024f45f9d46c506a65e0ffe546b2effc9cc4f4618f3a53b48a30724f14cc2"
+      "sha256": "a22024f45f9d46c506a65e0ffe546b2effc9cc4f4618f3a53b48a30724f14cc2",
+      "poster": "assets/artwork/9bef4bc96b4bb973-9896e9325f9d.jpg"
     },
     {
       "id": "apple-1653838270",
@@ -1275,7 +1316,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2923804,
       "mime": "audio/mpeg",
-      "sha256": "d3f8a54f3a9f37bd875982e2e09e0bcb96c604c6401cbb819f962e117b18093f"
+      "sha256": "d3f8a54f3a9f37bd875982e2e09e0bcb96c604c6401cbb819f962e117b18093f",
+      "poster": "assets/artwork/c8b8fe75a6f62384-356776a96ce2.jpg"
     },
     {
       "id": "apple-1833323723",
@@ -1301,7 +1343,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3842024,
       "mime": "audio/mpeg",
-      "sha256": "282011470ea3a367cb820fab179c2bf133a89bae3196451a3536ddcdbb04058d"
+      "sha256": "282011470ea3a367cb820fab179c2bf133a89bae3196451a3536ddcdbb04058d",
+      "poster": "assets/artwork/73dc052b79f70a80-f13c995a8394.jpg"
     },
     {
       "id": "apple-1654030309",
@@ -1327,7 +1370,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3772625,
       "mime": "audio/mpeg",
-      "sha256": "ec75041be05ec07976d30a641fcd48a64940c7fddd568e46e33b68151a9ed928"
+      "sha256": "ec75041be05ec07976d30a641fcd48a64940c7fddd568e46e33b68151a9ed928",
+      "poster": "assets/artwork/4aa82e77a7861d79-fff59285ae01.jpg"
     },
     {
       "id": "apple-1695106274",
@@ -1353,7 +1397,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2657921,
       "mime": "audio/mpeg",
-      "sha256": "fb5da4992b7127822b5eeec5ac9362f56168b39e162051a7e8edf5a0c90e7e3a"
+      "sha256": "fb5da4992b7127822b5eeec5ac9362f56168b39e162051a7e8edf5a0c90e7e3a",
+      "poster": "assets/artwork/deda517845b8978f-1e5c43bbc199.jpg"
     },
     {
       "id": "apple-1626885951",
@@ -1379,7 +1424,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4184320,
       "mime": "audio/mpeg",
-      "sha256": "2d1ff7ca27b4cd8e677c2828f5b81d0a1c62d0c91bbde41ea749d451bd3bf870"
+      "sha256": "2d1ff7ca27b4cd8e677c2828f5b81d0a1c62d0c91bbde41ea749d451bd3bf870",
+      "poster": "assets/artwork/10bc807fec56fd70-607a5ceff6eb.jpg"
     },
     {
       "id": "apple-1800438426",
@@ -1405,7 +1451,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2983081,
       "mime": "audio/mpeg",
-      "sha256": "b105692120b9871f1ac88d8f2ac4aac72bddd00cbd72522a1ee5a356f1d51266"
+      "sha256": "b105692120b9871f1ac88d8f2ac4aac72bddd00cbd72522a1ee5a356f1d51266",
+      "poster": "assets/artwork/5f59924e111ad2b0-fe37a5c70232.jpg"
     },
     {
       "id": "apple-1816123209",
@@ -1431,7 +1478,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2308524,
       "mime": "audio/mpeg",
-      "sha256": "5c90d6294cf5e8410d767de4f7822c273e0ef003f2fa310f227a240da9763b70"
+      "sha256": "5c90d6294cf5e8410d767de4f7822c273e0ef003f2fa310f227a240da9763b70",
+      "poster": "assets/artwork/960f09bd5a502e7d-9637ddb14380.jpg"
     },
     {
       "id": "apple-1711535782",
@@ -1457,7 +1505,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3083829,
       "mime": "audio/mpeg",
-      "sha256": "d4241f9515402357918820509a2b7bf7a1acbf22341d4c476fca0b889eba36e3"
+      "sha256": "d4241f9515402357918820509a2b7bf7a1acbf22341d4c476fca0b889eba36e3",
+      "poster": "assets/artwork/d26793e16993862b-75b4993e56d8.jpg"
     },
     {
       "id": "apple-1710366447",
@@ -1483,7 +1532,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3459605,
       "mime": "audio/mpeg",
-      "sha256": "12dbb03db0060d9fe79701dc9bcfce649030d1d8b011c12cd7b5d87c42bcf5c1"
+      "sha256": "12dbb03db0060d9fe79701dc9bcfce649030d1d8b011c12cd7b5d87c42bcf5c1",
+      "poster": "assets/artwork/0b9f77250d0dce29-9c9a467c7d16.jpg"
     },
     {
       "id": "apple-1719807519",
@@ -1509,7 +1559,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2843479,
       "mime": "audio/mpeg",
-      "sha256": "3e8042d164cbb114795a9cd66e9e0a5cf54fd63d11c4102c93d5636cdfc21f6f"
+      "sha256": "3e8042d164cbb114795a9cd66e9e0a5cf54fd63d11c4102c93d5636cdfc21f6f",
+      "poster": "assets/artwork/065d71454082f835-a75480a7cf79.jpg"
     },
     {
       "id": "apple-1776255951",
@@ -1535,7 +1586,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3295350,
       "mime": "audio/mpeg",
-      "sha256": "2af80435714556210a5bdca0b65987916706d897621efd35b60cbc676bd4c225"
+      "sha256": "2af80435714556210a5bdca0b65987916706d897621efd35b60cbc676bd4c225",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1734433549",
@@ -1561,7 +1613,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3408591,
       "mime": "audio/mpeg",
-      "sha256": "75795c8ae392b39d8542db4d47aaf329a5c8deb3fc2361d0ad7d34d76a07a6ea"
+      "sha256": "75795c8ae392b39d8542db4d47aaf329a5c8deb3fc2361d0ad7d34d76a07a6ea",
+      "poster": "assets/artwork/82d9468c5db8e299-7c7a3f4c0a91.jpg"
     },
     {
       "id": "apple-1558688687",
@@ -1587,7 +1640,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2474438,
       "mime": "audio/mpeg",
-      "sha256": "ac9e67b421f05f9b4e9a9e340f4430cacd5a0cef7e00c0aaae7d17956dc2a565"
+      "sha256": "ac9e67b421f05f9b4e9a9e340f4430cacd5a0cef7e00c0aaae7d17956dc2a565",
+      "poster": "assets/artwork/81b0ca20c5036cc3-59da9b214d52.jpg"
     },
     {
       "id": "apple-1820931848",
@@ -1613,7 +1667,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3088428,
       "mime": "audio/mpeg",
-      "sha256": "767fc4616b076585a1d1a7d6cbd6e4c8ba71cde6a4db1ba5c898a8636f923604"
+      "sha256": "767fc4616b076585a1d1a7d6cbd6e4c8ba71cde6a4db1ba5c898a8636f923604",
+      "poster": "assets/artwork/92e5b72e4dff6672-0869279a27f6.jpg"
     },
     {
       "id": "apple-1660373509",
@@ -1639,7 +1694,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2677186,
       "mime": "audio/mpeg",
-      "sha256": "957e9ceb2e62c4bf25b7cfe690ad5d04c0b6ffd77d898d675b06333757bbfd77"
+      "sha256": "957e9ceb2e62c4bf25b7cfe690ad5d04c0b6ffd77d898d675b06333757bbfd77",
+      "poster": "assets/artwork/634fc126d27b1256-a8c610f0c1b4.jpg"
     },
     {
       "id": "apple-1744889168",
@@ -1665,7 +1721,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3023713,
       "mime": "audio/mpeg",
-      "sha256": "b3abfbade2f8094a5571cce01ededcd3c3bfa454630e62c01fabdc75c8cce899"
+      "sha256": "b3abfbade2f8094a5571cce01ededcd3c3bfa454630e62c01fabdc75c8cce899",
+      "poster": "assets/artwork/9a0e274e665c2c31-a6852218f11b.jpg"
     },
     {
       "id": "apple-1576705565",
@@ -1691,7 +1748,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2961834,
       "mime": "audio/mpeg",
-      "sha256": "804a01f3c5d1a5094bde1c074796455892300aa6a41f4508f7bf0dc065e5d744"
+      "sha256": "804a01f3c5d1a5094bde1c074796455892300aa6a41f4508f7bf0dc065e5d744",
+      "poster": "assets/artwork/df761ce8cb721d53-70dcf69eaa1a.jpg"
     },
     {
       "id": "apple-6762808073",
@@ -1717,7 +1775,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3556969,
       "mime": "audio/mpeg",
-      "sha256": "a96ad2ef618d7c258682d12defded00b8db1a9c4265ed01642afde28a3c0f1c0"
+      "sha256": "a96ad2ef618d7c258682d12defded00b8db1a9c4265ed01642afde28a3c0f1c0",
+      "poster": "assets/artwork/66e0299a94d677bc-e01cbd05aa28.jpg"
     },
     {
       "id": "apple-1854844839",
@@ -1743,7 +1802,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2969744,
       "mime": "audio/mpeg",
-      "sha256": "e6692b98b83a8d35efb5c832c86df585a58e8c6ba1ded07152e4d0a30b7fb48c"
+      "sha256": "e6692b98b83a8d35efb5c832c86df585a58e8c6ba1ded07152e4d0a30b7fb48c",
+      "poster": "assets/artwork/1ccf3f03dd599112-26d8cee91643.jpg"
     },
     {
       "id": "apple-1711363858",
@@ -1769,7 +1829,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3398139,
       "mime": "audio/mpeg",
-      "sha256": "1c6ebf4c703b3695ff46ee1994ed6aec79a38b3a2c9684f32aaca197ff71dfcf"
+      "sha256": "1c6ebf4c703b3695ff46ee1994ed6aec79a38b3a2c9684f32aaca197ff71dfcf",
+      "poster": "assets/artwork/5a842c369d1ccee6-33a0a0921c7d.jpg"
     },
     {
       "id": "apple-1654030302",
@@ -1795,7 +1856,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3414014,
       "mime": "audio/mpeg",
-      "sha256": "d96c8cfd9d366e03f64d8d202129325e1b02f5ea3c61a43e6c9750889086c1ed"
+      "sha256": "d96c8cfd9d366e03f64d8d202129325e1b02f5ea3c61a43e6c9750889086c1ed",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1691083139",
@@ -1821,7 +1883,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2391667,
       "mime": "audio/mpeg",
-      "sha256": "eec600b5e1adf09cdab4fc4bf7ef955ffd0ce8aa6b92020db153a9a31989cd91"
+      "sha256": "eec600b5e1adf09cdab4fc4bf7ef955ffd0ce8aa6b92020db153a9a31989cd91",
+      "poster": "assets/artwork/b9869a6be05309fc-69ae62d6e6e8.jpg"
     },
     {
       "id": "apple-1649519688",
@@ -1847,7 +1910,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3155371,
       "mime": "audio/mpeg",
-      "sha256": "82ef95bde0963b6477ff17be3c057a89645e5a3d3ffcac6b62208fdacae4a596"
+      "sha256": "82ef95bde0963b6477ff17be3c057a89645e5a3d3ffcac6b62208fdacae4a596",
+      "poster": "assets/artwork/1ff206a0cdb8f3e0-913fcb55726c.jpg"
     },
     {
       "id": "apple-1671414387",
@@ -1873,7 +1937,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3594144,
       "mime": "audio/mpeg",
-      "sha256": "ab1e9e02c1ffd8a96113171773db69dea23415ad0f72faf57e58cefed16cbb79"
+      "sha256": "ab1e9e02c1ffd8a96113171773db69dea23415ad0f72faf57e58cefed16cbb79",
+      "poster": "assets/artwork/9048a0beacea295f-72f82ac6ac34.jpg"
     },
     {
       "id": "apple-1758147060",
@@ -1899,7 +1964,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2470314,
       "mime": "audio/mpeg",
-      "sha256": "b96805cec6860869fc4374db5b1f631406309a2856d90d321b33dc866e02bad8"
+      "sha256": "b96805cec6860869fc4374db5b1f631406309a2856d90d321b33dc866e02bad8",
+      "poster": "assets/artwork/e39a88f23f90f171-a18ea8f27584.jpg"
     },
     {
       "id": "apple-1624876545",
@@ -1925,7 +1991,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4286732,
       "mime": "audio/mpeg",
-      "sha256": "43233102174abd237f46e4ced29eed3eb86bd021f67a7314dd1cda4d7ae32596"
+      "sha256": "43233102174abd237f46e4ced29eed3eb86bd021f67a7314dd1cda4d7ae32596",
+      "poster": "assets/artwork/d4abaa19d2ed0474-6efe039898fc.jpg"
     },
     {
       "id": "apple-1654030303",
@@ -1951,7 +2018,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3633878,
       "mime": "audio/mpeg",
-      "sha256": "b5e648dfcb9d95b9924cd7e7d9b0a3c291af18404ae605bd4c2205d7363ffb9a"
+      "sha256": "b5e648dfcb9d95b9924cd7e7d9b0a3c291af18404ae605bd4c2205d7363ffb9a",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1717471774",
@@ -1977,7 +2045,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2891974,
       "mime": "audio/mpeg",
-      "sha256": "87df98a568713ff798021f195d35bfb2df0c649f825a9ead93cff5f7bd2d2acc"
+      "sha256": "87df98a568713ff798021f195d35bfb2df0c649f825a9ead93cff5f7bd2d2acc",
+      "poster": "assets/artwork/53250773229f3db0-08e939cad0cb.jpg"
     },
     {
       "id": "apple-1730729458",
@@ -2003,7 +2072,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3605479,
       "mime": "audio/mpeg",
-      "sha256": "1c8f1d86010358eb93d36a32063ab3589c2a3c2a7da6bbe4a0095c9a5b639f59"
+      "sha256": "1c8f1d86010358eb93d36a32063ab3589c2a3c2a7da6bbe4a0095c9a5b639f59",
+      "poster": "assets/artwork/2b77ae0ce3b0b3a4-391948a0e63e.jpg"
     },
     {
       "id": "apple-6764892305",
@@ -2029,7 +2099,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3529798,
       "mime": "audio/mpeg",
-      "sha256": "4a1fe3ebf34dcb6c9eeb8634d4f291a24a3b93357adba31f6a2c7fa87126ec85"
+      "sha256": "4a1fe3ebf34dcb6c9eeb8634d4f291a24a3b93357adba31f6a2c7fa87126ec85",
+      "poster": "assets/artwork/aa0109e84873aeaa-4e1376936c99.jpg"
     },
     {
       "id": "apple-1733000286",
@@ -2055,7 +2126,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2051945,
       "mime": "audio/mpeg",
-      "sha256": "5734bc098f80f5e35b5a731e4f748e766b9c51b8e1c873a3810619822d990dd3"
+      "sha256": "5734bc098f80f5e35b5a731e4f748e766b9c51b8e1c873a3810619822d990dd3",
+      "poster": "assets/artwork/810c0086d06ba8c2-66a874084476.jpg"
     },
     {
       "id": "apple-1775725784",
@@ -2081,7 +2153,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4481522,
       "mime": "audio/mpeg",
-      "sha256": "2c22aedc78f819a93b790ed8a28a8ac6ac785fc7d9bbaf7e8dde70ab206f43bd"
+      "sha256": "2c22aedc78f819a93b790ed8a28a8ac6ac785fc7d9bbaf7e8dde70ab206f43bd",
+      "poster": "assets/artwork/142767f444330f09-d33be98e1510.jpg"
     },
     {
       "id": "apple-1654030281",
@@ -2107,7 +2180,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4122882,
       "mime": "audio/mpeg",
-      "sha256": "36622f0614741b1d2c2d84c2bfd4e2e44b272ad9352bdc80a9f59fd207f7efdd"
+      "sha256": "36622f0614741b1d2c2d84c2bfd4e2e44b272ad9352bdc80a9f59fd207f7efdd",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1610718952",
@@ -2133,7 +2207,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3047476,
       "mime": "audio/mpeg",
-      "sha256": "e07b6e89cfdc9ee3b505c6e061605251d4231c51fc45cab06e96a34e8a5ce355"
+      "sha256": "e07b6e89cfdc9ee3b505c6e061605251d4231c51fc45cab06e96a34e8a5ce355",
+      "poster": "assets/artwork/b30823883f668953-65e47a0f67cf.jpg"
     },
     {
       "id": "apple-1776256101",
@@ -2159,7 +2234,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3687857,
       "mime": "audio/mpeg",
-      "sha256": "7e9a44cb3427dddafbb93590555b8f5afcc565899f22b9f9e3d8743e7e440e69"
+      "sha256": "7e9a44cb3427dddafbb93590555b8f5afcc565899f22b9f9e3d8743e7e440e69",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1724976982",
@@ -2185,7 +2261,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2461485,
       "mime": "audio/mpeg",
-      "sha256": "e4b41fa2c1a1a81bf10503367399e5f8b26655dfac34cf638bc2b2d04863d165"
+      "sha256": "e4b41fa2c1a1a81bf10503367399e5f8b26655dfac34cf638bc2b2d04863d165",
+      "poster": "assets/artwork/ec4ca66073c77835-0cf60fd41109.jpg"
     },
     {
       "id": "apple-1729882939",
@@ -2211,7 +2288,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2722735,
       "mime": "audio/mpeg",
-      "sha256": "5737cd30cc7dd27ed5ee4d0d783199f027db37d44f3ba55aeb71e85a9c7f33a6"
+      "sha256": "5737cd30cc7dd27ed5ee4d0d783199f027db37d44f3ba55aeb71e85a9c7f33a6",
+      "poster": "assets/artwork/db05316fb69daf03-9c6b9e014723.jpg"
     },
     {
       "id": "apple-1654029589",
@@ -2237,7 +2315,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3044112,
       "mime": "audio/mpeg",
-      "sha256": "c277649252136592c98eaf7388b33d8f26914d7bb44c6cd4b2a518a439fec782"
+      "sha256": "c277649252136592c98eaf7388b33d8f26914d7bb44c6cd4b2a518a439fec782",
+      "poster": "assets/artwork/66941f1423028e60-36e98e10dcda.jpg"
     },
     {
       "id": "apple-1671891038",
@@ -2263,7 +2342,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2488644,
       "mime": "audio/mpeg",
-      "sha256": "86a74f482200d51bcba81944daf0efb2c3987a7f4d2a45cd490688d284906ad2"
+      "sha256": "86a74f482200d51bcba81944daf0efb2c3987a7f4d2a45cd490688d284906ad2",
+      "poster": "assets/artwork/1fa910cee86770c5-28af5120b6a2.jpg"
     },
     {
       "id": "apple-1663203976",
@@ -2289,7 +2369,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3626445,
       "mime": "audio/mpeg",
-      "sha256": "d576bb4ca06ce8e6cb82672919c25fef53abedd6f419eabbe8dfade047e00ad3"
+      "sha256": "d576bb4ca06ce8e6cb82672919c25fef53abedd6f419eabbe8dfade047e00ad3",
+      "poster": "assets/artwork/30ae43c971bd0ae2-e97009624fcf.jpg"
     },
     {
       "id": "apple-1648093897",
@@ -2315,7 +2396,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2652890,
       "mime": "audio/mpeg",
-      "sha256": "6535267e7baf7a856e7a813a61de18faf605b56a95d03b9b10b3357a8917b3ef"
+      "sha256": "6535267e7baf7a856e7a813a61de18faf605b56a95d03b9b10b3357a8917b3ef",
+      "poster": "assets/artwork/cced3e6ed4e7dee1-fddeada0b55a.jpg"
     },
     {
       "id": "apple-6810141089",
@@ -2341,7 +2423,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3383929,
       "mime": "audio/mpeg",
-      "sha256": "1e26e3198d337e23c8636cb253916240f03a989be0352fca29386f832b9c31e0"
+      "sha256": "1e26e3198d337e23c8636cb253916240f03a989be0352fca29386f832b9c31e0",
+      "poster": "assets/artwork/68aa62139405c5a1-650110e8168d.jpg"
     },
     {
       "id": "apple-1654030279",
@@ -2367,7 +2450,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3633870,
       "mime": "audio/mpeg",
-      "sha256": "18e8b20d8d3de3aca66a0673c5a7cbf709ed02a6a4b34d430fe659a8df677df7"
+      "sha256": "18e8b20d8d3de3aca66a0673c5a7cbf709ed02a6a4b34d430fe659a8df677df7",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1522822259",
@@ -2393,7 +2477,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2657094,
       "mime": "audio/mpeg",
-      "sha256": "6071cca8d06688e940413f7b739e5e8c6cb78de87a8f49c3c5810963db4d90f7"
+      "sha256": "6071cca8d06688e940413f7b739e5e8c6cb78de87a8f49c3c5810963db4d90f7",
+      "poster": "assets/artwork/0d56e1d8d8836cde-a9d3d66a939d.jpg"
     },
     {
       "id": "apple-1776255971",
@@ -2419,7 +2504,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3402341,
       "mime": "audio/mpeg",
-      "sha256": "6c7d417a3bf04ef533b64a5bac4d689ef34dd37300ce4dbed77eaea62b7722d8"
+      "sha256": "6c7d417a3bf04ef533b64a5bac4d689ef34dd37300ce4dbed77eaea62b7722d8",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1848811950",
@@ -2445,7 +2531,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2418467,
       "mime": "audio/mpeg",
-      "sha256": "546e9a9890f47b8dd59652d5988636c5b790224d0f46b6a8f46cfef8fe4688bb"
+      "sha256": "546e9a9890f47b8dd59652d5988636c5b790224d0f46b6a8f46cfef8fe4688bb",
+      "poster": "assets/artwork/c30745f39dfa21ff-6a20a367dd2c.jpg"
     },
     {
       "id": "apple-1700172335",
@@ -2471,7 +2558,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2971017,
       "mime": "audio/mpeg",
-      "sha256": "c65decced02d2f5814941a830c299ef110fea1f0174b0b4806b58374bb795bb4"
+      "sha256": "c65decced02d2f5814941a830c299ef110fea1f0174b0b4806b58374bb795bb4",
+      "poster": "assets/artwork/7476b7f772ebf678-80807626fdac.jpg"
     },
     {
       "id": "apple-1654029775",
@@ -2497,7 +2585,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3149856,
       "mime": "audio/mpeg",
-      "sha256": "4611a1a924198e8d3ec00b382f136d01a9caf1f5d4b3e6c1ef219451b58fde85"
+      "sha256": "4611a1a924198e8d3ec00b382f136d01a9caf1f5d4b3e6c1ef219451b58fde85",
+      "poster": "assets/artwork/9d6c428b03616344-a382ba08ec8a.jpg"
     },
     {
       "id": "apple-1768082732",
@@ -2523,7 +2612,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2645378,
       "mime": "audio/mpeg",
-      "sha256": "e5eb96bbe2814d33da95bee9882e071a9bad2c4d76ba407fd65d305ca3c247a7"
+      "sha256": "e5eb96bbe2814d33da95bee9882e071a9bad2c4d76ba407fd65d305ca3c247a7",
+      "poster": "assets/artwork/b860bc94518863d0-b1267759cdbc.jpg"
     },
     {
       "id": "apple-1750447031",
@@ -2549,7 +2639,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2833133,
       "mime": "audio/mpeg",
-      "sha256": "d61970a3fc68363f3cb3aea5bbe0681131fa828832df70f6fd29ce613734c5dd"
+      "sha256": "d61970a3fc68363f3cb3aea5bbe0681131fa828832df70f6fd29ce613734c5dd",
+      "poster": "assets/artwork/27f906976580141b-081c20b5559d.jpg"
     },
     {
       "id": "apple-6816837452",
@@ -2575,7 +2666,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2151780,
       "mime": "audio/mpeg",
-      "sha256": "87ca420174209de77d160d6a3ea2d05b7d08cb7dca5e9e4ce60290d7e92e16ee"
+      "sha256": "87ca420174209de77d160d6a3ea2d05b7d08cb7dca5e9e4ce60290d7e92e16ee",
+      "poster": "assets/artwork/09ea8ffd0c5fd410-7b6cd997b513.jpg"
     },
     {
       "id": "apple-1812400110",
@@ -2601,7 +2693,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3379311,
       "mime": "audio/mpeg",
-      "sha256": "aa4cd8082f1b716957f9fdf2573b9a33a8a09c7f5326dc1caff7290673ae1054"
+      "sha256": "aa4cd8082f1b716957f9fdf2573b9a33a8a09c7f5326dc1caff7290673ae1054",
+      "poster": "assets/artwork/23a7a8516469bd4e-f29f2698c837.jpg"
     },
     {
       "id": "apple-1654027695",
@@ -2627,7 +2720,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 5127667,
       "mime": "audio/mpeg",
-      "sha256": "b33aca4aa4bcf1ad0af51f4c18904705c26dbf4e445ff6dbb9e1413e1553faed"
+      "sha256": "b33aca4aa4bcf1ad0af51f4c18904705c26dbf4e445ff6dbb9e1413e1553faed",
+      "poster": "assets/artwork/a1da5c453ec20ebc-dc73104c0b29.jpg"
     },
     {
       "id": "apple-1711070360",
@@ -2653,7 +2747,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2679221,
       "mime": "audio/mpeg",
-      "sha256": "a7dca3173e49e88adedddc339d045e0551bcb2fd7c3614efa4fbfbeafdf0ebd9"
+      "sha256": "a7dca3173e49e88adedddc339d045e0551bcb2fd7c3614efa4fbfbeafdf0ebd9",
+      "poster": "assets/artwork/66bc2416491d2bf0-0bfaa194b50c.jpg"
     },
     {
       "id": "apple-1764101667",
@@ -2679,7 +2774,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3428662,
       "mime": "audio/mpeg",
-      "sha256": "1a76d6e0108c4404a2700cd22929e82194600a42fa58220313f18def48b617bd"
+      "sha256": "1a76d6e0108c4404a2700cd22929e82194600a42fa58220313f18def48b617bd",
+      "poster": "assets/artwork/e66cc686f76b5bc2-8821cc713620.jpg"
     },
     {
       "id": "apple-1864369203",
@@ -2705,7 +2801,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2486603,
       "mime": "audio/mpeg",
-      "sha256": "d1f27a39bb0958399664386fb48688358e13f7b84b7a2179c97efc40db5833bf"
+      "sha256": "d1f27a39bb0958399664386fb48688358e13f7b84b7a2179c97efc40db5833bf",
+      "poster": "assets/artwork/4e88b37d1d12095d-3fb4d64f94cf.jpg"
     },
     {
       "id": "apple-1700172813",
@@ -2731,7 +2828,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2443983,
       "mime": "audio/mpeg",
-      "sha256": "4177aea5a8893c68b9e9a4d09d1913c83bc69aa652cef84ea1743fb613925052"
+      "sha256": "4177aea5a8893c68b9e9a4d09d1913c83bc69aa652cef84ea1743fb613925052",
+      "poster": "assets/artwork/59adc6f8b06f8cb6-d707f3e9b248.jpg"
     },
     {
       "id": "apple-1654030298",
@@ -2757,7 +2855,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3630511,
       "mime": "audio/mpeg",
-      "sha256": "7fe7ed2e08c4353547ea620dcb9308084202ed5def35ef0009e3298e26e3d3a8"
+      "sha256": "7fe7ed2e08c4353547ea620dcb9308084202ed5def35ef0009e3298e26e3d3a8",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1765105692",
@@ -2783,7 +2882,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2626570,
       "mime": "audio/mpeg",
-      "sha256": "991e6f7f57c7c20666d03fdb397bf1b83e7d67f6f213b546afab60b3ff4cbb61"
+      "sha256": "991e6f7f57c7c20666d03fdb397bf1b83e7d67f6f213b546afab60b3ff4cbb61",
+      "poster": "assets/artwork/acc5cc923f6d63cf-96c0bd549b53.jpg"
     },
     {
       "id": "apple-1641157262",
@@ -2809,7 +2909,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3807350,
       "mime": "audio/mpeg",
-      "sha256": "01b2a6c15af47cf5c50da3e8ffc8134e97ba1967ec9557d9ec3feecc2c1d09eb"
+      "sha256": "01b2a6c15af47cf5c50da3e8ffc8134e97ba1967ec9557d9ec3feecc2c1d09eb",
+      "poster": "assets/artwork/12a7394b64d03245-7a4a6902647b.jpg"
     },
     {
       "id": "apple-1778265722",
@@ -2835,7 +2936,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3206734,
       "mime": "audio/mpeg",
-      "sha256": "4ba75032bfaf9213046386d4dcd8c952d49efff9cc88a5507f2404bc078e9518"
+      "sha256": "4ba75032bfaf9213046386d4dcd8c952d49efff9cc88a5507f2404bc078e9518",
+      "poster": "assets/artwork/fc61e5310da65caa-49d74dd3e5b4.jpg"
     },
     {
       "id": "apple-1700170371",
@@ -2861,7 +2963,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2999006,
       "mime": "audio/mpeg",
-      "sha256": "9004a2c848ae2a3189feb586d48822fe1ac99a1333391b5df874548507d6a851"
+      "sha256": "9004a2c848ae2a3189feb586d48822fe1ac99a1333391b5df874548507d6a851",
+      "poster": "assets/artwork/96159775c22b4b84-e8f40ab31551.jpg"
     },
     {
       "id": "apple-1716033258",
@@ -2887,7 +2990,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2552639,
       "mime": "audio/mpeg",
-      "sha256": "c1542bfa7d5c4233d7571760eafcc51967f6d74079b76c5e43ac92348e1b5646"
+      "sha256": "c1542bfa7d5c4233d7571760eafcc51967f6d74079b76c5e43ac92348e1b5646",
+      "poster": "assets/artwork/7f3f2b1a81e2c451-8695797501d3.jpg"
     },
     {
       "id": "apple-1600684215",
@@ -2913,7 +3017,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2404233,
       "mime": "audio/mpeg",
-      "sha256": "9f7809dee1412f05109a1b85da10f99f5e5f59f8f2f65873d2033399754496c1"
+      "sha256": "9f7809dee1412f05109a1b85da10f99f5e5f59f8f2f65873d2033399754496c1",
+      "poster": "assets/artwork/51e8d34c8202baf9-5e8ff01fc29d.jpg"
     },
     {
       "id": "apple-1764094354",
@@ -2939,7 +3044,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2995234,
       "mime": "audio/mpeg",
-      "sha256": "41f804e83aa939104880aab762e2dd86b7ede26b919a5dacd43850e47185ab61"
+      "sha256": "41f804e83aa939104880aab762e2dd86b7ede26b919a5dacd43850e47185ab61",
+      "poster": "assets/artwork/87fd5b402c5d36f4-b1e2178cbc7a.jpg"
     },
     {
       "id": "apple-6764319058",
@@ -2965,7 +3071,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3447487,
       "mime": "audio/mpeg",
-      "sha256": "8c117781afbed6840b217fc1380a54d64a1db5f688e08d17d228acbf62e71573"
+      "sha256": "8c117781afbed6840b217fc1380a54d64a1db5f688e08d17d228acbf62e71573",
+      "poster": "assets/artwork/154f3d179ebe56de-fc3ba4ff0e3b.jpg"
     },
     {
       "id": "apple-1700173614",
@@ -2991,7 +3098,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4047704,
       "mime": "audio/mpeg",
-      "sha256": "c6890a775991984b0745993cf6e02fd178b4ff8c3aaa90c544bb3b5db751c3b0"
+      "sha256": "c6890a775991984b0745993cf6e02fd178b4ff8c3aaa90c544bb3b5db751c3b0",
+      "poster": "assets/artwork/537d3ccf5925f945-bebf3792e2d7.jpg"
     },
     {
       "id": "apple-1654030120",
@@ -3017,7 +3125,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1612605,
       "mime": "audio/mpeg",
-      "sha256": "303fc8e7376c2a1f9120762a550c44ff46ac55644882bd3df8ac2b26b26d24c7"
+      "sha256": "303fc8e7376c2a1f9120762a550c44ff46ac55644882bd3df8ac2b26b26d24c7",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg"
     },
     {
       "id": "apple-1675870550",
@@ -3043,7 +3152,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3100942,
       "mime": "audio/mpeg",
-      "sha256": "574820f1478d68d1b3edb9b018203e94be73d228719bde1e20c1089b5880c37c"
+      "sha256": "574820f1478d68d1b3edb9b018203e94be73d228719bde1e20c1089b5880c37c",
+      "poster": "assets/artwork/b7587e4277fbbdb2-eaa14cbdf344.jpg"
     },
     {
       "id": "apple-1772633404",
@@ -3069,7 +3179,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2459402,
       "mime": "audio/mpeg",
-      "sha256": "9fd3dfdaffa24a1e793362698a240adaf7da8ee318dcd66bdb3d8d95f2990dc4"
+      "sha256": "9fd3dfdaffa24a1e793362698a240adaf7da8ee318dcd66bdb3d8d95f2990dc4",
+      "poster": "assets/artwork/20ea47aa5da815f5-5a5e397ac762.jpg"
     },
     {
       "id": "apple-1717488797",
@@ -3095,7 +3206,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2880730,
       "mime": "audio/mpeg",
-      "sha256": "6df1e1b1402cf376670532014c2b7ff77a85a940b0df314b34fc63a07069d3d3"
+      "sha256": "6df1e1b1402cf376670532014c2b7ff77a85a940b0df314b34fc63a07069d3d3",
+      "poster": "assets/artwork/98b1218c3ca34101-6acddedc57cb.jpg"
     },
     {
       "id": "apple-1700170401",
@@ -3121,7 +3233,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2733580,
       "mime": "audio/mpeg",
-      "sha256": "3f37ea2def93c9005a5163e2a6f3d8753ec712404d9a4f0c8156d41cc0d1d0ae"
+      "sha256": "3f37ea2def93c9005a5163e2a6f3d8753ec712404d9a4f0c8156d41cc0d1d0ae",
+      "poster": "assets/artwork/b8ff854ac63d7db1-808acad167d7.jpg"
     },
     {
       "id": "apple-1653987883",
@@ -3147,7 +3260,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3342943,
       "mime": "audio/mpeg",
-      "sha256": "b7283e4a3f369c246c1683071d6253916b5bc0fce6228361e708bf9c7669e1d2"
+      "sha256": "b7283e4a3f369c246c1683071d6253916b5bc0fce6228361e708bf9c7669e1d2",
+      "poster": "assets/artwork/d8bedaee75ddaad8-b5ca50392e02.jpg"
     },
     {
       "id": "apple-1825665903",
@@ -3173,7 +3287,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2451029,
       "mime": "audio/mpeg",
-      "sha256": "dbda4bfc5b227675b4c9d7b3fbcbafaf39645d3db3c9ad587c302bf0996ff68c"
+      "sha256": "dbda4bfc5b227675b4c9d7b3fbcbafaf39645d3db3c9ad587c302bf0996ff68c",
+      "poster": "assets/artwork/b696b0e55ad61a52-57bfa6f29781.jpg"
     },
     {
       "id": "apple-6812377711",
@@ -3199,7 +3314,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4348606,
       "mime": "audio/mpeg",
-      "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c"
+      "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c",
+      "poster": "assets/artwork/344b374f48ab30c2-b9e8e1a715ba.jpg"
     },
     {
       "id": "apple-1574553714",
@@ -3225,7 +3341,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2657493,
       "mime": "audio/mpeg",
-      "sha256": "ecc94ea622040e419b0b301ee9a2fdd287f2d78f4897197e0b9f7503056cfe30"
+      "sha256": "ecc94ea622040e419b0b301ee9a2fdd287f2d78f4897197e0b9f7503056cfe30",
+      "poster": "assets/artwork/f74238dcff00f650-282a4e73fb69.jpg"
     },
     {
       "id": "apple-1879865292",
@@ -3251,7 +3368,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3678147,
       "mime": "audio/mpeg",
-      "sha256": "65398665b7b92ab002b0c1c6ee96bcd8a3f6bd05d18452c15f0e84ddd70da2a1"
+      "sha256": "65398665b7b92ab002b0c1c6ee96bcd8a3f6bd05d18452c15f0e84ddd70da2a1",
+      "poster": "assets/artwork/dc313218e312fd1e-c399992a025b.jpg"
     },
     {
       "id": "apple-1583730160",
@@ -3277,7 +3395,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4081081,
       "mime": "audio/mpeg",
-      "sha256": "1a93861b45cfeddcf6cb48c340225be6a5174f9f051b4ebdd9bc59f0a6128faa"
+      "sha256": "1a93861b45cfeddcf6cb48c340225be6a5174f9f051b4ebdd9bc59f0a6128faa",
+      "poster": "assets/artwork/8474db30882745e5-7983d8150b97.jpg"
     },
     {
       "id": "apple-1851698925",
@@ -3303,7 +3422,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2652486,
       "mime": "audio/mpeg",
-      "sha256": "75c0eeb1ac5eafec0d898360f4cabb9bc8bf576af010215ec920c3923dae2514"
+      "sha256": "75c0eeb1ac5eafec0d898360f4cabb9bc8bf576af010215ec920c3923dae2514",
+      "poster": "assets/artwork/21256fd287b77d40-ebac56920f4f.jpg"
     },
     {
       "id": "apple-1681034420",
@@ -3329,7 +3449,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3101933,
       "mime": "audio/mpeg",
-      "sha256": "6087c9ce3684c0d76b07992da42ffea1956f6a729163a49702499e180db3ab1b"
+      "sha256": "6087c9ce3684c0d76b07992da42ffea1956f6a729163a49702499e180db3ab1b",
+      "poster": "assets/artwork/2a921df44b2876b6-92e14c1ffb79.jpg"
     },
     {
       "id": "apple-6770517024",
@@ -3355,7 +3476,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2474888,
       "mime": "audio/mpeg",
-      "sha256": "07bd57b0e45d5b4940a87604652a0b32ee22e3cef3cdfb74505e1f39e11124a7"
+      "sha256": "07bd57b0e45d5b4940a87604652a0b32ee22e3cef3cdfb74505e1f39e11124a7",
+      "poster": "assets/artwork/afd38eace5810009-212549b82fac.jpg"
     },
     {
       "id": "apple-1717396960",
@@ -3381,7 +3503,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2471530,
       "mime": "audio/mpeg",
-      "sha256": "e2600022e60c5ed6576859604120e3a1201fc5efb975dcdaa2fa401fe719e9fa"
+      "sha256": "e2600022e60c5ed6576859604120e3a1201fc5efb975dcdaa2fa401fe719e9fa",
+      "poster": "assets/artwork/4fadc15418b655da-443f0e8fce38.jpg"
     },
     {
       "id": "apple-1734459624",
@@ -3407,7 +3530,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3394790,
       "mime": "audio/mpeg",
-      "sha256": "2db03713be7edd5bc6319a51dc0a4a7afa5027b40d7b602836691d92ff8a8481"
+      "sha256": "2db03713be7edd5bc6319a51dc0a4a7afa5027b40d7b602836691d92ff8a8481",
+      "poster": "assets/artwork/2a188e6aa2f46608-88ed3e2794ea.jpg"
     },
     {
       "id": "apple-1523292598",
@@ -3433,7 +3557,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2732001,
       "mime": "audio/mpeg",
-      "sha256": "1278a675818d50c6c98cc941c4376f16e565edcde0562f5c72ef4d53a3fad8b6"
+      "sha256": "1278a675818d50c6c98cc941c4376f16e565edcde0562f5c72ef4d53a3fad8b6",
+      "poster": "assets/artwork/291cf2e2bbe2eba8-cda239c939df.jpg"
     },
     {
       "id": "apple-1776256103",
@@ -3459,7 +3584,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3699560,
       "mime": "audio/mpeg",
-      "sha256": "e3c469e707bbd64b85d04abb6d56d64030495dc487d96905059d8b55eb6cedc9"
+      "sha256": "e3c469e707bbd64b85d04abb6d56d64030495dc487d96905059d8b55eb6cedc9",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg"
     },
     {
       "id": "apple-1764269033",
@@ -3485,7 +3611,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2497442,
       "mime": "audio/mpeg",
-      "sha256": "b2c98a654373d13e83e02316ae350d7f959828534c7d2951e55f8c403c1ff649"
+      "sha256": "b2c98a654373d13e83e02316ae350d7f959828534c7d2951e55f8c403c1ff649",
+      "poster": "assets/artwork/c4d4dd4fff8e3819-eb499751225e.jpg"
     },
     {
       "id": "apple-1844309922",
@@ -3511,7 +3638,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3119763,
       "mime": "audio/mpeg",
-      "sha256": "1ca8c5d35da205afec9256318022d7c5dd4d0e08e6d0caf46983249ff2fff505"
+      "sha256": "1ca8c5d35da205afec9256318022d7c5dd4d0e08e6d0caf46983249ff2fff505",
+      "poster": "assets/artwork/56fa20961b0bb1c0-7e811d80c0d5.jpg"
     },
     {
       "id": "apple-1806052221",
@@ -3537,7 +3665,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2489889,
       "mime": "audio/mpeg",
-      "sha256": "776fb9eb1a283ae1e26b087f1abbb6048a6dac1f50518192cffd02f0b7bf719c"
+      "sha256": "776fb9eb1a283ae1e26b087f1abbb6048a6dac1f50518192cffd02f0b7bf719c",
+      "poster": "assets/artwork/7c4b15dd58e8a50a-9fa53a42cf28.jpg"
     },
     {
       "id": "apple-1645267672",
@@ -3563,7 +3692,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3162443,
       "mime": "audio/mpeg",
-      "sha256": "5b4243c1e71968d132fc19019e1215686d67936210b010682278f3dc6750d125"
+      "sha256": "5b4243c1e71968d132fc19019e1215686d67936210b010682278f3dc6750d125",
+      "poster": "assets/artwork/c9e375ecfecdadd4-6258c80c83e2.jpg"
     },
     {
       "id": "apple-1863447626",
@@ -3589,7 +3719,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1055032,
       "mime": "audio/mpeg",
-      "sha256": "7fcd13e28f64cb1498fe4d85dcfe5967c791d7abb5cfaf6dcc2535a27433f917"
+      "sha256": "7fcd13e28f64cb1498fe4d85dcfe5967c791d7abb5cfaf6dcc2535a27433f917",
+      "poster": "assets/artwork/c0271b5007ba2740-79df3d1d1f85.jpg"
     },
     {
       "id": "apple-1528575679",
@@ -3615,7 +3746,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2718974,
       "mime": "audio/mpeg",
-      "sha256": "5eedfe10dce3d53ed04f77027114e3d2e3da80ce73701fbe84bd0aef325ad13c"
+      "sha256": "5eedfe10dce3d53ed04f77027114e3d2e3da80ce73701fbe84bd0aef325ad13c",
+      "poster": "assets/artwork/9370cf383b5119bb-d9fc9c1fab03.jpg"
     },
     {
       "id": "apple-1688432899",
@@ -3641,7 +3773,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4117031,
       "mime": "audio/mpeg",
-      "sha256": "2e8994d907f754189aaca23afe7052b2a3e8f2e73d0343cd108fea5316823158"
+      "sha256": "2e8994d907f754189aaca23afe7052b2a3e8f2e73d0343cd108fea5316823158",
+      "poster": "assets/artwork/9becfa62d73e789a-eef30186aaa0.jpg"
     },
     {
       "id": "apple-1615402340",
@@ -3667,7 +3800,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2881980,
       "mime": "audio/mpeg",
-      "sha256": "d2dc6dad6fad255c07903cb0b85196f019a6d94a4da5d4a761116917bbf42291"
+      "sha256": "d2dc6dad6fad255c07903cb0b85196f019a6d94a4da5d4a761116917bbf42291",
+      "poster": "assets/artwork/9ab245290074d9b2-5769ca87b037.jpg"
     },
     {
       "id": "apple-6797501868",
@@ -3693,7 +3827,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2731523,
       "mime": "audio/mpeg",
-      "sha256": "cf509ae6676db07998898f38caf15b3fae452608863acc77a40f34be09deaeea"
+      "sha256": "cf509ae6676db07998898f38caf15b3fae452608863acc77a40f34be09deaeea",
+      "poster": "assets/artwork/2078182316952881-60122effc4a4.jpg"
     },
     {
       "id": "apple-1654030282",
@@ -3719,7 +3854,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2471924,
       "mime": "audio/mpeg",
-      "sha256": "6021080b7c4f6a03396b4224f1323068f16ec1ad47f882dfafdd2dd3be918b46"
+      "sha256": "6021080b7c4f6a03396b4224f1323068f16ec1ad47f882dfafdd2dd3be918b46",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1711033691",
@@ -3745,7 +3881,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2394605,
       "mime": "audio/mpeg",
-      "sha256": "98d56a6b02604a539256352e7c5736c21c0c95fb07375ddf7cbbca496815e8b3"
+      "sha256": "98d56a6b02604a539256352e7c5736c21c0c95fb07375ddf7cbbca496815e8b3",
+      "poster": "assets/artwork/dbdc210d1cae0832-9d100f49996f.jpg"
     },
     {
       "id": "apple-1666851640",
@@ -3771,7 +3908,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3735041,
       "mime": "audio/mpeg",
-      "sha256": "37fc12b70dfcac057c0c7a62dbfaa4a95ec4df1b25bab5f61022ecb4f069500e"
+      "sha256": "37fc12b70dfcac057c0c7a62dbfaa4a95ec4df1b25bab5f61022ecb4f069500e",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg"
     },
     {
       "id": "apple-1810198443",
@@ -3797,7 +3935,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2364500,
       "mime": "audio/mpeg",
-      "sha256": "bca8ad5a9355e5e9b15edac35469ae964b2da67c88b8125847ef71d98c668449"
+      "sha256": "bca8ad5a9355e5e9b15edac35469ae964b2da67c88b8125847ef71d98c668449",
+      "poster": "assets/artwork/dc9397d343269a31-c2b2e1ee0209.jpg"
     },
     {
       "id": "apple-1785164297",
@@ -3823,7 +3962,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3314536,
       "mime": "audio/mpeg",
-      "sha256": "a53da9fbc197f0d488932f6a60fe2277eadb49dbd419d29d4b51fac0b555fc21"
+      "sha256": "a53da9fbc197f0d488932f6a60fe2277eadb49dbd419d29d4b51fac0b555fc21",
+      "poster": "assets/artwork/11aaa8afa10787d0-e7393e373bbe.jpg"
     },
     {
       "id": "apple-1580621762",
@@ -3849,7 +3989,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2675918,
       "mime": "audio/mpeg",
-      "sha256": "da39e952a72cf4325231da2f7c95c2c5b6d5764f1fa62afbd5b76396b5fd4f64"
+      "sha256": "da39e952a72cf4325231da2f7c95c2c5b6d5764f1fa62afbd5b76396b5fd4f64",
+      "poster": "assets/artwork/3faa0c6f68b03ceb-09198ef70ac8.jpg"
     },
     {
       "id": "apple-1666851631",
@@ -3875,7 +4016,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3604222,
       "mime": "audio/mpeg",
-      "sha256": "dd87b6b4670c3821aad6d5fc53bf15ac9d6b742a07c0cdc52a9f097b5a0965f4"
+      "sha256": "dd87b6b4670c3821aad6d5fc53bf15ac9d6b742a07c0cdc52a9f097b5a0965f4",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg"
     },
     {
       "id": "apple-1760635204",
@@ -3901,7 +4043,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2818434,
       "mime": "audio/mpeg",
-      "sha256": "4e014ed679d60e59143f3a34345b2ad2059eb6ffe9313c38bd78a3a06d738beb"
+      "sha256": "4e014ed679d60e59143f3a34345b2ad2059eb6ffe9313c38bd78a3a06d738beb",
+      "poster": "assets/artwork/72d2dc9c01d92c4f-b74933a613a9.jpg"
     },
     {
       "id": "apple-1734459852",
@@ -3927,7 +4070,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2709755,
       "mime": "audio/mpeg",
-      "sha256": "1e3eedade8ca4fda0f1073007673503cfb713f747076c8dca6ee5e64be3e33b6"
+      "sha256": "1e3eedade8ca4fda0f1073007673503cfb713f747076c8dca6ee5e64be3e33b6",
+      "poster": "assets/artwork/2a188e6aa2f46608-88ed3e2794ea.jpg"
     },
     {
       "id": "apple-1730460848",
@@ -3953,7 +4097,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3303234,
       "mime": "audio/mpeg",
-      "sha256": "a06ccb6ebc7d97e4edf355ac3f242f0ee787c23ec03c7bf12c684dc398e14a68"
+      "sha256": "a06ccb6ebc7d97e4edf355ac3f242f0ee787c23ec03c7bf12c684dc398e14a68",
+      "poster": "assets/artwork/033d2fcaa55a8439-96c66a10a385.jpg"
     },
     {
       "id": "apple-1666850953",
@@ -3979,7 +4124,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2947602,
       "mime": "audio/mpeg",
-      "sha256": "b1e7d8ce09f2a16f1bc6144a415e84bada8fd5b32f422aa563b65457abe3bd55"
+      "sha256": "b1e7d8ce09f2a16f1bc6144a415e84bada8fd5b32f422aa563b65457abe3bd55",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg"
     },
     {
       "id": "apple-1800112666",
@@ -4005,7 +4151,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2786239,
       "mime": "audio/mpeg",
-      "sha256": "e389fdf44ece3faa3ebf43e803aeb620b41806357294b2222b867b726e2678b0"
+      "sha256": "e389fdf44ece3faa3ebf43e803aeb620b41806357294b2222b867b726e2678b0",
+      "poster": "assets/artwork/04a8f7f4e38d6fce-541ccf1e583f.jpg"
     },
     {
       "id": "apple-1734459837",
@@ -4031,7 +4178,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3480465,
       "mime": "audio/mpeg",
-      "sha256": "795daac401c4cfc7f6e85765c3d09de225a8c64a7752f66f58aa1b5e17d52abc"
+      "sha256": "795daac401c4cfc7f6e85765c3d09de225a8c64a7752f66f58aa1b5e17d52abc",
+      "poster": "assets/artwork/2a188e6aa2f46608-88ed3e2794ea.jpg"
     },
     {
       "id": "apple-1816703319",
@@ -4057,7 +4205,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2561364,
       "mime": "audio/mpeg",
-      "sha256": "4674eae4805fff98411aba462482b91ac59bff578b0a7c2569f75e72b0b8ca19"
+      "sha256": "4674eae4805fff98411aba462482b91ac59bff578b0a7c2569f75e72b0b8ca19",
+      "poster": "assets/artwork/8a04d898b1023d02-77645aace9be.jpg"
     },
     {
       "id": "apple-1793104932",
@@ -4083,7 +4232,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3425777,
       "mime": "audio/mpeg",
-      "sha256": "8d4299f4842da8fbda746414d649507ca600d8aaa3e01e3df140462e3c7afa3a"
+      "sha256": "8d4299f4842da8fbda746414d649507ca600d8aaa3e01e3df140462e3c7afa3a",
+      "poster": "assets/artwork/32153aeaa966304d-24628e0b4608.jpg"
     },
     {
       "id": "apple-1781637816",
@@ -4109,7 +4259,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2373420,
       "mime": "audio/mpeg",
-      "sha256": "cfba6578a0505ca72b2fe906f90d0290fdc78930e5ed737f3f366e74006d4483"
+      "sha256": "cfba6578a0505ca72b2fe906f90d0290fdc78930e5ed737f3f366e74006d4483",
+      "poster": "assets/artwork/235ad007c87a0e09-4081facdbbf1.jpg"
     },
     {
       "id": "apple-1839496674",
@@ -4135,7 +4286,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2976405,
       "mime": "audio/mpeg",
-      "sha256": "e0439a6fe2618f8e0a429afef1d82208df39511e35ea6112b4870cd7963cb241"
+      "sha256": "e0439a6fe2618f8e0a429afef1d82208df39511e35ea6112b4870cd7963cb241",
+      "poster": "assets/artwork/db6df083e965c808-b38a938d8eb5.jpg"
     },
     {
       "id": "apple-6766889192",
@@ -4161,7 +4313,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2201070,
       "mime": "audio/mpeg",
-      "sha256": "bce3045531e77c61934eff474b9456cfa8aa6493ba0089e30ff08ef13f1057e1"
+      "sha256": "bce3045531e77c61934eff474b9456cfa8aa6493ba0089e30ff08ef13f1057e1",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1635457558",
@@ -4187,7 +4340,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3605054,
       "mime": "audio/mpeg",
-      "sha256": "db7ec94ede50f309d34dc5b42b6c9e93d5967e0622c983606f87e9548b3affef"
+      "sha256": "db7ec94ede50f309d34dc5b42b6c9e93d5967e0622c983606f87e9548b3affef",
+      "poster": "assets/artwork/5a44aef39df8917b-eb7a034ca860.jpg"
     },
     {
       "id": "apple-1790614781",
@@ -4213,7 +4367,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2006332,
       "mime": "audio/mpeg",
-      "sha256": "d45c3d8fd476f601ea9403e0e3e3d4e600b23eafbbedaee8b826ea4b4be7f90b"
+      "sha256": "d45c3d8fd476f601ea9403e0e3e3d4e600b23eafbbedaee8b826ea4b4be7f90b",
+      "poster": "assets/artwork/8897b8e12950ea0b-6084f9a5dd06.jpg"
     },
     {
       "id": "apple-1654030299",
@@ -4239,7 +4394,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2945057,
       "mime": "audio/mpeg",
-      "sha256": "5b406a778d0c98ff2c986b6b5797db28efc0d9618ad6bd6ca5bb8ed7437fefef"
+      "sha256": "5b406a778d0c98ff2c986b6b5797db28efc0d9618ad6bd6ca5bb8ed7437fefef",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1748533444",
@@ -4265,7 +4421,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2144286,
       "mime": "audio/mpeg",
-      "sha256": "35c73731e764f31c69bd50c72367a428ffd6ad18d40b58579bc005c1eed17368"
+      "sha256": "35c73731e764f31c69bd50c72367a428ffd6ad18d40b58579bc005c1eed17368",
+      "poster": "assets/artwork/c3079023da1fcdc7-02323593f811.jpg"
     },
     {
       "id": "apple-1717441739",
@@ -4291,7 +4448,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3499313,
       "mime": "audio/mpeg",
-      "sha256": "e2b04dd58d36d9c3cb326b24e02703cb14176929b7eaf8613fccfd176499e96b"
+      "sha256": "e2b04dd58d36d9c3cb326b24e02703cb14176929b7eaf8613fccfd176499e96b",
+      "poster": "assets/artwork/a43106e743a35928-8f65c3e95ede.jpg"
     },
     {
       "id": "apple-1541309376",
@@ -4317,7 +4475,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F001",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/e789d8c06e388158-b17368eab558.jpg"
     },
     {
       "id": "apple-1654030588",
@@ -4343,7 +4502,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 4041368,
       "mime": "audio/mpeg",
-      "sha256": "372265cba233b38d438de0bc8af76943bb76bbb2e65c47971b462e88cb6f557c"
+      "sha256": "372265cba233b38d438de0bc8af76943bb76bbb2e65c47971b462e88cb6f557c",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1876888863",
@@ -4369,7 +4529,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3003159,
       "mime": "audio/mpeg",
-      "sha256": "c5f19ff69bda3b705f7df692bca107c9f0adec1b734d97d29a5aea4c5a16df84"
+      "sha256": "c5f19ff69bda3b705f7df692bca107c9f0adec1b734d97d29a5aea4c5a16df84",
+      "poster": "assets/artwork/e70004a1bf763556-f5b5cd05f9bd.jpg"
     },
     {
       "id": "apple-1663288986",
@@ -4395,7 +4556,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2557688,
       "mime": "audio/mpeg",
-      "sha256": "ca0df0da52671e2bd8f3c3fcd6718bfab1cee9da9c765f98476f5b0ac437799b"
+      "sha256": "ca0df0da52671e2bd8f3c3fcd6718bfab1cee9da9c765f98476f5b0ac437799b",
+      "poster": "assets/artwork/30a1e99257153a39-ba572c75a993.jpg"
     },
     {
       "id": "apple-1831607675",
@@ -4421,7 +4583,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2339481,
       "mime": "audio/mpeg",
-      "sha256": "3c574b2ea35140c48633285c55666a9be5b6dda173959e0ae61d7d0648a35a0a"
+      "sha256": "3c574b2ea35140c48633285c55666a9be5b6dda173959e0ae61d7d0648a35a0a",
+      "poster": "assets/artwork/1529a19700069501-f51a1e30d487.jpg"
     },
     {
       "id": "apple-1654030121",
@@ -4447,7 +4610,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2859792,
       "mime": "audio/mpeg",
-      "sha256": "2e8e5661b3e1c0c5d5c71eefb51463169404606365a3b820a1f0fab37ebc8b98"
+      "sha256": "2e8e5661b3e1c0c5d5c71eefb51463169404606365a3b820a1f0fab37ebc8b98",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1634913631",
@@ -4473,7 +4637,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F002",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/eed113278f2851f0-9a108caa6872.jpg"
     },
     {
       "id": "apple-1810430171",
@@ -4499,7 +4664,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3552380,
       "mime": "audio/mpeg",
-      "sha256": "9204ff2bdd1e2da28ba8f9662e3aea728324ee9e724b855d91c549958ecdfa96"
+      "sha256": "9204ff2bdd1e2da28ba8f9662e3aea728324ee9e724b855d91c549958ecdfa96",
+      "poster": "assets/artwork/3baae006416947f7-f29187c22ae8.jpg"
     },
     {
       "id": "apple-1884051697",
@@ -4525,7 +4691,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2627419,
       "mime": "audio/mpeg",
-      "sha256": "83170d137e2870e6289a314a47a886fa72c332231b7ee27ee7b858d1652da76b"
+      "sha256": "83170d137e2870e6289a314a47a886fa72c332231b7ee27ee7b858d1652da76b",
+      "poster": "assets/artwork/93fc51fded6e6123-88f88856c7ec.jpg"
     },
     {
       "id": "apple-1654030278",
@@ -4551,7 +4718,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3105136,
       "mime": "audio/mpeg",
-      "sha256": "c65278a761268cb7793341863084da06644071ff63fc51ad0ac8bf40affc10b0"
+      "sha256": "c65278a761268cb7793341863084da06644071ff63fc51ad0ac8bf40affc10b0",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1548678265",
@@ -4577,7 +4745,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F003",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/76836b4a437ee111-6a751634264d.jpg"
     },
     {
       "id": "apple-1765007801",
@@ -4603,7 +4772,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3597927,
       "mime": "audio/mpeg",
-      "sha256": "a157e2885ac9fd101ef0465110aafea2ccf1c5065f0073e7a1d9185d7d718dc7"
+      "sha256": "a157e2885ac9fd101ef0465110aafea2ccf1c5065f0073e7a1d9185d7d718dc7",
+      "poster": "assets/artwork/cded577d6c35b2a0-4428af5ef47e.jpg"
     },
     {
       "id": "apple-1605779829",
@@ -4629,7 +4799,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2113325,
       "mime": "audio/mpeg",
-      "sha256": "93d478a7df1ee325eddbb7d841e98e6d87db0e1719c91c193f7ef7ff020ccece"
+      "sha256": "93d478a7df1ee325eddbb7d841e98e6d87db0e1719c91c193f7ef7ff020ccece",
+      "poster": "assets/artwork/b941196257b54a8c-56c0d8694db1.jpg"
     },
     {
       "id": "apple-1649536224",
@@ -4655,7 +4826,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 5353753,
       "mime": "audio/mpeg",
-      "sha256": "c87347229485f61d47c7333d254c1440bd89c9f5e04516d51744be544eabf5be"
+      "sha256": "c87347229485f61d47c7333d254c1440bd89c9f5e04516d51744be544eabf5be",
+      "poster": "assets/artwork/c1f76170b1d7f76b-517bc17f0eca.jpg"
     },
     {
       "id": "apple-1833517543",
@@ -4681,7 +4853,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2462722,
       "mime": "audio/mpeg",
-      "sha256": "24fbded11e5730451ccc2b846736eafd5a5b03a5a589701aff557ec458a7e6ff"
+      "sha256": "24fbded11e5730451ccc2b846736eafd5a5b03a5a589701aff557ec458a7e6ff",
+      "poster": "assets/artwork/c6969f2883de7382-f9fd96d9c708.jpg"
     },
     {
       "id": "apple-1666851620",
@@ -4707,7 +4880,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3758861,
       "mime": "audio/mpeg",
-      "sha256": "cf7007ef2722b36418716381c3df874725a6242c711b5a51da977992162d9778"
+      "sha256": "cf7007ef2722b36418716381c3df874725a6242c711b5a51da977992162d9778",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg"
     },
     {
       "id": "apple-1536426891",
@@ -4733,7 +4907,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2537148,
       "mime": "audio/mpeg",
-      "sha256": "118a668b296619e341c1a3b8d2d43029cf1707c18988d2e9a13768867c15618a"
+      "sha256": "118a668b296619e341c1a3b8d2d43029cf1707c18988d2e9a13768867c15618a",
+      "poster": "assets/artwork/d92d50ba801cf402-188f58084647.jpg"
     },
     {
       "id": "apple-1653986907",
@@ -4759,7 +4934,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2876922,
       "mime": "audio/mpeg",
-      "sha256": "0c3d0f4a92cec61c960e921676380bbb41cab8c1b6ee1ef62a9b193da93e3230"
+      "sha256": "0c3d0f4a92cec61c960e921676380bbb41cab8c1b6ee1ef62a9b193da93e3230",
+      "poster": "assets/artwork/a64ffc5d7b962d34-bf8879824c9b.jpg"
     },
     {
       "id": "apple-6766889023",
@@ -4785,7 +4961,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2314338,
       "mime": "audio/mpeg",
-      "sha256": "ecd11f08b0569f5e5e6c6ab60d54044199d8d780bde5a087199e7428383b29c1"
+      "sha256": "ecd11f08b0569f5e5e6c6ab60d54044199d8d780bde5a087199e7428383b29c1",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1666851634",
@@ -4811,7 +4988,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3325859,
       "mime": "audio/mpeg",
-      "sha256": "000d9f83eb35b1388c10f8f80ba51d2d4c52f55db699f7ea04c9f14e1707a88c"
+      "sha256": "000d9f83eb35b1388c10f8f80ba51d2d4c52f55db699f7ea04c9f14e1707a88c",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg"
     },
     {
       "id": "apple-6806313658",
@@ -4837,7 +5015,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2728573,
       "mime": "audio/mpeg",
-      "sha256": "74bc669f57e9e8f205061b9011679c9062bac5f8e7a0bead4c13a66e11f34765"
+      "sha256": "74bc669f57e9e8f205061b9011679c9062bac5f8e7a0bead4c13a66e11f34765",
+      "poster": "assets/artwork/774751887336d30e-c4f42c900d42.jpg"
     },
     {
       "id": "apple-1654030583",
@@ -4863,7 +5042,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3072957,
       "mime": "audio/mpeg",
-      "sha256": "30464f00e5aec5ff351f80d73e767f62d3a23aeed9800edbfa3c9e8a8ae40532"
+      "sha256": "30464f00e5aec5ff351f80d73e767f62d3a23aeed9800edbfa3c9e8a8ae40532",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg"
     },
     {
       "id": "apple-1856965027",
@@ -4889,7 +5069,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1946960,
       "mime": "audio/mpeg",
-      "sha256": "5649e78a4a31a3b8e4a48bd42a58a866ceb51702b7fa1a3ef4ae43cf43b3d83f"
+      "sha256": "5649e78a4a31a3b8e4a48bd42a58a866ceb51702b7fa1a3ef4ae43cf43b3d83f",
+      "poster": "assets/artwork/875871244c2e0849-da45486ee83e.jpg"
     },
     {
       "id": "apple-1663470378",
@@ -4915,7 +5096,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3806935,
       "mime": "audio/mpeg",
-      "sha256": "ea13446c5fb1ba1862d432a5bde1fa8fe459d618c6e26fc2a76e8a88e6e43e48"
+      "sha256": "ea13446c5fb1ba1862d432a5bde1fa8fe459d618c6e26fc2a76e8a88e6e43e48",
+      "poster": "assets/artwork/1a6684ee8b2a2f73-8057ee211b36.jpg"
     },
     {
       "id": "apple-1740944905",
@@ -4941,7 +5123,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2490745,
       "mime": "audio/mpeg",
-      "sha256": "425728055c8f676b869af440c1926abcf0f64a326d59c41ca7b11dec28372bca"
+      "sha256": "425728055c8f676b869af440c1926abcf0f64a326d59c41ca7b11dec28372bca",
+      "poster": "assets/artwork/1c6597c4a5524a79-6256677c45bb.jpg"
     },
     {
       "id": "apple-1653986911",
@@ -4967,7 +5150,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2625727,
       "mime": "audio/mpeg",
-      "sha256": "6e98da8866b861f9f99b0daceb986274217be91cc00f11e5588434235ae95eab"
+      "sha256": "6e98da8866b861f9f99b0daceb986274217be91cc00f11e5588434235ae95eab",
+      "poster": "assets/artwork/a64ffc5d7b962d34-bf8879824c9b.jpg"
     },
     {
       "id": "apple-6766889613",
@@ -4993,7 +5177,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2879002,
       "mime": "audio/mpeg",
-      "sha256": "89271e71f54ca98f2f8b5e436cbd341c1f69ef4e92c60e9600ec56d31af06e60"
+      "sha256": "89271e71f54ca98f2f8b5e436cbd341c1f69ef4e92c60e9600ec56d31af06e60",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1823186428",
@@ -5019,7 +5204,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3534817,
       "mime": "audio/mpeg",
-      "sha256": "cf5fe537dd0a144248fc37557ba8cdb5930457d54bc64fe9bf6dc34671585189"
+      "sha256": "cf5fe537dd0a144248fc37557ba8cdb5930457d54bc64fe9bf6dc34671585189",
+      "poster": "assets/artwork/fe8df6d365816ac0-6ce1332d6f74.jpg"
     },
     {
       "id": "apple-1584462704",
@@ -5045,7 +5231,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2964281,
       "mime": "audio/mpeg",
-      "sha256": "e9e8015d840fc08855f704f82bf0e9094833b7def2cba0b71fe952f3cce3fca7"
+      "sha256": "e9e8015d840fc08855f704f82bf0e9094833b7def2cba0b71fe952f3cce3fca7",
+      "poster": "assets/artwork/a80e416321cc7a8a-c6b4edeb1e1a.jpg"
     },
     {
       "id": "apple-1678134067",
@@ -5071,7 +5258,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2601074,
       "mime": "audio/mpeg",
-      "sha256": "788e3f9100e133a7fe509cec760e2d2022e7d6f241db37e72f6dc0a1d80e3384"
+      "sha256": "788e3f9100e133a7fe509cec760e2d2022e7d6f241db37e72f6dc0a1d80e3384",
+      "poster": "assets/artwork/29cf53f9f70aa3f2-6c8893b36217.jpg"
     },
     {
       "id": "apple-6766889615",
@@ -5097,7 +5285,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2699284,
       "mime": "audio/mpeg",
-      "sha256": "38e13fd478e63f24360c8fd84b7ee9d9dca24574e8b2a54c3a280bb901049a9e"
+      "sha256": "38e13fd478e63f24360c8fd84b7ee9d9dca24574e8b2a54c3a280bb901049a9e",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1754381786",
@@ -5123,7 +5312,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2964760,
       "mime": "audio/mpeg",
-      "sha256": "be3e3a43b984deb2a8406b1e50934d19838e25b7fa18335673b639d1b8784cf2"
+      "sha256": "be3e3a43b984deb2a8406b1e50934d19838e25b7fa18335673b639d1b8784cf2",
+      "poster": "assets/artwork/9f29516fa65c7374-cc26c0eedbe8.jpg"
     },
     {
       "id": "apple-1839518242",
@@ -5149,7 +5339,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2052737,
       "mime": "audio/mpeg",
-      "sha256": "4ef724e516b6289ce21928ceb7218e19e2cf6ada28f704730a3eed9ded83102f"
+      "sha256": "4ef724e516b6289ce21928ceb7218e19e2cf6ada28f704730a3eed9ded83102f",
+      "poster": "assets/artwork/bfe4d9b139410e19-16ae3449dd16.jpg"
     },
     {
       "id": "apple-1671413816",
@@ -5175,7 +5366,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3383122,
       "mime": "audio/mpeg",
-      "sha256": "4927630655eb86c4b9dbac7dccbc41d2c1795fe8fe97e876aa36ce6b8effb925"
+      "sha256": "4927630655eb86c4b9dbac7dccbc41d2c1795fe8fe97e876aa36ce6b8effb925",
+      "poster": "assets/artwork/6bffb64820f603b4-6ced8b808256.jpg"
     },
     {
       "id": "apple-6766889183",
@@ -5201,7 +5393,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3878758,
       "mime": "audio/mpeg",
-      "sha256": "bbc9efba2bf5e9023ac7871c4e6d724b7d5e108d6aa5d87cf9b292999ed4ff30"
+      "sha256": "bbc9efba2bf5e9023ac7871c4e6d724b7d5e108d6aa5d87cf9b292999ed4ff30",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1737782825",
@@ -5227,7 +5420,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3208413,
       "mime": "audio/mpeg",
-      "sha256": "d148d23565294ead0c282fad4a0242a5a4d16fa4edf4c1e191238e2ceb9755a5"
+      "sha256": "d148d23565294ead0c282fad4a0242a5a4d16fa4edf4c1e191238e2ceb9755a5",
+      "poster": "assets/artwork/b33e1d877d0a85c5-afdc099d16d4.jpg"
     },
     {
       "id": "apple-1680594544",
@@ -5253,7 +5447,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2599444,
       "mime": "audio/mpeg",
-      "sha256": "02882953afbcf1b51345ed0378e0b2153d082c655b122675d58661e7d5726b37"
+      "sha256": "02882953afbcf1b51345ed0378e0b2153d082c655b122675d58661e7d5726b37",
+      "poster": "assets/artwork/4e932346af201dd6-9e3a4995ca71.jpg"
     },
     {
       "id": "apple-1887279351",
@@ -5279,7 +5474,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3276552,
       "mime": "audio/mpeg",
-      "sha256": "aa574ea7e432dfd71e574e092a3443fd22af39885128c90a07c2f73f87b5f1de"
+      "sha256": "aa574ea7e432dfd71e574e092a3443fd22af39885128c90a07c2f73f87b5f1de",
+      "poster": "assets/artwork/a3dec63e8ea030ce-d5f97e7329e5.jpg"
     },
     {
       "id": "apple-6766889410",
@@ -5305,7 +5501,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3027799,
       "mime": "audio/mpeg",
-      "sha256": "42b73a49dcf4854fd4cb5d70edbe568c286461fca092ecb071783318b596c978"
+      "sha256": "42b73a49dcf4854fd4cb5d70edbe568c286461fca092ecb071783318b596c978",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-1876236038",
@@ -5331,7 +5528,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3714956,
       "mime": "audio/mpeg",
-      "sha256": "e8069cabd243e2262ab80c57c96801b5c43d963da71986ec34c916e35e61e8ec"
+      "sha256": "e8069cabd243e2262ab80c57c96801b5c43d963da71986ec34c916e35e61e8ec",
+      "poster": "assets/artwork/1ccbdd31e40d309a-be311b63dd36.jpg"
     },
     {
       "id": "apple-1579113443",
@@ -5357,7 +5555,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2625740,
       "mime": "audio/mpeg",
-      "sha256": "28550a37be55eb58716a0031db97d2ebdffae94814fcfaf23bc2dee1938fbdd2"
+      "sha256": "28550a37be55eb58716a0031db97d2ebdffae94814fcfaf23bc2dee1938fbdd2",
+      "poster": "assets/artwork/8afe4555e04312ac-3a9ad99c586d.jpg"
     },
     {
       "id": "apple-6766889014",
@@ -5383,7 +5582,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1111869,
       "mime": "audio/mpeg",
-      "sha256": "d21c38f62a06330cc51a3bdc6d14c03b8faa7fc1600d9d579d7f45dfc49971e8"
+      "sha256": "d21c38f62a06330cc51a3bdc6d14c03b8faa7fc1600d9d579d7f45dfc49971e8",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg"
     },
     {
       "id": "apple-6777342475",
@@ -5409,7 +5609,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3300357,
       "mime": "audio/mpeg",
-      "sha256": "da35c38ca806a3846320c8eedd771411aaa99b5347c7f847ea29a101b2feac69"
+      "sha256": "da35c38ca806a3846320c8eedd771411aaa99b5347c7f847ea29a101b2feac69",
+      "poster": "assets/artwork/d18e0c975ae4aa62-ebdb4f8e84b1.jpg"
     },
     {
       "id": "apple-1873399117",
@@ -5435,7 +5636,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1895134,
       "mime": "audio/mpeg",
-      "sha256": "7d2a627142d460d4a83eb61140787735393dd52cb96488e38467b727e4806e32"
+      "sha256": "7d2a627142d460d4a83eb61140787735393dd52cb96488e38467b727e4806e32",
+      "poster": "assets/artwork/aced270258470740-d3fd716fa36d.jpg"
     },
     {
       "id": "apple-1796402805",
@@ -5461,7 +5663,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 3167442,
       "mime": "audio/mpeg",
-      "sha256": "6acc4d0814502222edb6852aa8e674d82626ea971f67e8a77cbe904ba85315ed"
+      "sha256": "6acc4d0814502222edb6852aa8e674d82626ea971f67e8a77cbe904ba85315ed",
+      "poster": "assets/artwork/1e5242deca969e30-1c4834416d36.jpg"
     },
     {
       "id": "apple-1873399544",
@@ -5487,7 +5690,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 841476,
       "mime": "audio/mpeg",
-      "sha256": "99db2bd5ae680a1cd5ff582e93e700fa087482d4f943e2a1dd160929f05a73d3"
+      "sha256": "99db2bd5ae680a1cd5ff582e93e700fa087482d4f943e2a1dd160929f05a73d3",
+      "poster": "assets/artwork/aced270258470740-d3fd716fa36d.jpg"
     },
     {
       "id": "apple-1839265988",
@@ -5513,7 +5717,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 2865251,
       "mime": "audio/mpeg",
-      "sha256": "d597d2483853f248149a4d7f113395d7fb0b54626fb9b68e9b3153bd7ca10ba2"
+      "sha256": "d597d2483853f248149a4d7f113395d7fb0b54626fb9b68e9b3153bd7ca10ba2",
+      "poster": "assets/artwork/fda7e3d477d47a14-cb7dec1ec8a8.jpg"
     },
     {
       "id": "apple-1873399546",
@@ -5539,7 +5744,8 @@
       "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
       "size": 1658998,
       "mime": "audio/mpeg",
-      "sha256": "1219317469ce6d877b431ecff2500db848e018a9d709319f12ac6dea955eedbd"
+      "sha256": "1219317469ce6d877b431ecff2500db848e018a9d709319f12ac6dea955eedbd",
+      "poster": "assets/artwork/aced270258470740-d3fd716fa36d.jpg"
     },
     {
       "id": "apple-1880744346",
@@ -5565,7 +5771,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F004",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5812b261ca353590-1ac307926657.jpg"
     },
     {
       "id": "apple-1765007438",
@@ -5591,7 +5798,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F005",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/7afa6acab7476ad3-488cda9d1458.jpg"
     },
     {
       "id": "apple-1705937980",
@@ -5617,7 +5825,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F006",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c81f230f8f59d361-aa69651e43ec.jpg"
     },
     {
       "id": "apple-6820637496",
@@ -5643,7 +5852,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F007",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/78a7360700bd4fd8-b6b0645a8208.jpg"
     },
     {
       "id": "apple-1630139437",
@@ -5669,7 +5879,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F008",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/a80561eedcf49391-5e388e917a6a.jpg"
     },
     {
       "id": "apple-1875209646",
@@ -5695,7 +5906,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F009",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c63398da58ec01c4-f517ec4db4d2.jpg"
     },
     {
       "id": "apple-1682565605",
@@ -5721,7 +5933,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F010",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/31dd5ce236311022-eda46601f32f.jpg"
     },
     {
       "id": "apple-6819603937",
@@ -5747,7 +5960,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F011",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/611bdf5e31bd88be-7c9c053f7270.jpg"
     },
     {
       "id": "apple-1703961471",
@@ -5773,7 +5987,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F012",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/877970a778d2dfe1-7b43786cbe96.jpg"
     },
     {
       "id": "apple-1532703846",
@@ -5799,7 +6014,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F013",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/e91a621cec72a2c7-603a5836d786.jpg"
     },
     {
       "id": "apple-1675294688",
@@ -5825,7 +6041,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F014",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c6e9e0774196118a-e20bf4e02a3e.jpg"
     },
     {
       "id": "apple-1650819024",
@@ -5851,7 +6068,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F015",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/87bad347aefbd921-31c34ab43cd1.jpg"
     },
     {
       "id": "apple-1656414566",
@@ -5877,7 +6095,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F016",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/ed36329ca83fb087-b6c5b52e1d4f.jpg"
     },
     {
       "id": "apple-1840926010",
@@ -5903,7 +6122,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F017",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/8e5b155eb829456c-c2ecd352ef5a.jpg"
     },
     {
       "id": "apple-6830301778",
@@ -5929,7 +6149,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F018",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/24951d18b789c588-a4deeca50c8b.jpg"
     },
     {
       "id": "apple-1872427735",
@@ -5955,7 +6176,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F019",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5793e4218b2fd97b-f3a725fbde7c.jpg"
     },
     {
       "id": "apple-6825262010",
@@ -5981,7 +6203,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F020",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/ffe635743157ea63-7ffb5a77c056.jpg"
     },
     {
       "id": "apple-6824502112",
@@ -6007,7 +6230,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F021",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c9f4de4d3b126972-b92af519050e.jpg"
     },
     {
       "id": "apple-1724957047",
@@ -6034,7 +6258,8 @@
       "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c",
       "size": 4348606,
       "mime": "audio/mpeg",
-      "recordingAliasOf": "apple-6812377711"
+      "recordingAliasOf": "apple-6812377711",
+      "poster": "assets/artwork/147d386e99dcb185-7bccb54ad4e2.jpg"
     },
     {
       "id": "apple-1864367251",
@@ -6060,7 +6285,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F022",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/64e544cc2a5dd3d9-1a0ab815a8eb.jpg"
     },
     {
       "id": "apple-1826529541",
@@ -6086,7 +6312,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F023",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/779b669086cce52b-6103e1620173.jpg"
     },
     {
       "id": "apple-6820021068",
@@ -6112,7 +6339,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F024",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/fdf0dbe766fdc04f-89933a4a27fb.jpg"
     },
     {
       "id": "apple-1815286493",
@@ -6138,7 +6366,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F025",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg"
     },
     {
       "id": "apple-1650818586",
@@ -6164,7 +6393,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F026",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/87bad347aefbd921-31c34ab43cd1.jpg"
     },
     {
       "id": "apple-6830690061",
@@ -6190,7 +6420,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F027",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/7cb975fb00f9dc45-4bf5832ca5f4.jpg"
     },
     {
       "id": "apple-1653986914",
@@ -6216,7 +6447,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F028",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/a64ffc5d7b962d34-bf8879824c9b.jpg"
     },
     {
       "id": "apple-6763002983",
@@ -6242,7 +6474,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F029",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5b108c2292fce8cd-0912e3f53e84.jpg"
     },
     {
       "id": "apple-6812379571",
@@ -6269,7 +6502,8 @@
       "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c",
       "size": 4348606,
       "mime": "audio/mpeg",
-      "recordingAliasOf": "apple-6812377711"
+      "recordingAliasOf": "apple-6812377711",
+      "poster": "assets/artwork/41172b51aa260085-749f449007d7.jpg"
     },
     {
       "id": "apple-6797508189",
@@ -6295,7 +6529,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F030",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5cfe1c0fa0216387-69fa9e9b68eb.jpg"
     },
     {
       "id": "apple-1815286512",
@@ -6321,7 +6556,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F031",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg"
     },
     {
       "id": "apple-6827981168",
@@ -6347,7 +6583,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F032",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/8e5ccf57287d1083-1ec3388d0f4f.jpg"
     },
     {
       "id": "apple-1815286306",
@@ -6373,7 +6610,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F033",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg"
     },
     {
       "id": "apple-1650818594",
@@ -6399,7 +6637,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F034",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/87bad347aefbd921-31c34ab43cd1.jpg"
     },
     {
       "id": "apple-6763306994",
@@ -6425,7 +6664,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F035",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/06e70e7758724284-ee68af73a6f2.jpg"
     },
     {
       "id": "apple-6797508184",
@@ -6451,7 +6691,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F036",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5cfe1c0fa0216387-69fa9e9b68eb.jpg"
     },
     {
       "id": "apple-6817801159",
@@ -6477,7 +6718,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F037",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/0c45839585294538-136cbd805899.jpg"
     },
     {
       "id": "apple-6787939065",
@@ -6503,7 +6745,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F038",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c722b5e183451bcd-578b3b0cc526.jpg"
     },
     {
       "id": "apple-1728291032",
@@ -6529,7 +6772,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F039",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/3f6618d8f9fcf2c5-da015cd0f040.jpg"
     },
     {
       "id": "apple-6809780421",
@@ -6555,7 +6799,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F040",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f917f1a510f8b626-a14bb09ef3b8.jpg"
     },
     {
       "id": "apple-6797507874",
@@ -6581,7 +6826,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F041",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5cfe1c0fa0216387-69fa9e9b68eb.jpg"
     },
     {
       "id": "apple-1653993076",
@@ -6607,7 +6853,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F042",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/b873e5bd7a20571c-a0683a023501.jpg"
     },
     {
       "id": "apple-1815286320",
@@ -6633,7 +6880,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F043",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg"
     },
     {
       "id": "apple-1653986921",
@@ -6659,7 +6907,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F044",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/a64ffc5d7b962d34-bf8879824c9b.jpg"
     },
     {
       "id": "apple-1815286331",
@@ -6685,7 +6934,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F045",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg"
     },
     {
       "id": "apple-1567457314",
@@ -6711,7 +6961,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F046",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/ff9679bf4abf31fb-cc1e712aae25.jpg"
     },
     {
       "id": "apple-1645073442",
@@ -6737,7 +6988,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F047",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/22d9253fb76d5737-ab179cdd54b3.jpg"
     },
     {
       "id": "apple-1693897120",
@@ -6763,7 +7015,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F048",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/62b9176241139cdb-ae7eef81f821.jpg"
     },
     {
       "id": "apple-1785636292",
@@ -6789,7 +7042,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F049",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/acf77aad0aa25aa9-49c4fe092ef5.jpg"
     },
     {
       "id": "apple-1633937001",
@@ -6815,7 +7069,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F050",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/41034a5d56b12df7-4e1f5b671d9e.jpg"
     },
     {
       "id": "apple-1483502765",
@@ -6841,7 +7096,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F051",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/521f89f6a63a581b-02c25aa64eac.jpg"
     },
     {
       "id": "apple-1715481652",
@@ -6867,7 +7123,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F052",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-1707284051",
@@ -6893,7 +7150,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F053",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/a6a5e607d6d86e7b-bd6a69f3cf5c.jpg"
     },
     {
       "id": "apple-1891054568",
@@ -6919,7 +7177,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F054",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/62cb9359332ac38b-5cd8ec15c534.jpg"
     },
     {
       "id": "apple-1566702042",
@@ -6945,7 +7204,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F055",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5638f3139c62134e-f7fbc3bd9259.jpg"
     },
     {
       "id": "apple-1619987913",
@@ -6971,7 +7231,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F056",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f6aa163c812e9fe8-01807921b43c.jpg"
     },
     {
       "id": "apple-1656314976",
@@ -6997,7 +7258,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F057",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/0f51a58143e83653-7e51b2795dc4.jpg"
     },
     {
       "id": "apple-1668847231",
@@ -7023,7 +7285,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F058",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/88a48ddb8db10286-507c45a95351.jpg"
     },
     {
       "id": "apple-1780791552",
@@ -7049,7 +7312,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F059",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/0daa1a695e83369e-de1146b5dc15.jpg"
     },
     {
       "id": "apple-1682735625",
@@ -7075,7 +7339,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F060",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c3839b958e9f280e-49077fadead2.jpg"
     },
     {
       "id": "apple-1807096316",
@@ -7101,7 +7366,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F061",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/7a67623b0b1127a9-98e0ef744c8e.jpg"
     },
     {
       "id": "apple-1715482169",
@@ -7127,7 +7393,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F062",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-1678396183",
@@ -7153,7 +7420,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F063",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f70b344a4d53b65b-334e56085343.jpg"
     },
     {
       "id": "apple-1780791667",
@@ -7179,7 +7447,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F064",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/8f6f4c18d2f01aa6-9cddca8a88f3.jpg"
     },
     {
       "id": "apple-1620131430",
@@ -7205,7 +7474,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F065",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/9d8eddb514f3c138-6c623e6aee0e.jpg"
     },
     {
       "id": "apple-1840400476",
@@ -7231,7 +7501,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F066",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/fc8d245882da976d-aaa01237e608.jpg"
     },
     {
       "id": "apple-1755171356",
@@ -7257,7 +7528,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F067",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/e5f78a47b211d99d-1d698173561e.jpg"
     },
     {
       "id": "apple-1736739870",
@@ -7283,7 +7555,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F068",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/78eba6c9512307c7-04c824d6a0a6.jpg"
     },
     {
       "id": "apple-1762425042",
@@ -7309,7 +7582,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F069",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/a14e4344e26c4d28-0c32d8b162ef.jpg"
     },
     {
       "id": "apple-1763682058",
@@ -7335,7 +7609,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F070",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/8aa7de266e50874d-456c1a775431.jpg"
     },
     {
       "id": "apple-6833051592",
@@ -7361,7 +7636,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F071",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/3a51675622d69dd9-e801897f01f1.jpg"
     },
     {
       "id": "apple-1688432957",
@@ -7387,7 +7663,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F072",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f3d13785d2696dfc-33748ed4366e.jpg"
     },
     {
       "id": "apple-1720715817",
@@ -7413,7 +7690,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F073",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/2bc619e244e38b7d-42633b87b47a.jpg"
     },
     {
       "id": "apple-1762426130",
@@ -7439,7 +7717,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F074",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c04f47c3d5f1b173-022c6b118a6c.jpg"
     },
     {
       "id": "apple-1566702048",
@@ -7465,7 +7744,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F075",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5638f3139c62134e-f7fbc3bd9259.jpg"
     },
     {
       "id": "apple-1807096313",
@@ -7491,7 +7771,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F076",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/7a67623b0b1127a9-98e0ef744c8e.jpg"
     },
     {
       "id": "apple-1715482182",
@@ -7517,7 +7798,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F077",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-6786171892",
@@ -7543,7 +7825,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F078",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/af6259c3bdbdf86c-7bc85bf4a3eb.jpg"
     },
     {
       "id": "apple-1835757764",
@@ -7569,7 +7852,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F079",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/4230b4f411443464-4e97381bed3d.jpg"
     },
     {
       "id": "apple-1716499891",
@@ -7595,7 +7879,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F080",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/0e65a21325deb5db-1a0fb3e1081f.jpg"
     },
     {
       "id": "apple-1807096318",
@@ -7621,7 +7906,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F081",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/7a67623b0b1127a9-98e0ef744c8e.jpg"
     },
     {
       "id": "apple-1640249015",
@@ -7647,7 +7933,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F082",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/deaba0fc40d609fa-6fbd211f8226.jpg"
     },
     {
       "id": "apple-1678544000",
@@ -7673,7 +7960,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F083",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/c276127838213e3b-664341e848f9.jpg"
     },
     {
       "id": "apple-1766544951",
@@ -7699,7 +7987,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F084",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/aaef83fea0811c72-1d2161d4b1be.jpg"
     },
     {
       "id": "apple-1566702044",
@@ -7725,7 +8014,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F085",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5638f3139c62134e-f7fbc3bd9259.jpg"
     },
     {
       "id": "apple-1809381533",
@@ -7751,7 +8041,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F086",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1715481851",
@@ -7777,7 +8068,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F087",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-1787145527",
@@ -7803,7 +8095,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F088",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/2fc342f430afc091-b59e561a2d7a.jpg"
     },
     {
       "id": "apple-1763235881",
@@ -7829,7 +8122,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F089",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/cf1972561ae18611-adb2ad8bcf0d.jpg"
     },
     {
       "id": "apple-1566702049",
@@ -7855,7 +8149,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F090",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/5638f3139c62134e-f7fbc3bd9259.jpg"
     },
     {
       "id": "apple-1809381347",
@@ -7881,7 +8176,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F091",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1715481843",
@@ -7907,7 +8203,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F092",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-1778231816",
@@ -7933,7 +8230,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F093",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/e7c8e33cd859462f-becfa2dab1e5.jpg"
     },
     {
       "id": "apple-1664855144",
@@ -7959,7 +8257,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F094",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/d90efd00229097f6-ee9079684e27.jpg"
     },
     {
       "id": "apple-1725962751",
@@ -7985,7 +8284,8 @@
       "mime": "audio/mpeg",
       "permissionRef": "SAZ-20261121-002-F095",
       "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
-      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html"
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/additional-audio-20261121.html",
+      "poster": "assets/artwork/e20549fcc1656760-6e04892cd53b.jpg"
     },
     {
       "id": "apple-1715482340",
@@ -8012,7 +8312,8 @@
       "size": 3371377,
       "mime": "audio/mpeg",
       "sha256": "a266473e2b082bea7f2359be5dca26de7d19c50ae8812f33e44008e5f52271f1",
-      "version": "a266473e2b082bea"
+      "version": "a266473e2b082bea",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg"
     },
     {
       "id": "apple-1751960692",
@@ -8039,7 +8340,8 @@
       "size": 2591156,
       "mime": "audio/mpeg",
       "sha256": "6f67328be747b37183aea1b962db3040ca7bac5f325c2e15e236dcd920fc6491",
-      "version": "6f67328be747b371"
+      "version": "6f67328be747b371",
+      "poster": "assets/artwork/50c4fb3c7beb500a-7d643ae7ffa9.jpg"
     },
     {
       "id": "apple-1543979574",
@@ -8066,7 +8368,8 @@
       "size": 2656243,
       "mime": "audio/mpeg",
       "sha256": "d68491dc83832ff1f8e0fe7252c52a2403d852a5ab71ccf2f61bee925756ce20",
-      "version": "d68491dc83832ff1"
+      "version": "d68491dc83832ff1",
+      "poster": "assets/artwork/39b8c5dd0320a2ba-78331a475600.jpg"
     },
     {
       "id": "apple-1807096317",
@@ -8093,7 +8396,8 @@
       "size": 3634697,
       "mime": "audio/mpeg",
       "sha256": "addff17994d2b5e9884ff4c674287b8706864de5e14df149d45deaebc1191051",
-      "version": "addff17994d2b5e9"
+      "version": "addff17994d2b5e9",
+      "poster": "assets/artwork/7a67623b0b1127a9-98e0ef744c8e.jpg"
     },
     {
       "id": "apple-1809381343",
@@ -8120,7 +8424,8 @@
       "size": 1875066,
       "mime": "audio/mpeg",
       "sha256": "535363fd437288b14c58105d3665249913a7e6e72c7da623733905ca995644d9",
-      "version": "535363fd437288b1"
+      "version": "535363fd437288b1",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1809381344",
@@ -8147,7 +8452,8 @@
       "size": 2463980,
       "mime": "audio/mpeg",
       "sha256": "766fe9a73c315d349f3587835277602dac173c785a8d5b539d0ed50a0298994d",
-      "version": "766fe9a73c315d34"
+      "version": "766fe9a73c315d34",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1809381532",
@@ -8174,7 +8480,8 @@
       "size": 3242215,
       "mime": "audio/mpeg",
       "sha256": "9d59f855c9f93dea846781b9e024eb466c6d47e30be2adf81f1758dc3cec12d1",
-      "version": "9d59f855c9f93dea"
+      "version": "9d59f855c9f93dea",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1809381535",
@@ -8201,7 +8508,8 @@
       "size": 3106799,
       "mime": "audio/mpeg",
       "sha256": "38ab59a4858d58ec1c1b01e308aaf1bbf1d46c669f6f4c0620c0807ad374bdbb",
-      "version": "38ab59a4858d58ec"
+      "version": "38ab59a4858d58ec",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1809381536",
@@ -8228,7 +8536,8 @@
       "size": 3710330,
       "mime": "audio/mpeg",
       "sha256": "923093baa7cc225ae281cfb795d98a8409167d5640197ec46008f4043a346713",
-      "version": "923093baa7cc225a"
+      "version": "923093baa7cc225a",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg"
     },
     {
       "id": "apple-1840400741",
@@ -8255,7 +8564,8 @@
       "size": 2951323,
       "mime": "audio/mpeg",
       "sha256": "571e110642b7596bea14df921561e8b24189d751ede8b6b4989d35df3b9c0771",
-      "version": "571e110642b7596b"
+      "version": "571e110642b7596b",
+      "poster": "assets/artwork/85fb3a4ce45e51c6-742d5ccc7e30.jpg"
     },
     {
       "id": "apple-1841605041",
@@ -8282,7 +8592,8 @@
       "size": 2763658,
       "mime": "audio/mpeg",
       "sha256": "2e94e0f01940f5de9e297d28cb002f69693eb8e4e8dadebc2122ac48dad59024",
-      "version": "2e94e0f01940f5de"
+      "version": "2e94e0f01940f5de",
+      "poster": "assets/artwork/82822704dd2aeedf-61140fb67468.jpg"
     },
     {
       "id": "apple-6766387936",
@@ -8309,7 +8620,8 @@
       "size": 3534882,
       "mime": "audio/mpeg",
       "sha256": "265c0c3ad9a178df819b34806e25b1e698b3c54a2f42ac52b6cd7f8c52a5fb6a",
-      "version": "265c0c3ad9a178df"
+      "version": "265c0c3ad9a178df",
+      "poster": "assets/artwork/f3505a195907c396-c919d375a0b9.jpg"
     },
     {
       "id": "apple-1678716965",
@@ -8336,7 +8648,8 @@
       "size": 2196517,
       "mime": "audio/mpeg",
       "sha256": "dcfcb17ac8089f96162a4cc0d69df3ee696d18526f9124a8f1f68746c96fe5aa",
-      "version": "dcfcb17ac8089f96"
+      "version": "dcfcb17ac8089f96",
+      "poster": "assets/artwork/ba0b8a3f63c11f0a-0d8630a99803.jpg"
     },
     {
       "id": "apple-1762425040",
@@ -8363,7 +8676,8 @@
       "size": 3489648,
       "mime": "audio/mpeg",
       "sha256": "383f6603aab7c0886bbddbc7e1f877061b74c75b26aaa79a9e2406ed64ed2c36",
-      "version": "383f6603aab7c088"
+      "version": "383f6603aab7c088",
+      "poster": "assets/artwork/f98448704b197b88-0753b6d2533b.jpg"
     },
     {
       "id": "apple-1766268218",
@@ -8390,7 +8704,8 @@
       "size": 2801701,
       "mime": "audio/mpeg",
       "sha256": "6f9e95f40b8a55af33c65659e76b7eb96c629747c0d18d760d8a42a33c1e14fb",
-      "version": "6f9e95f40b8a55af"
+      "version": "6f9e95f40b8a55af",
+      "poster": "assets/artwork/abc821efad7939ed-09b171733dac.jpg"
     },
     {
       "id": "apple-1766544704",
@@ -8417,7 +8732,8 @@
       "size": 2529594,
       "mime": "audio/mpeg",
       "sha256": "d8c9bb64e36219e1a5e14383dccee45980ab4e896161e4bc2c7c556b692d8484",
-      "version": "d8c9bb64e36219e1"
+      "version": "d8c9bb64e36219e1",
+      "poster": "assets/artwork/aaef83fea0811c72-1d2161d4b1be.jpg"
     },
     {
       "id": "apple-1766544965",
@@ -8444,7 +8760,8 @@
       "size": 3561118,
       "mime": "audio/mpeg",
       "sha256": "daf70b3ee68947c4b4a715b27ddbaf2e992aaee2fbf64fade4c24eda8a039f51",
-      "version": "daf70b3ee68947c4"
+      "version": "daf70b3ee68947c4",
+      "poster": "assets/artwork/aaef83fea0811c72-1d2161d4b1be.jpg"
     },
     {
       "id": "apple-1766544977",
@@ -8471,7 +8788,8 @@
       "size": 2127100,
       "mime": "audio/mpeg",
       "sha256": "2299fc7cb32fb49b942fed80f1e629b51679f7d0598e189aabf98a7110585f11",
-      "version": "2299fc7cb32fb49b"
+      "version": "2299fc7cb32fb49b",
+      "poster": "assets/artwork/aaef83fea0811c72-1d2161d4b1be.jpg"
     },
     {
       "id": "apple-1778062348",
@@ -8498,7 +8816,8 @@
       "size": 2933785,
       "mime": "audio/mpeg",
       "sha256": "5212169932a03a69937731a198d223efa4690f3d01fdadf10568b9fba49414f4",
-      "version": "5212169932a03a69"
+      "version": "5212169932a03a69",
+      "poster": "assets/artwork/e18f65b384b6531d-43000089a0ff.jpg"
     },
     {
       "id": "apple-1780772737",
@@ -8525,7 +8844,8 @@
       "size": 2716024,
       "mime": "audio/mpeg",
       "sha256": "b2045c0b918f0dc4b53bc7928291e55d533581c78d92907c7b3a37611a789582",
-      "version": "b2045c0b918f0dc4"
+      "version": "b2045c0b918f0dc4",
+      "poster": "assets/artwork/9db85c5c3115e5e3-bed5c2287912.jpg"
     },
     {
       "id": "apple-1780791706",
@@ -8552,7 +8872,8 @@
       "size": 2750317,
       "mime": "audio/mpeg",
       "sha256": "edb6a91e01ca1f5f2173b4dd75b41a091477818776f1fd83bb387b4cd904660e",
-      "version": "edb6a91e01ca1f5f"
+      "version": "edb6a91e01ca1f5f",
+      "poster": "assets/artwork/f74bfb99a812f908-fd6ebfb3db38.jpg"
     },
     {
       "id": "apple-1780792042",
@@ -8579,7 +8900,8 @@
       "size": 3172851,
       "mime": "audio/mpeg",
       "sha256": "68f331b7189a7e29dd77183fa1a3e3776e377f550fb1512570dfbb4ec87e53ee",
-      "version": "68f331b7189a7e29"
+      "version": "68f331b7189a7e29",
+      "poster": "assets/artwork/de95826207ffafa9-dc6496c6caa1.jpg"
     },
     {
       "id": "apple-1795044550",
@@ -8606,7 +8928,8 @@
       "size": 4054725,
       "mime": "audio/mpeg",
       "sha256": "223f5e36e5072f06e27b4ee9086b28e5818a6f11ad87a9e1d6122b301e6cab31",
-      "version": "223f5e36e5072f06"
+      "version": "223f5e36e5072f06",
+      "poster": "assets/artwork/6c7e395fc3b115e9-794eb65c8b63.jpg"
     },
     {
       "id": "apple-1765720546",
@@ -8633,7 +8956,8 @@
       "size": 3100142,
       "mime": "audio/mpeg",
       "sha256": "1766f3f4105314a0e6a56d2dee37a91c9007cf7283bead41840ce3e9dca83370",
-      "version": "1766f3f4105314a0"
+      "version": "1766f3f4105314a0",
+      "poster": "assets/artwork/e94912604ea7d79e-1b4a3c9b9b24.jpg"
     },
     {
       "id": "apple-1880593150",
@@ -8660,7 +8984,8 @@
       "size": 3255602,
       "mime": "audio/mpeg",
       "sha256": "2c2113f087f30bd10cac7662b9e2e499168ce4e1f949b7e827a2c651c64e704e",
-      "version": "2c2113f087f30bd1"
+      "version": "2c2113f087f30bd1",
+      "poster": "assets/artwork/48038e2e5a9cb642-e034e35627d8.jpg"
     },
     {
       "id": "saz-wave",

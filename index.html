@@ -19,7 +19,7 @@
     <title>SAZ — сенің әуенің</title>
     <link rel="manifest" href="manifest.json" />
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon-180.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icon-180.png?v=2.7" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="experience.css" />
   </head>
@@ -91,7 +91,7 @@
             ><input
               id="search"
               type="search"
-              placeholder="Ән, орындаушы немесе әуен іздеу…"
+              placeholder="Ән не орындаушы"
               aria-label="Музыка іздеу"
               autocomplete="off"
             /><kbd>/</kbd>
@@ -99,8 +99,8 @@
           <button class="topbar-import" data-action="import">
             <span data-icon="plus"></span><span>Ән қосу</span>
           </button>
-          <button class="avatar" data-action="settings" aria-label="Баптаулар">
-            S
+          <button class="icon-button topbar-settings" data-action="settings" aria-label="Баптаулар">
+            <span data-icon="settings"></span>
           </button>
         </header>
         <div id="offlineBanner" class="offline-banner" hidden>
@@ -144,7 +144,7 @@
         data-action="now-playing"
         aria-label="Ойнап тұрған әнді ашу"
       >
-        <span class="cover-art player-art" id="playerArt"
+        <span class="player-art" id="playerArt" aria-hidden="true"
           ><span data-icon="music"></span></span
         ><span class="player-track-copy"
           ><strong id="playerTitle">Әуеніңді таңда</strong
@@ -203,6 +203,7 @@
           <span id="currentTime">0:00</span
           ><input
             id="seek"
+            class="saz-seek"
             type="range"
             min="0"
             max="100"
@@ -258,7 +259,7 @@
       hidden
     />
     <input type="file" id="backupInput" accept=".saz" hidden />
-    <dialog id="dialog" class="dialog">
+    <dialog id="dialog" class="dialog" aria-labelledby="dialogTitle">
       <div class="dialog-top">
         <h2 id="dialogTitle"></h2>
         <button

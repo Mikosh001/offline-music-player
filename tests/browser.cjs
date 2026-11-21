@@ -19,7 +19,7 @@ async function start() {
   const errors = [];
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("http://127.0.0.1:4173");
-  await page.getByRole("heading", { name: "Қош келдің, тыңдарман." }).waitFor();
+  await page.getByRole("heading", { name: "Өз ырғағыңмен." }).waitFor();
   await page.evaluate(() =>
     navigator.serviceWorker.ready.then(
       () =>
@@ -122,7 +122,7 @@ async function start() {
   mobile.on("pageerror", (e) => errors.push(e.message));
   await mobile.goto("http://127.0.0.1:4173");
   await mobile
-    .getByRole("heading", { name: "Қош келдің, тыңдарман." })
+    .getByRole("heading", { name: "Өз ырғағыңмен." })
     .waitFor();
   await mobile.screenshot({
     path: path.join(output, "saz-mobile.png"),

@@ -162,6 +162,8 @@ export function validateCatalog(input) {
       officialUrl: safeUrl(t.officialUrl),
       audioUrl,
       artwork: safeUrl(t.artwork, { relative: true }),
+      poster: typeof t.poster === "string" && /^assets\/artwork\/[a-f0-9]{16}-[a-f0-9]{12}\.jpg$/.test(t.poster)
+        ? t.poster : "",
       downloadable: Boolean(audioUrl && t.downloadable === true && t.license),
       license: String(t.license || "").slice(0, 500),
       licenseUrl: safeUrl(t.licenseUrl),

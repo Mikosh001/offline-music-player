@@ -1,1 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img"><title>Sadraddin — Aiga qarap · SAZ мұқабасы</title><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#afbe9b"/><stop offset="1" stop-color="#25283e"/></linearGradient><radialGradient id="v"><stop stop-color="#afbe9b"/><stop offset=".14" stop-color="#111522"/><stop offset=".99" stop-color="#171c29"/></radialGradient></defs><rect width="400" height="400" fill="#121726"/><path d="M0 0H400V400H0Z" fill="url(#g)" opacity=".78"/><g transform="rotate(30 280 140)"><circle cx="300" cy="100" r="162" fill="url(#v)"/><g fill="none" stroke="#afbe9b" opacity=".22"><circle cx="300" cy="100" r="52"/><circle cx="300" cy="100" r="68"/><circle cx="300" cy="100" r="88"/><circle cx="300" cy="100" r="108"/><circle cx="300" cy="100" r="128"/><circle cx="300" cy="100" r="148"/></g><circle cx="300" cy="100" r="23" fill="#afbe9b"/><circle cx="300" cy="100" r="5" fill="#141827"/></g><path d="M0 235L400 172V400H0Z" fill="#101625" opacity=".9"/><text x="28" y="39" fill="#fff" opacity=".8" font-family="Arial,sans-serif" font-size="12" letter-spacing="4">SAZ / QAZAQ WAVE</text><rect x="28" y="239" width="35" height="3" rx="1.5" fill="#afbe9b"/><g fill="#fff" font-family="Segoe UI,Arial,sans-serif" font-weight="700" font-size="30"><text x="28" y="276">Aiga qarap</text></g><text x="28" y="379" fill="#afbe9b" font-family="Segoe UI,Arial,sans-serif" font-size="14">Sadraddin</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img">
+  <title>Aiga qarap · Sadraddin</title>
+  <defs>
+    <linearGradient id="base" x2=".8" y2="1">
+      <stop stop-color="hsl(111 55% 19%)"/>
+      <stop offset=".52" stop-color="hsl(97 46% 37%)"/>
+      <stop offset="1" stop-color="#161427"/>
+    </linearGradient>
+    <linearGradient id="light" x2=".86" y2="1">
+      <stop stop-color="hsl(97 78% 83%)"/>
+      <stop offset="1" stop-color="hsl(126 64% 52%)"/>
+    </linearGradient>
+    <linearGradient id="ink" x2="0" y2="1">
+      <stop offset=".43" stop-color="#121224" stop-opacity="0"/>
+      <stop offset=".64" stop-color="#171326" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#141224"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#base)"/>
+  <rect x="49" y="117.01246368580655" width="12" height="49.9750726283869" rx="6" fill="url(#light)" opacity="0.6203955092681039"/><rect x="71.3" y="112.82115947849036" width="12" height="58.3576810430193" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="93.6" y="104.11404061708423" width="12" height="75.77191876583154" rx="6" fill="url(#light)" opacity="0.7542957248827961"/><rect x="115.9" y="85.65446270329997" width="12" height="112.69107459340005" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="138.2" y="75.12387647848244" width="12" height="133.7522470430351" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="160.5" y="79.86502947082155" width="12" height="124.26994105835688" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="182.8" y="91.10066055517683" width="12" height="101.79867888964633" rx="6" fill="url(#light)" opacity="0.9509529358847655"/><rect x="205.1" y="65.76934535864832" width="12" height="152.46130928270335" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="227.4" y="52.98129299514872" width="12" height="178.03741400970256" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="249.70000000000002" y="60.10935338308367" width="12" height="163.78129323383266" rx="6" fill="url(#light)" opacity="1"/><rect x="272" y="83.41536218081029" width="12" height="117.1692756383794" rx="6" fill="url(#light)" opacity="0.9944597532678121"/><rect x="294.3" y="74.45334572252959" width="12" height="135.09330855494082" rx="6" fill="url(#light)" opacity="0.9779754323328191"/><rect x="316.6" y="62.370008009888934" width="12" height="159.25998398022213" rx="6" fill="url(#light)" opacity="0.9509529358847656"/><rect x="338.90000000000003" y="68.50504347947145" width="12" height="146.9899130410571" rx="6" fill="url(#light)" opacity="0.9140576474687264"/><rect x="361.2" y="88.39906827085893" width="12" height="107.20186345828213" rx="6" fill="url(#light)" opacity="0.8681980515339465"/><rect x="383.5" y="101.27100097861741" width="12" height="81.45799804276518" rx="6" fill="url(#light)" opacity="0.814503363531613"/><rect x="405.8" y="97.08385291032792" width="12" height="89.83229417934416" rx="6" fill="url(#light)" opacity="0.7542957248827962"/><rect x="428.1" y="104.53459886673298" width="12" height="74.93080226653404" rx="6" fill="url(#light)" opacity="0.6890576474687264"/><rect x="450.40000000000003" y="117.80085262721417" width="12" height="48.39829474557167" rx="6" fill="url(#light)" opacity="0.6203955092681039"/>
+  <rect width="512" height="512" fill="url(#ink)"/>
+  <rect x="34" y="336" width="36" height="4" rx="2" fill="hsl(97 78% 83%)"/>
+  <g fill="#fff8f5" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="64" font-weight="700">
+    <text x="33" y="420">Aiga qarap</text>
+  </g>
+  <text x="35" y="469" fill="hsl(97 78% 83%)" font-family="Segoe UI, DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="600">Sadraddin</text>
+</svg>

@@ -114,7 +114,7 @@ async function geometry(page, selector, minimum = 44) {
   });
   await page.waitForFunction(
     () =>
-      getComputedStyle(document.querySelector(".mobile-nav")).height === "98px",
+      getComputedStyle(document.querySelector(".mobile-nav")).paddingBottom === "34px",
   );
   assert.ok((await page.locator(".mobile-brand").boundingBox()).y >= 59);
   assert.ok((await page.locator(".search-wrap").boundingBox()).y >= 59);

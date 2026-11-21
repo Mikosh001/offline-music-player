@@ -1,22 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 96 96" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="12 12 72 72" fill="none">
   <title>SAZ — әуен мен өрнек</title>
   <defs>
-    <linearGradient id="field" x1="12" y1="4" x2="85" y2="96" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#302442"/>
-      <stop offset="1" stop-color="#141527"/>
-    </linearGradient>
     <linearGradient id="ribbon" x1="25" y1="19" x2="72" y2="79" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#e0cfff"/>
-      <stop offset=".5" stop-color="#bea0f5"/>
-      <stop offset="1" stop-color="#9574dc"/>
+      <stop class="ribbon-light" stop-color="#efdfff"/>
+      <stop class="ribbon-dark" offset="1" stop-color="#ab90f0"/>
     </linearGradient>
-    <linearGradient id="rim" x1="8" y1="0" x2="89" y2="96" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#c4a7f0" stop-opacity=".6"/>
-      <stop offset=".52" stop-color="#9f80cf" stop-opacity=".08"/>
-      <stop offset="1" stop-color="#b29bdd" stop-opacity=".28"/>
-    </linearGradient>
+    <mask id="play-cutout" maskUnits="userSpaceOnUse" x="12" y="12" width="72" height="72">
+      <rect x="12" y="12" width="72" height="72" fill="#fff"/>
+      <path d="m45 41 11 7-11 7z" fill="#000"/>
+    </mask>
   </defs>
-  <rect x="1" y="1" width="94" height="94" rx="26" fill="url(#field)" stroke="url(#rim)" stroke-width="1.5"/>
-  <path d="M55 32C61 39 72 30 63 24C50 15 27 22 27 36C27 48 40 48 48 48C56 48 69 48 69 60C69 74 46 81 33 72C24 66 35 57 41 64" stroke="url(#ribbon)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M44 41.5L54 48L44 54.5V41.5Z" fill="#fff4e8"/>
+  <path d="M55 32C61 39 72 30 63 24C50 15 27 22 27 36C27 48 40 48 48 48C56 48 69 48 69 60C69 74 46 81 33 72C24 66 35 57 41 64" stroke="url(#ribbon)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" mask="url(#play-cutout)"/>
 </svg>

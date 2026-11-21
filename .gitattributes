@@ -2,5 +2,8 @@
 permissions/** -text whitespace=cr-at-eol
 # Preserve the bytes recorded in the policy registry's SHA-256 checksums.
 legal/** -text whitespace=cr-at-eol
+# Keep cover bytes consistent with the values in the artwork registry.
+assets/artwork/*.svg text eol=lf
+assets/artwork/index.json text eol=lf
 *.mp3 binary
 *.pdf binary

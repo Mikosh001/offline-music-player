@@ -118,7 +118,7 @@ const base = "http://127.0.0.1:4173",
     false,
   );
   await a.unroute("**/assets/audio/quiet-evening.wav");
-  await a.getByRole("button", { name: "Қолжетімді аудионы жүктеу" }).click();
+  await a.locator('.playlist-heading [data-action="download-list"]').click();
   await a.locator('[data-track-id="saz-evening"] .offline-text').waitFor();
   assert.equal(
     await a.evaluate(async () => {

@@ -7,1555 +7,2073 @@
       "file": "assets/artwork/0322a5f75aa5b4ff.svg",
       "artistId": "ernar",
       "album": "Keipker - Single",
-      "sha256": "39642352a3ff0a3152267ce5b8e572286fb1be489773eba51eca10985abe5d3c"
+      "sha256": "eb2ce9b6d71f1181611e101ea31f80693d3207d2ed59874397f2fd0ed30d139a",
+      "poster": "assets/artwork/0322a5f75aa5b4ff-dec5fd447d16.jpg",
+      "posterSha256": "dec5fd447d16002ed532499c50cfc67d06ac899c35a80539decbdd49af88dfa5"
     },
     {
       "file": "assets/artwork/2863db07e6a88004.svg",
       "artistId": "moldanazar",
       "album": "Mahabbatym - Single",
-      "sha256": "ac44ab999b84b584afbc402859569bfb61dce83d9d692387e964a431bbcf8435"
+      "sha256": "6c7c415411e88fb1b5e85212d972ab6056d6226e94a2f6200255ffc02e56f1d6",
+      "poster": "assets/artwork/2863db07e6a88004-67c93e31fae2.jpg",
+      "posterSha256": "67c93e31fae23294ff96252d23551761c0b2ea7f4145731ca356fc0339b9e596"
     },
     {
       "file": "assets/artwork/653d4cc44f0c1da2.svg",
       "artistId": "sadraddin",
       "album": "ZEIIN",
-      "sha256": "c6b904991951d328c3b197d4be7102514475167de3bae98b0f3879767dc39396"
+      "sha256": "2cff8894db2bb650a821387fb4bba4bebe012350389d19b329f1e42852da0d3b",
+      "poster": "assets/artwork/653d4cc44f0c1da2-2df7e01cba30.jpg",
+      "posterSha256": "2df7e01cba30437327459b7185618af62e00bada6167c13a06bbeccf1ed52330"
     },
     {
       "file": "assets/artwork/b117e28e26f79149.svg",
       "artistId": "miras",
       "album": "Зымыран - Single",
-      "sha256": "21403c8a6cef89d271acb111a9c05378fd393a03bdf98d11fa82b7c7f1be1054"
+      "sha256": "6d10c5a910a61f4e1b765d380dac5242e0deb21b93b95db0399d88696dffef79",
+      "poster": "assets/artwork/b117e28e26f79149-7ffb5f0061fa.jpg",
+      "posterSha256": "7ffb5f0061fa7d9b6b05d654548f1d876a951b8e3c8a248047e824a0587dcde7"
     },
     {
       "file": "assets/artwork/bef32f6a6e920c6a.svg",
       "artistId": "turar",
       "album": "Иіс - Single",
-      "sha256": "b28a7ad6a1dc97680d31d8e0e323fc5550c60e52e76772164732e920b5f12ee9"
+      "sha256": "ff55b04ca1f9114a5b8e32ea20ca9199836f6163509ed986efd6fd9b293a2a58",
+      "poster": "assets/artwork/bef32f6a6e920c6a-3679df1208bc.jpg",
+      "posterSha256": "3679df1208bc6aff4c8018b85e0e4f55c7977ca9a2a55028396901e176706f04"
     },
     {
       "file": "assets/artwork/e52774de8f57c9ed.svg",
       "artistId": "duman",
       "album": "Жіберем қалай? - Single",
-      "sha256": "5dc1f4b8e6fa73f7552d0c40830992a7a8f6454c94267d67e0cc0e4b4ea8055d"
+      "sha256": "f5492a33b66f4ee23ec94565589eba4efb6d4923e4ffba4a77a566eb10432fc4",
+      "poster": "assets/artwork/e52774de8f57c9ed-2be879d9dfac.jpg",
+      "posterSha256": "2be879d9dfac93c377d5d40b4bb7ef41b5fc53a000781e68e6d4be1b6b67462a"
     },
     {
       "file": "assets/artwork/db71af02c64707d8.svg",
       "artistId": "ernar",
       "album": "Meni kut - Single",
-      "sha256": "f0ef43a3b60b73d0e7d0583f42b51741a8e74b896231cf3579354ba94db7f1af"
+      "sha256": "82072a2f2e48978af3a8d83fd4cab9dbd6e43ecd081b9c6da8b162a1c838601f",
+      "poster": "assets/artwork/db71af02c64707d8-dc52709a4038.jpg",
+      "posterSha256": "dc52709a4038b262af4d748133fce777333a7c101735b8a0bc735b88ddeda38f"
     },
     {
       "file": "assets/artwork/98446c1299553c63.svg",
       "artistId": "moldanazar",
       "album": "Ozin Gana - Single",
-      "sha256": "fc6836249ff09e4bb4bc2231521d325639f222a1f928ffc2435d76e06cd58f90"
+      "sha256": "67d39cf1a4973f79e8b4a2f37b14f69b77c9033870dae114d4afe6bb915876c7",
+      "poster": "assets/artwork/98446c1299553c63-0aa0de0b8415.jpg",
+      "posterSha256": "0aa0de0b8415fb778e938f85fbb9c210755e413ce33f516fa77355b979553ffd"
     },
     {
       "file": "assets/artwork/46fa1a708d78046f.svg",
       "artistId": "sadraddin",
       "album": "Aiga qarap - Single",
-      "sha256": "f5c17690cb39a1dc9415eab2de1dc2df4ae01f039655c3982d3bb5183f6a7e87"
+      "sha256": "4d79750c5bc65f9e1edab0b0d199bb4d63ee912de6e6339ce2333f03f56cee6c",
+      "poster": "assets/artwork/46fa1a708d78046f-9c411239cdbc.jpg",
+      "posterSha256": "9c411239cdbc2b3af1bf36ec3a9cc49550ffc2977c64272bb995a853129e2a4f"
     },
     {
       "file": "assets/artwork/025f0b66c9b5fa29.svg",
       "artistId": "miras",
       "album": "Әндетемін - EP",
-      "sha256": "1c0cc1f6246cbf19ff586e1a2ae76d8fc774d02b6312baf845026ab1dd5a8ca6"
+      "sha256": "373662968b3af0f99231d5f5c687218eb1f7a49f1985174c08880d45a5f31dc6",
+      "poster": "assets/artwork/025f0b66c9b5fa29-9ba849639e31.jpg",
+      "posterSha256": "9ba849639e31b00a651dee7cf75efc12b08425499698dc4df9c254c04f54c576"
     },
     {
       "file": "assets/artwork/47556c79ca402797.svg",
       "artistId": "turar",
       "album": "Armandamyn - Single",
-      "sha256": "a82172f1e5a53727cc7a2ebc07fef610815d2486128071fd2c24ae25b98531e1"
+      "sha256": "73d549c2dc9aaaff322006c9e5a916188c3e7f1c65c7022d199453dbdb76faed",
+      "poster": "assets/artwork/47556c79ca402797-24c6def34d09.jpg",
+      "posterSha256": "24c6def34d092cb9a64fa692f7d0d1f3eda7b50cd67afd0b869898057cf3c277"
     },
     {
       "file": "assets/artwork/2e2aac8d18b9553a.svg",
       "artistId": "duman",
       "album": "Баяғыдай - Single",
-      "sha256": "51880ad32c3dcdb61aa359c2fad529f2cc1939c450c3d706ce1eafd91d4d06c1"
+      "sha256": "152718027969184c770c4927d57be0549def53c2225989c8185616f95c854d58",
+      "poster": "assets/artwork/2e2aac8d18b9553a-d544532d4e50.jpg",
+      "posterSha256": "d544532d4e50f806177bd526347f99cf88185ed657823be2f01fa0187a4942df"
     },
     {
       "file": "assets/artwork/32324684e800fefa.svg",
       "artistId": "ernar",
       "album": "Baribir - Single",
-      "sha256": "2e4c96e3e24bf5c3ccc8b6c3c8f63e9e4fd3f0f291f3b77dadad83da7226c046"
+      "sha256": "bcba88e273aeee5ff8be544e7773a8a0a5edc1bf52c41110bb97941b6f1b5505",
+      "poster": "assets/artwork/32324684e800fefa-1c19b1606e43.jpg",
+      "posterSha256": "1c19b1606e439c16cd2e20bd60695ec20967060f4bf27c6794723a285568438e"
     },
     {
       "file": "assets/artwork/d94eda95a309efd1.svg",
       "artistId": "moldanazar",
       "album": "Alystama - Single",
-      "sha256": "e0cf165ea9c28243441ebfdfa04aeb4555f781866bcec35f16b04527a67a5a09"
+      "sha256": "8916fac8019772390f45c9a17d961bd031a6696309caa4698fab5056dacf87c2",
+      "poster": "assets/artwork/d94eda95a309efd1-1292be8133e6.jpg",
+      "posterSha256": "1292be8133e63e15ba681889bde57b32b826e3fe0850fde5fbfe75ddf31a837c"
     },
     {
       "file": "assets/artwork/c21e1b38b8ec8331.svg",
       "artistId": "miras",
       "album": "Сен Туралы - Single",
-      "sha256": "0048de1a285ba087dd19f1c94746a7150e26ea16f2df8d27eedbae0c9d6ec8c4"
+      "sha256": "b945b419cc46f5cabb4a05da83d9e561bccb19d518ca768623fb56b7e353e929",
+      "poster": "assets/artwork/c21e1b38b8ec8331-7edeb7866215.jpg",
+      "posterSha256": "7edeb7866215dd70e3dda13e288503f8474a59e53b36760aae3963dfc7765af3"
     },
     {
       "file": "assets/artwork/ce5c378127c7e166.svg",
       "artistId": "turar",
       "album": "Kobelek - Single",
-      "sha256": "17b2dfa357566eb5faca945c40c6b8bcd1c118e5882ce52fa6aa7cd402d2107c"
+      "sha256": "b93523a7ecb10c7010a8fa78ef2a94c2b3a827a3b4b34b7d8c1c4b4643b5b96e",
+      "poster": "assets/artwork/ce5c378127c7e166-bc653f1a92e1.jpg",
+      "posterSha256": "bc653f1a92e1f6d80db6cc8e2c04cb86430658a8ddf5901318df61b499830955"
     },
     {
       "file": "assets/artwork/aa73243f9b65daec.svg",
       "artistId": "duman",
       "album": "Sagynam - Single",
-      "sha256": "71d0994b16591a70a64b1b2d9430a1f9bb35dc89dc49c040bce656619addfe9a"
+      "sha256": "cac85aa27c367a5b91dc50752ff08066d0b30494767cf7e0ff4b85e2c05b0ff9",
+      "poster": "assets/artwork/aa73243f9b65daec-f85ca5a13060.jpg",
+      "posterSha256": "f85ca5a13060837b2e717441d87f178bfd8c204152126c4d3e1dbf867edea0c1"
     },
     {
       "file": "assets/artwork/4fadc15418b655da.svg",
       "artistId": "ernar",
       "album": "Senen kein... - Single",
-      "sha256": "4da0ea5f1c0895d9b26e13509fe46984ab74af28930ab367300e61bab503f1d8"
+      "sha256": "f65ea010bef625de1815898cd2d255fea5247ff3e120601c3b0c402634a9ae11",
+      "poster": "assets/artwork/4fadc15418b655da-443f0e8fce38.jpg",
+      "posterSha256": "443f0e8fce387c8767dcb63773f2830f48e5526005e05f08cd15225ec887f652"
     },
     {
       "file": "assets/artwork/4a63306ee1a75d62.svg",
       "artistId": "moldanazar",
       "album": "Akpen Birge - Single",
-      "sha256": "843a6517eeab6509cae8c3341c6767f5059b4d9fffac9dc64e07a7d7c12feef5"
+      "sha256": "6eb3cb9c9c4a412f1ac84d45d8ec7a42c974b2475e457364c053d2fcf77a87a8",
+      "poster": "assets/artwork/4a63306ee1a75d62-0c8b2c46ebc3.jpg",
+      "posterSha256": "0c8b2c46ebc3358eaa3302a52cbb6f8f20fd46d2edf871320a036c0f18ceb012"
     },
     {
       "file": "assets/artwork/52b14a3581c8c3df.svg",
       "artistId": "miras",
       "album": "Bari uaqytsha - Single",
-      "sha256": "ead8d62200b78390cd1559f9304e3f8aa628f17bdb0324c7db333a94da1be073"
+      "sha256": "4822925c852c61463ad87548b5a42d6fc088e6d2428355520eb291d60b0f9440",
+      "poster": "assets/artwork/52b14a3581c8c3df-b3d5555352ab.jpg",
+      "posterSha256": "b3d5555352abbe4b6cec9667ebfe56105b3d9e345ccf9747fdb78f9d641a3485"
     },
     {
       "file": "assets/artwork/638155511ee36d8c.svg",
       "artistId": "turar",
       "album": "yeski taspa (2 season)",
-      "sha256": "6aec2ad8d118e14cd7c72fd0f54f62ec4cfb1fdae0faf1bf6e262174780cd1c6"
+      "sha256": "04550a2f429bdfa75fd5bc615a9c4f5290b0c2cf1093dded2776dff3356f1cf8",
+      "poster": "assets/artwork/638155511ee36d8c-bd877ec40c20.jpg",
+      "posterSha256": "bd877ec40c20b4d831f82d078ef815e53afcfc5697349c793c956f70c0196b67"
     },
     {
       "file": "assets/artwork/3ed741235dc34a7d.svg",
       "artistId": "duman",
       "album": "Жіберем қалай? (Speed Up Version) - Single",
-      "sha256": "4ead395fd4b005de731ee7e8d1ea2a502eab63edf2458fb966ac15b36b893c1f"
+      "sha256": "c33fc64b8cc7e70386a197dbb58b984948223e57100ad2ba0852c0758e14abfc",
+      "poster": "assets/artwork/3ed741235dc34a7d-1907f3732c1f.jpg",
+      "posterSha256": "1907f3732c1fd5f692977fa976f6dc06b841783d57ed83948c9cc24cb283b1c6"
     },
     {
       "file": "assets/artwork/e1c028bc5003f50a.svg",
       "artistId": "ernar",
       "album": "Жалғыз гүл - Single",
-      "sha256": "349b8a5d253f72318274ab0a3e1cd48c3eab53c266bfc5dc1952e266357b2777"
+      "sha256": "f69e793a5dbe3a138ae2fea1a0fa75f6160729e6e544920ea8f2e81c12c6c68b",
+      "poster": "assets/artwork/e1c028bc5003f50a-062b612ef210.jpg",
+      "posterSha256": "062b612ef210c1a32b62caca39f8a98c3e631b6e9f9443871c36c70f073cf23d"
     },
     {
       "file": "assets/artwork/6ad65f4afdb08ea3.svg",
       "artistId": "moldanazar",
       "album": "Senin Zhanynda - Single",
-      "sha256": "ad5cb4f584a0d1b20589985389e42bcc83c10a23f295586b4dbfe22c6d9132ac"
+      "sha256": "1b5ef04a5460a51b20a29b99ac1f4f2892204248c818ec96cbf66f7f1ea1fdf4",
+      "poster": "assets/artwork/6ad65f4afdb08ea3-1384baca5a65.jpg",
+      "posterSha256": "1384baca5a653c8880e17457a81d4e3c9034c88ce27484bc7a8ca19621a0aed0"
     },
     {
       "file": "assets/artwork/013d2f2c658fb6a7.svg",
       "artistId": "miras",
       "album": "Шыда - Single",
-      "sha256": "bc41d1bdc876465f1a04facf5ed22a8cd53e7649335f3185a9efc5df13e2f38b"
+      "sha256": "997d09f300070e8640fb35d916b677db4de0ce92fa9af5910d96628eab072c88",
+      "poster": "assets/artwork/013d2f2c658fb6a7-5e7bd674c23b.jpg",
+      "posterSha256": "5e7bd674c23b0a38cd5b01a8c30c8d5ff6b8af7032b8b1e29ae34b4b6cac14c0"
     },
     {
       "file": "assets/artwork/6b59319fa6fac412.svg",
       "artistId": "turar",
       "album": "Jo joq - Single",
-      "sha256": "6e09349c8f7bd9540dffe9e9bba5707d8a87627cfa35564e20d76c08e73ac355"
+      "sha256": "3860c6f41eef8f6058a34ac81a8f8b520e41142e5be9a588455524e3d7090793",
+      "poster": "assets/artwork/6b59319fa6fac412-64500666bed4.jpg",
+      "posterSha256": "64500666bed49a83857cac57db7e492b048414ee2e47cd8d181ba46fe9e865a1"
     },
     {
       "file": "assets/artwork/0f858e8475777999.svg",
       "artistId": "duman",
       "album": "Есіңе ал мені - Single",
-      "sha256": "a43bd9fce39121ce7687f551c7ce09f1912677975826554fb4f8d2356680769a"
+      "sha256": "0d0ef7451c02959121277ba73f18565621d91dd1114872ac128b20b998ac2bfa",
+      "poster": "assets/artwork/0f858e8475777999-339c6663616a.jpg",
+      "posterSha256": "339c6663616a0f8598b4ad2313db4586f7cccb10004ed71ce3498cd8d80bc43f"
     },
     {
       "file": "assets/artwork/b883631a805f880f.svg",
       "artistId": "ernar",
       "album": "Жарығым - Single",
-      "sha256": "7cc9780d3b64d51d2b7f350bdcb2f4b38e04a1c97e3fdfe22a6e7ddec694b65c"
+      "sha256": "413efed0cbaca51efb6ef22de558c2ca5dd9287367084b2a00e06d368cad9a4a",
+      "poster": "assets/artwork/b883631a805f880f-276fc5bf2f1e.jpg",
+      "posterSha256": "276fc5bf2f1ef17d9b8d7de1c189012952c263d176935d2a55fa88cac7dd1933"
     },
     {
       "file": "assets/artwork/a4f87590b6574b0c.svg",
       "artistId": "moldanazar",
       "album": "Meirymdy Bol - Single",
-      "sha256": "cf1252e6bf30531e4e3e9c0b2d05d772afd9e68073d01d262516afabd72c925f"
+      "sha256": "1bfd19b1137beebb558180c676474596e002c7001c8f7424131e705bf4c7b391",
+      "poster": "assets/artwork/a4f87590b6574b0c-936035292d73.jpg",
+      "posterSha256": "936035292d734b47ddb3db0dc8385b023da6450ba672d80e4074d3c78384dafc"
     },
     {
       "file": "assets/artwork/b8958d7e4062e040.svg",
       "artistId": "sadraddin",
       "album": "Jauap bar ma? - Single",
-      "sha256": "0fff0f9ed25b520f0d5bce4468b10e488acfb3757ec1d77140ea4caadf14c333"
+      "sha256": "3fea520dee02b0a66d4d80a53c5fd192d03bbacccde8f8e6dd6d85b71b29b594",
+      "poster": "assets/artwork/b8958d7e4062e040-3817083ae3b6.jpg",
+      "posterSha256": "3817083ae3b638aa5571bee766d9e2e27b342cc143a0ddc84c8d85c0b1c1e69e"
     },
     {
       "file": "assets/artwork/5a086bbc99a9ebd9.svg",
       "artistId": "miras",
       "album": "Саяхат - Single",
-      "sha256": "255ddbe66fc31d7cf97beaa0cb65431b16eada58af4b98330227e6557a55c494"
+      "sha256": "bd5805f0c5faaab0a2867d7c99355b315ce098dd13b7721091b677fab59eb471",
+      "poster": "assets/artwork/5a086bbc99a9ebd9-0a7265a1fe99.jpg",
+      "posterSha256": "0a7265a1fe991e55eb9559207c1168e3873fb7ded219dbb496f7217333b325da"
     },
     {
       "file": "assets/artwork/b9b0e79e39016196.svg",
       "artistId": "turar",
       "album": "Zhaman Unayd - Single",
-      "sha256": "49af1bda06ef0cffe62116d0ca52e7b0c439681545abda7cfe7c24f40891840e"
+      "sha256": "ab9624b1a4ea6048a6f4e8cf011d77b8ac0c7f80a0cd03f44fd86dd5ae0de41a",
+      "poster": "assets/artwork/b9b0e79e39016196-3a0b5d12571d.jpg",
+      "posterSha256": "3a0b5d12571d7dc2cdf6540dbea5bde38417c9a0d6c8dc980578f9b90ddeb33e"
     },
     {
       "file": "assets/artwork/ff0447837c68284d.svg",
       "artistId": "duman",
       "album": "Сағынып үлгердім - Single",
-      "sha256": "533d0bdf2d51fb0f97fdf8febe45c0ef43077b41d79c764c28af06e064d1fccf"
+      "sha256": "4ce5197827a47b9f5b5e441cf8aa5ee28a93253fc04be3a4c545c1f3f3bb69bc",
+      "poster": "assets/artwork/ff0447837c68284d-3d20e62597b3.jpg",
+      "posterSha256": "3d20e62597b34b557f7eeb141a70181d0f02aad59f68d07d1fcd3a0547b52c20"
     },
     {
       "file": "assets/artwork/31918d9649ea4e66.svg",
       "artistId": "ernar",
       "album": "Taptym Au Seni - Single",
-      "sha256": "b665aef8fe6242de56bcc66b8a90386482d5bee5ff720ea16442d36dc566645d"
+      "sha256": "fbead22e96a26cd7b8a16a679f17984a9ec3e6461a23a83959d72d77da74091e",
+      "poster": "assets/artwork/31918d9649ea4e66-687e0a3a9b05.jpg",
+      "posterSha256": "687e0a3a9b05f7e5b63abca5be104c627bcdb314746421aa45dedd1577345d49"
     },
     {
       "file": "assets/artwork/2771d23ead8b06b7.svg",
       "artistId": "moldanazar",
       "album": "Esimde Bári",
-      "sha256": "ed794c5922ccb28e94a76ae454b3fc24dae25e4e39b0fa0a08f3b90b5fbac210"
+      "sha256": "d2e42fd93384d8e8cdaf0f27fd2c74092fce79921f992222426d4e10e276f187",
+      "poster": "assets/artwork/2771d23ead8b06b7-e19311fb193a.jpg",
+      "posterSha256": "e19311fb193abb57df18d7d0de8d8a89e3203cfdbbc7816b8e6a07c1500f7255"
     },
     {
       "file": "assets/artwork/ec22da41fd46b734.svg",
       "artistId": "sadraddin",
       "album": "Taxi - Single",
-      "sha256": "3811bca75ba45a06d8ef7d5c417ce353b463877069d5e61f942642438c72bdfa"
+      "sha256": "012f13a8c9e265bd7246f41dbb56ab2dd3ad8ceca926f3195698cadc76e5fe99",
+      "poster": "assets/artwork/ec22da41fd46b734-ae4ee3cf5609.jpg",
+      "posterSha256": "ae4ee3cf5609b78e2968d9e8f3a25438dd54a022fcea0521ded19e03bd7be4bf"
     },
     {
       "file": "assets/artwork/9bef4bc96b4bb973.svg",
       "artistId": "turar",
       "album": "BAR SHYGAR - Single",
-      "sha256": "db9ba5c463b8b6125d2268aa3edd0daab4318273cd4198488ffe0ad264d802b9"
+      "sha256": "b89dad0923ce768ba2c5f299d052dea7c4d880ae1d4af00c208f6cc032b7675b",
+      "poster": "assets/artwork/9bef4bc96b4bb973-9896e9325f9d.jpg",
+      "posterSha256": "9896e9325f9d218233d827ceec097cd33c7809d9a9e86fbd7920ee820dd6e4dc"
     },
     {
       "file": "assets/artwork/c8b8fe75a6f62384.svg",
       "artistId": "duman",
       "album": "Өзгенің жанындасың - Single",
-      "sha256": "d704d87b9fb12d69b189ebc319669004ae43ea4a880e19b88ab1387d29d89d6f"
+      "sha256": "1b731fc39b36d638d564057225188858ab91cd04df603fbcf51c0df546b3831b",
+      "poster": "assets/artwork/c8b8fe75a6f62384-356776a96ce2.jpg",
+      "posterSha256": "356776a96ce23408b35f11e21f72c83698e67fd313b3c4f86aaabea48486d34e"
     },
     {
       "file": "assets/artwork/73dc052b79f70a80.svg",
       "artistId": "ernar",
       "album": "Жақыным - Single",
-      "sha256": "c7a5996c99cf1050d5da5f16c07534c49fc8f8ed6c50085d12f3999a7d9d4e95"
+      "sha256": "b019f225cfea8a09fa32220848f6fdcf268bc9288f018097eb735876d9c7edbb",
+      "poster": "assets/artwork/73dc052b79f70a80-f13c995a8394.jpg",
+      "posterSha256": "f13c995a839471846c2ee044128545594a09c01eabc89e0ead9848c0193e97e6"
     },
     {
       "file": "assets/artwork/4aa82e77a7861d79.svg",
       "artistId": "moldanazar",
       "album": "Zhauap Bar Ma? - Single",
-      "sha256": "6c3fdd13d7939b9fda15b44f5ff14b8e0d005c12db6c29facee32887d9ea467c"
+      "sha256": "6c27b7473e3e3279900cc0e32d5b69d5e495dbee7915a4e5ceaf7cb5425727ff",
+      "poster": "assets/artwork/4aa82e77a7861d79-fff59285ae01.jpg",
+      "posterSha256": "fff59285ae01286def8b8a168a2a448712c37ef483427b2553fffc569c2dbcda"
     },
     {
       "file": "assets/artwork/deda517845b8978f.svg",
       "artistId": "sadraddin",
       "album": "Qansha kun? - Single",
-      "sha256": "f73142e4cb252527adc1daf0f0202929bdc3ed85ea0bf0b054e857357c684817"
+      "sha256": "b9de4a8396a66498d6e245d6b651bfb31d802cf8b11fefdd6bf51ed679bb7469",
+      "poster": "assets/artwork/deda517845b8978f-1e5c43bbc199.jpg",
+      "posterSha256": "1e5c43bbc1997f7fd868fa1603dccd8a8a2ea70673fdcec1ba81859a34d82c8c"
     },
     {
       "file": "assets/artwork/10bc807fec56fd70.svg",
       "artistId": "miras",
       "album": "UAQYT - Single",
-      "sha256": "0c850e8886f15b93d375e7a1f1417c4a935c2d416c0353e9339ee2005478ecdb"
+      "sha256": "52b307663cd0b6f543c04126d5eb5d367374a46de7ed5c90cc23a4c3d9c982d8",
+      "poster": "assets/artwork/10bc807fec56fd70-607a5ceff6eb.jpg",
+      "posterSha256": "607a5ceff6eb098d5e84d1174af85599de7f082bac899418c2b50d641e008717"
     },
     {
       "file": "assets/artwork/5f59924e111ad2b0.svg",
       "artistId": "turar",
       "album": "Aspanga - Single",
-      "sha256": "5a5c2c8009054c6e5170d37ac4e2ebe646dba384ab8c72d8fb9ae6ec3e55fa12"
+      "sha256": "1e071c961022f303596ce916af02a4337cb5138bb22db95527e09e36f1a97cba",
+      "poster": "assets/artwork/5f59924e111ad2b0-fe37a5c70232.jpg",
+      "posterSha256": "fe37a5c7023256788b7ce531876dc8347056c2ee9fa4e18e3864d20fcad11d23"
     },
     {
       "file": "assets/artwork/960f09bd5a502e7d.svg",
       "artistId": "duman",
       "album": "Миллион - Single",
-      "sha256": "5121db7c51851412b60dd50a7ca19408815cd61d0c31bb2ecc9f629f5e2c65ad"
+      "sha256": "572aa557e30cbfeeea77ce013199a0999637160c1f3f9f504b477205d8ba5ffc",
+      "poster": "assets/artwork/960f09bd5a502e7d-9637ddb14380.jpg",
+      "posterSha256": "9637ddb143802cf02f5912ef81d34c8f53981a0dc6ece6c9ed3a91f977e085dd"
     },
     {
       "file": "assets/artwork/d26793e16993862b.svg",
       "artistId": "ernar",
       "album": "Tynyshtyq Ber - Single",
-      "sha256": "66bf78e79e2e68efc21e1daef5e380cf5e7397061d59ca97fdce6c9e970866d9"
+      "sha256": "0973dceb5d0c0d58b1aff71e8060b854f99c4546679a2d28b0f77440bc1a8605",
+      "poster": "assets/artwork/d26793e16993862b-75b4993e56d8.jpg",
+      "posterSha256": "75b4993e56d8fe66f5c98897b9ef87368ec399e4486cdd318d202af0c29c6bc7"
     },
     {
       "file": "assets/artwork/0b9f77250d0dce29.svg",
       "artistId": "moldanazar",
       "album": "Bata - Single",
-      "sha256": "ef148062bffe91df69aabee5fa419da5dce263b209fba5fccbaf949420990ae7"
+      "sha256": "59be36831122fe545a806d2284271217d337d7179e4c9cfd5511fe349dce7984",
+      "poster": "assets/artwork/0b9f77250d0dce29-9c9a467c7d16.jpg",
+      "posterSha256": "9c9a467c7d16c0d62d1f593722e8335d77dc0925fb9ac8de5dff270df568c34a"
     },
     {
       "file": "assets/artwork/065d71454082f835.svg",
       "artistId": "sadraddin",
       "album": "Tun - Single",
-      "sha256": "44401d570a88fecb9fe9b05caaf2b8b8b11710ea5163b5612f041ee3458e07af"
+      "sha256": "2785dd576a2b87ab975f2cf299c8046386b9618aaaec6d3419b7dd9805aac4dd",
+      "poster": "assets/artwork/065d71454082f835-a75480a7cf79.jpg",
+      "posterSha256": "a75480a7cf79c7c530c2868fd65f853cc7a92500247f443a2a8c8df72a9be64f"
     },
     {
       "file": "assets/artwork/82d9468c5db8e299.svg",
       "artistId": "turar",
       "album": "Zhaqsy korem - Single",
-      "sha256": "4391951fc435a343ce8f1c0c2b94b6e709809bb8a88108c093a16dfc320885ee"
+      "sha256": "4aad3ba81851ad3f084002ef12ab7a0db276dc176405008038ef2d05dfc4bb9a",
+      "poster": "assets/artwork/82d9468c5db8e299-7c7a3f4c0a91.jpg",
+      "posterSha256": "7c7a3f4c0a91d6f5f8f1f4f250bc256e2e4c543cff02298a4e88e176c0986a0d"
     },
     {
       "file": "assets/artwork/81b0ca20c5036cc3.svg",
       "artistId": "duman",
       "album": "Qaitadan - Single",
-      "sha256": "e5ded2ea7940d55117cd907d6f8a18c5f50c0154ac6268360fc3e8ea6cb4a9a4"
+      "sha256": "eac4dace44b7ef4bd3668a419015781dd63e5c1edea32056905c8fead4537d09",
+      "poster": "assets/artwork/81b0ca20c5036cc3-59da9b214d52.jpg",
+      "posterSha256": "59da9b214d5264df9740953c80478a87978eda801e755c2e0dec75d1bda7f858"
     },
     {
       "file": "assets/artwork/92e5b72e4dff6672.svg",
       "artistId": "ernar",
       "album": "КЕТ - Single",
-      "sha256": "2a06d3f4e294ff017f99ea3227ab98cb46bc388d7e0ecc153168b74721f3656d"
+      "sha256": "4d1f510149cfa68b2288a3151f4567cc13ad7e241f9230c747d992b99fe8b5f8",
+      "poster": "assets/artwork/92e5b72e4dff6672-0869279a27f6.jpg",
+      "posterSha256": "0869279a27f697e73d586c66f74a9a8802d12e12c3a8cf43c27cf4686d5469ab"
     },
     {
       "file": "assets/artwork/634fc126d27b1256.svg",
       "artistId": "moldanazar",
       "album": "Jusan: Senimmen - Single",
-      "sha256": "7529cee6e2abc1084c673c7c7dfb62a5a6c9600bbd8815d2e298be7c0ec83fec"
+      "sha256": "b9540a8e6f2d24e019ee34fb160fa33235052c969885725d665364a85e233eab",
+      "poster": "assets/artwork/634fc126d27b1256-a8c610f0c1b4.jpg",
+      "posterSha256": "a8c610f0c1b48da9ba72b1b562d961204cf738692ba609197c03f9f34f332efe"
     },
     {
       "file": "assets/artwork/9a0e274e665c2c31.svg",
       "artistId": "sadraddin",
       "album": "Aman bolşy süigenım - Single",
-      "sha256": "76293156b499f021d6d300ec2e7abb417fab60b78429965ad52a32fd1a609d30"
+      "sha256": "9a11e12515a0d94dc5812241d5e581e263f9dacede4ed01359f8af81d7bf5c10",
+      "poster": "assets/artwork/9a0e274e665c2c31-a6852218f11b.jpg",
+      "posterSha256": "a6852218f11b970f88212fe80156bceb122af796878247cd6b91c2ebe49de43e"
     },
     {
       "file": "assets/artwork/df761ce8cb721d53.svg",
       "artistId": "miras",
       "album": "Қызғанамын - Single",
-      "sha256": "ac9fd2a4f0a3372cb21ff6be6f19518095e3069e0ebed62b4af03061a92b8be0"
+      "sha256": "0ca04dbd554ddabdf5430df172fbec22bfbaca9d04626580a808807490504e2c",
+      "poster": "assets/artwork/df761ce8cb721d53-70dcf69eaa1a.jpg",
+      "posterSha256": "70dcf69eaa1ada77ad7994b570b59fe2685495aa0047e4561d03373ad3ee42ce"
     },
     {
       "file": "assets/artwork/66e0299a94d677bc.svg",
       "artistId": "turar",
       "album": "Bir adam (feat. B'NDA) - Single",
-      "sha256": "2e1818a35cc06c3345a60630aacea87e3c62e8b7f73a17a04aae6a497cd530e9"
+      "sha256": "90806e8bf5800f4d1677b4a80148d817648028c25e3626eea70044a83f5aaa62",
+      "poster": "assets/artwork/66e0299a94d677bc-e01cbd05aa28.jpg",
+      "posterSha256": "e01cbd05aa280611cb13c945eb8f2275c45fca984f93a08d3c8ecd045e66a48b"
     },
     {
       "file": "assets/artwork/1ccf3f03dd599112.svg",
       "artistId": "duman",
       "album": "Жоғалттым - Single",
-      "sha256": "3f40f5db8d1e5cc5c79f4ff778bd192c6d3582f9787fb130a3d3985937f8de75"
+      "sha256": "ad272a617ec1668da981fe606c741fc2ee3326a1d269a9d46fb9c3bb4c0195a3",
+      "poster": "assets/artwork/1ccf3f03dd599112-26d8cee91643.jpg",
+      "posterSha256": "26d8cee916439e8adb1ad1d4f45e39c94378924ebd6b807d74045e4e6cb1bb3a"
     },
     {
       "file": "assets/artwork/5a842c369d1ccee6.svg",
       "artistId": "ernar",
       "album": "Ozine Syilaimyn - Single",
-      "sha256": "79d3bdcaac32835cc886dc0f4db987f8aa3416c11670fcd031e333d006e1a379"
+      "sha256": "8923d0cac67b37abde17ccf8b8e038ca930a7458322199e511afd26caf2664a2",
+      "poster": "assets/artwork/5a842c369d1ccee6-33a0a0921c7d.jpg",
+      "posterSha256": "33a0a0921c7d2015069fce02df4eca42a690d9ea11dc4ebab1f104f5875a8bd3"
     },
     {
       "file": "assets/artwork/b9869a6be05309fc.svg",
       "artistId": "sadraddin",
       "album": "Uige - Single",
-      "sha256": "3e3b6ff19ccfed56bdc69cb663eae14396d60d2c201e23a7ee8e2f56dab56619"
+      "sha256": "57bdf8638449ec588e0dc277917946d7ddb6f2af993ea5b7f3b4e83d29fce5e2",
+      "poster": "assets/artwork/b9869a6be05309fc-69ae62d6e6e8.jpg",
+      "posterSha256": "69ae62d6e6e8b6feaf7034b27c1b3056faee5eb5cbb92f597878387e1d3aaf22"
     },
     {
       "file": "assets/artwork/1ff206a0cdb8f3e0.svg",
       "artistId": "miras",
       "album": "Елестетем - Single",
-      "sha256": "be07e34036c92fe80894f5d38036a0ecefa88c019e44a4f6e9ee56a25ae77bf5"
+      "sha256": "caa86085a1f7d81d3d3ba5d8017209b082c87efff045a8ac902da330de0ef94e",
+      "poster": "assets/artwork/1ff206a0cdb8f3e0-913fcb55726c.jpg",
+      "posterSha256": "913fcb55726c7f4a6578194bda581d8e81c5b2484f84ba5badfd136d5626b109"
     },
     {
       "file": "assets/artwork/9048a0beacea295f.svg",
       "artistId": "turar",
       "album": "Mundy olen - Single",
-      "sha256": "e908b5a41f542f6f82ec3cfdb647944fd540a553e07e448b94245b8cedaac17b"
+      "sha256": "69f23c36f9ec470f315a60f35a116e8b15e3cc491d5cf97e5686295512b42e05",
+      "poster": "assets/artwork/9048a0beacea295f-72f82ac6ac34.jpg",
+      "posterSha256": "72f82ac6ac34c3dc9e8ed5091e539ba60b135c6576d9eaeec33c12e11bee8510"
     },
     {
       "file": "assets/artwork/e39a88f23f90f171.svg",
       "artistId": "duman",
       "album": "мен болмасам кім? - Single",
-      "sha256": "cbcf56ed25e6e393ef1d597ecdab2124bfe2da7df5b8bee0f7a217b454308b5b"
+      "sha256": "23b266c87c3e79eb121ab2db145fa6fc658557f80bfba991ba79840ed8a9646e",
+      "poster": "assets/artwork/e39a88f23f90f171-a18ea8f27584.jpg",
+      "posterSha256": "a18ea8f27584db28ee3d13b63fa68453268075e7a3291c8608a36b5cd68cfdce"
     },
     {
       "file": "assets/artwork/d4abaa19d2ed0474.svg",
       "artistId": "ernar",
       "album": "Men Seni Shyn Suiemin - Single",
-      "sha256": "4fbf3bf8cacc1f1cbe8519f57c30832300663ff8f1c3b1b34ea746bae4375980"
+      "sha256": "2af2bae0a6ab55e6979ce26a35e4da339f80a3c30b46584b7f9599090a6735ec",
+      "poster": "assets/artwork/d4abaa19d2ed0474-6efe039898fc.jpg",
+      "posterSha256": "6efe039898fc27553e47607088b9a184f582d4b20f7cb8958da3a9d5b9cef883"
     },
     {
       "file": "assets/artwork/53250773229f3db0.svg",
       "artistId": "sadraddin",
       "album": "Sura - Single",
-      "sha256": "54f5deaa1ffe27debb2c41b18f407562eba5bd876b831fd77f7c8c84a68a469a"
+      "sha256": "692130365114d61fe784f83c9d71a34de11e823ab590eaf8c788e022ae60fafb",
+      "poster": "assets/artwork/53250773229f3db0-08e939cad0cb.jpg",
+      "posterSha256": "08e939cad0cba6ddb28bcc1c81925d5bd178b514acfb3679ea99b64a209f0925"
     },
     {
       "file": "assets/artwork/2b77ae0ce3b0b3a4.svg",
       "artistId": "miras",
       "album": "Жолдама - Single",
-      "sha256": "0922586145d2eb229cb02a59e18ae8aafcaaa4b3ee81d2ff0abf6d880f8887d9"
+      "sha256": "f6710b04dc09c3aea2294cde0c1e1c85badb1bdc43b3f5f17296dc49dc3b3441",
+      "poster": "assets/artwork/2b77ae0ce3b0b3a4-391948a0e63e.jpg",
+      "posterSha256": "391948a0e63e5ad6e7e12d7f80c408d106c53d157c3bfad37d1f7a28b463b5f5"
     },
     {
       "file": "assets/artwork/aa0109e84873aeaa.svg",
       "artistId": "turar",
       "album": "Sormandai - Single",
-      "sha256": "8fb2e0a9469aee1542b98e4c2a87d4692569aa7ee058119d0d82e588a9006820"
+      "sha256": "e080f3ab65c7e67c1de57983fe4196a2c46eabd043e698127dd37a9ca8621fb8",
+      "poster": "assets/artwork/aa0109e84873aeaa-4e1376936c99.jpg",
+      "posterSha256": "4e1376936c9948908bae385975ee4f4c7ce3813ad349f720556857267e0180c2"
     },
     {
       "file": "assets/artwork/810c0086d06ba8c2.svg",
       "artistId": "duman",
       "album": "Кездестіргім келеді - Single",
-      "sha256": "deea29acaf39e0ce574eb7c9aa23e5c5d86797bc617de128811970dc599b505b"
+      "sha256": "bb8ee8ae71872aa85d57a17ad6d05740cf8a0e7f5407ed593e7daeddd2a4da9a",
+      "poster": "assets/artwork/810c0086d06ba8c2-66a874084476.jpg",
+      "posterSha256": "66a874084476de318e2bb8c7d2194b40596be35a40b7539d70f8ed59af81cd7e"
     },
     {
       "file": "assets/artwork/142767f444330f09.svg",
       "artistId": "ernar",
       "album": "Jańbyr beine - Single",
-      "sha256": "bc43f27f929aa723ab9ca2ebb8d70779634faab5cbc40b1015f2bd7f86ba73bc"
+      "sha256": "dc4f555777d5daa1f68b6225107322427c2171a1e61de593ba9764b3f5e7b697",
+      "poster": "assets/artwork/142767f444330f09-d33be98e1510.jpg",
+      "posterSha256": "d33be98e1510a19bae536bdfbce296818519cd9153087e0892905e3d9b843f0f"
     },
     {
       "file": "assets/artwork/b30823883f668953.svg",
       "artistId": "sadraddin",
       "album": "18 лет - Single",
-      "sha256": "523ef5721002ec4a574ff09acc134544660682cb669308295ded29e593029b7a"
+      "sha256": "44d31c70418727a1145dee22b09a15dd4173060e5bda52326da94d401c56a631",
+      "poster": "assets/artwork/b30823883f668953-65e47a0f67cf.jpg",
+      "posterSha256": "65e47a0f67cf0f2c4d5cb2317046527020f0ef5a53e2b15d0577f95a85a58c88"
     },
     {
       "file": "assets/artwork/ec4ca66073c77835.svg",
       "artistId": "duman",
       "album": "Жылу - Single",
-      "sha256": "d27873c16880f8b43b43e8bfa776a849263029d1612fbe2ffb327b3c611a6982"
+      "sha256": "9f969863106673ec44994990afe2ef385fe38d3215f715101358e4baca661d31",
+      "poster": "assets/artwork/ec4ca66073c77835-0cf60fd41109.jpg",
+      "posterSha256": "0cf60fd411095a7126e192f258292b9abfdf90b35cad7007398c0dff7fcaf3f7"
     },
     {
       "file": "assets/artwork/db05316fb69daf03.svg",
       "artistId": "ernar",
       "album": "Senen kein... (Acoustic) - Single",
-      "sha256": "1cee0b2c849f455ec0062f46cb817723ce76872d576664c1cb86bc1844a7324f"
+      "sha256": "5fd5ae5b8f79658fe91b52820bdd0c83d82f23a5818453507ad268ef7a11d6b4",
+      "poster": "assets/artwork/db05316fb69daf03-9c6b9e014723.jpg",
+      "posterSha256": "9c6b9e014723f3934e00519c9f3b2686741457f0d78581ef7272c271286f9dba"
     },
     {
       "file": "assets/artwork/66941f1423028e60.svg",
       "artistId": "moldanazar",
       "album": "Janym Sol - Single",
-      "sha256": "f8b5744a6abab519e633e84a806fd231f2120e06c7c47adee54e30560900a579"
+      "sha256": "28508b2d06f8734288f15530cf98313139fb452d90b75a66aaba3a928959ba4c",
+      "poster": "assets/artwork/66941f1423028e60-36e98e10dcda.jpg",
+      "posterSha256": "36e98e10dcda19337c0a0c5c986a916724ee9ddb557d2448d0ce7af99148c13a"
     },
     {
       "file": "assets/artwork/1fa910cee86770c5.svg",
       "artistId": "sadraddin",
       "album": "Ne sebep? - Single",
-      "sha256": "ae40fba079bda9cbf086d1c52d64511a600e8728b6cd434e51df9cdc013cb138"
+      "sha256": "7b448d23d3b1bac2485f27e87d03278ce6edc2ed4d0f7f34bea93944dbb57b4d",
+      "poster": "assets/artwork/1fa910cee86770c5-28af5120b6a2.jpg",
+      "posterSha256": "28af5120b6a29f519d55a09e4f7b68dcc8dfff815eecdf29ebc172dab16e9f7b"
     },
     {
       "file": "assets/artwork/30ae43c971bd0ae2.svg",
       "artistId": "miras",
       "album": "Ойлай берем (feat. 2Rar) - Single",
-      "sha256": "3f661785f65c75dc78bdd9e82d23b72a983d28cd8ac3035d36962dcc383ee7f9"
+      "sha256": "0be9dc428ad28dad9db29a73b7aea7f5d00e25abf7593d5060eb1e65fe525629",
+      "poster": "assets/artwork/30ae43c971bd0ae2-e97009624fcf.jpg",
+      "posterSha256": "e97009624fcf9d322ccdceb253fe4a350d49b2cc8a73107af7e500acbd99f0e8"
     },
     {
       "file": "assets/artwork/cced3e6ed4e7dee1.svg",
       "artistId": "duman",
       "album": "Salem - Single",
-      "sha256": "e7cb4390eacfedd2a92e6c0609d4244e8ed3ea190431706e9816ae0c55a1ea66"
+      "sha256": "f80ba83199276fe7b5fa44765c263cdb46622d566bb5205743d9c39027b04d52",
+      "poster": "assets/artwork/cced3e6ed4e7dee1-fddeada0b55a.jpg",
+      "posterSha256": "fddeada0b55a6634b26e594e3cced9f5173e59e1bb50d34c9593ac3a7c87c1b6"
     },
     {
       "file": "assets/artwork/68aa62139405c5a1.svg",
       "artistId": "ernar",
       "album": "Sende qalai? - Single",
-      "sha256": "0e783e36baddad76799ab7f08f97a5dd5b4ea4d9544546c5cad9faac2ac3f494"
+      "sha256": "f2760268cf575e5d08836425613476a4418c62709a2d8cf87d04c3ff6a72497d",
+      "poster": "assets/artwork/68aa62139405c5a1-650110e8168d.jpg",
+      "posterSha256": "650110e8168deeac91eae846dad3a7a5d1735e2c93b6546b41c28c0478d5f51d"
     },
     {
       "file": "assets/artwork/0d56e1d8d8836cde.svg",
       "artistId": "sadraddin",
       "album": "Алия - Single",
-      "sha256": "7dd803fce11e1d9d9dc7d4bcdc3bd5e1eaadaf61a5baabda9dd1f77cc262b740"
+      "sha256": "054d1282265fa3a72444708a649867c1e319a663797c417452f656934d43005b",
+      "poster": "assets/artwork/0d56e1d8d8836cde-a9d3d66a939d.jpg",
+      "posterSha256": "a9d3d66a939dbb34c209be3f991317e33507e42a94356598263de6c22bc3b1ab"
     },
     {
       "file": "assets/artwork/c30745f39dfa21ff.svg",
       "artistId": "duman",
       "album": "Нөмірімді де - Single",
-      "sha256": "6b93c882cbf7a2002d183336357b1d8f4a330424f15a18648fd5a7aaf8aa8312"
+      "sha256": "32b8c00d2b1c101e942f1e3f5780bd68763857f8f0e58a8826b361f91e340bbd",
+      "poster": "assets/artwork/c30745f39dfa21ff-6a20a367dd2c.jpg",
+      "posterSha256": "6a20a367dd2c7df1abeffa709952dd1dd49088cc4b233adfd109060156b21d62"
     },
     {
       "file": "assets/artwork/7476b7f772ebf678.svg",
       "artistId": "ernar",
       "album": "Сен арманыма - Single",
-      "sha256": "7061bff92d226f58f73ac604f6d46283f1f8faf307b1898315deb751ef1e06a1"
+      "sha256": "794089dcf373772a9717d1b9e1f490e96611a7fdb9780ec9939323ee1f50f325",
+      "poster": "assets/artwork/7476b7f772ebf678-80807626fdac.jpg",
+      "posterSha256": "80807626fdacf96556a47aa7e8f7344eb7ce32cf4ed6b408b7c350ab23807533"
     },
     {
       "file": "assets/artwork/9d6c428b03616344.svg",
       "artistId": "moldanazar",
       "album": "Berik Bol - Single",
-      "sha256": "cc30a0683f7a5f0f96218897c4f83f04b3a99dc16efbc4432c553fc75c0eea2d"
+      "sha256": "cd8c5214d633f96845d1c419aad13466d31a74d4e12e6496c442918d453177a8",
+      "poster": "assets/artwork/9d6c428b03616344-a382ba08ec8a.jpg",
+      "posterSha256": "a382ba08ec8ad1a318841d7657e283eae8f432b320251f52e96bbfb75591b6b4"
     },
     {
       "file": "assets/artwork/b860bc94518863d0.svg",
       "artistId": "sadraddin",
       "album": "Melodrama - Single",
-      "sha256": "e127fa72fe8eebf2f80970553a3e7fca8288b2d9d5246aecde52c099246aa1fe"
+      "sha256": "97ef6d966d43af57eeb0a3e305ac9a6f85533e23f25875f54d1d05d27cc30f29",
+      "poster": "assets/artwork/b860bc94518863d0-b1267759cdbc.jpg",
+      "posterSha256": "b1267759cdbcabe4ef0c76874260a9e2050e6762becbda563e9ca1ee5e0e9588"
     },
     {
       "file": "assets/artwork/27f906976580141b.svg",
       "artistId": "miras",
       "album": "Ғашықпын - Single",
-      "sha256": "11369cceea644bccd8e71d08c404185a9e092a62f96d939fc857c147ae6468bb"
+      "sha256": "6a83f1c015a3c965330b7a425636a65d018af54cf3dbcb60b58f38bf98236616",
+      "poster": "assets/artwork/27f906976580141b-081c20b5559d.jpg",
+      "posterSha256": "081c20b5559d05d7aa8343c02f87ba3dab77608ee4f4e7a327a5447bb86a30c5"
     },
     {
       "file": "assets/artwork/09ea8ffd0c5fd410.svg",
       "artistId": "duman",
       "album": "Aldamaisyn (Live) - Single",
-      "sha256": "459c4849e5ac2e5cf7b936c8d8428db94c872546fa01d719d0b6c82ab2f491ee"
+      "sha256": "e181dad975cf2eaa7a4d18cdea21bc1dabad5c8091dbb0b551bf212ec70d1ce3",
+      "poster": "assets/artwork/09ea8ffd0c5fd410-7b6cd997b513.jpg",
+      "posterSha256": "7b6cd997b513c7c2692d1dbaaa9887d5f5a9d9931a18063fe7ce4018f58be356"
     },
     {
       "file": "assets/artwork/23a7a8516469bd4e.svg",
       "artistId": "ernar",
       "album": "Tynda - Single",
-      "sha256": "00197a62e1cd09ce10c9678fe4f9a4738117bbee70641326fca5aa1630408147"
+      "sha256": "c35e837ecbc8bd7e27cd8c305459f447ffef68fe44cf14281bc769a6d8e376fd",
+      "poster": "assets/artwork/23a7a8516469bd4e-f29f2698c837.jpg",
+      "posterSha256": "f29f2698c837eea3f2b591721a8da5017a971e2f04f89eb65a727327061031a2"
     },
     {
       "file": "assets/artwork/a1da5c453ec20ebc.svg",
       "artistId": "moldanazar",
       "album": "Men Seni Jylytyp Alamyn - Single",
-      "sha256": "2a2776e3c1005d4674f23d90100ed47487b554eaccdf0dc840198a5c91b36ed0"
+      "sha256": "762bdbc9db7249bb7c1b3174e646f386c11d1157715c20f3dca4fa1e26b8406b",
+      "poster": "assets/artwork/a1da5c453ec20ebc-dc73104c0b29.jpg",
+      "posterSha256": "dc73104c0b29c6f4ebd217be332c805d7b83c36fda28cf1fad5ff653a184fbf7"
     },
     {
       "file": "assets/artwork/66bc2416491d2bf0.svg",
       "artistId": "sadraddin",
       "album": "ANT - Single",
-      "sha256": "b017633b728431e565146aa1cd8e0facaf6df72a0020894d350f3bc61c9be22e"
+      "sha256": "42afc5454da23a8811c8f8ae0a2cc183c55d81d8479a7069d7c128c2a51f1f0e",
+      "poster": "assets/artwork/66bc2416491d2bf0-0bfaa194b50c.jpg",
+      "posterSha256": "0bfaa194b50c8a73d185a31073779581cb6bbd02a30396a1b6394d9e2b2ab86b"
     },
     {
       "file": "assets/artwork/e66cc686f76b5bc2.svg",
       "artistId": "miras",
       "album": "Biz ekeumiz - Single",
-      "sha256": "0147197bfe31efd7b4a02d7ef2ef3f90ce68486528d8f9a776ec8445fa757280"
+      "sha256": "2ad4cbb22ab0056b01a3729593b8e5e96aaa7be13a5724acd9df987353f3c676",
+      "poster": "assets/artwork/e66cc686f76b5bc2-8821cc713620.jpg",
+      "posterSha256": "8821cc7136201fdbc28ed5b3bd6f5ad9cebfd9221050d95d5c9e1c9e7b4b7aaa"
     },
     {
       "file": "assets/artwork/4e88b37d1d12095d.svg",
       "artistId": "duman",
       "album": "Ештеңе етпейді - Single",
-      "sha256": "1b691f1ea8bff46bcd444ae2333f9f84426fa8839ea17db066b39572d953b6f2"
+      "sha256": "ea6ff5aa5bd6505b1731f30f67ee9a4f1448ce5a2ac7a4d600ca5065b28fda1f",
+      "poster": "assets/artwork/4e88b37d1d12095d-3fb4d64f94cf.jpg",
+      "posterSha256": "3fb4d64f94cf60a0e9109c6a7607c312b3d148dc8c60d72e44839738832c1709"
     },
     {
       "file": "assets/artwork/59adc6f8b06f8cb6.svg",
       "artistId": "ernar",
       "album": "Сырласқың келсе - Single",
-      "sha256": "93ab3a9c8c8b827f43b4b1980fa1427e6230e0fff89f418e220df546bf3cff44"
+      "sha256": "6a3986ef6d52a1790f70a9f4049c1eed0de8a1ae91fc28b0106789110abed959",
+      "poster": "assets/artwork/59adc6f8b06f8cb6-d707f3e9b248.jpg",
+      "posterSha256": "d707f3e9b248308cc1a320b9bc170532f7245d9cdedadc1d6bd7d6c521d481eb"
     },
     {
       "file": "assets/artwork/acc5cc923f6d63cf.svg",
       "artistId": "sadraddin",
       "album": "Aq koilek - Single",
-      "sha256": "a6c45b82009aba04165bc082d05ef873aeb73bfc138c076333c1a2eaa7fd749f"
+      "sha256": "60a7f92fe6d3ff029448981a4ba660c5f539ecc4ad24426319e27261d82d4963",
+      "poster": "assets/artwork/acc5cc923f6d63cf-96c0bd549b53.jpg",
+      "posterSha256": "96c0bd549b53ceb075330ec9526db275bcb396a397a3fbd7076a197e312712a5"
     },
     {
       "file": "assets/artwork/12a7394b64d03245.svg",
       "artistId": "miras",
       "album": "ОЙЫМДА - Single",
-      "sha256": "1780bc51ef135ba5f93299285dddd1ca2604e8af3c82df9896eba58114e1b29e"
+      "sha256": "0bd23e7cd98df9394b19a6f517eef363aa34d435753d85ee59bab63eba98d4ae",
+      "poster": "assets/artwork/12a7394b64d03245-7a4a6902647b.jpg",
+      "posterSha256": "7a4a6902647b1e023345e46757e07ff3cb009b8b0ab561007941c7796b989b02"
     },
     {
       "file": "assets/artwork/fc61e5310da65caa.svg",
       "artistId": "duman",
       "album": "Бір кездесу - Single",
-      "sha256": "95d7645d6549e6f46cca944973fdd517d58669d3445cd918aa3db01c716e46d7"
+      "sha256": "5de1bff3ca8c2fad3bd80b095148ae339ce32e09bee7e1249c2cc47db6b33c6d",
+      "poster": "assets/artwork/fc61e5310da65caa-49d74dd3e5b4.jpg",
+      "posterSha256": "49d74dd3e5b4c38fd994d6ffeb73f370aae94e933d50aa3a63602bf88e9211ef"
     },
     {
       "file": "assets/artwork/96159775c22b4b84.svg",
       "artistId": "ernar",
       "album": "Tagy Neni Qalaisyn? - Single",
-      "sha256": "02b34560310c6d1ba6f259c1398857da21aa0f2dd0444e405a92ee02513ecd69"
+      "sha256": "85f13ca5f1e3a7eb7acf55df05e6a4ea488515b69087a3e3d8f8fb1c51f1d4a6",
+      "poster": "assets/artwork/96159775c22b4b84-e8f40ab31551.jpg",
+      "posterSha256": "e8f40ab315515470a6202d60bd898ae9c215d1bf4bbb682095ae3cc0b972912c"
     },
     {
       "file": "assets/artwork/7f3f2b1a81e2c451.svg",
       "artistId": "moldanazar",
       "album": "Jarqyra - Single",
-      "sha256": "19d527354fab184643e02e094346fda30a9347bf067f6c92c8a516e98b720df0"
+      "sha256": "98784234574027b66c665f12b580b38a7d35e535ddf493223c77f83564e59111",
+      "poster": "assets/artwork/7f3f2b1a81e2c451-8695797501d3.jpg",
+      "posterSha256": "8695797501d3ac2fe955d0d8570fbb74fc134185493c6a9fb636697514bb135f"
     },
     {
       "file": "assets/artwork/51e8d34c8202baf9.svg",
       "artistId": "sadraddin",
       "album": "Дамма - Single",
-      "sha256": "401c6a686062a692fe1023e56e7f398e16982ce2984d4be8c5df26824a0d10cd"
+      "sha256": "12e6c2b0e4447d453c395ffc9838b7ad83d1a2213a1e3ec68d2b665a53f61bb1",
+      "poster": "assets/artwork/51e8d34c8202baf9-5e8ff01fc29d.jpg",
+      "posterSha256": "5e8ff01fc29d2bd4cf391b8eeebe2a76d36e587275c7fda7133f8cbdc359f673"
     },
     {
       "file": "assets/artwork/87fd5b402c5d36f4.svg",
       "artistId": "miras",
       "album": "Beri qara - Single",
-      "sha256": "bfcd387682bb2e4a2531a35167a8575e9b1d81626276c0cfe9485b43220a2ae4"
+      "sha256": "1ace6a4e2d6d0c738ff06b233dcbec0e39c78c4222a55d512708fdf6c0e1385d",
+      "poster": "assets/artwork/87fd5b402c5d36f4-b1e2178cbc7a.jpg",
+      "posterSha256": "b1e2178cbc7ab880dfd21b45f06acbcfe04edd2d54f6ce54b0f1f1e3fd990baf"
     },
     {
       "file": "assets/artwork/154f3d179ebe56de.svg",
       "artistId": "duman",
       "album": "Ұмыталмайм-ау - Single",
-      "sha256": "81b0513c779161b4ec1087882be58297bf5277014ec1aa36e14a150238b1808d"
+      "sha256": "e464a091fb6059546e4049893f801cc5e32daef53e0817598330342e0aec2f24",
+      "poster": "assets/artwork/154f3d179ebe56de-fc3ba4ff0e3b.jpg",
+      "posterSha256": "fc3ba4ff0e3bac22f31b7d7299f9080aa165a64e2ec47f67042dced30fda9142"
     },
     {
       "file": "assets/artwork/537d3ccf5925f945.svg",
       "artistId": "ernar",
       "album": "Жүрегіммен ойнасаң - Single",
-      "sha256": "ec0dde3c45247bbb95176a6befa586be207c30d23c5bb222ef1fac9418e61d5b"
+      "sha256": "8ca8514eeadfab432c7ec672d363a4dbe699f7f6acee5b1d7db88434a8dfc9cc",
+      "poster": "assets/artwork/537d3ccf5925f945-bebf3792e2d7.jpg",
+      "posterSha256": "bebf3792e2d7a4c963f5f4ae85c6d2594fdaee98847b896a060639428fc0c9f6"
     },
     {
       "file": "assets/artwork/b7587e4277fbbdb2.svg",
       "artistId": "sadraddin",
       "album": "Ana - Single",
-      "sha256": "bacf7e5041099b50dc465be43e5046998b48967907ad848b377dd193d22c9e8e"
+      "sha256": "20318cfa339bf07b9573674903c7e92f6200524a3488af1bd103fa683d742bd6",
+      "poster": "assets/artwork/b7587e4277fbbdb2-eaa14cbdf344.jpg",
+      "posterSha256": "eaa14cbdf3448bd7e9a7f917866b3e012de274dc1dd52ca3ced37f669c936c8b"
     },
     {
       "file": "assets/artwork/20ea47aa5da815f5.svg",
       "artistId": "miras",
       "album": "BAQYT - Single",
-      "sha256": "347bdc1fc59b45caabd9b35d7ac74bf574f65d20b6aef5a81f747466fd37346b"
+      "sha256": "79d6e6f53bb2346833f808498301be4b37850b560c6deae45ce42794b153992d",
+      "poster": "assets/artwork/20ea47aa5da815f5-5a5e397ac762.jpg",
+      "posterSha256": "5a5e397ac762907bc831316994d70f6f495bd3f9dad19e1b43e4a7d2094eae67"
     },
     {
       "file": "assets/artwork/98b1218c3ca34101.svg",
       "artistId": "duman",
       "album": "Сүйемін деші - Single",
-      "sha256": "d0d681bb4ffdc6555cd956a632883dac92c20484d6cb72a32e04a5edd29154f9"
+      "sha256": "0ce687d0f420d90adcfe956f1b067a4df9d612563417173b8247c18fe2aedd6d",
+      "poster": "assets/artwork/98b1218c3ca34101-6acddedc57cb.jpg",
+      "posterSha256": "6acddedc57cb2d3c8792ca5bf359a43e8ce326b4bebbe043bf77fa013ef362fd"
     },
     {
       "file": "assets/artwork/b8ff854ac63d7db1.svg",
       "artistId": "ernar",
       "album": "Japyraq Jurek - Single",
-      "sha256": "d1a0506707b6f7a4b5db0ea081b38a1735bb2b342d63130e7b11c5a45481e1ed"
+      "sha256": "dc7b4d8d10647673d4a2557abbaaba24af078d7be96cddcb56400166a25c8b07",
+      "poster": "assets/artwork/b8ff854ac63d7db1-808acad167d7.jpg",
+      "posterSha256": "808acad167d737036c000761566fd25f3e0c20989178d11c35ef58f96f055425"
     },
     {
       "file": "assets/artwork/d8bedaee75ddaad8.svg",
       "artistId": "moldanazar",
       "album": "Bile - Single",
-      "sha256": "42a920795a67765d6563e037f06cac59148d2a8bbf1dc93bab8dbd34675c3e4c"
+      "sha256": "b60769921af0dad15ece72096801bba81d52567f4f8cdf59318fb0b56a8bd075",
+      "poster": "assets/artwork/d8bedaee75ddaad8-b5ca50392e02.jpg",
+      "posterSha256": "b5ca50392e023263e3d00764a92fc0d10793e39bb71543becb4d72d242366281"
     },
     {
       "file": "assets/artwork/b696b0e55ad61a52.svg",
       "artistId": "sadraddin",
       "album": "Qaragym-ai - Single",
-      "sha256": "e8b91a92bb97585b1005ef0c409949673e8de9fb0b83b8ac091e892fe1621bee"
+      "sha256": "44ae2e16828290dce5e4b0e14628b2b9257d6af71c24bf1dc554a040f27fd3d3",
+      "poster": "assets/artwork/b696b0e55ad61a52-57bfa6f29781.jpg",
+      "posterSha256": "57bfa6f29781678bb5d3929e98d45746f2d62538ce7530ae6de7b7fe67043623"
     },
     {
       "file": "assets/artwork/344b374f48ab30c2.svg",
       "artistId": "miras",
       "album": "Janym : Yeski Taspa - Single",
-      "sha256": "03f1a7cb814e050139648ce709dbc2a7be09e3d3a9e7540242b97c468151243e"
+      "sha256": "5b6a402a873a859755103fc660f287fbe26011e04f8ef30551d54ac03b13c799",
+      "poster": "assets/artwork/344b374f48ab30c2-b9e8e1a715ba.jpg",
+      "posterSha256": "b9e8e1a715baa9f922f30c4e23c4351953b56233a170d1cb9097bf1e043745fa"
     },
     {
       "file": "assets/artwork/f74238dcff00f650.svg",
       "artistId": "duman",
       "album": "Aldamshy - Single",
-      "sha256": "592b16df74276f634d447ba40a84a9f6500c1740f775528c81a60a64c1bbb8b4"
+      "sha256": "e8b26dd17dc8a1d8ea63cd7fe9b9b725140278114ebb9a0ab429ac4152ed29d7",
+      "poster": "assets/artwork/f74238dcff00f650-282a4e73fb69.jpg",
+      "posterSha256": "282a4e73fb691a943d57d7b60f77eddbdbdda40bd82f0769d14198183cbb96f7"
     },
     {
       "file": "assets/artwork/dc313218e312fd1e.svg",
       "artistId": "ernar",
       "album": "Ana - Single",
-      "sha256": "b2fb44b2a0b67a2eec1d190170faaf16339c6234c5087793e502488a061e9eb3"
+      "sha256": "f51cea41c05c976352c20390dfee075aac215d41f302152ec5d6fd154b449e77",
+      "poster": "assets/artwork/dc313218e312fd1e-c399992a025b.jpg",
+      "posterSha256": "c399992a025bcbe4e616ce630879dc46ef8fe323df06279493883f5215504a62"
     },
     {
       "file": "assets/artwork/8474db30882745e5.svg",
       "artistId": "moldanazar",
       "album": "OYU Live Season 2",
-      "sha256": "54fd940cc90a0b198c6fa41e35d0a269ca56fb57178a9eb87af56db89b7ab772"
+      "sha256": "904389ee66f1aaf44b5806b509fcd1c31d3ce66c8d80cb25507299d35c886d83",
+      "poster": "assets/artwork/8474db30882745e5-7983d8150b97.jpg",
+      "posterSha256": "7983d8150b970404d2cb8f77fa7d41b19113c56ce00d20e23e1ac185b20ef34e"
     },
     {
       "file": "assets/artwork/21256fd287b77d40.svg",
       "artistId": "sadraddin",
       "album": "Mahabbatym - Single",
-      "sha256": "e60607154eb3675eb49deaee5bf91d499c7549c3b9fab87907fd2701f612e065"
+      "sha256": "c6d201d97c1919086601f4565dfa078708a960c87a0b40ff5b702c10429c568f",
+      "poster": "assets/artwork/21256fd287b77d40-ebac56920f4f.jpg",
+      "posterSha256": "ebac56920f4f308c5b3823690942e209cc99ec6b38dae8cc58b38b1e31e6b3d4"
     },
     {
       "file": "assets/artwork/2a921df44b2876b6.svg",
       "artistId": "miras",
       "album": "Таптым. Махаббатпен, Jusan - Single",
-      "sha256": "79d06076602bd0d0803267b5751310d92bb2b467f7b8fdeb66bdceb4e9e5593a"
+      "sha256": "5de276c696745f7a084a0dab17b0bf7e6cfdf55633637c3d94df9c226098db92",
+      "poster": "assets/artwork/2a921df44b2876b6-92e14c1ffb79.jpg",
+      "posterSha256": "92e14c1ffb799dff135eb3b25ab931d50f40f00e76c5d829f335533619283672"
     },
     {
       "file": "assets/artwork/afd38eace5810009.svg",
       "artistId": "duman",
       "album": "Күрделім-ай - Single",
-      "sha256": "90ebeaadee42ea43b10041c4c604acae706c80a8089d3598b816de624f2bc0bc"
+      "sha256": "7917fd3ef395da715f5af71e997c1a6361d704cf37821e5e77648d47cf211794",
+      "poster": "assets/artwork/afd38eace5810009-212549b82fac.jpg",
+      "posterSha256": "212549b82fac7616ea07bc6d1ddc8c42822d9cbc0b9a6c841656b94bc69eb811"
     },
     {
       "file": "assets/artwork/2a188e6aa2f46608.svg",
       "artistId": "moldanazar",
       "album": "En qymbat adam - Single",
-      "sha256": "25c6d708d94a3f3b26983a03e6a5ac54e6c3bbbc6fab7ecc6291a8c8768986f5"
+      "sha256": "9edf64fe8239bb533bcbaa325e1b1967d33cedf0f42687a92a3d019c1240f219",
+      "poster": "assets/artwork/2a188e6aa2f46608-88ed3e2794ea.jpg",
+      "posterSha256": "88ed3e2794ea94263f0d3d51dfdd7fb610854a811a83c8919c9f777a9828a432"
     },
     {
       "file": "assets/artwork/291cf2e2bbe2eba8.svg",
       "artistId": "sadraddin",
       "album": "Королева (feat. Baha Puper) - Single",
-      "sha256": "f8ca734c80db649f8426a2d5be8e5058655297be3f3c13086565587e84fb64f0"
+      "sha256": "58ff9816e3747b95e13ee49a7f7926713ae448f35d1123f7eb4e037f8f4e19ff",
+      "poster": "assets/artwork/291cf2e2bbe2eba8-cda239c939df.jpg",
+      "posterSha256": "cda239c939df1e9dd7d68406c27ad1db8438e1229813c087fe0bcdf6eedece21"
     },
     {
       "file": "assets/artwork/c4d4dd4fff8e3819.svg",
       "artistId": "duman",
       "album": "Асықпай - Single",
-      "sha256": "979e775548234b5999cd622ea0530e186207413f3e24fda1fe6d51f78e8cb889"
+      "sha256": "5df5bb7831715a9d827caef455531dee45f8cadd92b14bad530d8e6fff3295b9",
+      "poster": "assets/artwork/c4d4dd4fff8e3819-eb499751225e.jpg",
+      "posterSha256": "eb499751225eb10a7e2f6b2ff9c73449aadc45aa3ffaeeedb05b5218139eeae0"
     },
     {
       "file": "assets/artwork/56fa20961b0bb1c0.svg",
       "artistId": "moldanazar",
       "album": "Dal bugin - Single",
-      "sha256": "458b9ed3619f42734f15b1cd916151f59690c2f3f4419c622e1dcdec27b97f46"
+      "sha256": "aa89c9a3b8e4c3f4a55d9ef21bb245178ae669df4372be243a2f7f838e115557",
+      "poster": "assets/artwork/56fa20961b0bb1c0-7e811d80c0d5.jpg",
+      "posterSha256": "7e811d80c0d5573ac6d4fd46dc249ce530f8f7276e4cfc9b5660e1d2e6c58daa"
     },
     {
       "file": "assets/artwork/7c4b15dd58e8a50a.svg",
       "artistId": "sadraddin",
       "album": "Baqyt - Single",
-      "sha256": "fc5ddcc6c6724d33a6bbbda3e059d9232e2ddfcabbcbef2a4d2e9593d347ea83"
+      "sha256": "fb7e3f59202e93b4f1b94694fead229c0a3e946774450f901a8dce3c31aaa88e",
+      "poster": "assets/artwork/7c4b15dd58e8a50a-9fa53a42cf28.jpg",
+      "posterSha256": "9fa53a42cf28daa3fbdde400c0036f2a3abf17baa492cc98699c268806fca294"
     },
     {
       "file": "assets/artwork/c9e375ecfecdadd4.svg",
       "artistId": "miras",
       "album": "Жанамын - Single",
-      "sha256": "7ac8ce24bb2e3c91b799954af66a7f246cbdb54b75f833ee3733ad1327beef7a"
+      "sha256": "fbcc8c8a32130fc2d6ad73318f41927c307dc5764f04fa84aa775a5060601990",
+      "poster": "assets/artwork/c9e375ecfecdadd4-6258c80c83e2.jpg",
+      "posterSha256": "6258c80c83e2574a96dacf0b7760e5e1b6ef849bba430794d67ab3951d20d982"
     },
     {
       "file": "assets/artwork/c0271b5007ba2740.svg",
       "artistId": "duman",
       "album": "Intro - Single",
-      "sha256": "2ff14bfd4ed88a4ee26cda7b24ebf53be72bdfb6e340c7314646d3b273413110"
+      "sha256": "f700a16f64ebf7a2c5f758792ddcc545d09e6a9f3bbdbc1426939ea9187a5462",
+      "poster": "assets/artwork/c0271b5007ba2740-79df3d1d1f85.jpg",
+      "posterSha256": "79df3d1d1f85b9469af12a015e5705c5de366659a0d2b14a23ae6fd8a9b56843"
     },
     {
       "file": "assets/artwork/9370cf383b5119bb.svg",
       "artistId": "moldanazar",
       "album": "Jylytty Meni (Doomx Remix) - Single",
-      "sha256": "4e234d7d6f4d14af2230f3cedd9e5bd68313f9b1dc801b713df40a94f708afb3"
+      "sha256": "aecb5b1501fcc953f19e8ef353770f591cdfde85adbb12baea008d89bddb9113",
+      "poster": "assets/artwork/9370cf383b5119bb-d9fc9c1fab03.jpg",
+      "posterSha256": "d9fc9c1fab036b192e922c6dd7de61e9b7dec1763a04ec877512502a6c2b57f2"
     },
     {
       "file": "assets/artwork/9becfa62d73e789a.svg",
       "artistId": "sadraddin",
       "album": "yeski taspa (2 season)",
-      "sha256": "e810748261a26c94ab1d25935a73190608bccbfd97745d0c180475f105a28886"
+      "sha256": "99e638de29eff37c1b321571b991423fcd59b7416ed585991a7f50e26226092b",
+      "poster": "assets/artwork/9becfa62d73e789a-eef30186aaa0.jpg",
+      "posterSha256": "eef30186aaa0e4eace54625afca7c6017adcb36210ef4d86f1791b0af53f27be"
     },
     {
       "file": "assets/artwork/9ab245290074d9b2.svg",
       "artistId": "miras",
       "album": "Мама - Single",
-      "sha256": "fd0d9e58002ec1e14f27ef31e13849bc374982d20b21c363a4ed604503df2559"
+      "sha256": "003d9e0b198251f552677f0e9980dee6c86853cd04300eece4b046ff9a122ac7",
+      "poster": "assets/artwork/9ab245290074d9b2-5769ca87b037.jpg",
+      "posterSha256": "5769ca87b0379bc67cc6b253745a6bbde987c277aa5287037ad7d98ddc00797c"
     },
     {
       "file": "assets/artwork/2078182316952881.svg",
       "artistId": "duman",
       "album": "Ғашық екенмін - Single",
-      "sha256": "554fadd587a6d50639f38ef8a52680ddee9dafeb0ec769974ab07996d4d0f2a4"
+      "sha256": "e5f7b16a525f04c420d7f59de857a36b263636c729e293d420366fdadd2618ea",
+      "poster": "assets/artwork/2078182316952881-60122effc4a4.jpg",
+      "posterSha256": "60122effc4a4ec69dd08d4fef1a727cce7116b73ea53d75803b407b789d2808a"
     },
     {
       "file": "assets/artwork/0a716cf4944eb9f4.svg",
       "artistId": "moldanazar",
       "album": "Aitarym Kop - EP",
-      "sha256": "b0464138bf83d8daa00d5edc04fa5a454d84203d3683874e699960274b9c1f97"
+      "sha256": "0bc7d62daa9bc4f7f25fa45aa5aa8ef6dc8b11de5f9166dac82321c884402f06",
+      "poster": "assets/artwork/0a716cf4944eb9f4-39347ada786c.jpg",
+      "posterSha256": "39347ada786ca7ac071383182850ff0d3165f6db5b8dc08bc4fb3624d2cd9b3e"
     },
     {
       "file": "assets/artwork/dbdc210d1cae0832.svg",
       "artistId": "sadraddin",
       "album": "Basqa adam - Single",
-      "sha256": "a9a65a15aa5845659af6ca1c18f5bde17b4d677caeb5ec72fc09050d808a93e1"
+      "sha256": "8f7a09b8b8d09c7fe8521a36724381b7ba49ab3c30c146bf4488c7903fbfdb19",
+      "poster": "assets/artwork/dbdc210d1cae0832-9d100f49996f.jpg",
+      "posterSha256": "9d100f49996f1bdac1f397945700dc8b84416a6858c30298e606033c36a03b87"
     },
     {
       "file": "assets/artwork/ccc8e0e18dd846f6.svg",
       "artistId": "miras",
       "album": "Сен-ем - EP",
-      "sha256": "bc53a7e09f8b612a5fd598fb07a58cf8b833c3c8a9a45382f3c7d280aab5a27b"
+      "sha256": "844f7f1c041a4d74ef13d8cfa059e8aa12577a4c8a19bbf68b32120ab403d305",
+      "poster": "assets/artwork/ccc8e0e18dd846f6-a223eaea8f48.jpg",
+      "posterSha256": "a223eaea8f48a9cbc4df86ce53bdcccbc5dd1cb755f18fa3d9d00788c4f8c1d2"
     },
     {
       "file": "assets/artwork/dc9397d343269a31.svg",
       "artistId": "duman",
       "album": "jaraid - Single",
-      "sha256": "bb0c010592c9c5753b37074bee0f979898ab0e6e258525062653f5ce360088d3"
+      "sha256": "c593d051fe08607e7ee5c16c03c5c04ee7e311a4ee59b4a1ded09273dd2369f5",
+      "poster": "assets/artwork/dc9397d343269a31-c2b2e1ee0209.jpg",
+      "posterSha256": "c2b2e1ee0209f92aa7f4f514435879ffa296d8fa01ffb73e105b302dc4b89cfe"
     },
     {
       "file": "assets/artwork/11aaa8afa10787d0.svg",
       "artistId": "moldanazar",
       "album": "ARBIR JANGA - Single",
-      "sha256": "2ad1c5b5725593c884cc2474d56f849264a8c0a91a36f501e87b8de61c675dac"
+      "sha256": "c0289488c55f1043d9a0b9bc0edb668fdbe0fcd0afada9bb3072cc8831a054c3",
+      "poster": "assets/artwork/11aaa8afa10787d0-e7393e373bbe.jpg",
+      "posterSha256": "e7393e373bbe6f20c416d161ff953e77a990172cff42a7ea28b591a5fbbb191a"
     },
     {
       "file": "assets/artwork/3faa0c6f68b03ceb.svg",
       "artistId": "sadraddin",
       "album": "Не плачь - Single",
-      "sha256": "9ca636180d0ae8a4dbfcf46ea4c40fd4dcb04fc16e5683a6626c80a2e6007344"
+      "sha256": "310669884c6b6e95bcff6dbf3a39ec175ef12f7aed9e7ddfe71bffb567d5641f",
+      "poster": "assets/artwork/3faa0c6f68b03ceb-09198ef70ac8.jpg",
+      "posterSha256": "09198ef70ac8165a2b57c0cbdfa551a72bddc08b90bc2993e3a1c763d9c831c7"
     },
     {
       "file": "assets/artwork/72d2dc9c01d92c4f.svg",
       "artistId": "duman",
       "album": "Оп-Оңай - Single",
-      "sha256": "9e286756891846393c1452dc2f16c665ce12d88560b157280f64fd4d6268feb7"
+      "sha256": "35591114933c1c3c2277d09e49df2a16780dac35cad6a15bc818313702abe50e",
+      "poster": "assets/artwork/72d2dc9c01d92c4f-b74933a613a9.jpg",
+      "posterSha256": "b74933a613a96a4e8fe38973a0a960e6382c25217819ae2edc13dd6baad80e0a"
     },
     {
       "file": "assets/artwork/033d2fcaa55a8439.svg",
       "artistId": "sadraddin",
       "album": "Kuz - Single",
-      "sha256": "0a7c859ea752e85aff483f28827ae30d6025c8816ea2feac03483d5f9044a6af"
+      "sha256": "d3642f89229c34450a29c568270cdae2c6daea4468f825582301396457050a22",
+      "poster": "assets/artwork/033d2fcaa55a8439-96c66a10a385.jpg",
+      "posterSha256": "96c66a10a385d90c63141bff6e79efb03583162e07c48c789fa938f5c1d713a2"
     },
     {
       "file": "assets/artwork/04a8f7f4e38d6fce.svg",
       "artistId": "duman",
       "album": "Әдет - Single",
-      "sha256": "3a6573e5da1d39a2a4343913d4f3836737d6274e7158945ffec130fc088a0163"
+      "sha256": "5aed78aaaa46a36ed8d533f70701f822fc312d411aedc20b010ded780d83bb9e",
+      "poster": "assets/artwork/04a8f7f4e38d6fce-541ccf1e583f.jpg",
+      "posterSha256": "541ccf1e583f476bbf08eba6cca01e31ccbfa33f13891b88fbabb2bfff1bfcc7"
     },
     {
       "file": "assets/artwork/8a04d898b1023d02.svg",
       "artistId": "sadraddin",
       "album": "Telefon - Single",
-      "sha256": "964663da01ee8fc66283f1bb983560b0b46df0693bc442e1f98191355d40a1e3"
+      "sha256": "2df80dec6bb56d37cf2bc4e5c0ca4c53043cfaa2d78e4c3e69528a742f3e9ebd",
+      "poster": "assets/artwork/8a04d898b1023d02-77645aace9be.jpg",
+      "posterSha256": "77645aace9be30b10a7540581baaf6e1f51651cf69bc64e48bde5a562eb72938"
     },
     {
       "file": "assets/artwork/32153aeaa966304d.svg",
       "artistId": "miras",
       "album": "Сенесің бе ? - Single",
-      "sha256": "563476dc734a7e0a32c37bb8a1f24fd9e53f3512e622ae7c9c4a947ec9b7666d"
+      "sha256": "a9cd09f42fbe8a720eee415652de37ab49ff16c780760cb6d0b34a7bafe92947",
+      "poster": "assets/artwork/32153aeaa966304d-24628e0b4608.jpg",
+      "posterSha256": "24628e0b4608b76187f1fe09464b5840e31ee693263228a94e895a17a1382145"
     },
     {
       "file": "assets/artwork/235ad007c87a0e09.svg",
       "artistId": "duman",
       "album": "Мен болуым керек (Acoustic Version) - Single",
-      "sha256": "bf0e4e100168b8ec52ec7fbcf6ceb388e534059380ee366797673672bd52f5f7"
+      "sha256": "019cc9d52212d28f4f4a86ab63cfc79f78aa7c8bb1794c8758488b04e22e2700",
+      "poster": "assets/artwork/235ad007c87a0e09-4081facdbbf1.jpg",
+      "posterSha256": "4081facdbbf16316571064a6504ae81ae64944d6c49940519d39dcb89b73bdb8"
     },
     {
       "file": "assets/artwork/db6df083e965c808.svg",
       "artistId": "moldanazar",
       "album": "ESTELIKTER - Single",
-      "sha256": "0c8e97be381b4528454319151a94e5537baee9fd4213feb5677390a0d65990d5"
+      "sha256": "1d6c076408487ff18cb9f6e6f67450fbb697bbfc4af26ea6bb0e7b9a06666619",
+      "poster": "assets/artwork/db6df083e965c808-b38a938d8eb5.jpg",
+      "posterSha256": "b38a938d8eb58f2055b7ceec5accbae0c6c390abcce925f28c6f0670cc28155d"
     },
     {
       "file": "assets/artwork/5a44aef39df8917b.svg",
       "artistId": "miras",
       "album": "Сүйем - Single",
-      "sha256": "ee5acd6742b14efa5acdd5662c67c479f875b98aea8c2d7720822caf58ed5812"
+      "sha256": "f6ebdb38a23380cb9992305b19fb98d0388b504d592844b912ad86fb5b1f4299",
+      "poster": "assets/artwork/5a44aef39df8917b-eb7a034ca860.jpg",
+      "posterSha256": "eb7a034ca860c2c86a8830614cb3997d40b2d2a5b2a42a07c9ae67184e31f024"
     },
     {
       "file": "assets/artwork/8897b8e12950ea0b.svg",
       "artistId": "duman",
       "album": "Аруым - Single",
-      "sha256": "c4b7058d73032b3503169f6289e1daf0f895588c07cd8a2f9129b65e35ef34ed"
+      "sha256": "9f411b743e65c41240fae20b65cfa16909f9d4b3f601c9d6de03f068c6c7f8e3",
+      "poster": "assets/artwork/8897b8e12950ea0b-6084f9a5dd06.jpg",
+      "posterSha256": "6084f9a5dd060a76ca5f323c8f32b60e1f0e9745f45f75d68ec99cfc29e688b2"
     },
     {
       "file": "assets/artwork/c3079023da1fcdc7.svg",
       "artistId": "sadraddin",
       "album": "Если любишь - Single",
-      "sha256": "a87b4bf12700a7ce2b03bcb6f2d3f45aa208805074ef4bffb527c4c0646cfe24"
+      "sha256": "1421ed9f0c3af5a06308101ca278ad13aca5d5a380e67344d1ce77b8175779fb",
+      "poster": "assets/artwork/c3079023da1fcdc7-02323593f811.jpg",
+      "posterSha256": "02323593f811293537a9e8af3617c9385ce2603491ee1e1023487bdb09135985"
     },
     {
       "file": "assets/artwork/a43106e743a35928.svg",
       "artistId": "miras",
       "album": "Oiladyn ba? - Single",
-      "sha256": "305083c2d85eff0454f92069605ac404efb08bca07f0026c844be71fa8d093d3"
+      "sha256": "de5febb0c069e5a958a58e82a11197278c3bc1b5e15846838c9d5cc384b680c9",
+      "poster": "assets/artwork/a43106e743a35928-8f65c3e95ede.jpg",
+      "posterSha256": "8f65c3e95edef7fbe65c88d3822c0f244d70dd59f85aeb19d568ec43578f598b"
     },
     {
       "file": "assets/artwork/e789d8c06e388158.svg",
       "artistId": "duman",
       "album": "Воспоминания - Single",
-      "sha256": "760707eb274c55f1ee2a5122defc05cb4ffcbfd64a860c1e5cb0d46b615698ad"
+      "sha256": "88b635b60b45e2713994d4ec812594d3dec655092379717adf03b1748ca51d7e",
+      "poster": "assets/artwork/e789d8c06e388158-b17368eab558.jpg",
+      "posterSha256": "b17368eab5588482f791235c9b029743b245b964c2c2ce1fd49eca7f7be7f253"
     },
     {
       "file": "assets/artwork/e70004a1bf763556.svg",
       "artistId": "sadraddin",
       "album": "Qolymnan usta - Single",
-      "sha256": "85f1a9ccc8f457de7b4a0e1e28408935e39747c4b1943e7bf86d972ed60325e0"
+      "sha256": "4c15bcf92d937b38990e2c7aa12cd928cbd288882f7dca81c17b0c46a0c3706f",
+      "poster": "assets/artwork/e70004a1bf763556-f5b5cd05f9bd.jpg",
+      "posterSha256": "f5b5cd05f9bd948df60b950e381c9a2ae2051af250186c5e75a7ccaa6c1b8909"
     },
     {
       "file": "assets/artwork/30a1e99257153a39.svg",
       "artistId": "miras",
       "album": "Роман - Single",
-      "sha256": "63d7e01c794230fcd78e95b92c956a629883fdf38e066d3f2e4b2805a8eab932"
+      "sha256": "23842f8fb80fd483261b6e0ea1f1f4f8bd223054ff9d812bde75bad95c0d150f",
+      "poster": "assets/artwork/30a1e99257153a39-ba572c75a993.jpg",
+      "posterSha256": "ba572c75a993e92c2e412e8508419a95fa29a9209a7298d8f86bb40d3062eacd"
     },
     {
       "file": "assets/artwork/1529a19700069501.svg",
       "artistId": "duman",
       "album": "шынымды айтсам - Single",
-      "sha256": "ce32be771d9055811792eae8a152b9ab97209fdef0a9b42fcfe0a669a8572553"
+      "sha256": "e0ab03b33ec1bdf93207f106ff9ca7fca59628280f92e42f2c8643f9cc69630b",
+      "poster": "assets/artwork/1529a19700069501-f51a1e30d487.jpg",
+      "posterSha256": "f51a1e30d487cda8960a4fc90f2002827310f205b75ea35e4b1d9b23fa75f0dc"
     },
     {
       "file": "assets/artwork/eed113278f2851f0.svg",
       "artistId": "sadraddin",
       "album": "18 лет (Acoustic version) - Single",
-      "sha256": "6deb8b451e059c56a44981b89c5a962a9a45e60a28021bf27d1ffc581b8fb7fe"
+      "sha256": "4492ef8c6ac275035ea02b9bd45cd93de0a1ee4158625a0f4073773cca76aa7e",
+      "poster": "assets/artwork/eed113278f2851f0-9a108caa6872.jpg",
+      "posterSha256": "9a108caa6872afb21962550c6bd1db3655408f248c388c6b6cf3ae62f76b3550"
     },
     {
       "file": "assets/artwork/3baae006416947f7.svg",
       "artistId": "miras",
       "album": "Sagyndyn ba? - Single",
-      "sha256": "36c867673b580ca229af515ea9b4695c3600e4a16697a22b3883c06c401c3136"
+      "sha256": "bc8538c261073c5b3c1a3afc7622aa02613d780b5f993ef068901346f5726dff",
+      "poster": "assets/artwork/3baae006416947f7-f29187c22ae8.jpg",
+      "posterSha256": "f29187c22ae89464c4defec9b5f2303d199d8042ca2a5185966e3599ab1efca1"
     },
     {
       "file": "assets/artwork/93fc51fded6e6123.svg",
       "artistId": "duman",
       "album": "Тұмар - Single",
-      "sha256": "91994fd4e83e742fd6d07f5df1b8ea3421b4fae2bbb0a574f10d616a2d394e8e"
+      "sha256": "0931b5c8d19ed53e094b257a7fc1d50534e32db1be2d5522cb967b4517cd7f04",
+      "poster": "assets/artwork/93fc51fded6e6123-88f88856c7ec.jpg",
+      "posterSha256": "88f88856c7ec22a8dd03fd1326d9393b91e259d08e2202eb89faa6bec0b7f0db"
     },
     {
       "file": "assets/artwork/76836b4a437ee111.svg",
       "artistId": "sadraddin",
       "album": "Зажигалка - Single",
-      "sha256": "f89374e934acb4ef006f2a4ff2d2c4535951a6bdb29bf4f2f9e5d11615cfa309"
+      "sha256": "b20e671c01d67b3c157dea0287ec398bbe0434bf64ae977ca10e4787f3344ca5",
+      "poster": "assets/artwork/76836b4a437ee111-6a751634264d.jpg",
+      "posterSha256": "6a751634264d71b48ea2d283d775568dadfd401f2fef2d628cc1025b8abf4ea3"
     },
     {
       "file": "assets/artwork/cded577d6c35b2a0.svg",
       "artistId": "miras",
       "album": "Aspanga - Single",
-      "sha256": "40a23051b2c6d1d2d6ac0530de9606f1d974bbeb1fbbf7ee8cd28a9bc63dbec8"
+      "sha256": "bd79bba6a12c8d2a46b49d3b0bb4c9ca2ea8409ce3eeaa0058900e11b3e33925",
+      "poster": "assets/artwork/cded577d6c35b2a0-4428af5ef47e.jpg",
+      "posterSha256": "4428af5ef47e0a82d01abd53c998a43d463a9dbfedeb945ed2e843fdf640d051"
     },
     {
       "file": "assets/artwork/b941196257b54a8c.svg",
       "artistId": "duman",
       "album": "Кино - Single",
-      "sha256": "9c70de2cfe7c49801a7aa6873568289e15190a6a683f984d3c8d226e8a6a72a3"
+      "sha256": "29ade6d7d0bbc91d2432482662a3cb88622b09c10cb29546be28890e33073991",
+      "poster": "assets/artwork/b941196257b54a8c-56c0d8694db1.jpg",
+      "posterSha256": "56c0d8694db18e6842ea72dc71c00dc154c513127b870e5953700eed93459457"
     },
     {
       "file": "assets/artwork/c1f76170b1d7f76b.svg",
       "artistId": "moldanazar",
       "album": "Kogersin - Single",
-      "sha256": "0135fe412a5736f0c9ca81e78c06354eb5021f8d22e3a27cce0c599408b63d97"
+      "sha256": "2107fb20bf4665526f3e7bf5bdc64a416783a02231f05adf815f613fa0564253",
+      "poster": "assets/artwork/c1f76170b1d7f76b-517bc17f0eca.jpg",
+      "posterSha256": "517bc17f0ecac1de1fbf8de174a54e6b53d3df3cc622b6b1dfe1392044b2f847"
     },
     {
       "file": "assets/artwork/c6969f2883de7382.svg",
       "artistId": "sadraddin",
       "album": "Dosym - Single",
-      "sha256": "d4b1c8aa4ce7245eeda6e6acc7f0aa9e9985b00e77ece609e0ae145d99cfa679"
+      "sha256": "4ec7e7232c696d742241e1df990419dfcea68453a52fa03a1a9c20680cd1f7fd",
+      "poster": "assets/artwork/c6969f2883de7382-f9fd96d9c708.jpg",
+      "posterSha256": "f9fd96d9c708aba7c1aa14fee113f36b2855ae812105da70c1356e4098bc39eb"
     },
     {
       "file": "assets/artwork/d92d50ba801cf402.svg",
       "artistId": "duman",
       "album": "Почему? - Single",
-      "sha256": "3350684fb4d63b352d7ab0cff5fb848cc1fdb3836cbd52883218143bc9440b5b"
+      "sha256": "ace627a04adb16e3226ec2bd17427066abf087d39ba0e24d2e544a7968f50fe2",
+      "poster": "assets/artwork/d92d50ba801cf402-188f58084647.jpg",
+      "posterSha256": "188f58084647c1868ddbafed2e02d5c469065ab6305067bdd979da3979295a00"
     },
     {
       "file": "assets/artwork/a64ffc5d7b962d34.svg",
       "artistId": "moldanazar",
       "album": "Depti - EP",
-      "sha256": "eafa5b4d138e104598fc5841a508af80811a8ece55b873ac56283e7a19d04635"
+      "sha256": "f49b34f2724500eb094817a5319e65efa0a9dec546019b7d4378e2abee92ada2",
+      "poster": "assets/artwork/a64ffc5d7b962d34-bf8879824c9b.jpg",
+      "posterSha256": "bf8879824c9b32f38fa27e40a4f6363e62db460476caaef65d1cfed805c3de3d"
     },
     {
       "file": "assets/artwork/774751887336d30e.svg",
       "artistId": "duman",
       "album": "Өткенім - Single",
-      "sha256": "5c24ef604dd1d5c2c9fdd2fa89e482b79126930db1d43528b8a1242dbc5fccf5"
+      "sha256": "04c02caff7ec1709f12d53e00ff51d057a927b3fc8824c1e4ce6b7765189922e",
+      "poster": "assets/artwork/774751887336d30e-c4f42c900d42.jpg",
+      "posterSha256": "c4f42c900d42c4563d27191370cecd752a9e594eb008ce336ad567a10e7db6b5"
     },
     {
       "file": "assets/artwork/875871244c2e0849.svg",
       "artistId": "sadraddin",
       "album": "Chill - Single",
-      "sha256": "e6007531f127291fc83561f0a696b7d516151f83bef68d72f23bcfbe9f2139cc"
+      "sha256": "c2585992b9bea920e06554fca5b075741f306ee50c214a7aa5c19e1f1cab8666",
+      "poster": "assets/artwork/875871244c2e0849-da45486ee83e.jpg",
+      "posterSha256": "da45486ee83e32f6b98f895e293ba28b7a3464393f1b338d19de6360789f0f69"
     },
     {
       "file": "assets/artwork/1a6684ee8b2a2f73.svg",
       "artistId": "miras",
       "album": "OMIR KITABY - Single",
-      "sha256": "2e0b1f8875fc8e09a37c4dd26c33df67403d1a04a24e247d6f651838c4049f50"
+      "sha256": "f9e150d5ce8160a8f1ebe84125123fd4ca13a4a96e606c83c55c1e5fae0cb389",
+      "poster": "assets/artwork/1a6684ee8b2a2f73-8057ee211b36.jpg",
+      "posterSha256": "8057ee211b368db395a4ccf5add16005c9c257ab8b2d27a0f160e33138261257"
     },
     {
       "file": "assets/artwork/1c6597c4a5524a79.svg",
       "artistId": "duman",
       "album": "Nege kerek? - Single",
-      "sha256": "e3f7490b30de697e3331055da0f7a8dd63d341ddec2f31735ee2dbe148a05770"
+      "sha256": "7a91d69346fef3b1b1045a1fbaa3280f378b86d9713028aa1e903a6b06031d79",
+      "poster": "assets/artwork/1c6597c4a5524a79-6256677c45bb.jpg",
+      "posterSha256": "6256677c45bb5c357bae9065bb9cacf16652d962212359a53e652f537d74a76b"
     },
     {
       "file": "assets/artwork/fe8df6d365816ac0.svg",
       "artistId": "miras",
       "album": "Sen gana - Single",
-      "sha256": "50bae2b2a639dbc77baf9c5ea000bbeda660407d25c2883ac0e6a11c472efd5b"
+      "sha256": "7e395a0015f53e5663ec06daec3861598b4b50a36ba48ae32d73fbe96038348a",
+      "poster": "assets/artwork/fe8df6d365816ac0-6ce1332d6f74.jpg",
+      "posterSha256": "6ce1332d6f74b1025fd9992611d8f354f3765020937966f90538434cb300a675"
     },
     {
       "file": "assets/artwork/a80e416321cc7a8a.svg",
       "artistId": "duman",
       "album": "Bakytty Bol - Single",
-      "sha256": "e76bff4d785737fe54dea3546e797278ce015f0cbb6f6ecd6c90b5c75dedd709"
+      "sha256": "f7caebc888376190d02e4ea57d689f5a7f98cd5088a18c5a09c443721a565eaa",
+      "poster": "assets/artwork/a80e416321cc7a8a-c6b4edeb1e1a.jpg",
+      "posterSha256": "c6b4edeb1e1a1acc8482d86941b763cbc1d46d24136ebe8bdc41057962c5738b"
     },
     {
       "file": "assets/artwork/29cf53f9f70aa3f2.svg",
       "artistId": "moldanazar",
       "album": "Qyz syny - Single",
-      "sha256": "6753da3a92e7da6bdf4b001d84638efcb4fc0a092badf4ac27a6645abafd774c"
+      "sha256": "670f44b31705479ebbab3ba1444a66144fbfe21b7202193b237962eece7d7666",
+      "poster": "assets/artwork/29cf53f9f70aa3f2-6c8893b36217.jpg",
+      "posterSha256": "6c8893b3621706ae71a5fa3a5f9c2a05b233affb70f28d6e682c2d3e278571ce"
     },
     {
       "file": "assets/artwork/9f29516fa65c7374.svg",
       "artistId": "miras",
       "album": "Тамсанамын - Single",
-      "sha256": "7a431375adacc2c7540c9a29ae24fba92a319cb67fbc2be4952d5ba5573e3b06"
+      "sha256": "192713cfe08c085a711406a94cdea722db3a09659cbfada788bc43474de67fd7",
+      "poster": "assets/artwork/9f29516fa65c7374-cc26c0eedbe8.jpg",
+      "posterSha256": "cc26c0eedbe895ea13fda5818c4f0d586944a9ea2fd8812da962406b9140b5fe"
     },
     {
       "file": "assets/artwork/bfe4d9b139410e19.svg",
       "artistId": "duman",
       "album": "Көріпкел - Single",
-      "sha256": "b3da25a6d95b595d68f7f4ac57e50af715287503ef532d55ca9943bdc743f7b0"
+      "sha256": "71f654fc38eab299d7b9f55290a23eea36375073573514f3ed3b8dd24fa65a04",
+      "poster": "assets/artwork/bfe4d9b139410e19-16ae3449dd16.jpg",
+      "posterSha256": "16ae3449dd1602447104f663430d36108f84e4ba060b78c74d6e0c0cff67e086"
     },
     {
       "file": "assets/artwork/6bffb64820f603b4.svg",
       "artistId": "moldanazar",
       "album": "Bàri bizdiki - Single",
-      "sha256": "cf5bd6ccb5d506c680177d78dcba77102807c4555b45226e8881e480e9a16481"
+      "sha256": "77c15d653afc0bd6216429ce47224449804f6f62ec34ca12c88f0538a5614e50",
+      "poster": "assets/artwork/6bffb64820f603b4-6ced8b808256.jpg",
+      "posterSha256": "6ced8b8082566b8e7e6dbf69c05a475c844a32e31f1c29750ca161c5d0a9bc32"
     },
     {
       "file": "assets/artwork/b33e1d877d0a85c5.svg",
       "artistId": "miras",
       "album": "Sen zhalgyz emessin - Single",
-      "sha256": "092949ad952bfd91a8a5dc16f21850d66ebda08c1ea8b9124fb7c21b98c6d5fc"
+      "sha256": "dd776b168ba44f50564d7281e3d542593812ceb03363be3d602e59b6ad72303b",
+      "poster": "assets/artwork/b33e1d877d0a85c5-afdc099d16d4.jpg",
+      "posterSha256": "afdc099d16d4a770386611699a56e943768f64859ae61f18a3fbe85de32b18b3"
     },
     {
       "file": "assets/artwork/4e932346af201dd6.svg",
       "artistId": "duman",
       "album": "Бiр, eкі, үш - Single",
-      "sha256": "4ba5cb885e2891aa01f8461494ed6f49cc50618fcf5f08a571adbadd503c7f82"
+      "sha256": "f5512ff3c6d0360fac0ac12f3a7a151c22da285b674421b5e42947ca4f387615",
+      "poster": "assets/artwork/4e932346af201dd6-9e3a4995ca71.jpg",
+      "posterSha256": "9e3a4995ca71604bc191aa9d9e4951aff28af7d79139e1d02b235bf8441f1197"
     },
     {
       "file": "assets/artwork/a3dec63e8ea030ce.svg",
       "artistId": "moldanazar",
       "album": "Zhumbaq alem (feat. Rakhat Turezhan) - Single",
-      "sha256": "792114e6df711909ef37178cea75cba4e8f8857ddea466c8abc21d6175e95086"
+      "sha256": "64956c24d98fa922738512e6220ca859d5dd31046c999138eb012d923f76fb8f",
+      "poster": "assets/artwork/a3dec63e8ea030ce-d5f97e7329e5.jpg",
+      "posterSha256": "d5f97e7329e5030b6078eafbe780187e972934ab5ac91bad2b10026f130f6a7b"
     },
     {
       "file": "assets/artwork/1ccbdd31e40d309a.svg",
       "artistId": "miras",
       "album": "Shekara - Single",
-      "sha256": "7361d7654c1bb7db3c2f2822dbdb11a7b3c86809a7968678426417d12d81d796"
+      "sha256": "8d79511615f64d85f76e8627d074763f41324da842b33d79b5e0d68382af843b",
+      "poster": "assets/artwork/1ccbdd31e40d309a-be311b63dd36.jpg",
+      "posterSha256": "be311b63dd3648aa3825157e7e3bc7ceca601021d6164dd7af9b9be2312fa416"
     },
     {
       "file": "assets/artwork/8afe4555e04312ac.svg",
       "artistId": "duman",
       "album": "Nege Munaidyn? - Single",
-      "sha256": "aecc9950af6b2368331ccccec9d2c2461a20d7de90c31c5e57000fec5f639013"
+      "sha256": "d4f5e0ca4f0dfa9d10fc69108bccae529494f5670c829721430c91534c3720be",
+      "poster": "assets/artwork/8afe4555e04312ac-3a9ad99c586d.jpg",
+      "posterSha256": "3a9ad99c586da7b57d92a533697907597bede6b43ddcdb98f6685af0701d0d06"
     },
     {
       "file": "assets/artwork/d18e0c975ae4aa62.svg",
       "artistId": "miras",
       "album": "Үйім - Single",
-      "sha256": "296e0f231e9ec7df96ba6f4e7f849a29fde69095974ac2efe1b31a277cdf5a29"
+      "sha256": "db70b2cc743cba253391d44aba3e26b4bb67bd4233e89f629ea7951de95277a5",
+      "poster": "assets/artwork/d18e0c975ae4aa62-ebdb4f8e84b1.jpg",
+      "posterSha256": "ebdb4f8e84b11c4755204bc6a70e572e4dd6c58324ee8bf34ab57af546ecfab8"
     },
     {
       "file": "assets/artwork/aced270258470740.svg",
       "artistId": "sadraddin",
       "album": "DON'T - Single",
-      "sha256": "390a407a0d1b1b7ae89090c7929e796677c71d7b4b6ab997f4ad20cfa9aa8604"
+      "sha256": "a9f7f24dd200c149e5e821c6567bc61e3ba773c8608106d195a687e7baa76bb8",
+      "poster": "assets/artwork/aced270258470740-d3fd716fa36d.jpg",
+      "posterSha256": "d3fd716fa36d4549c914831d1a3dcbdbd5b484a534687b6ff5e2e3fc6a84a491"
     },
     {
       "file": "assets/artwork/1e5242deca969e30.svg",
       "artistId": "miras",
       "album": "Сон - Single",
-      "sha256": "342db5322a38106fac3df60b4ac0f17eb93a6e375b507cdc124f0d899cdc723e"
+      "sha256": "740a4dc4564ecc9f6ef288def441fae610abb6d85fcd749e32a54aa708e35aa0",
+      "poster": "assets/artwork/1e5242deca969e30-1c4834416d36.jpg",
+      "posterSha256": "1c4834416d3690f3b07cde9fae46906262fbd7629af814299f41a0acf5ceff47"
     },
     {
       "file": "assets/artwork/fda7e3d477d47a14.svg",
       "artistId": "miras",
       "album": "Tungi qala - Single",
-      "sha256": "6cd8617686330871d765d9c72e81cddae05ed8962556b9c5430745a8de5eb9b3"
+      "sha256": "6713182fb11aeb9754216f711cb7b106fc3fe3101ddb55eee52cc415d4e5e2aa",
+      "poster": "assets/artwork/fda7e3d477d47a14-cb7dec1ec8a8.jpg",
+      "posterSha256": "cb7dec1ec8a8963a4becd91032f1795f673a5c61c595002bbd7261047b479dd1"
     },
     {
       "file": "assets/artwork/5812b261ca353590.svg",
       "artistId": "miras",
       "album": "Сенемін - Single",
-      "sha256": "37ab23d5326b8bfbdfaa41bcff26b923b6e8b73082ea0656b6bd1556ed84342f"
+      "sha256": "9ae0d6a1366822880599fc85421707dc86476944f5e72cfbfbe22c95ad328e69",
+      "poster": "assets/artwork/5812b261ca353590-1ac307926657.jpg",
+      "posterSha256": "1ac307926657156c45c2d76f1267bb12a6cad500ff3efa50adfc749a6f26118a"
     },
     {
       "file": "assets/artwork/7afa6acab7476ad3.svg",
       "artistId": "ernar",
       "album": "Sen Kelgeli - Single",
-      "sha256": "a436ef8b8654f29dccd63eb21927ee763a1eac28e4406e40b63404e3d8da711b"
+      "sha256": "2ac684bb8de1c75a026870ed6c42ef9e57b00e462092bbc706d6722f33a3dc04",
+      "poster": "assets/artwork/7afa6acab7476ad3-488cda9d1458.jpg",
+      "posterSha256": "488cda9d14580f9ce1472e7b1f72cc67487a15fb97e2b700b77164eb4f70fddb"
     },
     {
       "file": "assets/artwork/c81f230f8f59d361.svg",
       "artistId": "moldanazar",
       "album": "Tyiym salam - Single",
-      "sha256": "47352adfdc0155a87cdd2f95749e5916913d5630e806b28250d153eb1aeeab62"
+      "sha256": "8bc0afa1c961361a8e6b50090564eecb6cd3aa8365d0fd353d51710d13691641",
+      "poster": "assets/artwork/c81f230f8f59d361-aa69651e43ec.jpg",
+      "posterSha256": "aa69651e43eccde45c98bebfac327750ce9da01cc33c674508d2ab406a196a2e"
     },
     {
       "file": "assets/artwork/78a7360700bd4fd8.svg",
       "artistId": "ernar",
       "album": "Aru - Single",
-      "sha256": "a4d0db6265374a1eafbead40e1c9c50efde12c07a7e8c577dae04a18b5b778e3"
+      "sha256": "40ed98ee69a394b9347685b9b46570a3f3c55980c9983a8823798eab70ce9954",
+      "poster": "assets/artwork/78a7360700bd4fd8-b6b0645a8208.jpg",
+      "posterSha256": "b6b0645a82081250fec837f54c0a7033f3be3b1214c8c17e772d580a8645884d"
     },
     {
       "file": "assets/artwork/a80561eedcf49391.svg",
       "artistId": "miras",
       "album": "Кеш - Single",
-      "sha256": "96dd1782a97fe0ccd210149cf6a5adb26c1325d617946e8d50876bc8fb6cbc34"
+      "sha256": "17801d5094e00eadba59fcbc38ef9bb6feab6b93c539e5f0d3260b8ac15c6181",
+      "poster": "assets/artwork/a80561eedcf49391-5e388e917a6a.jpg",
+      "posterSha256": "5e388e917a6aab84878f0474b297ac6960e8b4479112d214c6d36ee19661c196"
     },
     {
       "file": "assets/artwork/c63398da58ec01c4.svg",
       "artistId": "turar",
       "album": "SUIGEN ADAM - Single",
-      "sha256": "58d163fd3cdddd8e091e3d0b1f2021299633b380958bc29ef75d18ec70dfa6e8"
+      "sha256": "0cedf3428bac85c65f4fbbdcc2118c3a68daa45efaf8aa97f05203fa96dbf919",
+      "poster": "assets/artwork/c63398da58ec01c4-f517ec4db4d2.jpg",
+      "posterSha256": "f517ec4db4d29d722a3282ce22d81ea2c943c74a713b6d92e42e955ac9a16199"
     },
     {
       "file": "assets/artwork/31dd5ce236311022.svg",
       "artistId": "turar",
       "album": "Okpeleidi - Single",
-      "sha256": "d1dfbfd0f857cdbe1de5599ebec8ebd10d356281413c86f9004afbe07732c194"
+      "sha256": "b1309ac36a1be22d892a8de1de44826c86f266675d9e1721f5655fdbc8120c1e",
+      "poster": "assets/artwork/31dd5ce236311022-eda46601f32f.jpg",
+      "posterSha256": "eda46601f32f1fad6a53a86f910d846b44ea09849133e47cc58def4c06f22ab8"
     },
     {
       "file": "assets/artwork/611bdf5e31bd88be.svg",
       "artistId": "turar",
       "album": "OZINE SEN - Single",
-      "sha256": "dd4a1da7be1b4eb68ba110077a7e4b9ccbb498a6c732b73a77b36600640fb72e"
+      "sha256": "23300a87e717341e73961d6007c7911081f90c3de614ec828f3dd64cff7b0df9",
+      "poster": "assets/artwork/611bdf5e31bd88be-7c9c053f7270.jpg",
+      "posterSha256": "7c9c053f7270acafb2a22a01e6771fafaaeec5093a4a96ecdb15fbbc854f0302"
     },
     {
       "file": "assets/artwork/877970a778d2dfe1.svg",
       "artistId": "moldanazar",
       "album": "KORIKTIM - Single",
-      "sha256": "d6b7301db339527e2eb03236d3081cb942fde8607a1cc8bf45bd31af09ee88d1"
+      "sha256": "b9b44a9bfd3219efb025de88408557a89128858c5a4d605f9e4c97f54ae7d4f4",
+      "poster": "assets/artwork/877970a778d2dfe1-7b43786cbe96.jpg",
+      "posterSha256": "7b43786cbe9693e383e7b4e11505a5d146fc9432c460460d0479f28b4e6119fd"
     },
     {
       "file": "assets/artwork/e91a621cec72a2c7.svg",
       "artistId": "sadraddin",
       "album": "Грустный танец - Single",
-      "sha256": "bc17d6a371210452e1773371e0a038daeef4a53feea54ccb46b9ac5945f5d77a"
+      "sha256": "77773a209b1fac41f3c1a6c3b853e93bfc5bad16739aa123767885d3849ada29",
+      "poster": "assets/artwork/e91a621cec72a2c7-603a5836d786.jpg",
+      "posterSha256": "603a5836d786c459b93dd3624a3deb7780e14224ad731d17a53da672b966b1cf"
     },
     {
       "file": "assets/artwork/c6e9e0774196118a.svg",
       "artistId": "moldanazar",
       "album": "Aman bol - Single",
-      "sha256": "077fb9c4d284696ff6ae718b6f1b8711b660f7f54b9f4d4d31ecadf2cfcb3e2f"
+      "sha256": "4e25f577b2e279e4bb6b573efb86a9a6266a739d899519cfbdb4ee50a5eee13c",
+      "poster": "assets/artwork/c6e9e0774196118a-e20bf4e02a3e.jpg",
+      "posterSha256": "e20bf4e02a3e51a0044bfc59c33ec42660a987e431f4d2cb345382aaaedabf4a"
     },
     {
       "file": "assets/artwork/87bad347aefbd921.svg",
       "artistId": "moldanazar",
       "album": "Jalgyz otem - Single",
-      "sha256": "22317d947ac799e48d0ff8ec526c8eb046cfa817b77bd369ae3fcc782df052ba"
+      "sha256": "ca3a1eeb6a4486f7374afa1877780535ac77e24d4f7e6b1c925b3f9c8def89f8",
+      "poster": "assets/artwork/87bad347aefbd921-31c34ab43cd1.jpg",
+      "posterSha256": "31c34ab43cd1ff14c0f5b295b80562d82c72386b415bf1951297e8e27ea2dee0"
     },
     {
       "file": "assets/artwork/ed36329ca83fb087.svg",
       "artistId": "moldanazar",
       "album": "Solai unai ma? - Single",
-      "sha256": "6bb127605f5418831e132e1737f6124d86bcb48881083877e2256ffef97b8962"
+      "sha256": "49586e07d46e8e88c1e2845e6d41b5733d32c88f20db7a36b52581d4de60677a",
+      "poster": "assets/artwork/ed36329ca83fb087-b6c5b52e1d4f.jpg",
+      "posterSha256": "b6c5b52e1d4f3bf60f56ba6460a317f7f314e7d07a7c13baba32902d7da62058"
     },
     {
       "file": "assets/artwork/8e5b155eb829456c.svg",
       "artistId": "moldanazar",
       "album": "why? - Single",
-      "sha256": "19e90998a58202460bf7ed33d11cc717089675a7e1467f381229bd887d0dab0f"
+      "sha256": "b8ec0483fa0a73c52273838596347d493863c9a60012286f49facc0f57560310",
+      "poster": "assets/artwork/8e5b155eb829456c-c2ecd352ef5a.jpg",
+      "posterSha256": "c2ecd352ef5a14eb3ba6339273773d5df1de0e16cdc8ba326a62045ebb022d11"
     },
     {
       "file": "assets/artwork/24951d18b789c588.svg",
       "artistId": "moldanazar",
       "album": "Kogersin (Live) - Single",
-      "sha256": "d401334b1afdcd4c60dc9c968667594bdeff058ca8de268b9c0a2e40ee6110ae"
+      "sha256": "e63d3877c9472a6322208ad9e3095c3b228d25535d2aafc2d440da2a6070e414",
+      "poster": "assets/artwork/24951d18b789c588-a4deeca50c8b.jpg",
+      "posterSha256": "a4deeca50c8bd692552af2dba602d4c3fce0d9005db9c00abd4f6303afaf2dc0"
     },
     {
       "file": "assets/artwork/5793e4218b2fd97b.svg",
       "artistId": "moldanazar",
       "album": "ESTI ZHI - Single",
-      "sha256": "8ffb5e195de260a88b5d66efd04100bc5c6acdb4f1a7bd4d804400705b9763cb"
+      "sha256": "447c18c7b721e87f7bef37daae5856cdf78d81e68248302dec60b8fb2379a154",
+      "poster": "assets/artwork/5793e4218b2fd97b-f3a725fbde7c.jpg",
+      "posterSha256": "f3a725fbde7c71b1768711750b00cbe2a2a108e3bdfd8a17e864e1e0836a4c72"
     },
     {
       "file": "assets/artwork/ffe635743157ea63.svg",
       "artistId": "duman",
       "album": "Солай ма? - Single",
-      "sha256": "4ec2fa2e48b767293a8339a89231488d1d02e74b14493d114cc05a411f55cb3d"
+      "sha256": "b53545917179b0e686ee374054005298f422b623689591428b0243f10591dd54",
+      "poster": "assets/artwork/ffe635743157ea63-7ffb5a77c056.jpg",
+      "posterSha256": "7ffb5a77c0560018e3a53897c0b7962d74504ef87a33ac034174a2faec3fa61d"
     },
     {
       "file": "assets/artwork/c9f4de4d3b126972.svg",
       "artistId": "moldanazar",
       "album": "Bilgim keledi - Single",
-      "sha256": "e53e982b45361459d7139514f2be98ebfc769cb7fa7907dbd2711a3a01dc591d"
+      "sha256": "fe93e06684edf5cafbfcf4e679d240997c5a76fbd561d220494b68e96937fd63",
+      "poster": "assets/artwork/c9f4de4d3b126972-b92af519050e.jpg",
+      "posterSha256": "b92af519050e85e1acc2164f779fd1ee7aaa8c3d7088ec2d820c8b4444a05782"
     },
     {
       "file": "assets/artwork/147d386e99dcb185.svg",
       "artistId": "miras",
       "album": "Yeski Taspa (3 Season)",
-      "sha256": "87f5963bad7442b0112e1e112d909b3f19aae9c7c4b24b45325f4880deacc54a"
+      "sha256": "1bc520bda77838f66dfc74c481e055ae72b1cc03c990515b52e918cd832b9da1",
+      "poster": "assets/artwork/147d386e99dcb185-7bccb54ad4e2.jpg",
+      "posterSha256": "7bccb54ad4e209fbca651736b7a8478958ee986cccf08cc109b81ffa0bf921c2"
     },
     {
       "file": "assets/artwork/64e544cc2a5dd3d9.svg",
       "artistId": "moldanazar",
       "album": "menin tilegim - Single",
-      "sha256": "2baca38b196ed41cacc5edfe453218a5ba051ebb4846f60747b72b7a19181f05"
+      "sha256": "f4ee0c7ea2a0d64c54f9b4c006b5605bfc5ec8fce853d09ea090e7f77e19a5d0",
+      "poster": "assets/artwork/64e544cc2a5dd3d9-1a0ab815a8eb.jpg",
+      "posterSha256": "1a0ab815a8ebfa83a2234aaa7a5374df183f7652c52b70c5198b260990f1b029"
     },
     {
       "file": "assets/artwork/779b669086cce52b.svg",
       "artistId": "moldanazar",
       "album": "Aqyldym - Single",
-      "sha256": "cef3d1b7b0a586f1610f1b4337bc3e8ede18738cf53b3ce4b24007c805d28553"
+      "sha256": "7dc853b395a0816cc41bb207bcdbe639608ec6754599ae6641185b248cf05a57",
+      "poster": "assets/artwork/779b669086cce52b-6103e1620173.jpg",
+      "posterSha256": "6103e162017357de93de0985323cc1dd4013fc066c955a92d5ec598d2e855ed2"
     },
     {
       "file": "assets/artwork/fdf0dbe766fdc04f.svg",
       "artistId": "sadraddin",
       "album": "Радость - Single",
-      "sha256": "ad8573f4cbf8a250bf3493140a052ae7a7223b2752a1deb8d09746facb394385"
+      "sha256": "cfab24c3cbd4ecf7a5bdb08824a7b93388190ebbfde2df2b9fd6232930a57678",
+      "poster": "assets/artwork/fdf0dbe766fdc04f-89933a4a27fb.jpg",
+      "posterSha256": "89933a4a27fbdb08bc757fa71910dcf3d107a86b7507625a938749629640bcae"
     },
     {
       "file": "assets/artwork/70e57c2f30ee57cf.svg",
       "artistId": "moldanazar",
       "album": "YA - EP",
-      "sha256": "63801eb6ab04dae0632a85c46bd531fd31a2e650a952bec3ba9dd7b476278a5b"
+      "sha256": "5aae92c4672d0b60941edecfb8ac0124eef175d5c3766d1a6908fcc813240a1b",
+      "poster": "assets/artwork/70e57c2f30ee57cf-18629bf0b322.jpg",
+      "posterSha256": "18629bf0b322e83525be795d6a9ae3d838b51b41f18dbf92ee3940ec7d5996da"
     },
     {
       "file": "assets/artwork/7cb975fb00f9dc45.svg",
       "artistId": "duman",
       "album": "Жауың емеспін - Single",
-      "sha256": "4eb6db2b2bb96976ffffd9b9ea2c0676037e1fbd751785057e5394baff409b38"
+      "sha256": "9d5dc1a7d5e67992ab7764a712cf14618f858f7b5044352ebd51ee043e779300",
+      "poster": "assets/artwork/7cb975fb00f9dc45-4bf5832ca5f4.jpg",
+      "posterSha256": "4bf5832ca5f46906088b7c31f9c783b9e784e88e077993b22575fa4e39032d04"
     },
     {
       "file": "assets/artwork/5b108c2292fce8cd.svg",
       "artistId": "moldanazar",
       "album": "omir kures - Single",
-      "sha256": "b3b24ccb826e723c6ed683fcbe2d3247726e0429fba3a8b04df33576e9d3f2f7"
+      "sha256": "aed0ed348b8f31ee62271dde4f8462a87950a61f65acf274516503a457268140",
+      "poster": "assets/artwork/5b108c2292fce8cd-0912e3f53e84.jpg",
+      "posterSha256": "0912e3f53e849f18c28214699994afebb45e26ff12f6d0d9bf241e78ba048e7e"
     },
     {
       "file": "assets/artwork/41172b51aa260085.svg",
       "artistId": "miras",
       "album": "Yeski Taspa : 3 Season",
-      "sha256": "dc50a78134ea798be889372f52536c4ab7f8408658618fdf46d29c3e33ea2c57"
+      "sha256": "c15e1e74caa289a307fd9e2fa2c28b3257418f81dd3b684bda4448febc94e5d4",
+      "poster": "assets/artwork/41172b51aa260085-749f449007d7.jpg",
+      "posterSha256": "749f449007d735d23c6557800168cb04fefdacde612bec99a27678e5574be878"
     },
     {
       "file": "assets/artwork/5cfe1c0fa0216387.svg",
       "artistId": "moldanazar",
       "album": "Kim ol? - Single",
-      "sha256": "4f68e991dcecedadaf8739111bd1ebaf46573e17e3b485e97162e7bd8a74c9d2"
+      "sha256": "e3f478b5ef4d212cc17325b3ebbbfced78e6a28f867807cb2c3d547cb977b632",
+      "poster": "assets/artwork/5cfe1c0fa0216387-69fa9e9b68eb.jpg",
+      "posterSha256": "69fa9e9b68eb2049d81454ffdf7cab99630aee436692576222ff8a8f50574dac"
     },
     {
       "file": "assets/artwork/8e5ccf57287d1083.svg",
       "artistId": "miras",
       "album": "Jai gana - Single",
-      "sha256": "96d3bd8e397fe09ce9668134d2b27e1295a142d7c730e524495e41f5fd7a4b0b"
+      "sha256": "e13e48ec8f16d38b1f8daee7c8489f1881f35b89683eed993450b73f27c3d026",
+      "poster": "assets/artwork/8e5ccf57287d1083-1ec3388d0f4f.jpg",
+      "posterSha256": "1ec3388d0f4f884a649fdf41e0e2255a6f980f32271df629b12395c94275ef5f"
     },
     {
       "file": "assets/artwork/06e70e7758724284.svg",
       "artistId": "moldanazar",
       "album": "Kobelek - Single",
-      "sha256": "d1d0b33a95a9998163c2f1f75519b5218277bb46a381f78f0ebe9f547b227707"
+      "sha256": "872a3d89f25bfc381e9ef7d8a7c5af25fd2355814690edf323982dffd70d22b7",
+      "poster": "assets/artwork/06e70e7758724284-ee68af73a6f2.jpg",
+      "posterSha256": "ee68af73a6f273d3eeec8a8f5f024f4a6eb99244eb8d3e5edeccf006d2c9660d"
     },
     {
       "file": "assets/artwork/0c45839585294538.svg",
       "artistId": "moldanazar",
       "album": "7 Қарақшы (Original Motion Picture Soundtrack)",
-      "sha256": "96b356b1a74874e615d52138e3e47bf13a0e42747911f618a5a9de3be350cc8c"
+      "sha256": "457bb085ac37b1664de50cc4f79136e3158568d3fe9c36f9eddf0572bd29e8aa",
+      "poster": "assets/artwork/0c45839585294538-136cbd805899.jpg",
+      "posterSha256": "136cbd80589991a5332fe271a978895580fa07d118dc105f33c08071698d9f66"
     },
     {
       "file": "assets/artwork/c722b5e183451bcd.svg",
       "artistId": "moldanazar",
       "album": "Magan Unaidy - Single",
-      "sha256": "cb9b641171bec2d0270504af6baf2ad6cc37e0a599e2c2ec506680b5365c61f4"
+      "sha256": "41ca2da6431b570a196b331684195a99ccc9b2a405b7817f2224d20d4982f210",
+      "poster": "assets/artwork/c722b5e183451bcd-578b3b0cc526.jpg",
+      "posterSha256": "578b3b0cc52647eff645694c70e255442a4d48decba1d1f208354c01e288624f"
     },
     {
       "file": "assets/artwork/3f6618d8f9fcf2c5.svg",
       "artistId": "moldanazar",
       "album": "QARANGYDA - Single",
-      "sha256": "eb2a7085202ec7afdb3fc40e1244696f155e2431d9b9af665fe50b3c386885bc"
+      "sha256": "77534b8d7acada5dd4abcfde4c7135c2eff838438df717fef9ff00c3855c9855",
+      "poster": "assets/artwork/3f6618d8f9fcf2c5-da015cd0f040.jpg",
+      "posterSha256": "da015cd0f040ba96cfd968f4da8a45836d1548f52aa34d6356a34e50f3752f4e"
     },
     {
       "file": "assets/artwork/f917f1a510f8b626.svg",
       "artistId": "moldanazar",
       "album": "esimde bari - Single",
-      "sha256": "9fca333854224e0373227fb1fcc1d64da4bf2e415f81e058a154a410048e6af0"
+      "sha256": "d7c44a8586be7fd0cb8fecb597858cc17cb656bc6e84dac76b6d4e5d5d7e352f",
+      "poster": "assets/artwork/f917f1a510f8b626-a14bb09ef3b8.jpg",
+      "posterSha256": "a14bb09ef3b8a277a8ab3f9f78ef9be1ccf4363188bc26e168548ecea1494b00"
     },
     {
       "file": "assets/artwork/b873e5bd7a20571c.svg",
       "artistId": "moldanazar",
       "album": "Aramyz Zhylyp Qalar (Acoustic Version) - Single",
-      "sha256": "e4df7f2351104b56ebd7602c9f206ddee4399eb60bef72386278b6f4da5a9499"
+      "sha256": "fb5876295f24a53baf39a847ec4e4ae4acbe817d1612462ebfe029b5ce1db694",
+      "poster": "assets/artwork/b873e5bd7a20571c-a0683a023501.jpg",
+      "posterSha256": "a0683a023501286fcf726d3fe407ceb0900a6fc4644c4092d98bae9ad03d4f6c"
     },
     {
       "file": "assets/artwork/ff9679bf4abf31fb.svg",
       "artistId": "darkhan",
       "album": "OYU Live Season 1",
-      "sha256": "c4b013cbf434b30f60673d9676ce31d33db07c1fecda0de967c0e05500235bd5"
+      "sha256": "b0332eecb65ac22f07f34a618a972d169fa48831d3ecbe3a19317cb008037e91",
+      "poster": "assets/artwork/ff9679bf4abf31fb-cc1e712aae25.jpg",
+      "posterSha256": "cc1e712aae25a3e4e81d7fbf0789374432e9aae012cf9fd918dc53227a66a9dc"
     },
     {
       "file": "assets/artwork/22d9253fb76d5737.svg",
       "artistId": "ayau",
       "album": "sybyrlaiyn <3 - Single",
-      "sha256": "ab81a866fdaf8792f9be107b697900982adfc7274d1b1fdfb22506bc9b7c1bb3"
+      "sha256": "35e0f6727a440e841691f90c086b50f2783c001e82229d6c2e42dcf6ed657b6e",
+      "poster": "assets/artwork/22d9253fb76d5737-ab179cdd54b3.jpg",
+      "posterSha256": "ab179cdd54b36f094c623d1121629ed18d3706cc55652d40f8c7bb8954d0ebe9"
     },
     {
       "file": "assets/artwork/62b9176241139cdb.svg",
       "artistId": "dequine",
       "album": "Deja Vu - Single",
-      "sha256": "c11612235613d9c9850a1e8cdf24b51defebbfc83e729b6bf183974d1ad39d18"
+      "sha256": "978326145114fa906a9a20fa00eafccf3e9937405a0c937da8dff11cf14b0367",
+      "poster": "assets/artwork/62b9176241139cdb-ae7eef81f821.jpg",
+      "posterSha256": "ae7eef81f821f3ddddd8306ccae33faa26efc8a84de61a0087144f663985ab3e"
     },
     {
       "file": "assets/artwork/acf77aad0aa25aa9.svg",
       "artistId": "kalifarniya",
       "album": "Qymbattym - Single",
-      "sha256": "4fc25903a0a9265a5a7e884ccd472192be742fd383f094571bf956890ea14404"
+      "sha256": "006f8c44f36e88a657b2c9a54259775f57f050f7c2b742f4594107d6dc8b01cc",
+      "poster": "assets/artwork/acf77aad0aa25aa9-49c4fe092ef5.jpg",
+      "posterSha256": "49c4fe092ef54593dbb1da325abb26e5d2443d8da55a3a088693da4a63d1a6a4"
     },
     {
       "file": "assets/artwork/41034a5d56b12df7.svg",
       "artistId": "kazybek",
       "album": "Таптым-ау сені - Single",
-      "sha256": "3d6250462b15c74931cca9f69b6a6dfb2b76a70f74596e0267f08aded600db20"
+      "sha256": "39c02a90aea2bde58f495c790390e230224e32d59571fcb007104aaccf274724",
+      "poster": "assets/artwork/41034a5d56b12df7-4e1f5b671d9e.jpg",
+      "posterSha256": "4e1f5b671d9ee4c0372b35e5d09c0cdfd4fc0d2d0cab9cb9be3b25563c462d17"
     },
     {
       "file": "assets/artwork/521f89f6a63a581b.svg",
       "artistId": "darkhan",
       "album": "Qosh Bol Japyraq - Single",
-      "sha256": "185178e0530836e3a0648cf9233e1b20aed33b2d8772b86b3979a64e497a17f0"
+      "sha256": "b4df12e1c7d0bae748a03c02a50eb2067d9cc76112a343f5b6b75ec37d645c30",
+      "poster": "assets/artwork/521f89f6a63a581b-02c25aa64eac.jpg",
+      "posterSha256": "02c25aa64eac1b0ee1e7522bc82c580b7d78e004ee6648bd7c0f086d1056215b"
     },
     {
       "file": "assets/artwork/045012d7d6a92e61.svg",
       "artistId": "ayau",
       "album": "AYAULYM",
-      "sha256": "0db98c56532ece32eb1b79babe540267f834797c86de04f7a791e4fa9f34c4f2"
+      "sha256": "ee88102c1f9bdfe072e0aeb32f6a2ad01eb52c20b907df7783ff6bf2690f297a",
+      "poster": "assets/artwork/045012d7d6a92e61-816c802ab88b.jpg",
+      "posterSha256": "816c802ab88b2424db4d0fbdaf05b823122756e38c852810dfec20072ae42345"
     },
     {
       "file": "assets/artwork/a6a5e607d6d86e7b.svg",
       "artistId": "dequine",
       "album": "Такси - Single",
-      "sha256": "341ecf8bcd6819d1b62c8e4df7e22ad8a716337c8a75268ea2adf1aa8839cef8"
+      "sha256": "30c72e0d31728734b8a92c25ed2b214e52400724c275994da3751c3f8753ee02",
+      "poster": "assets/artwork/a6a5e607d6d86e7b-bd6a69f3cf5c.jpg",
+      "posterSha256": "bd6a69f3cf5cd0b5805611bbaecdcf958fd3665a50112b77f0f10bded84c9b91"
     },
     {
       "file": "assets/artwork/62cb9359332ac38b.svg",
       "artistId": "kalifarniya",
       "album": "Ademi - Single",
-      "sha256": "130754ea95cbff3a851569da8101579f69885f9222de240c08df7e2b3fdfa4f0"
+      "sha256": "b8640702153547f24b4f3bc89de30280acc340efe3088c662252b334edb75aa8",
+      "poster": "assets/artwork/62cb9359332ac38b-5cd8ec15c534.jpg",
+      "posterSha256": "5cd8ec15c534080e344939e78cdfbd98db7f1192ab2a1d4a14b9876016bee18c"
     },
     {
       "file": "assets/artwork/5638f3139c62134e.svg",
       "artistId": "kazybek",
       "album": "Birge - EP",
-      "sha256": "f5a40131aca13c045d3b31fe4ebb557b90aa0f63ec58e068e751dbf8d846ce27"
+      "sha256": "528c32a0d3e97d1e395d7f235c4e9d6921e6c99693c86978dfa8c2ac70f75abe",
+      "poster": "assets/artwork/5638f3139c62134e-f7fbc3bd9259.jpg",
+      "posterSha256": "f7fbc3bd92593c5578e134ad87ddc3bb04b22af1aa2c7ba74b98ab38d0b799bd"
     },
     {
       "file": "assets/artwork/f6aa163c812e9fe8.svg",
       "artistId": "darkhan",
       "album": "IE - Single",
-      "sha256": "af127927e9a2d4996c3a6ba5ce307362f8932bf32be1245e8e0391b0beca914c"
+      "sha256": "17a4feb33a61291a7fceb8e8c7954cefc584f7e4b99319e9c4da9c22244b3093",
+      "poster": "assets/artwork/f6aa163c812e9fe8-01807921b43c.jpg",
+      "posterSha256": "01807921b43cbc81ca89df6fcf9d08eed0d7c324ad1a88299a9afe5974ee4d1c"
     },
     {
       "file": "assets/artwork/0f51a58143e83653.svg",
       "artistId": "ayau",
       "album": "basqany :( - Single",
-      "sha256": "6c068a3731eb413739de7f3cf65c75bc623964665b24e0d3ee5490da18e7c30f"
+      "sha256": "3f777491dfb11a4df0ec59c2fa9183639f938a6f96a2fdcf33a0659f18076a07",
+      "poster": "assets/artwork/0f51a58143e83653-7e51b2795dc4.jpg",
+      "posterSha256": "7e51b2795dc46694c479dac351410307c14a2b97473e40aa0f52a99c4bd160ab"
     },
     {
       "file": "assets/artwork/88a48ddb8db10286.svg",
       "artistId": "dequine",
       "album": "Ай Ай (for my vip kazashkas) - Single",
-      "sha256": "659047abb7daa82fe515e95b4df74615239ee59657b44411e6c3ee35681d05a1"
+      "sha256": "419350ce2c596e7ef74cba4812a4e82354ef762f45f28f61c1392df43aa6813d",
+      "poster": "assets/artwork/88a48ddb8db10286-507c45a95351.jpg",
+      "posterSha256": "507c45a95351fef4cf0ffc6207ef09af3560a2ab6803fbf618a86b2422707f44"
     },
     {
       "file": "assets/artwork/0daa1a695e83369e.svg",
       "artistId": "kalifarniya",
       "album": "Puerto-Rico - Single",
-      "sha256": "39e41b275e65572b904e8e60075cc523eed978ee3aeaf62f4513c4cd97a1f6e8"
+      "sha256": "050a1f17de37b32ea99be1bacbded382251d9f60e668076389b0b07321eb5c2a",
+      "poster": "assets/artwork/0daa1a695e83369e-de1146b5dc15.jpg",
+      "posterSha256": "de1146b5dc1581460a37bb83738bba1fd903d47d7cee37c2350745970b1e5cc0"
     },
     {
       "file": "assets/artwork/c3839b958e9f280e.svg",
       "artistId": "kazybek",
       "album": "Ana - Single",
-      "sha256": "6a1630d35a065fb008bd813edf3f72d0bdd0526410a7ad7c8150477b00578f58"
+      "sha256": "cabc3b6901b0bae49e1b350e3e7d2a4fbf9846dc8950445b0bac88e5c9428b72",
+      "poster": "assets/artwork/c3839b958e9f280e-49077fadead2.jpg",
+      "posterSha256": "49077fadead2238bb4c1f785fa45f487eb7d40cfa905acb36b40beaf7ad54ad1"
     },
     {
       "file": "assets/artwork/7a67623b0b1127a9.svg",
       "artistId": "darkhan",
       "album": "TBRN",
-      "sha256": "eea57070b539b648b835878f0b87f6b4daf0162ca77f1d5b5ba11e0e02bc46e9"
+      "sha256": "8b80e32c4c7ef1936f9745402cc71752d2e92e88bae71d9716145311462bb3be",
+      "poster": "assets/artwork/7a67623b0b1127a9-98e0ef744c8e.jpg",
+      "posterSha256": "98e0ef744c8e02fcfc024af4eb28aa82a09e6ae827581f4a860b9f307b4abdd1"
     },
     {
       "file": "assets/artwork/f70b344a4d53b65b.svg",
       "artistId": "dequine",
       "album": "Матча чай - Single",
-      "sha256": "062f14584265a74fb967dbf988648fd14476af7e2eac2c891334d94cca9c7f43"
+      "sha256": "9dee514fdac3de43ea3475c5bfd00574a856ba73b6d8bfb715764076df93bee6",
+      "poster": "assets/artwork/f70b344a4d53b65b-334e56085343.jpg",
+      "posterSha256": "334e56085343feaf5ee1c70ba20cd06cd6c28afebbcf576dc303894c718805e1"
     },
     {
       "file": "assets/artwork/8f6f4c18d2f01aa6.svg",
       "artistId": "kalifarniya",
       "album": "Hello - Single",
-      "sha256": "2c2b67e2934e9957d5c12187834d30df983e63a6b54640364065fde223a77766"
+      "sha256": "867279443e3d67e8fbc2ac941c42ca97b3ce6f69af493eee7d0332c158ab4613",
+      "poster": "assets/artwork/8f6f4c18d2f01aa6-9cddca8a88f3.jpg",
+      "posterSha256": "9cddca8a88f31c87e617a691e82e4478f8085b3b45cffdcd8ca83e3a0584d456"
     },
     {
       "file": "assets/artwork/9d8eddb514f3c138.svg",
       "artistId": "kazybek",
       "album": "Korkemim - Single",
-      "sha256": "4a8fadbbf291c60a45b9d178374d6403bd68eb1acac2ec777cb2637b7bea0677"
+      "sha256": "20cab5b8ce561071cf20aea7eb3348bacfc7b56a00cecef1b049bca1d32b3e98",
+      "poster": "assets/artwork/9d8eddb514f3c138-6c623e6aee0e.jpg",
+      "posterSha256": "6c623e6aee0e122c5aacaf61e2fd76130a73e5fdc6e6d68803280425bc18480c"
     },
     {
       "file": "assets/artwork/fc8d245882da976d.svg",
       "artistId": "darkhan",
       "album": "В темном небе - Single",
-      "sha256": "5d76438a7678541b8f4b57db139339f079311df420465cbf04910eb00390f3fe"
+      "sha256": "2a7d6002a2a4c390d2cf28ad609999e4ef7b599942f61eca4b3ba522e76e8180",
+      "poster": "assets/artwork/fc8d245882da976d-aaa01237e608.jpg",
+      "posterSha256": "aaa01237e608efe5ddf9093f91cf594c978c41e5f6853e2d161c7f6f9b285c6b"
     },
     {
       "file": "assets/artwork/e5f78a47b211d99d.svg",
       "artistId": "ayau",
       "album": "tartady - Single",
-      "sha256": "f0f1b0d59004e3f8d5d06abf3c36d79227da8080ff9b1004dbc358495f93197b"
+      "sha256": "f4e7fbb060ebc054b77ddf07e64cf961629f59f3350da895673eccc4c270c408",
+      "poster": "assets/artwork/e5f78a47b211d99d-1d698173561e.jpg",
+      "posterSha256": "1d698173561eb7ce1ab8c04e66e6eace1a6dbfa88245fb083395b94e3fa8159d"
     },
     {
       "file": "assets/artwork/78eba6c9512307c7.svg",
       "artistId": "dequine",
       "album": "Fresh & Clean (Freestyle) - Single",
-      "sha256": "8d58694d1d6a0724fc98b232bda774e65e4f4df909f8758d986dc8b849d8010c"
+      "sha256": "46f238d74b1df552b29f5f28a80d854f0907bca9553e6e8a46c7c74f1d6ba280",
+      "poster": "assets/artwork/78eba6c9512307c7-04c824d6a0a6.jpg",
+      "posterSha256": "04c824d6a0a6e1440ed291ae20c9be3b64326027fb2c4aae4707ab6c7037184e"
     },
     {
       "file": "assets/artwork/a14e4344e26c4d28.svg",
       "artistId": "kalifarniya",
       "album": "Qar - Single",
-      "sha256": "f2e14acc444a0350d32492441da96ee1783292bc4fc3b3f0bae898261fa5626c"
+      "sha256": "496bf967eb7f312a11c4436aa02a344bac1e30749391ac94eced2448edbdcc6e",
+      "poster": "assets/artwork/a14e4344e26c4d28-0c32d8b162ef.jpg",
+      "posterSha256": "0c32d8b162ef8d7d5b2318885e85ce71526ecd4c41b7cf9efc5fc89a38a8ebf1"
     },
     {
       "file": "assets/artwork/8aa7de266e50874d.svg",
       "artistId": "kazybek",
       "album": "Бақытыңды табасың - Single",
-      "sha256": "866b37d24232e617b8878738104881d58a41b358f19fa0894970d038bdad6183"
+      "sha256": "3ec1786aad1114cb907488f896e71e70b3d06ddaff1feff2d8ee33c2777010a5",
+      "poster": "assets/artwork/8aa7de266e50874d-456c1a775431.jpg",
+      "posterSha256": "456c1a775431fc9f18de4ab286817198dc48053a24effa094bb005d1836bcb8c"
     },
     {
       "file": "assets/artwork/3a51675622d69dd9.svg",
       "artistId": "darkhan",
       "album": "coca-cola x õzen",
-      "sha256": "6c7277a787ff2d6f6e5a8db0daeb643d158daa2021c2ba52ccd04705a45a15a8"
+      "sha256": "3fe4faac938d44c9f9441ba40671dfe22329a0cdde07ee89905ec45efae7ca4b",
+      "poster": "assets/artwork/3a51675622d69dd9-e801897f01f1.jpg",
+      "posterSha256": "e801897f01f14e38838146f65f3586ff189382c02d02725fc947eb2dcdfc953e"
     },
     {
       "file": "assets/artwork/f3d13785d2696dfc.svg",
       "artistId": "ayau",
       "album": "yeski taspa (2 season)",
-      "sha256": "f2080928a0c0fbcec864a7d6fca3a688ec92b98bef2c4b3be0cc17943f46b717"
+      "sha256": "8b9c29ac3c324f81ad374190df296a296a200901844a30a5be1dc2cf7f219b68",
+      "poster": "assets/artwork/f3d13785d2696dfc-33748ed4366e.jpg",
+      "posterSha256": "33748ed4366e3880caba52a7ea5a58b6fc06074f0c991225bd57366cba04c2f2"
     },
     {
       "file": "assets/artwork/2bc619e244e38b7d.svg",
       "artistId": "dequine",
       "album": "l.o.v.e. - Single",
-      "sha256": "d35f61a8c2c7310e3f8954a6c444c2093daddfc9f0ef5e6b3660b02d4ffa0e80"
+      "sha256": "197d1ca38c008b7fe4258be4478bf92d2bc80054ebe12712f632b5fab48ad7b8",
+      "poster": "assets/artwork/2bc619e244e38b7d-42633b87b47a.jpg",
+      "posterSha256": "42633b87b47a718584856138f84fb35b3c4861bc6b186375578e13cdcbd81c8e"
     },
     {
       "file": "assets/artwork/c04f47c3d5f1b173.svg",
       "artistId": "kalifarniya",
       "album": "Aspan - Single",
-      "sha256": "fe72c3d9deb313c8e1559ba1e03a4d010ae35cd9a2144f88f1a4c1eeb102d09f"
+      "sha256": "29a8f84fbf466d2d6f64edc74888430964206807aaa470839589ebaad04338cd",
+      "poster": "assets/artwork/c04f47c3d5f1b173-022c6b118a6c.jpg",
+      "posterSha256": "022c6b118a6ccd3220111317cbd8581605ad466b5a677185c75b933eee06cf88"
     },
     {
       "file": "assets/artwork/af6259c3bdbdf86c.svg",
       "artistId": "dequine",
       "album": "Хороша - Single",
-      "sha256": "b1c0b671b217dcc7a7362ff972c2791977d5efe2ebdee33c0761700cc2b4e2a0"
+      "sha256": "a311fa3893de1092392e57b54f8c183429a4a1ff8465836d19e1599f2acc37d9",
+      "poster": "assets/artwork/af6259c3bdbdf86c-7bc85bf4a3eb.jpg",
+      "posterSha256": "7bc85bf4a3eb8f00dbe30e727e07ffdda457a01cc1477cf29425be0d1c85e2c9"
     },
     {
       "file": "assets/artwork/4230b4f411443464.svg",
       "artistId": "kalifarniya",
       "album": "QYLYQ - Single",
-      "sha256": "8811c14e68b663b008fd5d3366531b2e1c9c1851b924a386d8a31bdd5892226e"
+      "sha256": "3ddebc9d67c8069267fec27e7d27f760f228e6f7b0786892a34c992e09924c62",
+      "poster": "assets/artwork/4230b4f411443464-4e97381bed3d.jpg",
+      "posterSha256": "4e97381bed3d8d402b66a8feba4c79a70459515770be0745f54cccea5d5a188f"
     },
     {
       "file": "assets/artwork/0e65a21325deb5db.svg",
       "artistId": "kazybek",
       "album": "Сағындым сені - Single",
-      "sha256": "3b4160eb9d83573eda634a7f1a70523541bbea3c2e0cb4e2109bfc9a1b5a7b51"
+      "sha256": "aeb36ceb8dbf4d46d13bd90368fbe92a424610a78a110597469031c9f8c82a03",
+      "poster": "assets/artwork/0e65a21325deb5db-1a0fb3e1081f.jpg",
+      "posterSha256": "1a0fb3e1081f1deadca036b00747140da46dc9d2a6a5b77af41f507be16f59d8"
     },
     {
       "file": "assets/artwork/deaba0fc40d609fa.svg",
       "artistId": "ayau",
       "album": "sensiz? - Single",
-      "sha256": "dd0dae392c20bf158e90c3b1663ff27c3ceba5bec88939c4b2edf17337dfeded"
+      "sha256": "500968a91e250c707eabc8c28db18cb3d731d49032cfae0e888c7c70bd733cba",
+      "poster": "assets/artwork/deaba0fc40d609fa-6fbd211f8226.jpg",
+      "posterSha256": "6fbd211f8226de4e616a8701ce7d6332eb3d2cfac28588efbe1ca8f52c61cec0"
     },
     {
       "file": "assets/artwork/c276127838213e3b.svg",
       "artistId": "dequine",
       "album": "Деньги Или Смерть - Single",
-      "sha256": "e879dbf6aac3c597817ea5167fd730dc698f97c413206f2c8c92b96857b914bd"
+      "sha256": "5f823f1565b209438dea204c63a614389eeac0b49760bd429a72eba0581cc7b6",
+      "poster": "assets/artwork/c276127838213e3b-664341e848f9.jpg",
+      "posterSha256": "664341e848f95e65021551ac65cfa0a33ae4bdca65526a726d03ef528aa25117"
     },
     {
       "file": "assets/artwork/aaef83fea0811c72.svg",
       "artistId": "kalifarniya",
       "album": "KUSH PENDE",
-      "sha256": "177d5f6e66b321fbdb79c410d90f083def93eb266d1418a3606218bff4cac114"
+      "sha256": "cb0fddb9fdcf21543689805f80b2ee105e1366e8dbf1aaf36387b1ba744ecc5b",
+      "poster": "assets/artwork/aaef83fea0811c72-1d2161d4b1be.jpg",
+      "posterSha256": "1d2161d4b1be531ee67eb5cb2f896f53fa93b85d90224696b030c0328a934b14"
     },
     {
       "file": "assets/artwork/f1eabc01385704a4.svg",
       "artistId": "darkhan",
       "album": "aūe",
-      "sha256": "fda358e9b33dd70f5506f6f8ee6d957dbcbcd99bebb54ab3fc617b7467ba20bd"
+      "sha256": "fddae5e1091385f48dfe0412af52f6f0b4131c698d0ad1eb7441aa4959655aaa",
+      "poster": "assets/artwork/f1eabc01385704a4-43e67617be71.jpg",
+      "posterSha256": "43e67617be71d6d23ae9f4c0d31ea2b7d516635bd4df59c6fc2c47c8e48c2275"
     },
     {
       "file": "assets/artwork/2fc342f430afc091.svg",
       "artistId": "dequine",
       "album": "labum",
-      "sha256": "c105d46a0effbf06669a121a066c54354b74bfba7273fee31139f72e741d72ea"
+      "sha256": "9731570004a9780d4d0d27b40f7d9d9ffc17cbd737cc6ee69ae7fba6b4ba7308",
+      "poster": "assets/artwork/2fc342f430afc091-b59e561a2d7a.jpg",
+      "posterSha256": "b59e561a2d7a791f16a538432ca5557f52b4251648452409dd18b7ee4ea95201"
     },
     {
       "file": "assets/artwork/cf1972561ae18611.svg",
       "artistId": "kalifarniya",
       "album": "Aiyp etpe - Single",
-      "sha256": "271f1534697ea9e2c6a8b8b6674106c46f0b18403bc0c4114db73145bf93e126"
+      "sha256": "19f8a1ac07d07fea0e2caa411e174ceec8cc2619945026ac546bd96e9e95ed13",
+      "poster": "assets/artwork/cf1972561ae18611-adb2ad8bcf0d.jpg",
+      "posterSha256": "adb2ad8bcf0db652f739c43be8e5afc8da7170e731a7778ada281f8df3f94556"
     },
     {
       "file": "assets/artwork/e7c8e33cd859462f.svg",
       "artistId": "dequine",
       "album": "До утра - Single",
-      "sha256": "2f035593daeaeb3ce3cd6e29911469b9dffff72ac80ea1b2a12ef06aca2a0b76"
+      "sha256": "48d18d2a7bebfa20f5de9ce6aaa8e50ad16ec6300db09e42d49bcbda6a8db077",
+      "poster": "assets/artwork/e7c8e33cd859462f-becfa2dab1e5.jpg",
+      "posterSha256": "becfa2dab1e5ff56387ca098bf53068831b7e7027cb258ca12d7511a7a25c026"
     },
     {
       "file": "assets/artwork/d90efd00229097f6.svg",
       "artistId": "kalifarniya",
       "album": "Jetim - Single",
-      "sha256": "dcfdbd05449ab02444a8c1ec6e3be9bff603bdac39971405c8fd8562f519eecd"
+      "sha256": "8423809e876a41d28673cd300d2977d4189c62a6ff5f84f2046e25ebcf3bfa93",
+      "poster": "assets/artwork/d90efd00229097f6-ee9079684e27.jpg",
+      "posterSha256": "ee9079684e278b6841476168289fa3e901ad4c0c9a7cf84010eb323d49483643"
     },
     {
       "file": "assets/artwork/e20549fcc1656760.svg",
       "artistId": "kazybek",
       "album": "Qaragym - Single",
-      "sha256": "1ad5126a86feec894256a7acd31ab5e1240ec1cbbba7d3909aea443b4b0c8d50"
+      "sha256": "9b66d28f0edd3acf03fdc74dc52e3c874a1eba95658180e64c8699d05236e918",
+      "poster": "assets/artwork/e20549fcc1656760-6e04892cd53b.jpg",
+      "posterSha256": "6e04892cd53b78ac36dff5080b58fd43d0cacc2a553022f3a397bf8df90f9be9"
     },
     {
       "file": "assets/artwork/50c4fb3c7beb500a.svg",
       "artistId": "ayau",
       "album": "jañbyr astynda (Euphoria Edit) - Single",
-      "sha256": "ff2c221f79536f3c4769cf3aa2b71a8927112e310fc8bb069ae88702b7fac50f"
+      "sha256": "672cb2a08beeff90f0bbdde9f5f1c6d011f599e48f67b531955c4e392c2d2dd5",
+      "poster": "assets/artwork/50c4fb3c7beb500a-7d643ae7ffa9.jpg",
+      "posterSha256": "7d643ae7ffa9164486bc8f130516949aef5e28aa8b0dd0b7490026611d83aa2d"
     },
     {
       "file": "assets/artwork/39b8c5dd0320a2ba.svg",
       "artistId": "darkhan",
       "album": "700 - Single",
-      "sha256": "8a36747f514dfb989b0f9f3e04a925ddf04c4735b1ad8f0cf33ba9826cd084dc"
+      "sha256": "5158410cf97118d8547c70c5082aeb4f449412d235bbbc2f3f1f267953a1bc0c",
+      "poster": "assets/artwork/39b8c5dd0320a2ba-78331a475600.jpg",
+      "posterSha256": "78331a4756004b63752a61708e222ac6b24238a67935fa44f7e2cf9aafc7d5c3"
     },
     {
       "file": "assets/artwork/85fb3a4ce45e51c6.svg",
       "artistId": "darkhan",
       "album": "Quralai - Single",
-      "sha256": "ca39d31f62d2f5e5d1261c1c6f7cf64825e29dfac13f27cfea186c651970ec3e"
+      "sha256": "8cb5606bb5b807516fd868ee91c8167b3c2e17de9c529d1681df48e57382ff3d",
+      "poster": "assets/artwork/85fb3a4ce45e51c6-742d5ccc7e30.jpg",
+      "posterSha256": "742d5ccc7e30d4656931b41e2d71fb020acf1552e742341f7ea2c67b4f239fa0"
     },
     {
       "file": "assets/artwork/82822704dd2aeedf.svg",
       "artistId": "darkhan",
       "album": "Shyraq - Single",
-      "sha256": "1d67aa68c7a15c0eeb587120475a7f630289e5be17e74b7e36cd93703cd661ae"
+      "sha256": "0999d73c5a82173f63ad8e81f887f935c79b1921a35a25775ae74536be111550",
+      "poster": "assets/artwork/82822704dd2aeedf-61140fb67468.jpg",
+      "posterSha256": "61140fb6746841d1290a99ef99ee655fc05af3a1a93b4dc4ebbfc9d7a0eea48c"
     },
     {
       "file": "assets/artwork/f3505a195907c396.svg",
       "artistId": "darkhan",
       "album": "Kún Men Aıym (Remix) - Single",
-      "sha256": "dfc253b2322b970ec7d1e48a48537b28fe1bdea30390964459faa3be2280acc7"
+      "sha256": "591beb9082c7862cc810d318e5fa1564fc3de7bf4859d5339817f17f6bfd8f2c",
+      "poster": "assets/artwork/f3505a195907c396-c919d375a0b9.jpg",
+      "posterSha256": "c919d375a0b95f4e815a5f474859c97bc9922f50fbd4329ca87d951178cfa2f4"
     },
     {
       "file": "assets/artwork/ba0b8a3f63c11f0a.svg",
       "artistId": "dequine",
       "album": "Да Ладно - Single",
-      "sha256": "47456c762c256ac3de84edc42afe4a9d50dbe6e1350ba7faa1b0dfd21e30f1a4"
+      "sha256": "966e78d20e0331dbcee50dc7254abef3d55803a6a5cf656fdaa85abf3f834908",
+      "poster": "assets/artwork/ba0b8a3f63c11f0a-0d8630a99803.jpg",
+      "posterSha256": "0d8630a998031e9c2afc03ae14fc1f8cbbafc8a7502084dc3f2701d67ef33d43"
     },
     {
       "file": "assets/artwork/f98448704b197b88.svg",
       "artistId": "kalifarniya",
       "album": "Roza - Single",
-      "sha256": "6de516c2aa750c7cfc550c2993f827171d3f306a1f46223ed59377a5968e1f51"
+      "sha256": "1aed9d50235a08288ab4f2e065127c1021a60a152a4802e100c74f50dd1830a5",
+      "poster": "assets/artwork/f98448704b197b88-0753b6d2533b.jpg",
+      "posterSha256": "0753b6d2533ba87c6517d5d14dc1b51b1284c6ec8f18066e9f3fb7f821c143a3"
     },
     {
       "file": "assets/artwork/abc821efad7939ed.svg",
       "artistId": "kalifarniya",
       "album": "UAQYT - Single",
-      "sha256": "93d888a6b878acd463886d5d385973275eef15257f76f531dbea3dd11e296dda"
+      "sha256": "eb2357191a7f8f6c5ff5910354abe53392b78132452db38d29bd265b0d354c52",
+      "poster": "assets/artwork/abc821efad7939ed-09b171733dac.jpg",
+      "posterSha256": "09b171733daced20cf71773a0bdfb47a859e4942b41ae262b6802ff638e67005"
     },
     {
       "file": "assets/artwork/e18f65b384b6531d.svg",
       "artistId": "kalifarniya",
       "album": "Өмір - Single",
-      "sha256": "555c9a08e9bfb8864297c857000bbeed7ab5579bd43a3e799fb38f511fe36779"
+      "sha256": "267e02c1173c90b8c89e05dd014ad393e0318a9233fa8c4bd57279e394ed07d3",
+      "poster": "assets/artwork/e18f65b384b6531d-43000089a0ff.jpg",
+      "posterSha256": "43000089a0ff4f8abe042dd3c12c23a9c4ed30a4724ea1ee9af495a38a2b9129"
     },
     {
       "file": "assets/artwork/9db85c5c3115e5e3.svg",
       "artistId": "kalifarniya",
       "album": "Хат - Single",
-      "sha256": "973e423b42b871b299af140c00183d3c3f9e1f17456e26714dab46e6be7831ce"
+      "sha256": "99c91ee0cc71efc013976d4fd182d94f3ab4cad44b2089170c08b71afcf7fffb",
+      "poster": "assets/artwork/9db85c5c3115e5e3-bed5c2287912.jpg",
+      "posterSha256": "bed5c2287912b997a0fc7ba9af3c97ab3409315cd3c9c6631ea2c3195576f088"
     },
     {
       "file": "assets/artwork/f74bfb99a812f908.svg",
       "artistId": "kalifarniya",
       "album": "ПРЕПАРАТ - Single",
-      "sha256": "7e2d140fd9c85529c5dd0a6e75656734123e6f576068f7cb734a3200ef2859d1"
+      "sha256": "0251e69b9e1ad883592b6f082650721588ec7189e80906be36e92f31c77f4668",
+      "poster": "assets/artwork/f74bfb99a812f908-fd6ebfb3db38.jpg",
+      "posterSha256": "fd6ebfb3db38e6b00dda0f36526ed5876925e9e9b9c515bc1621fadcec65995c"
     },
     {
       "file": "assets/artwork/de95826207ffafa9.svg",
       "artistId": "kalifarniya",
       "album": "Oi barekeldi - Single",
-      "sha256": "7dee5ef2bca48b7768ac298f44615a5b72b2fa5b84a11cf8e070e363cbd9e8c0"
+      "sha256": "ba1b0c8021747e92140ab95283771b97fcc8c0aa14ed9d15c50cc80b98c1b7cc",
+      "poster": "assets/artwork/de95826207ffafa9-dc6496c6caa1.jpg",
+      "posterSha256": "dc6496c6caa15a8ae5152574b4e48f97aa065eef559192c290ff4c99e0951fd1"
     },
     {
       "file": "assets/artwork/6c7e395fc3b115e9.svg",
       "artistId": "kalifarniya",
       "album": "69 - Single",
-      "sha256": "41c5125741c4246731dea32778f248d60a524aaf23fbf0313d975298be9fea07"
+      "sha256": "77ce66d9da7b31169013fc09c63365223a38611c07c5e66e2d0a49e76ddb507f",
+      "poster": "assets/artwork/6c7e395fc3b115e9-794eb65c8b63.jpg",
+      "posterSha256": "794eb65c8b638b1b06ba4b7203b80710fac2b0a976483e96dd0d6151e19d1a8a"
     },
     {
       "file": "assets/artwork/e94912604ea7d79e.svg",
       "artistId": "kazybek",
       "album": "Баяғы - Single",
-      "sha256": "17bc23a106f3d587afe26397e2784628d201ea10eebd9844bfbc746b76abbe33"
+      "sha256": "e5aa6d39fe66c270b3412bb050de40a6b29f3c41f68937f87c3f15e1afde7b52",
+      "poster": "assets/artwork/e94912604ea7d79e-1b4a3c9b9b24.jpg",
+      "posterSha256": "1b4a3c9b9b24c0436762de067898efd8bebe6160d7da5b043fcc2abbfdb2ffc1"
     },
     {
       "file": "assets/artwork/48038e2e5a9cb642.svg",
       "artistId": "kazybek",
       "album": "Suiemin - Single",
-      "sha256": "493480d5426763dffe86bd7747e2b1fbbf82b5c6e5b4fcfd00a83602c48be30c"
+      "sha256": "0b30601cf33a06fec523b8bd7e971114778046f14dd0731d325c917ec483e04c",
+      "poster": "assets/artwork/48038e2e5a9cb642-e034e35627d8.jpg",
+      "posterSha256": "e034e35627d8ae778c4b2251c751f42d91af52935c5b96f227914d78e5f94f84"
     }
   ]
 }
