@@ -133,7 +133,7 @@ test("personal audio bindings and downloaded byte counts survive catalogue updat
   assert.equal(result.plays, 3);
   assert.equal(result.audioUrl, personal.audioUrl);
 });
-test("bundled catalogue connects 203 owner-supplied recordings to declarations and keeps new metadata separate from full audio", async () => {
+test("all 300 catalogue songs have full audio, source references and declared checksums", async () => {
   const catalog = validateCatalog(
     JSON.parse(
       await readFile(new URL("../catalog.json", import.meta.url), "utf8"),
@@ -151,8 +151,8 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
     assert.ok(catalog.tracks.filter((t) => t.artistId === id).length >= 10, id);
   const songs = catalog.tracks.filter((t) => !t.demo);
   const hosted = songs.filter((t) => t.downloadable);
-  assert.equal(hosted.length, 205);
-  assert.equal(new Set(hosted.map((t) => t.audioUrl)).size, 202);
+  assert.equal(hosted.length, 300);
+  assert.equal(new Set(hosted.map((t) => t.audioUrl)).size, 297);
   for (const t of songs) {
     assert.match(t.officialUrl, /^https:\/\/music.apple.com\//);
   }
@@ -161,19 +161,13 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
       t.audioUrl,
       /^assets\/audio\/licensed\/apple-\d+-[a-f0-9]{16}\.mp3$/,
     );
-    assert.match(t.permissionRef, /^SAZ-20261005-001-F\d{3}$/);
+    assert.match(t.permissionRef, /^SAZ-(20261005-001|20261121-002)-F\d{3}$/);
     assert.match(t.license, /жинақтаушының мәлімдемесі/);
     assert.match(t.sha256, /^[a-f0-9]{64}$/);
     assert.ok(t.size > 0 && t.duration > 0);
   }
   const pending = songs.filter(t => !t.downloadable);
-  for (const id of ["apple-1541309376", "apple-1548678265", "apple-1634913631", "apple-1880744346"])
-    assert.ok(pending.some(t => t.id === id));
-  assert.equal(pending.length, 95);
-  for (const track of pending) {
-    assert.equal(track.audioUrl, "");
-    assert.equal(track.downloadable, false);
-  }
+  assert.equal(pending.length, 0);
   assert.equal(
     catalog.tracks.filter((t) => t.demo && t.downloadable).length,
     2,

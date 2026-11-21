@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { createReadStream } from 'node:fs';
 import { createHash } from 'node:crypto';
-test('all 202 hosted MP3 files have exactly the declared byte size and SHA-256', async () => {
+test('all 297 hosted MP3 files have exactly the declared byte size and SHA-256', async () => {
   const catalog=JSON.parse(await readFile(new URL('../catalog.json',import.meta.url),'utf8'));
   const paths=new Set();
   for (const track of catalog.tracks.filter(t=>t.sha256)) {
@@ -14,5 +14,5 @@ test('all 202 hosted MP3 files have exactly the declared byte size and SHA-256',
     assert.equal(size,track.size,track.id+' size');
     assert.equal(hash.digest('hex'),track.sha256,track.id+' checksum');
   }
-  assert.equal(paths.size,202);
+  assert.equal(paths.size,297);
 });

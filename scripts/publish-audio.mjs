@@ -17,6 +17,11 @@ const ALLOWED_ARTISTS = new Set([
   "miras",
   "turar",
   "duman",
+  "darkhan",
+  "ayau",
+  "dequine",
+  "kalifarniya",
+  "kazybek",
 ]);
 const digest = (bytes) => createHash("sha256").update(bytes).digest("hex");
 function isAudio(bytes, extension) {
@@ -55,7 +60,7 @@ export async function publishAudio({ root, manifestPath, apply = false }) {
     const track = catalog.tracks.find((t) => t.id === entry.trackId);
     if (!track || !ALLOWED_ARTISTS.has(track.artistId))
       throw new Error(
-        `Ән осы алты орындаушының каталогынан табылмады: ${entry.trackId}`,
+        `Ән жария каталог орындаушыларының арасынан табылмады: ${entry.trackId}`,
       );
     if (!/^[a-zA-Z0-9_-]{1,100}$/.test(track.id) || seen.has(track.id))
       throw new Error("Ән ID-лері жарамды әрі бірегей болуы керек.");

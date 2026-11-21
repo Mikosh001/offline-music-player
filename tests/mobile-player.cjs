@@ -139,8 +139,8 @@ async function geometry(page, selector, minimum = 44) {
       ).length,
   );
   assert.equal(saved.queue.length, fullCount);
-  assert.equal(fullCount, 205);
-  assert.equal(new Set(saved.queue).size, 205);
+  assert.equal(fullCount, 300);
+  assert.equal(new Set(saved.queue).size, 300);
   assert.equal(saved.shuffle, true);
   assert.notDeepEqual(saved.queue, saved.queueOrder);
   const first = saved.currentId;
@@ -160,7 +160,7 @@ async function geometry(page, selector, minimum = 44) {
   saved = await playback(page);
   assert.equal(saved.shuffle, false);
   assert.deepEqual(saved.queue, saved.queueOrder);
-  assert.equal(saved.queue.length, 205);
+  assert.equal(saved.queue.length, 300);
   await page.locator("#shuffleBtn").click();
   await page.waitForTimeout(400);
   await page.locator('.mobile-nav [href="#home"]').click();
@@ -318,7 +318,7 @@ async function geometry(page, selector, minimum = 44) {
   assert.deepEqual(errors, []);
   await browser.close();
   console.log(
-    `Mobile ${engine} passed: safe-area geometry, 44px controls, 205-song shuffle, original queue restore, expanded player, favorites, repeat, seek, Media Session commands, ${process.env.SAZ_SKIP_OFFLINE ? "offline codec test explicitly skipped" : "offline two-song shuffle (actual hosted MP3)"}, portrait widths 320–430 and landscape 844.`,
+    `Mobile ${engine} passed: safe-area geometry, 44px controls, 300-song shuffle, original queue restore, expanded player, favorites, repeat, seek, Media Session commands, ${process.env.SAZ_SKIP_OFFLINE ? "offline codec test explicitly skipped" : "offline two-song shuffle (actual hosted MP3)"}, portrait widths 320–430 and landscape 844.`,
   );
 })().catch(async (error) => {
   console.error(error);

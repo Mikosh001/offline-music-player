@@ -73,7 +73,7 @@ const base = process.env.SAZ_TEST_BASE || "http://127.0.0.1:4173/";
     await page.locator(".availability-strip").waitFor();
     assert.match(
       await page.locator(".availability-strip").textContent(),
-      /205 толық аудио · 2 офлайн дайын/,
+      /300 толық аудио · 2 офлайн дайын/,
     );
     assert.equal(await page.locator("#favCount").textContent(), "1");
     assert.equal(await page.locator("#downloadCount").textContent(), "2");
@@ -117,7 +117,7 @@ const base = process.env.SAZ_TEST_BASE || "http://127.0.0.1:4173/";
           ).length,
         };
       }, seeded.ids);
-      assert.equal(stored.cachedFull, 205);
+      assert.equal(stored.cachedFull, 300);
       for (const record of stored.records) {
         assert.equal(record.size, seeded.size);
         assert.equal(record.sha256, seeded.sha256);
@@ -144,7 +144,7 @@ const base = process.env.SAZ_TEST_BASE || "http://127.0.0.1:4173/";
     await page.locator(".availability-strip").waitFor();
     assert.match(
       await page.locator(".availability-strip").textContent(),
-      /205 толық аудио · 2 офлайн дайын/,
+      /300 толық аудио · 2 офлайн дайын/,
     );
     await page.locator("#availabilityFilter").selectOption("offline");
     assert.equal(await page.locator(".track-row").count(), 2);
@@ -156,7 +156,7 @@ const base = process.env.SAZ_TEST_BASE || "http://127.0.0.1:4173/";
     await page.locator("#playBtn").click();
     assert.deepEqual(errors, []);
     console.log(
-      "Catalogue sync passed in Edge: stale imported catalogue becomes 205 full songs; two exact private files, favorite, playlist, play counts and playback position survive; offline reload and private playback work.",
+      "Catalogue sync passed in Edge: stale imported catalogue becomes 300 full songs; two exact private files, favorite, playlist, play counts and playback position survive; offline reload and private playback work.",
     );
   } finally {
     await browser.close();

@@ -27,7 +27,7 @@ const base = "http://127.0.0.1:4173";
   );
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /205 толық аудио/,
+    /300 толық аудио/,
   );
   await page.locator("#availabilityFilter").selectOption("full");
   assert.ok((await page.locator(".track-row").count()) > 0);
@@ -40,11 +40,7 @@ const base = "http://127.0.0.1:4173";
   );
   await page.locator("#playBtn").click();
   await page.locator("#availabilityFilter").selectOption("pending");
-  assert.equal(await page.locator(".track-row").count(), 50);
-  await page.locator('[data-track-id="apple-1541309376"] .track-title').click();
-  await page.locator(".availability-message").waitFor();
-  assert.equal(await page.locator("#dialog iframe").count(), 0);
-  await page.locator('[data-action="close-dialog"]').click();
+  assert.equal(await page.locator(".track-row").count(), 0);
   await page.locator("#availabilityFilter").selectOption("all");
   await page.evaluate(async () => {
     await navigator.serviceWorker.ready;

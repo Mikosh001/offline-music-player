@@ -7,22 +7,24 @@
       "recordingAliasOf": "apple-6812377711",
       "recordingTitle": "Janym : Yeski Taspa",
       "artistId": "miras",
-      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "audioUrl": "assets/audio/licensed/apple-6812379571-04ec0398fa738bb1.mp3",
       "permissionRef": "SAZ-20261005-001-F128",
-      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c",
       "basis": "Same performer and Yeski Taspa recording; official durations 271.698/271.701 seconds match the existing 271.700658-second file.",
-      "verifiedAt": "2026-11-21"
+      "verifiedAt": "2026-11-21",
+      "encoding": "MP3 128 kbps; full recording duration preserved"
     },
     {
       "trackId": "apple-6812379571",
       "recordingAliasOf": "apple-6812377711",
       "recordingTitle": "Janym : Yeski Taspa",
       "artistId": "miras",
-      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "audioUrl": "assets/audio/licensed/apple-6812379571-04ec0398fa738bb1.mp3",
       "permissionRef": "SAZ-20261005-001-F128",
-      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "sha256": "04ec0398fa738bb14f68e68a479683a17b709325386b1d30963b673a6d64030c",
       "basis": "Same performer and Yeski Taspa recording; official durations 271.698/271.701 seconds match the existing 271.700658-second file.",
-      "verifiedAt": "2026-11-21"
+      "verifiedAt": "2026-11-21",
+      "encoding": "MP3 128 kbps; full recording duration preserved"
     }
   ]
 }

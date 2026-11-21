@@ -140,7 +140,16 @@ const base = "http://127.0.0.1:4173",
     }),
     2,
   );
+  // The public catalogue is now complete. Model an unavailable personal binding
+  // to retain coverage of the pending-audio dialog.
+  await a.evaluate(async () => {
+    const DB = await import("./db.js");
+    const catalog = await (await fetch("./catalog.json")).json();
+    const t = catalog.tracks.find(t => t.id === "apple-1541309376");
+    await DB.put("library", {...t, audioSourceOverride: true, audioUrl: "", downloadable: false, sha256: ""});
+  });
   await a.goto(base + "/#catalog");
+  await a.reload();
   await a.locator("#availabilityFilter").selectOption("pending");
   await a.locator('[data-track-id="apple-1541309376"] .track-title').click();
   await a.locator(".availability-message").waitFor();
