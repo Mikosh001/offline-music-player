@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "notice": "These aliases reuse existing owner-supplied audio and its existing permission reference. No new authorization is asserted. Original declarations remain unchanged.",
+  "aliases": [
+    {
+      "trackId": "apple-1724957047",
+      "recordingAliasOf": "apple-6812377711",
+      "recordingTitle": "Janym : Yeski Taspa",
+      "artistId": "miras",
+      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "permissionRef": "SAZ-20261005-001-F128",
+      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "basis": "Same performer and Yeski Taspa recording; official durations 271.698/271.701 seconds match the existing 271.700658-second file.",
+      "verifiedAt": "2026-11-21"
+    },
+    {
+      "trackId": "apple-6812379571",
+      "recordingAliasOf": "apple-6812377711",
+      "recordingTitle": "Janym : Yeski Taspa",
+      "artistId": "miras",
+      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "permissionRef": "SAZ-20261005-001-F128",
+      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "basis": "Same performer and Yeski Taspa recording; official durations 271.698/271.701 seconds match the existing 271.700658-second file.",
+      "verifiedAt": "2026-11-21"
+    }
+  ]
+}

@@ -167,6 +167,7 @@ export function validateCatalog(input) {
       sourceUrl: safeUrl(t.sourceUrl),
       permissionRef: String(t.permissionRef || "").slice(0, 500),
       audioSourceOverride: Boolean(t.audioSourceOverride),
+      recordingAliasOf: String(t.recordingAliasOf || "").slice(0, 100),
       sha256: /^[a-f0-9]{64}$/i.test(t.sha256 || "") ? t.sha256 : "",
       size: Math.max(0, Number(t.size) || 0),
       mime: String(t.mime || "audio/mpeg"),
@@ -183,6 +184,7 @@ export function validateCatalog(input) {
   };
 }
 const AUDIO_FIELDS = [
+  "recordingAliasOf",
   "audioUrl",
   "downloadable",
   "license",

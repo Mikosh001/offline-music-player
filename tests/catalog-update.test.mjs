@@ -151,7 +151,7 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
     assert.ok(catalog.tracks.filter((t) => t.artistId === id).length >= 10, id);
   const songs = catalog.tracks.filter((t) => !t.demo);
   const hosted = songs.filter((t) => t.downloadable);
-  assert.equal(hosted.length, 203);
+  assert.equal(hosted.length, 205);
   assert.equal(new Set(hosted.map((t) => t.audioUrl)).size, 202);
   for (const t of songs) {
     assert.match(t.officialUrl, /^https:\/\/music.apple.com\//);
@@ -169,7 +169,7 @@ test("bundled catalogue connects 203 owner-supplied recordings to declarations a
   const pending = songs.filter(t => !t.downloadable);
   for (const id of ["apple-1541309376", "apple-1548678265", "apple-1634913631", "apple-1880744346"])
     assert.ok(pending.some(t => t.id === id));
-  assert.equal(pending.length, 97);
+  assert.equal(pending.length, 95);
   for (const track of pending) {
     assert.equal(track.audioUrl, "");
     assert.equal(track.downloadable, false);

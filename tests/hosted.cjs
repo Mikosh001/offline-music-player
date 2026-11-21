@@ -27,7 +27,7 @@ const base = "http://127.0.0.1:4173";
   );
   assert.match(
     await page.locator(".availability-strip").textContent(),
-    /203 толық аудио/,
+    /205 толық аудио/,
   );
   await page.locator("#availabilityFilter").selectOption("full");
   assert.ok((await page.locator(".track-row").count()) > 0);

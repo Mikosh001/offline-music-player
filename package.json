@@ -1,6 +1,6 @@
 {
   "name": "saz-offline-music",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "private": true,
   "type": "module",
   "scripts": {

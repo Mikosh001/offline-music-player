@@ -5868,7 +5868,7 @@
       "artistId": "miras",
       "artist": "Жугунусов Мирас",
       "album": "Yeski Taspa (3 Season)",
-      "duration": 272,
+      "duration": 271.700658,
       "releaseDate": "2023-12-22",
       "styles": [
         "lyrical",
@@ -5876,10 +5876,18 @@
       ],
       "officialUrl": "https://music.apple.com/kz/album/janym-yeski-taspa/1724956336?i=1724957047",
       "artwork": "",
-      "audioUrl": "",
-      "downloadable": false,
+      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "downloadable": true,
       "source": "Apple Music catalog",
-      "version": "1"
+      "version": "3d738f6eae4a11fc",
+      "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
+      "permissionRef": "SAZ-20261005-001-F128",
+      "sourceUrl": "https://lmusic.kz/mp3/miras-zhugunusov-janym/145185",
+      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "size": 6522827,
+      "mime": "audio/mpeg",
+      "recordingAliasOf": "apple-6812377711"
     },
     {
       "id": "apple-1864367251",
@@ -6039,7 +6047,7 @@
       "artistId": "miras",
       "artist": "Жугунусов Мирас",
       "album": "Yeski Taspa : 3 Season",
-      "duration": 272,
+      "duration": 271.700658,
       "releaseDate": "2023-12-22",
       "styles": [
         "lyrical",
@@ -6047,10 +6055,18 @@
       ],
       "officialUrl": "https://music.apple.com/kz/album/janym-yeski-taspa/6812379566?i=6812379571",
       "artwork": "",
-      "audioUrl": "",
-      "downloadable": false,
+      "audioUrl": "assets/audio/licensed/apple-6812377711-3d738f6eae4a11fc.mp3",
+      "downloadable": true,
       "source": "Apple Music catalog",
-      "version": "1"
+      "version": "3d738f6eae4a11fc",
+      "license": "Автордың жеке келісімі — жинақтаушының мәлімдемесі бойынша",
+      "licenseUrl": "https://mikosh001.github.io/offline-music-player/permissions/music-sources-and-permissions.html",
+      "permissionRef": "SAZ-20261005-001-F128",
+      "sourceUrl": "https://lmusic.kz/mp3/miras-zhugunusov-janym/145185",
+      "sha256": "3d738f6eae4a11fc5fd027a122e702ebadb28880992ac6ab063d94cd190e6f47",
+      "size": 6522827,
+      "mime": "audio/mpeg",
+      "recordingAliasOf": "apple-6812377711"
     },
     {
       "id": "apple-6797508189",

@@ -34,6 +34,7 @@ if (previous?.tracks) {
       "licenseUrl",
       "sourceUrl",
       "permissionRef",
+      "recordingAliasOf",
       "sha256",
       "duration",
     ]) {
