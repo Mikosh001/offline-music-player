@@ -53,6 +53,11 @@ const output =
     assert.equal(registry.isDigitallySigned, false);
     assert.equal(registry.version, "1.2");
     const text = await page.evaluate(async () => (await fetch('site-policy-content.json')).json());
+    for (const id of ['1.4','14.1']) {
+      const clause=text.sections.flatMap(s=>s.clauses).find(c=>c.id===id);
+      assert.ok(clause.text.includes(registry.version),id+' current version');
+      assert.ok(clause.text.includes(text.metadata.dateDisplay),id+' current date');
+    }
     for (const section of text.sections) {
       for (const clause of section.clauses) {
         assert.equal(await page.locator(`#clause-${clause.id.replace('.', '-')} p`).textContent(), clause.text);

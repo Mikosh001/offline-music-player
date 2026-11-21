@@ -61,18 +61,18 @@
   "files": [
     {
       "path": "site-policy.html",
-      "sha256": "f16a04c8bf9e939125d46721bc22a55ff1200fc6be7448be7cae83bc7cf567ff",
-      "bytes": 82754
+      "sha256": "e193189da6ba24b58b7e5996c7cde66aec6b826f890c56b94b00205d70d2bcea",
+      "bytes": 82771
     },
     {
       "path": "site-policy.pdf",
-      "sha256": "02785ce54b14fa74adc99b5cb7e0cd3752c90fe0ccbd72e225f052c15b795527",
-      "bytes": 203233
+      "sha256": "a71edb7f983100fcab9e859ee0d662837b023281a1c95e76f3a8b062f83ea3d8",
+      "bytes": 203249
     },
     {
       "path": "site-policy-content.json",
-      "sha256": "041923d02267be88bf99da81b6b1a94a7f70dae32c072ba83745ff10e735feb0",
-      "bytes": 64770
+      "sha256": "b8797893c225782d564de4c372bd6f60c1157859979e42cc0e05a46c010d9b85",
+      "bytes": 64787
     },
     {
       "path": "saz-policy-seal.svg",
