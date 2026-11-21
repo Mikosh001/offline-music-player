@@ -9,6 +9,10 @@ const base=process.env.SAZ_TEST_URL||'http://127.0.0.1:4173/';
   const context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(),errors=[],external=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(!r.url().startsWith(base)&&!r.url().startsWith('blob:')&&!r.url().startsWith('data:'))external.push(r.url());});
   await page.goto(base+'#home');await page.locator('.mix-card').first().waitFor();
+  // Finish first-install control before the fixture reload below. The remaining
+  // scenarios exercise an installed offline shell, rather than interrupting installation.
+  await page.evaluate(()=>navigator.serviceWorker.ready);
+  await page.waitForFunction(()=>!!navigator.serviceWorker.controller);
   assert.equal(await page.locator('.mix-card').count(),3);
   await page.locator('[data-action="mix"][data-id="rediscover"]').click();
   await page.getByRole('heading',{name:'Микс әлі толған жоқ'}).waitFor();
